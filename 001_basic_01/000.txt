@@ -1,0 +1,1352 @@
+---------------
+ Exercise: 001
+---------------
+
+Write a Python program to print the following string in a specific format (see the output).
+
+Sample String:
+==============
+"Twinkle, twinkle, little star, How I wonder what you are! \
+Up above the world so high, Like a diamond in the sky. \
+Twinkle, twinkle, little star, How I wonder what you are"
+
+Output:
+=======
+    Twinkle, twinkle, little star,
+        How I wonder what you are!
+            Up above the world so high,
+            Like a diamond in the sky.
+    Twinkle, twinkle, little star,
+        How I wonder what you are
+
+==============================================================================
+---------------
+ Exercise: 002
+---------------
+
+Write a Python program to find out what version of Python you are using.
+
+==============================================================================
+---------------
+ Exercise: 003
+---------------
+
+Write a Python program to display the current date and time.
+
+Sample Output :
+===============
+Current date and time :
+2014-07-05 14:34:14
+
+==============================================================================
+---------------
+ Exercise: 004
+---------------
+
+Write a Python program that calculates the area of a circle based on the radius entered by the user.
+
+Sample Output :
+===============
+r = 1.1
+Area = 3.8013271108436504
+
+==============================================================================
+---------------
+ Exercise: 005
+---------------
+
+Write a Python program that accepts the user's first and last name and prints them in reverse order with
+a space between them.
+
+==============================================================================
+---------------
+ Exercise: 006
+---------------
+
+Write a Python program that accepts a sequence of comma-separated numbers from the user and generates
+a list and a tuple of those numbers.
+
+Sample data : 3, 5, 7, 23
+
+Output :
+========
+List : ['3', ' 5', ' 7', ' 23']
+Tuple : ('3', ' 5', ' 7', ' 23')
+
+==============================================================================
+---------------
+ Exercise: 007
+---------------
+
+Write a Python program that accepts a filename from the user and prints the extension of the file.
+
+Sample filename : abc.java
+Output : java
+
+==============================================================================
+---------------
+ Exercise: 008
+---------------
+
+Write a Python program to display the first and last colors from the following list.
+
+color_list = ["Red","Green","White" ,"Black"]
+
+==============================================================================
+---------------
+ Exercise: 009
+---------------
+
+Write a Python program to display the examination schedule. (extract the date from exam_st_date).
+
+exam_st_date = (11, 12, 2014)
+
+Sample Output :
+===============
+The examination will start from : 11 / 12 / 2014
+
+==============================================================================
+---------------
+ Exercise: 010
+---------------
+
+Write a Python program that accepts an integer (n) and computes the value of n+nn+nnn.
+
+Sample value of n is 5
+Expected Result : 615  (5 + 55 + 555)
+
+==============================================================================
+---------------
+ Exercise: 011
+---------------
+
+Write a Python program to print the documents (syntax, description etc.) of Python built-in function(s).
+
+Sample function : abs()
+
+Expected Result :
+=================
+abs(number) -> number
+Return the absolute value of the argument.
+
+==============================================================================
+---------------
+ Exercise: 012
+---------------
+
+Write a Python program that prints the calendar for a given month and year.
+Note : Use 'calendar' module.
+
+==============================================================================
+---------------
+ Exercise: 013
+---------------
+
+Write a Python program to print the following 'here document'.
+
+Sample string:
+==============
+a string that you "don't" have to escape
+This
+is a ....... multi-line
+heredoc string --------> example
+
+==============================================================================
+---------------
+ Exercise: 014
+---------------
+
+Write a Python program to calculate the number of days between two dates.
+
+Sample dates : (2014, 7, 2), (2014, 7, 11)
+Expected output : 9 days
+
+==============================================================================
+---------------
+ Exercise: 015
+---------------
+
+Write a Python program to get the volume of a sphere with radius six.
+
+V = 4/3 * π * r^3
+
+==============================================================================
+---------------
+ Exercise: 016
+---------------
+
+Write a Python program to calculate the difference between a given number and 17.
+If the number is greater than 17, return twice the absolute difference.
+
+==============================================================================
+---------------
+ Exercise: 017
+---------------
+
+Write a Python program to test whether a number is within 100 of 1000 or 2000.
+
+==============================================================================
+---------------
+ Exercise: 018
+---------------
+
+Write a Python program to calculate the sum of three given numbers.
+If the values are equal, return three times their sum.
+
+==============================================================================
+---------------
+ Exercise: 019
+---------------
+
+Write a Python program to get a newly-generated string from a given string where "Is" has been added to the front.
+Return the string unchanged if the given string already begins with "Is".
+
+==============================================================================
+---------------
+ Exercise: 020
+---------------
+
+Write a Python program that returns a string that is n (non-negative integer) copies of a given string.
+
+==============================================================================
+---------------
+ Exercise: 021
+---------------
+
+Write a Python program that determines whether a given number (accepted from the user) is even or odd,
+and prints an appropriate message to the user.
+
+==============================================================================
+---------------
+ Exercise: 022
+---------------
+
+Write a Python program to count the number 4 in a given list.
+
+==============================================================================
+---------------
+ Exercise: 023
+---------------
+
+Write a Python program to get n (non-negative integer) copies of the first 2 characters of a given string.
+Return n copies of the whole string if the length is less than 2.
+
+==============================================================================
+---------------
+ Exercise: 024
+---------------
+
+Write a Python program to test whether a passed letter is a vowel or not.
+
+==============================================================================
+---------------
+ Exercise: 025
+---------------
+
+Write a Python program that checks whether a specified value is contained within a group of values.
+
+Test Data :
+3 -> [1, 5, 8, 3] : True
+-1 -> [1, 5, 8, 3] : False
+
+==============================================================================
+---------------
+ Exercise: 026
+---------------
+
+Write a Python program to create a histogram from a given list of integers.
+
+Sample Input: 2 3 6 5
+
+Output:
+======
+##
+###
+######
+#####
+
+==============================================================================
+---------------
+ Exercise: 027
+---------------
+
+Write a Python program that concatenates all elements in a list into a string and returns it.
+
+==============================================================================
+---------------
+ Exercise: 028
+---------------
+
+Write a Python program to print all even numbers from a given list of numbers in the same order and stop
+printing any after 237 in the sequence.
+
+Sample numbers list :
+
+numbers = [
+    386, 462, 47, 418, 907, 344, 236, 375, 823, 566, 597, 978, 328, 615, 953, 345,
+    399, 162, 758, 219, 918, 237, 412, 566, 826, 248, 866, 950, 626, 949, 687, 217,
+    815, 67, 104, 58, 512, 24, 892, 894, 767, 553, 81, 379, 843, 831, 445, 742, 717,
+    958,743, 527
+    ]
+
+==============================================================================
+---------------
+ Exercise: 029
+---------------
+
+Write a Python program that prints out all colors from color_list_1 that are not present in color_list_2.
+
+Test Data :
+===========
+color_list_1 = set(["White", "Black", "Red"])
+color_list_2 = set(["Red", "Green"])
+
+Expected Output :
+=================
+{'Black', 'White'}
+
+==============================================================================
+---------------
+ Exercise: 030
+---------------
+
+Write a Python program that will accept the base and height of a triangle and compute its area.
+
+==============================================================================
+---------------
+ Exercise: 031
+---------------
+
+Write a Python program that computes the greatest common divisor (GCD) of two positive integers.
+
+==============================================================================
+---------------
+ Exercise: 032
+---------------
+
+Write a Python program to find the least common multiple (LCM) of two positive integers.
+
+==============================================================================
+---------------
+ Exercise: 033
+---------------
+
+Write a Python program to sum three given integers. However, if two values are equal, the sum will be zero.
+
+==============================================================================
+---------------
+ Exercise: 034
+---------------
+
+Write a Python program to sum two given integers. However, if the sum is between 15 and 20 it will return 20.
+
+==============================================================================
+---------------
+ Exercise: 035
+---------------
+
+Write a Python program that returns true if the two given integer values are equal or their sum or difference is 5.
+
+==============================================================================
+---------------
+ Exercise: 036
+---------------
+
+Write a Python program to add two objects if both objects are integers.
+
+==============================================================================
+---------------
+ Exercise: 037
+---------------
+
+Write a Python program that displays your name, age, and address on three different lines.
+
+==============================================================================
+---------------
+ Exercise: 038
+---------------
+
+Write a Python program to solve (x + y) * (x + y).
+
+Test Data : x = 4, y = 3
+Expected Output : (4 + 3) ^ 2) = 49
+
+==============================================================================
+---------------
+ Exercise: 039
+---------------
+
+[Weird Exercise]
+
+Write a Python program to compute the future value of a specified principal amount, rate of interest,
+and number of years.
+
+Test Data : amt = 10000, int = 3.5, years = 7
+Expected Output : 12722.79
+
+Hint: The formula for future value with compound interest is FV = P(1 + r/n)^nt.
+FV = the future value;
+P = the principal;
+r = the annual interest rate expressed as a decimal;
+n = the number of times interest is paid each year;
+t = time in years.
+
+==============================================================================
+---------------
+ Exercise: 040
+---------------
+
+Write a Python program to calculate the Euclidean Distance between the points (x1, y1) and (x2, y2).
+
+==============================================================================
+---------------
+ Exercise: 041
+---------------
+
+Write a Python program to check whether a file exists.
+
+==============================================================================
+---------------
+ Exercise: 042
+---------------
+
+Write a Python program to determine if a Python shell is executing in 32bit or 64bit mode on OS.
+
+==============================================================================
+---------------
+ Exercise: 043
+---------------
+
+Write a Python program to get OS name, platform and release information.
+
+==============================================================================
+---------------
+ Exercise: 044
+---------------
+
+Write a Python program to locate Python site packages.
+
+==============================================================================
+---------------
+ Exercise: 045
+---------------
+
+Write a Python program that calls an external command.
+
+e.g. "python -V"
+
+==============================================================================
+---------------
+ Exercise: 046
+---------------
+
+Write a Python program to retrieve the path and name of the file currently being executed.
+
+==============================================================================
+---------------
+ Exercise: 047
+---------------
+
+Write a Python program to find out the number of CPUs used.
+
+==============================================================================
+---------------
+ Exercise: 048
+---------------
+
+Write a Python program to parse a string to float or integer.
+
+==============================================================================
+---------------
+ Exercise: 049
+---------------
+
+Write a Python program to list all files in a directory.
+
+==============================================================================
+---------------
+ Exercise: 050
+---------------
+
+Write a Python program to print without a newline or space.
+
+==============================================================================
+---------------
+ Exercise: 051
+---------------
+
+Write a Python program to determine the profiling of Python programs.
+Note: A profile is a set of statistics that describes how often and for how long various parts of the program executed.
+These statistics can be formatted into reports via the pstats module.
+
+"cProfile" and "profile" provide deterministic profiling of Python programs.
+
+==============================================================================
+---------------
+ Exercise: 052
+---------------
+
+Write a Python program to print to STDERR.
+
+At program startup, three text streams are predefined and need not be opened explicitly:
+    standard input (for reading conventional input),
+    standard output (for writing conventional output),
+    and standard error (for writing diagnostic output).
+
+As initially opened, the standard error stream is not fully buffered; the standard input and standard output
+streams are fully buffered if and only if the stream can be determined not to refer to an interactive device.
+
+The purpose of the standard error stream is to separate error messages from regular output.
+
+==============================================================================
+---------------
+ Exercise: 053
+---------------
+
+Write a Python program to access environment variables.
+
+Try to print the PATH environment variable
+
+==============================================================================
+---------------
+ Exercise: 054
+---------------
+
+Write a Python program to get the current username.
+
+==============================================================================
+---------------
+ Exercise: 055
+---------------
+
+Write a Python program to find local IP addresses using Python's stdlib.
+
+==============================================================================
+---------------
+ Exercise: 056
+---------------
+
+Write a Python program to get the height and width of the console window.
+
+==============================================================================
+---------------
+ Exercise: 057
+---------------
+
+Write a Python program to get the execution time of a Python method.
+
+==============================================================================
+---------------
+ Exercise: 058
+---------------
+
+Write a Python program to sum the first n positive integers.
+
+==============================================================================
+---------------
+ Exercise: 059
+---------------
+
+Write a Python program to convert height (in feet and inches) to centimeters.
+
+    1 foot = 30.48  cm
+    1 inch = 2.54   cm
+
+    1 foot = 12 inches
+
+==============================================================================
+---------------
+ Exercise: 060
+---------------
+
+Write a Python program to calculate the hypotenuse of a right-angled triangle.
+
+A right triangle or right-angled triangle, or more formally an orthogonal triangle, is a triangle in which one angle
+is a right angle. The relation between the sides and angles of a right triangle is the basis for trigonometry.
+The side opposite the right angle is called the hypotenuse.
+
+If the lengths of all three sides of a right triangle are integers, the triangle is said to be a Pythagorean triangle
+and its side lengths are collectively known as a Pythagorean triple.
+
+==============================================================================
+---------------
+ Exercise: 061
+---------------
+
+Write a Python program to convert the distance (in feet) to inches, yards, and miles.
+
+    1 inch = 2.54   cm
+    1 foot = 12   inch
+    1 yard = 3    feet
+    1 yard = 36   inch
+    1 mile = 1760 yards
+    1 mile = 5280 feet
+
+==============================================================================
+---------------
+ Exercise: 062
+---------------
+
+Write a Python program to convert all units of time into seconds.
+
+==============================================================================
+---------------
+ Exercise: 063
+---------------
+
+Write a Python program to get the absolute file path of an input relative path.
+
+==============================================================================
+---------------
+ Exercise: 064
+---------------
+
+Write a Python program that retrieves the date and time of file creation and modification.
+
+==============================================================================
+---------------
+ Exercise: 065
+---------------
+
+Write a Python program that converts seconds into days, hours, minutes, and seconds.
+
+==============================================================================
+---------------
+ Exercise: 066
+---------------
+
+Write a Python program to calculate the body mass index.
+
+Body mass index (BMI) is a measure of body fat based on height and weight that applies to adult men and women.
+
+The input height is expected to be in feet
+The input weight is expected to be in kg
+
+BMI = w (kg) / h^2 (feet)
+
+==============================================================================
+---------------
+ Exercise: 067
+---------------
+
+Write a Python program to convert pressure in kilopascals to pounds per square inch, a millimeter of mercury (mmHg)
+and atmosphere pressure.
+
+    psi     = kPa / 6.89475729
+    mmHg    = kPa * 760 / 101.325
+    atm     = kPa / 101.325
+
+==============================================================================
+---------------
+ Exercise: 068
+---------------
+
+Write a Python program to calculate sum of digits of a number.
+
+==============================================================================
+---------------
+ Exercise: 069
+---------------
+
+Write a Python program to sort three integers without using conditional statements and loops.
+
+==============================================================================
+---------------
+ Exercise: 070
+---------------
+
+Write a Python program to sort all python files in an input directory by the modification date.
+
+==============================================================================
+---------------
+ Exercise: 071
+---------------
+
+Write a Python program to get a directory listing, sorted by creation date.
+
+==============================================================================
+---------------
+ Exercise: 072
+---------------
+
+Write a Python program to get the details of the math module.
+
+==============================================================================
+---------------
+ Exercise: 073
+---------------
+
+Write a Python program to calculate the midpoints of a line.
+
+==============================================================================
+---------------
+ Exercise: 074
+---------------
+
+Write a Python program to hash a word.
+
+==============================================================================
+---------------
+ Exercise: 075
+---------------
+
+Write a Python program to get the Python copyright information.
+
+==============================================================================
+---------------
+ Exercise: 076
+---------------
+
+Write a Python program to get the command-line arguments (name of the script, the number of arguments, arguments)
+ passed to a script.
+
+ Hint: Use the 'sys' module
+
+==============================================================================
+---------------
+ Exercise: 077
+---------------
+
+Write a Python program to test whether the system is a big-endian platform or a little-endian platform.
+
+A big-endian system stores the most significant byte of a word at the smallest memory address and the least
+significant byte at the largest. A little-endian system, in contrast, stores the least-significant byte at the
+smallest address.
+
+The most significant bit/byte (MSB) is the bit/byte in a multiple-bit/byte binary number with the largest value.
+This is usually the bit/byte farthest to the left, or the bit/byte transmitted first in a sequence.
+
+E.g.:
+=====
+Data: 0x12345678
+
+BE:     0x100   0x101   0x102   0x103
+        0x12    0x34    0x56    0x78
+
+LE:     0x100   0x101   0x102   0x103
+        0x78    0x56    0x34    0x12
+
+Hint: using the 'sys' module
+
+==============================================================================
+---------------
+ Exercise: 078
+---------------
+
+Write a Python program to find the available built-in modules.
+
+Hint: use the 'sys' module
+
+==============================================================================
+---------------
+ Exercise: 079
+---------------
+
+Write a Python program to get the size of an object in bytes.
+
+Hint: use the 'sys' module
+
+==============================================================================
+---------------
+ Exercise: 080
+---------------
+
+Write a Python program to get the current value of the recursion limit.
+
+Hint: use 'sys' module
+
+==============================================================================
+---------------
+ Exercise: 081
+---------------
+
+Write a Python program to concatenate (with a dash) N strings in an input list.
+
+==============================================================================
+---------------
+ Exercise: 082
+---------------
+
+Write a Python program to calculate the sum of all items of a container (tuple, list, set, dictionary).
+
+==============================================================================
+---------------
+ Exercise: 083
+---------------
+
+Write a Python program to test whether all numbers in a list are greater than a certain number.
+
+==============================================================================
+---------------
+ Exercise: 084
+---------------
+
+Write a Python program to count the number of occurrences of a specific character in a string.
+
+==============================================================================
+---------------
+ Exercise: 085
+---------------
+
+Write a Python program to check whether a file path is a file or a directory.
+
+==============================================================================
+---------------
+ Exercise: 086
+---------------
+
+Write a Python program to get the ASCII value of a character.
+
+==============================================================================
+---------------
+ Exercise: 087
+---------------
+
+Write a Python program to get the size of a file.
+
+==============================================================================
+---------------
+ Exercise: 088
+---------------
+
+Given variables x=30 and y=20, write a Python program to print "30+20=50".
+
+==============================================================================
+---------------
+ Exercise: 089
+---------------
+
+Write a Python program to perform an action if a condition is true.
+Given a variable name, if the value is 1, display the string "First day of a Month!" and do nothing if the
+value is not equal.
+
+==============================================================================
+---------------
+ Exercise: 090
+---------------
+
+Write a Python program to create a copy of its own source code.
+
+==============================================================================
+---------------
+ Exercise: 091
+---------------
+
+Write a Python program to swap two variables.
+
+==============================================================================
+---------------
+ Exercise: 092
+---------------
+
+Write a Python program to define a string containing special characters in various forms.
+
+==============================================================================
+---------------
+ Exercise: 093
+---------------
+
+Write a Python program to get the Identity, Type, and Value of an object.
+
+==============================================================================
+---------------
+ Exercise: 094
+---------------
+
+Write a Python program to convert the bytes in a given string to a list of integers.
+
+x = b'Abc'
+
+==============================================================================
+---------------
+ Exercise: 095
+---------------
+
+Write a Python program to check whether a string is numeric.
+
+==============================================================================
+---------------
+ Exercise: 096
+---------------
+
+Write a Python program to print the current call stack.
+
+Hint: Use the 'traceback' module
+
+==============================================================================
+---------------
+ Exercise: 097
+---------------
+
+Write a Python program to list the special variables used in the language.
+
+==============================================================================
+---------------
+ Exercise: 098
+---------------
+
+Write a Python program to get system time.
+
+==============================================================================
+---------------
+ Exercise: 099
+---------------
+
+Write a Python program to clear the screen or terminal.
+
+==============================================================================
+---------------
+ Exercise: 100
+---------------
+
+Write a Python program to get the name of the host on which the routine is running.
+
+==============================================================================
+---------------
+ Exercise: 101
+---------------
+
+Write a Python program to access and print the html contents of a URL to the console.
+
+Hint: use the built-in 'http' module or the 'requests' module
+
+Host: https://www.w3resource.com/python-exercises/python-basic-exercise-101.php
+
+==============================================================================
+---------------
+ Exercise: 102
+---------------
+
+Write a Python program to get the system 'dir' command output.
+
+==============================================================================
+---------------
+ Exercise: 103
+---------------
+
+Write a Python program to extract the filename from a given path.
+
+==============================================================================
+---------------
+ Exercise: 104
+---------------
+
+Write a Python program to get the effective group id, effective user id, real group id, and a list of supplemental
+group ids associated with the current process.
+
+Note: Availability: Unix.
+
+==============================================================================
+---------------
+ Exercise: 105
+---------------
+
+Write a Python program to get the environment variables and print them in a neat way.
+
+==============================================================================
+---------------
+ Exercise: 106
+---------------
+
+Write a Python program to divide a path by the extension separator.
+
+==============================================================================
+---------------
+ Exercise: 107
+---------------
+
+Write a Python program to retrieve file properties.
+    File name
+    File format
+    Most recent access time
+    Modified time
+    Creating time (ctime)
+    Size
+
+==============================================================================
+---------------
+ Exercise: 108
+---------------
+
+Write a Python program to check the following properties of an input path.
+
+    Absolute?
+    Is File?
+    Is Dir?
+    Is Link?        (is a symbolic link)
+    Exists?         (if the file path exists (regardless of its type)
+
+==============================================================================
+---------------
+ Exercise: 109
+---------------
+
+Write a Python program to check if a number is positive, negative or zero.
+
+==============================================================================
+---------------
+ Exercise: 110
+---------------
+
+Write a Python program to get numbers divisible by fifteen from a list using an anonymous function.
+
+==============================================================================
+---------------
+ Exercise: 111
+---------------
+
+Write a Python program to make file lists from the current directory using a wildcard.
+
+e.g. List all python files that start with '00' in the current directory.
+
+==============================================================================
+---------------
+ Exercise: 112
+---------------
+
+Write a Python program to remove the first item from a specified list.
+
+==============================================================================
+---------------
+ Exercise: 113
+---------------
+
+Write a Python program that inputs a number and generates an error message if it is not a number.
+
+==============================================================================
+---------------
+ Exercise: 114
+---------------
+
+Write a Python program to filter positive numbers from a list.
+
+==============================================================================
+---------------
+ Exercise: 115
+---------------
+
+Write a Python program to compute the product of a list of integers (without using a for loop).
+
+==============================================================================
+---------------
+ Exercise: 116
+---------------
+
+Write a Python program to print this Unicode character "2713" (the checkmark).
+
+Unicode (https://www.unicode.org/) is a specification that aims to list every character used by human languages
+and give each character its own unique code.
+
+see: https://docs.python.org/3/howto/unicode.html
+
+==============================================================================
+---------------
+ Exercise: 117
+---------------
+
+Write a Python program to prove that two string variables of the same value point to the same memory location.
+
+==============================================================================
+---------------
+ Exercise: 118
+---------------
+
+Write a Python program to create a bytearray from a list.
+
+==============================================================================
+---------------
+ Exercise: 119
+---------------
+
+Write a Python program to round a floating-point number to a specified number of decimal places.
+
+round 212.374 with 2 decimal places
+
+==============================================================================
+---------------
+ Exercise: 120
+---------------
+
+Write a Python program to format a specified string and limit the length of a string.
+
+    Original string:    1234567890
+    Output string:      123456
+
+==============================================================================
+---------------
+ Exercise: 121
+---------------
+
+Write a Python program to determine if a variable is defined or not.
+
+==============================================================================
+---------------
+ Exercise: 122
+---------------
+
+Write a Python program to empty a variable without destroying it.
+
+    Sample data: n=20
+    d = {"x":200}
+    Expected Output : 0
+    {}
+
+==============================================================================
+---------------
+ Exercise: 123
+---------------
+
+Write a Python program to determine the system largest and smallest integers, longs, and floats.
+
+==============================================================================
+---------------
+ Exercise: 124
+---------------
+
+Write a Python program to check whether multiple variables have the same value.
+
+==============================================================================
+---------------
+ Exercise: 125
+---------------
+
+Write a Python program to sum all counts in a collection (it should be equal to the len of the list).
+
+==============================================================================
+---------------
+ Exercise: 126
+---------------
+
+126. Write a Python program to get the actual module object for a given object.
+
+e.g. inspect that the `sqrt` function is implemented in the builtin `math` module
+
+Hint: use the `inspect` builtin module
+
+==============================================================================
+---------------
+ Exercise: 127
+---------------
+
+Write a Python program to check whether an integer fits in 64 bits.
+
+==============================================================================
+---------------
+ Exercise: 128
+---------------
+
+Write a Python program to check whether lowercase letters exist in a string.
+
+==============================================================================
+---------------
+ Exercise: 129
+---------------
+
+Write a Python program to add leading zeroes to a string.
+
+e.g. 1 -> 001
+
+==============================================================================
+---------------
+ Exercise: 130
+---------------
+
+Write a Python program that uses double quotes to display strings.
+
+==============================================================================
+---------------
+ Exercise: 131
+---------------
+
+Write a Python program to split a variable length string into variables.
+
+e.g.: "ab" -> "a", "b"
+
+==============================================================================
+---------------
+ Exercise: 132
+---------------
+
+Write a Python program to list the home directory without an absolute path.
+
+==============================================================================
+---------------
+ Exercise: 133
+---------------
+
+Write a Python program to calculate the time runs (difference between start and current time) of a program.
+
+==============================================================================
+---------------
+ Exercise: 134
+---------------
+
+Write a Python program to input two integers on a single line.
+
+e.g.: 1 2   =>   x = 1, y = 2
+
+==============================================================================
+---------------
+ Exercise: 135
+---------------
+
+Write a Python program to print the following:
+
+    Sample value : x = 30
+    Expected output : Value of x is "30"
+
+==============================================================================
+---------------
+ Exercise: 136
+---------------
+
+Write a Python program to find files and skip directories in a given directory.
+
+==============================================================================
+---------------
+ Exercise: 137
+---------------
+
+Write a Python program to extract a single key-value pair from a dictionary into variables.
+
+==============================================================================
+---------------
+ Exercise: 138
+---------------
+
+Write a Python program to convert true to 1 and false to 0.
+
+==============================================================================
+---------------
+ Exercise: 139
+---------------
+
+Write a Python program to validate an IP address.
+
+An Internet Protocol address (IP address) is a numerical label assigned to each device connected to a computer
+network that uses the Internet Protocol for communication. An IP address serves two main functions: host or network
+interface identification and location addressing.
+
+Internet Protocol version 4 (IPv4) defines an IP address as a 32-bit number. However, because of the growth of the
+Internet and the depletion of available IPv4 addresses, a new version of IP (IPv6), using 128 bits for the IP address,
+was standardized in 1998. IPv6 deployment has been ongoing since the mid-2000s.
+
+IP addresses are written and displayed in human-readable notations, such as 172.16.254.1 in IPv4, and
+2001:db8:0:1234:0:567:8:1 in IPv6. The size of the routing prefix of the address is designated in CIDR notation
+by suffixing the address with the number of significant bits, e.g., 192.168.1.15/24, which is equivalent to the
+historically used subnet mask 255.255.255.0.
+
+     10.0.0.0 -> Valid Ip address
+
+     10.255.255.255 -> Valid Ip address
+
+     192.168.255.0 -> Valid Ip address
+
+     266.1.0.2 -> Invalid Ip address
+
+==============================================================================
+---------------
+ Exercise: 140
+---------------
+
+Write a Python program to convert an integer to binary that keeps leading zeros.
+
+    Sample data : x=12
+    Expected output : 00001100
+
+==============================================================================
+---------------
+ Exercise: 141
+---------------
+
+Write a python program to convert decimal to hexadecimal.
+    Sample decimal number: 30, 4
+    Expected output: 1e, 04
+
+==============================================================================
+---------------
+ Exercise: 142
+---------------
+
+Write a Python program to check if every consecutive sequence of zeroes is followed by a consecutive sequence of
+ones of same length in a given string. Return True/False.
+
+    Original sequence: 01010101
+    True
+
+    Original sequence: 00
+    False
+
+    Original sequence: 000111000111
+    True
+
+    Original sequence: 00011100011
+    False
+
+==============================================================================
+---------------
+ Exercise: 143
+---------------
+
+Write a Python program to determine if the Python shell is executing in 32-bit or 64-bit mode on the operating system.
+
+==============================================================================
+---------------
+ Exercise: 144
+---------------
+
+Write a Python program to check whether a variable is an integer or string.
+
+==============================================================================
+---------------
+ Exercise: 145
+---------------
+
+Write a Python program to test if a variable is a list, tuple, or set.
+
+==============================================================================
+---------------
+ Exercise: 146
+---------------
+
+Write a Python program to find the location of Python module sources.
+
+e.g.: try to find the location of the 'os' and 'datetime' libraries
+
+==============================================================================
+---------------
+ Exercise: 147
+---------------
+
+Write a Python function to check whether a number is divisible by another number. Accept two integer values
+from the user.
+
+==============================================================================
+---------------
+ Exercise: 148
+---------------
+
+Write a Python function to find the maximum and minimum numbers from a sequence of numbers.
+Note: Do not use built-in functions.
+
+==============================================================================
+---------------
+ Exercise: 149
+---------------
+
+Write a Python function that takes a positive integer and returns the sum of the cube of all positive integers
+smaller than the specified number.
+
+==============================================================================
+---------------
+ Exercise: 150
+---------------
+
+Write a Python function to check whether a distinct pair of numbers whose product is odd is present in a sequence
+of integer values.
+
+    [2, 4, 6, 8] False
+    [1, 6, 4, 7, 8] True
+    [1, 3, 5, 7, 9] True
+
+==============================================================================

@@ -1,0 +1,111 @@
+---------------
+ Exercise: 001
+---------------
+
+Write a Python program to calculate the sum of a list of numbers using recursion.
+
+[2, 4, 5, 6, 7]     =>  24
+
+==============================================================================
+---------------
+ Exercise: 002
+---------------
+
+Write a Python program to convert an integer to a string in any base using recursion.
+
+integer: 2835, base: 16     =>  B13
+
+==============================================================================
+---------------
+ Exercise: 003
+---------------
+
+Write a Python program to sum recursion lists using recursion.
+Test Data: [1, 2, [3,4], [5,6]]
+Expected Result: 21
+
+==============================================================================
+---------------
+ Exercise: 004
+---------------
+
+Write a Python program to get the factorial of a non-negative integer using recursion.
+
+5   =>  120
+
+==============================================================================
+---------------
+ Exercise: 005
+---------------
+
+Write a Python program to solve the Fibonacci sequence with an input integer using recursion.
+
+7   =>  13
+
+==============================================================================
+---------------
+ Exercise: 006
+---------------
+
+Write a Python program to get the sum of a non-negative integer using recursion.
+Test Data:
+sumDigits(345) -> 12
+sumDigits(45) -> 9
+
+==============================================================================
+---------------
+ Exercise: 007
+---------------
+
+Write a Python program to calculate the sum of the positive integers of n+(n-2)+(n-4)... (until n-x =< 0)
+using recursion.
+
+Test Data:
+sum_series(6) -> 12
+sum_series(10) -> 30
+
+==============================================================================
+---------------
+ Exercise: 008
+---------------
+
+Write a Python program to calculate the sum of harmonic series upto n terms.
+Note: The harmonic sum is the sum of reciprocals of the positive integers.
+Example : 1 + 1/2 + 1/3 + 1/4 + 1/5 + ...
+
+7   =>  2.5928571428571425
+4   =>  2.083333333333333
+
+==============================================================================
+---------------
+ Exercise: 009
+---------------
+
+Write a Python program to calculate the geometric sum up to 'n' terms.
+Note: In mathematics, a geometric series is a series with a constant ratio between successive terms.
+
+sum(1 / 2^m) for m in the range: [0, n]
+
+7   =>  1.9921875
+4   =>  1.9375
+
+==============================================================================
+---------------
+ Exercise: 010
+---------------
+
+Write a Python program to calculate the value of 'a' to the power of 'b' using recursion.
+
+Test Data :
+(power(3,4) -> 81
+
+==============================================================================
+---------------
+ Exercise: 011
+---------------
+
+Write a Python program to find the greatest common divisor (GCD) of two integers using recursion.
+
+48, 12      =>  12
+
+==============================================================================

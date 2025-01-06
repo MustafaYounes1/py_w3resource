@@ -1,0 +1,134 @@
+---------------
+ Exercise: 001
+---------------
+
+Write a Python program to convert JSON data to Python object.
+
+json_obj =  '{ "Name":"David", "Class":"I", "Age":6 }'
+
+Name:  David
+Class:  I
+Age:  6
+
+==============================================================================
+---------------
+ Exercise: 002
+---------------
+
+Write a Python program to convert Python object to JSON data.
+
+python_obj = {
+  "name": "David",
+  "class":"I",
+  "age": 6
+}
+
+{"name": "David", "class": "I", "age": 6}
+
+==============================================================================
+---------------
+ Exercise: 003
+---------------
+
+Write a Python program to convert Python objects into JSON strings. Print all the values.
+
+py_objs = [
+    {"name": "David", "age": 6, "class": "I"},
+    ["Red", "Green", "Black"],
+    "Python Json",
+    1234,
+    21.34,
+    True,
+    False,
+    None
+    ]
+
+{"name": "David", "age": 6, "class": "I"}
+["Red", "Green", "Black"]
+"Python Json"
+1234
+21.34
+true
+false
+null
+
+==============================================================================
+---------------
+ Exercise: 004
+---------------
+
+Write a Python program to convert Python dictionary object (sort by key) to JSON data.
+Print the object members with indent level 4
+
+py_dict = {'4': 5, '6': 7, '1': 3, '2': 4}
+
+{
+    "1": 3,
+    "2": 4,
+    "4": 5,
+    "6": 7
+}
+
+==============================================================================
+---------------
+ Exercise: 005
+---------------
+
+Write a Python program to convert JSON encoded data into Python objects.
+
+json_data = [
+    '{"name": "David", "age": 6, "class": "I"}',
+    '["Red", "Green", "Black"]',
+    '"Python Json"',
+    '1234',
+    '21.34'
+]
+
+{'name': 'David', 'age': 6, 'class': 'I'}
+['Red', 'Green', 'Black']
+Python Json
+1234
+21.34
+
+==============================================================================
+---------------
+ Exercise: 006
+---------------
+
+Write a Python program to create a new JSON file from an existing JSON file.
+
+Load '006.json' and delete the key 'abbreviation' from all states and write the result to '006_out.json'
+
+==============================================================================
+---------------
+ Exercise: 007
+---------------
+
+Write a Python program to encode a complex number to json data.
+
+2 + 3j  =>  '[2.0, 3.0]'
+
+==============================================================================
+---------------
+ Exercise: 008
+---------------
+
+Write a Python program to check whether a JSON string contains complex object or not.
+If the json object contains the '__complex__' key => parse it as a python complex object, otherwise, parse it as
+a dict
+
+'{"__complex__": true, "real": 4, "img": 5}'        =>  (4+5j)
+'{"real": 4, "img": 3}'                             =>  {'real': 4, 'img': 3}
+
+==============================================================================
+---------------
+ Exercise: 009
+---------------
+
+Write a Python program to deserialize the following json data.
+
+'{"a":  1, "a":  2, "a":  3, "a": 4, "b": 1, "b": 2}'
+
+{'a': 4, 'b': 2}
+
+==============================================================================

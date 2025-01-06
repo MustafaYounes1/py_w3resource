@@ -1,0 +1,1285 @@
+---------------
+ Exercise: 001
+---------------
+
+Write a Python program to calculate the length of a string.
+
+w3resource.com      =>  14
+
+==============================================================================
+---------------
+ Exercise: 002
+---------------
+
+Write a Python program to count the number of characters (character frequency) in a string.
+Sample String : google.com'
+Expected Result : {'g': 2, 'o': 3, 'l': 1, 'e': 1, '.': 1, 'c': 1, 'm': 1}
+
+==============================================================================
+---------------
+ Exercise: 003
+---------------
+
+Write a Python program to get a string made of the first 2 and last 2 characters of a given string.
+If the string length is less than 2, return the empty string instead.
+
+Sample String : 'w3resource'
+Expected Result : 'w3ce'
+
+Sample String : 'w3'
+Expected Result : 'w3w3'
+
+Sample String : ' w'
+Expected Result : Empty String
+
+==============================================================================
+---------------
+ Exercise: 004
+---------------
+
+Write a Python program to get a string from a given string where all occurrences of its first char have been
+ changed to '$', except the first char itself.
+
+Sample String : 'restart'
+Expected Result : 'resta$t'
+
+==============================================================================
+---------------
+ Exercise: 005
+---------------
+
+Write a Python program to get a single string from two given strings, separated by a space and swap the first
+two characters of each string.
+
+Sample String : 'abc', 'xyz'
+Expected Result : 'xyc abz'
+
+==============================================================================
+---------------
+ Exercise: 006
+---------------
+
+Write a Python program to add 'ing' at the end of a given string (length should be at least 3).
+If the given string already ends with 'ing', add 'ly' instead. If the string length of the given string is less than 3,
+leave it unchanged.
+
+Sample String : 'abc'
+Expected Result : 'abcing'
+
+Sample String : 'string'
+Expected Result : 'stringly'
+
+==============================================================================
+---------------
+ Exercise: 007
+---------------
+
+Write a Python program to find the first appearance of the substrings 'not' and 'poor' in a given string.
+If 'not' follows 'poor', replace the whole 'not'...'poor' substring with 'good'. Return the resulting string.
+
+Sample String : 'The lyrics is not that poor!'
+'The lyrics is poor!'
+
+Expected Result : 'The lyrics is good!'
+'The lyrics is poor!'
+
+==============================================================================
+---------------
+ Exercise: 008
+---------------
+
+Write a Python function that takes a list of words and return the longest word and the length of the longest one.
+
+["PHP", "Exercises", "Backend"]
+
+Longest word: Exercises
+Length of the longest word: 9
+
+==============================================================================
+---------------
+ Exercise: 009
+---------------
+
+Write a Python program to remove the nth index character from a nonempty string.
+
+'Python', 0     =>  ython
+'Python', 3     =>  Pyton
+'Python', 5     =>  Pytho
+
+==============================================================================
+---------------
+ Exercise: 010
+---------------
+
+Write a Python program to change a given string to a newly string where the first and last chars have been exchanged.
+
+abcd    =>  dbca
+
+==============================================================================
+---------------
+ Exercise: 011
+---------------
+
+Write a Python program to remove characters that have odd index values in a given string.
+
+abcdef  =>  ace
+
+==============================================================================
+---------------
+ Exercise: 012
+---------------
+
+Write a Python program to count the occurrences of each word in a given sentence.
+
+==============================================================================
+---------------
+ Exercise: 013
+---------------
+
+Write a Python script that takes input from the user and displays that input back in upper and lower cases.
+
+==============================================================================
+---------------
+ Exercise: 014
+---------------
+
+Write a Python program that accepts a comma-separated sequence of words as input and prints the distinct words
+in sorted form (alphanumerically).
+
+Sample Words : red, white, black, red, green, black
+Expected Result : black, green, red, white
+
+==============================================================================
+---------------
+ Exercise: 015
+---------------
+
+Write a Python function to create an HTML string with tags around the word(s).
+
+Sample function and result :
+add_tags('i', 'Python') -> '<i>Python</i>'
+add_tags('b', 'Python Tutorial') -> '<b>Python Tutorial </b>'
+
+==============================================================================
+---------------
+ Exercise: 016
+---------------
+
+Write a Python function to insert a string in the middle of a string.
+
+Sample function and result :
+insert_sting_middle('[[]]', 'Python') -> [[Python]]
+insert_sting_middle('{{}}', 'PHP') -> {{PHP}}
+
+==============================================================================
+---------------
+ Exercise: 017
+---------------
+
+Write a Python function to get a string made of 4 copies of the last two characters of a specified string
+(length must be at least 2).
+
+Sample function and result :
+insert_end('Python') -> onononon
+insert_end('Exercises') -> eseseses
+
+==============================================================================
+---------------
+ Exercise: 018
+---------------
+
+Write a Python function to get a string made of the first three characters of a specified string.
+If the length of the string is less than 3, return the original string.
+
+Sample function and result :
+first_three('ipy') -> ipy
+first_three('python') -> pyt
+
+==============================================================================
+---------------
+ Exercise: 019
+---------------
+
+Write a Python program to get the last part of a string before a specified character.
+
+https://www.w3resource.com/python-exercises     '-'
+
+https://www.w3resource.com/python
+
+==============================================================================
+---------------
+ Exercise: 020
+---------------
+
+Write a Python function to reverse a string if its length is a multiple of 4.
+
+abcd    =>  dcba
+python  =>  python
+
+==============================================================================
+---------------
+ Exercise: 021
+---------------
+
+Write a Python function to convert a given string to all uppercase if it contains at least 2 uppercase
+characters in the first 4 characters.
+
+Python  =>  Python
+PyThon  =>  PYTHON
+
+==============================================================================
+---------------
+ Exercise: 022
+---------------
+
+Write a Python program to sort a string lexicographically.
+
+w3resource  =>  ['3', 'c', 'e', 'e', 'o', 'r', 'r', 's', 'u', 'w']
+
+==============================================================================
+---------------
+ Exercise: 023
+---------------
+
+Write a Python program to remove a newline at the end of a string.
+
+==============================================================================
+---------------
+ Exercise: 024
+---------------
+
+Write a Python program to check whether a string starts with specified characters.
+
+w3resource.com, w3r     =>  True
+
+==============================================================================
+---------------
+ Exercise: 025
+---------------
+
+Write a Python program to create a Caesar encryption.
+
+Note : In cryptography, a Caesar cipher, also known as Caesar's cipher, the shift cipher, Caesar's code or Caesar shift,
+is one of the simplest and most widely known encryption techniques.
+
+It is a type of substitution cipher in which each letter in the plaintext is replaced by a letter some fixed number
+of positions down the alphabet. For example, with a left shift of 3, D would be replaced by A, E would become B,
+and so on.
+
+The method is named after Julius Caesar, who used it in his private correspondence.
+
+abc     =>  cde
+
+==============================================================================
+---------------
+ Exercise: 026
+---------------
+
+Write a Python program to display formatted text (width=100) as output.
+
+
+Center: $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$Test$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+Left  : Test$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+Right : $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$Test
+
+
+Python is a widely used high-level, general-purpose, interpreted,
+dynamic programming language. Its design philosophy emphasizes
+code readability, and its syntax allows programmers to express
+concepts in fewer lines of code than possible in languages such
+as C++ or Java.
+
+
+Python is a widely used high-level, general-purpose, interpreted, dynamic programming language. Its
+design philosophy emphasizes code readability, and its syntax allows programmers to express concepts
+in fewer lines of code than possible in languages such as C++ or Java.
+
+==============================================================================
+---------------
+ Exercise: 027
+---------------
+
+Write a Python program to remove existing indentation from all of the lines in a given text.
+
+    Python is a widely used high-level, general-purpose, interpreted,
+dynamic programming language. Its design philosophy emphasizes
+code readability, and its syntax allows programmers to express
+concepts in fewer lines of code than possible in languages such
+as C++ or Java.
+
+Python is a widely used high-level, general-purpose, interpreted,
+dynamic programming language. Its design philosophy emphasizes
+code readability, and its syntax allows programmers to express
+concepts in fewer lines of code than possible in languages such
+as C++ or Java.
+
+==============================================================================
+---------------
+ Exercise: 028
+---------------
+
+Write a Python program to add prefix text to all of the lines in a string.
+
+==============================================================================
+---------------
+ Exercise: 029
+---------------
+
+Write a Python program to set the indentation of the first line.
+
+==============================================================================
+---------------
+ Exercise: 030
+---------------
+
+Write a Python program to print the following numbers up to 2 decimal places.
+
+3.1415926   =>  3.14
+12.9999     =>  13.00
+
+==============================================================================
+---------------
+ Exercise: 031
+---------------
+
+Write a Python program to print the following numbers up to 2 decimal places with a sign.
+
+3.1415926   =>  +3.14
+-12.9999    =>  -13.00
+
+==============================================================================
+---------------
+ Exercise: 032
+---------------
+
+Write a Python program to print the following positive and negative numbers with no decimal places.
+
+3.1415926   =>  +3
+-12.9999    =>  -13
+
+==============================================================================
+---------------
+ Exercise: 033
+---------------
+
+Write a Python program to print the following integers with zeros to the left of the specified width.
+
+3       =>  03
+123     =>  000123
+
+==============================================================================
+---------------
+ Exercise: 034
+---------------
+
+Write a Python program to print the following integers with '*' to the right of the specified width.
+
+3   =>  3*
+123 =>  123***
+
+==============================================================================
+---------------
+ Exercise: 035
+---------------
+
+Write a Python program to display a number with a comma separator.
+
+1           =>  1
+3000000     =>  3,000,000
+30000000    =>  30,000,000
+
+==============================================================================
+---------------
+ Exercise: 036
+---------------
+
+Write a Python program to format a number with a percentage.
+
+0.25    =>  25.00%
+-0.25   =>  -25.00%
+
+==============================================================================
+---------------
+ Exercise: 037
+---------------
+
+Write a Python program to display a number in left, right, and center aligned with a width of 10.
+
+==============================================================================
+---------------
+ Exercise: 038
+---------------
+
+Write a Python program to count occurrences of a substring in a string.
+
+The quick brown fox jumps over the lazy dog., fox       =>  1
+
+==============================================================================
+---------------
+ Exercise: 039
+---------------
+
+Write a Python program to reverse a string.
+
+abcdef  =>  fedcba
+
+==============================================================================
+---------------
+ Exercise: 040
+---------------
+
+Write a Python program to reverse words in a string.
+
+The quick brown fox jumps over the lazy dog.
+dog. lazy the over jumps fox brown quick The
+
+==============================================================================
+---------------
+ Exercise: 041
+---------------
+
+Write a Python program to strip a set of characters from a string.
+
+The quick brown fox jumps over the lazy dog.    ,   aeiou
+Th qck brwn fx jmps vr th lzy dg.
+
+==============================================================================
+---------------
+ Exercise: 042
+---------------
+
+Write a Python program to count repeated characters in a string.
+
+Sample string: 'thequickbrownfoxjumpsoverthelazydog'
+Expected output :
+o 4
+e 3
+u 2
+h 2
+r 2
+t 2
+
+==============================================================================
+---------------
+ Exercise: 043
+---------------
+
+Write a Python program to print the square and cube symbols in the area of a rectangle and the volume of a cylinder.
+
+area = 1256.66
+volume = 1254.725
+
+Sample output:
+The area of the rectangle is 1256.66cm2
+The volume of the cylinder is 1254.725cm3
+
+==============================================================================
+---------------
+ Exercise: 044
+---------------
+
+Write a Python program to print the index of a character in a string.
+
+Sample string: w3resource
+Expected output:
+Current character w position at 0
+Current character 3 position at 1
+Current character r position at 2
+- - - - - - - - - - - - - - - - - - - - - - - - -
+Current character c position at 8
+Current character e position at 9
+
+==============================================================================
+---------------
+ Exercise: 045
+---------------
+
+Write a Python program to check whether a string contains all letters of the alphabet.
+
+The quick brown fox jumps over the lazy dog     =>  True
+The quick brown fox jumps over the lazy cat     =>  False
+
+==============================================================================
+---------------
+ Exercise: 046
+---------------
+
+Write a Python program to convert a given string into a list of words.
+
+The quick brown fox jumps over the lazy dog.
+
+Sample Output:
+['The', 'quick', 'brown', 'fox', 'jumps', 'over', 'the', 'lazy', 'dog.']
+
+==============================================================================
+---------------
+ Exercise: 047
+---------------
+
+Write a Python program to lowercase the first n characters in a string.
+
+W3RESOURCE.COM, 4   =>  w3reSOURCE.COM
+
+==============================================================================
+---------------
+ Exercise: 048
+---------------
+
+Write a Python program to swap commas and dots in a string.
+
+Sample string: "32.054,23"
+Expected Output: "32,054.23"
+
+==============================================================================
+---------------
+ Exercise: 049
+---------------
+
+Write a Python program to count and display vowels in text.
+
+w3resource
+
+e 2
+o 1
+u 1
+
+==============================================================================
+---------------
+ Exercise: 050
+---------------
+
+Write a Python program to split a string on the last occurrence of the delimiter.
+
+"w,3,r,e,s,o,u,r,c,e"
+
+['w,3,r,e,s,o,u,r,c', 'e']
+
+==============================================================================
+---------------
+ Exercise: 051
+---------------
+
+Write a Python program to find the first non-repeating character in a given string.
+
+abcdef      =>  a
+abcabcdef   =>  d
+aabbcc      =>  None
+
+==============================================================================
+---------------
+ Exercise: 052
+---------------
+
+Write a Python program to print all permutations with a given repetition number of characters of a given string.
+
+'xyz', 2
+[('x', 'x'), ('x', 'y'), ('x', 'z'), ('y', 'x'), ('y', 'y'), ('y', 'z'), ('z', 'x'), ('z', 'y'), ('z', 'z')]
+
+==============================================================================
+---------------
+ Exercise: 053
+---------------
+
+Write a Python program to find the first repeated character in a given string.
+
+abcdabcd    =>  a
+abcd        =>  None
+
+==============================================================================
+---------------
+ Exercise: 054
+---------------
+
+Write a Python program to find the first repeated character in a given string + the index of the first
+occurrence is smallest.
+
+abcabc  =>  ('a', 0)
+abcb    =>  ('b', 1)
+abcc    =>  ('c', 2)
+abcxxy  =>  ('x', 3)
+
+==============================================================================
+---------------
+ Exercise: 055
+---------------
+
+Write a Python program to find the first repeated word in a given string.
+
+ab ca bc ab             =>  ab
+ab ca bc ab ca ab bc    =>  ab
+ab ca bc ca bc          =>  ab
+ab ca bc                =>  None
+
+==============================================================================
+---------------
+ Exercise: 056
+---------------
+
+Write a Python program to find the second most repeated word in a given string.
+
+Both of these issues are fixed by postponing the evaluation of annotations. Instead of compiling code which executes
+expressions in annotations at their definition time, the compiler stores the annotation in a string form equivalent to
+the AST of the expression in question. If needed, annotations can be resolved at runtime using typing.get_type_hints().
+In the common case where this is not required, the annotations are cheaper to store (since short strings are interned
+by the interpreter) and make startup time faster.
+
+==============================================================================
+---------------
+ Exercise: 057
+---------------
+
+Write a Python program to remove spaces from a given string.
+
+w 3 res ou r ce     =>  w3resource
+
+==============================================================================
+---------------
+ Exercise: 058
+---------------
+
+Write a Python program to move spaces to the front of a given string.
+
+"w3resource .  com  "   =>  "     w3resource.com"
+
+==============================================================================
+---------------
+ Exercise: 059
+---------------
+
+Write a Python program to find the maximum occurring character in a given string.
+
+Python: Get file creation and modification date/times   =>  t
+abcdefghijkb                                            =>  b
+
+==============================================================================
+---------------
+ Exercise: 060
+---------------
+
+Write a Python program to capitalize the first and last letters of each word in a given string.
+
+python exercises practice solution  =>  PythoN ExerciseS PracticE SolutioN
+
+==============================================================================
+---------------
+ Exercise: 061
+---------------
+
+Write a Python program to remove duplicate characters from a given string.
+
+python exercises practice solution  =>  python exrcisalu
+w3resource                          =>  w3resouc
+
+==============================================================================
+---------------
+ Exercise: 062
+---------------
+
+Write a Python program to compute the sum of the digits in a given string.
+
+123abcd45   =>  15
+
+==============================================================================
+---------------
+ Exercise: 063
+---------------
+
+Write a Python program to remove leading zeros from an IP address.
+
+255.024.01.01   =>  255.24.1.1
+127.0.0.01      =>  127.0.0.1
+
+==============================================================================
+---------------
+ Exercise: 064
+---------------
+
+Write a Python program to find the maximum length of consecutive 0's in a given binary string.
+
+111000010000110     =>  4
+111000111           =>  3
+
+==============================================================================
+---------------
+ Exercise: 065
+---------------
+
+Write a Python program to find all the common characters in lexicographical order from two given lower case strings.
+If there are no similar letters print "No common characters".
+
+w3resource, Python and SWIFT        =>  osw
+Python, PHP                         =>  p
+Java, PHP                           =>  No common characters
+
+==============================================================================
+---------------
+ Exercise: 066
+---------------
+
+Write a Python program to get the total number of characters to delete from both strings in order to make two given
+strings (lower case, may or may not be of the same length) anagrams.
+
+An anagram of a string is another string that contains the same characters, only the order of characters can be
+different.
+
+spearmk, pearsuv    =>  spear, pears
+
+==============================================================================
+---------------
+ Exercise: 067
+---------------
+
+Write a Python program to remove all consecutive duplicates of a given string.
+
+aaaaebbbb       =>  aeb
+xxxxxyyyyy      =>  xy
+xxxxxyyyyyxx    =>  xyx
+
+==============================================================================
+---------------
+ Exercise: 068
+---------------
+
+Write a Python program to generate two strings from a given string. For the first string, use the characters that
+occur only once, and for the second, use the characters that occur multiple times in the said string.
+
+aabbcceffgh     =>  egh,    abcf
+w3resource      =>  3cosuw, er
+
+==============================================================================
+---------------
+ Exercise: 069
+---------------
+
+Write a Python program to find the longest common sub-string from two given strings.
+
+abcdefgh, xswerabcdwd           =>  abcd
+15sd45asdmusss2sss, 1545musss   =>  musss
+
+==============================================================================
+---------------
+ Exercise: 070
+---------------
+
+Write a Python program that concatenates uncommon characters from two strings.
+
+abcdpqr, xyzabcd     =>  pqrxyz
+
+==============================================================================
+---------------
+ Exercise: 071
+---------------
+
+Write a Python program to move all spaces to the front of a given string in a single traversal.
+
+Python Exercises    =>  " PythonExercises"
+
+==============================================================================
+---------------
+ Exercise: 072
+---------------
+
+Write a Python program to remove all characters except a specified character from a given string.
+
+Python Exercises,   P   =>  P
+
+google,             g   =>  gg
+
+exercises,          e   =>  eee
+
+==============================================================================
+---------------
+ Exercise: 073
+---------------
+
+Write a Python program to count Uppercase, Lowercase, special characters and numeric values in a given string.
+
+@W3Resource.Com
+
+#upper     : 3
+#lower     : 9
+#puctuation: 2
+#digits    : 1
+
+==============================================================================
+---------------
+ Exercise: 074
+---------------
+
+Write a Python program to find the minimum window in a given string that will contain all the characters of
+another given string.
+
+
+str1 = " PRWSOERIUSFK "
+str2 = " OSU "
+Output: Minimum window is ['SOERIU', 'OERIUS']
+
+==============================================================================
+---------------
+ Exercise: 075
+---------------
+
+Write a Python program to find the smallest window that contains all characters in a given string.
+
+asdaewsqgtwwsa      =>  daewsqgt
+aabcbcdbca          =>  dbca
+muuusssddddrqrrz    =>  muuusssddddrqrrz
+
+==============================================================================
+---------------
+ Exercise: 076
+---------------
+
+Write a Python program to count the number of substrings from a given string of lowercase alphabets with exactly k
+distinct characters.
+
+wolf    ,  4   =>   1
+mustafa ,  4   =>   3
+
+==============================================================================
+---------------
+ Exercise: 077
+---------------
+
+Write a Python program to count the number of non-empty substrings of a given string.
+
+w3resource  =>  55
+
+==============================================================================
+---------------
+ Exercise: 078
+---------------
+
+Write a Python program to count characters at the same position in a given string (lower and uppercase characters) as
+in the English alphabet.
+
+xbcefg  =>  2
+
+==============================================================================
+---------------
+ Exercise: 079
+---------------
+
+Write a Python program to find the smallest and largest words in a given string.
+
+Write a Java program to sort an array of given integers using Quick sort Algorithm.
+
+Smallest word:  a
+Largest word:   Algorithm.
+
+==============================================================================
+---------------
+ Exercise: 080
+---------------
+
+Write a Python program to count the number of substrings in a given string with the same first and last characters.
+
+abc =>  3
+
+==============================================================================
+---------------
+ Exercise: 081
+---------------
+
+Write a Python program to determine the index of a given string at which a certain substring starts.
+If the substring is not found in the given string return 'Not found'.
+
+Python Exercises, Ex
+Python Exercises, yt
+Python Exercises, PY
+
+==============================================================================
+---------------
+ Exercise: 082
+---------------
+
+Write a Python program to wrap a given string into a paragraph with a given width.
+
+Sample Output:
+Input a string: The quick brown fox.
+Input the width of the paragraph: 10
+
+Result:
+The quick
+brown fox.
+
+==============================================================================
+---------------
+ Exercise: 083
+---------------
+
+Write a Python program to print four integer values - decimal, octal, hexadecimal (capitalized),
+binary - in a single line.
+
+Sample Output:
+Input an integer: 25
+Decimal Octal Hexadecimal (capitalized), Binary
+25 31 19 11001
+
+==============================================================================
+---------------
+ Exercise: 084
+---------------
+
+Write a Python program to swap cases in a given string.
+
+Python Exercises    =>  pYTHON eXERCISES
+
+==============================================================================
+---------------
+ Exercise: 085
+---------------
+
+Write a Python program to convert a given Bytearray to a Hexadecimal string.
+
+Original Bytearray :
+[111, 12, 45, 67, 109]
+
+Hexadecimal string:
+6f0c2d436d
+
+==============================================================================
+---------------
+ Exercise: 086
+---------------
+
+Write a Python program to delete all occurrences of a specified character in a given string.
+
+Delete all occurrences of a specified character in a given string, a
+
+Delete ll occurrences of specified chrcter in given string
+
+==============================================================================
+---------------
+ Exercise: 087
+---------------
+
+Write a Python program to find the common values that appear in two given strings.
+
+Original strings:
+Python3, Python2.7
+
+Intersection of two said String:
+Python
+
+==============================================================================
+---------------
+ Exercise: 088
+---------------
+
+Write a Python program to check whether a given string contains a capital letter, a lower case letter, a number
+
+W3resource  =>  True
+
+==============================================================================
+---------------
+ Exercise: 089
+---------------
+
+Write a Python program to remove unwanted characters from a given string.
+
+Original String : Pyth*^on Exercis^es   =>  Python Exercises
+Original String : A%^!B#*CD             =>  ABCD
+
+==============================================================================
+---------------
+ Exercise: 090
+---------------
+
+Write a Python program to remove duplicate words from a given string.
+
+Python Exercises Practice Solution Exercises
+
+Python Exercises Practice Solution
+
+==============================================================================
+---------------
+ Exercise: 091
+---------------
+
+Write a Python program to convert a given heterogeneous list of scalars into a string.
+
+['Red', 100, -50, 'green', 'w,3,r', 12.12, False]
+
+Red,100,-50,green,w,3,r,12.12,False
+
+==============================================================================
+---------------
+ Exercise: 092
+---------------
+
+Write a Python program to find string similarity between two given strings.
+
+Hint: use the difflib SequenceMatcher
+
+Python Exercises, Python Exercises    =>  1.0
+Python Exercises, Python Exercise     =>  0.967741935483871
+Python Exercises, Python Ex.          =>  0.6923076923076923
+Python Exercises, Python              =>  0.5454545454545454
+Java Exercises, Python                =>  0.0
+
+==============================================================================
+---------------
+ Exercise: 093
+---------------
+
+Write a Python program to extract numbers from a given string.
+
+Original string: red 12 black 45 green
+Extract numbers from the said string: [12, 45]
+
+==============================================================================
+---------------
+ Exercise: 094
+---------------
+
+Write a Python program to convert a hexadecimal color code to a tuple of integers corresponding to its RGB components.
+
+FFA501  =>  (255, 165, 1)
+FFFFFF  =>  (255, 255, 255)
+000000  =>  (0, 0, 0)
+FF0000  =>  (255, 0, 0)
+000080  =>  (0, 0, 128)
+C0C0C0  =>  (192, 192, 192)
+
+==============================================================================
+---------------
+ Exercise: 095
+---------------
+
+Write a Python program to convert the values of RGB components to a hexadecimal color code.
+
+(255, 165, 1)       =>  FFA501
+(255, 255, 255)     =>  FFFFFF
+(0, 0, 0)           =>  000000
+(255, 0, 0)         =>  FF0000
+(0, 0, 128)         =>  000080
+(192, 192, 192)     =>  C0C0C0
+
+==============================================================================
+---------------
+ Exercise: 096
+---------------
+
+Write a Python program to convert a given string to Camelcase.
+
+Camel case (sometimes stylized as camelCase or CamelCase; also known as camel caps or more formally as medial
+capitals) is the practice of writing phrases without spaces or punctuation, indicating the separation of words with
+a single capitalized letter, and the first word starting with either case.
+
+Note: World would come separated in the input using '-' or '_', otherwise it would be only one single word
+
+'JavaScript'        Javascript
+'Foo-Bar'           FooBar
+'foo_bar'           FooBar
+'--foo.bar'         Foo.bar
+'Foo-BAR'           FooBar
+'fooBAR'            Foobar
+'foo bar'           FooBar
+
+==============================================================================
+---------------
+ Exercise: 097
+---------------
+
+Write a Python program to convert a given Camel string to Snake case.
+
+Snake case (stylized as snake_case) refers to the style of writing in which each space is replaced by an underscore
+(_) character, and the first letter of each word written in lowercase. It is a commonly used naming convention in
+computing, for example for variable and subroutine names, and for filenames. One study has found that readers can
+recognize snake case values more quickly than camel case.
+
+'JavaScript'        java_script
+'FooBar'            foo_bar
+
+==============================================================================
+---------------
+ Exercise: 098
+---------------
+
+Write a Python program to decapitalize the first letter of a given string.
+
+Java Script     =>  java Script
+Python          =>  python
+
+==============================================================================
+---------------
+ Exercise: 099
+---------------
+
+Write a Python program to split a multi-line string into a list of lines.
+
+This
+is a
+multiline
+string.
+
+['This', 'is a', 'multiline', 'string.']
+
+==============================================================================
+---------------
+ Exercise: 100
+---------------
+
+Write a Python program to check whether all words in a given string does not contain duplicate characters.
+Return True or False.
+
+Filter out the factorials of the said list.     =>  False
+Python Exercise.                                =>  False
+The wait is over.                               =>  True
+
+==============================================================================
+---------------
+ Exercise: 101
+---------------
+
+Write a Python program to add two strings as if they were numbers (positive integer values). Return a message if
+the numbers are strings.
+
+10 32       =>  42
+10 22.6    =>  Error in input!
+100 -200   =>  Error in input!
+
+==============================================================================
+---------------
+ Exercise: 102
+---------------
+
+Write a Python program to remove punctuation from a given string.
+
+String! With. Punctuation?  =>  String With Punctuation
+
+==============================================================================
+---------------
+ Exercise: 103
+---------------
+
+Write a Python program to replace each character of a word of length five and more with a hash character (#).
+
+Count the lowercase letters in the said list of words:
+##### the ######### ####### in the said list of ######
+
+Python - Remove punctuations from a string:
+###### - ###### ############ from a #######
+
+==============================================================================
+---------------
+ Exercise: 104
+---------------
+
+Write a Python program that capitalizes the first letter and lowercases the remaining letters in a given string.
+
+Red Green WHITE                 -> "Red Green White"
+w3resource                      -> "W3resource"
+dow jones industrial average    -> "Dow Jones Industrial Average"
+
+==============================================================================
+---------------
+ Exercise: 105
+---------------
+
+Write a Python program to extract and display the name from a given Email address.
+
+john@example.com                    -> ("john")
+john.smith@example.com              -> ("johnsmith")
+fully-qualified-domain@example.com  -> ("fullyqualifieddomain")
+
+==============================================================================
+---------------
+ Exercise: 106
+---------------
+
+Write a Python program to remove repeated consecutive characters and replace them with single letters and print a
+updated string.
+
+
+Red Green White     -> "Red Gren White"
+aabbbcdeffff        -> "abcdef"
+Yellowwooddoor      -> "Yelowodor"
+
+==============================================================================
+---------------
+ Exercise: 107
+---------------
+
+Write a Python program that takes two strings. Count the number of times each string contains the same three
+letters at the same index.
+
+Red, RedGreen            -> 1
+Red White, Red White     -> 7
+Red White, White Red     -> 0
+
+==============================================================================
+---------------
+ Exercise: 108
+---------------
+
+Write a Python program that takes a string and returns # on both sides of each element, which are not vowels.
+
+Green       -> "-G--r-ee-n-"
+White       -> "-W--h-i-t-e"
+aeiou       -> "aeiou"
+
+==============================================================================
+---------------
+ Exercise: 109
+---------------
+
+Write a Python program that counts the number of leap years within the range of years.
+Ranges of years should be accepted as strings.
+
+1981-1991 -> 2
+2000-2020 -> 6
+
+==============================================================================
+---------------
+ Exercise: 110
+---------------
+
+Write a Python program to insert space before every capital letter appears in a given word.
+
+PythonExercises                         -> "Python Exercises"
+Python                                  -> "Python"
+PythonExercisesPracticeSolution         -> "Python Exercises Practice Solution"
+
+==============================================================================
+---------------
+ Exercise: 111
+---------------
+
+Write a Python program that takes a string and replaces all the characters with their respective numbers.
+
+Python              -> "16 25 20 8 15 14"
+Java                -> "10 1 22 1"
+Python Tutorial     -> "16 25 20 8 15 14 20 21 20 15 18 9 1 12"
+
+==============================================================================
+---------------
+ Exercise: 112
+---------------
+
+Write a Python program to calculate the sum of two numbers given as strings. Return the result in the same
+string representation.
+
+234242342341, 2432342342    -> "236674684683"
+"", 2432342342              -> False
+1000, 0                     -> "1000"
+1000, 10                    -> "1010"
+
+==============================================================================
+---------------
+ Exercise: 113
+---------------
+
+Write a Python program that returns a string sorted alphabetically by the first character of a given string of words.
+
+Red Green Black White Pink
+Black Green Pink Red White
+
+Calculate the sum of two said numbers given as strings.
+Calculate as given numbers of sum said strings. the two
+
+The quick brown fox jumps over the lazy dog.
+The brown dog. fox jumps lazy over quick the
+
+==============================================================================

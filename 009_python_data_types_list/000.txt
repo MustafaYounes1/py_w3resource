@@ -1,0 +1,3444 @@
+---------------
+ Exercise: 001
+---------------
+
+Write a Python program to sum all the items in a list.
+
+[1, 2, -8]  =>  -5
+
+==============================================================================
+---------------
+ Exercise: 002
+---------------
+
+Write a Python program to multiply all the items in a list.
+
+[1, 2, -8]  =>  -16
+
+==============================================================================
+---------------
+ Exercise: 003
+---------------
+
+Write a Python program to get the largest number from a list.
+
+[1, 2, -8, 0]   =>  2
+
+==============================================================================
+---------------
+ Exercise: 004
+---------------
+
+Write a Python program to get the smallest number from a list.
+
+[1, 2, -8, 0]   =>  -8
+
+==============================================================================
+---------------
+ Exercise: 005
+---------------
+
+Write a Python program to count the number of strings from a given list of strings.
+The string length is 2 or more and the first and last characters are the same.
+
+['abc', 'xyz', 'aba', '1221']     =>  2
+
+==============================================================================
+---------------
+ Exercise: 006
+---------------
+
+Write a Python program to get a list, sorted in increasing order by the last element in each tuple from a given
+list of non-empty tuples.
+
+Sample List : [(2, 5), (1, 2), (4, 4), (2, 3), (2, 1)]
+Expected Result : [(2, 1), (1, 2), (2, 3), (4, 4), (2, 5)]
+
+==============================================================================
+---------------
+ Exercise: 007
+---------------
+
+Write a Python program to remove duplicates from a list.
+
+[10, 20, 30, 20, 10, 50, 60, 40, 80, 50, 40]    =>  [40, 10, 80, 50, 20, 60, 30]
+
+==============================================================================
+---------------
+ Exercise: 008
+---------------
+
+Write a Python program to check if a list is empty or not.
+
+==============================================================================
+---------------
+ Exercise: 009
+---------------
+
+Write a Python program to clone or copy a list.
+
+==============================================================================
+---------------
+ Exercise: 010
+---------------
+
+Write a Python program to find the list of words that are longer than n from a given list of words.
+
+The quick brown fox jumps over the lazy dog, 3
+
+['quick', 'brown', 'jumps', 'over', 'lazy']
+
+==============================================================================
+---------------
+ Exercise: 011
+---------------
+
+Write a Python function that takes two lists and returns True if they have at least one common member.
+
+[1, 2, 3, 4, 5], [5, 6, 7, 8, 9]    =>  True
+[1, 2, 3, 4, 5], [6, 7, 8, 9]       =>  False
+
+==============================================================================
+---------------
+ Exercise: 012
+---------------
+
+Write a Python program to print a specified list after removing the 0th, 4th and 5th elements.
+
+Sample List : ['Red', 'Green', 'White', 'Black', 'Pink', 'Yellow']
+Expected Output : ['Green', 'White', 'Black']
+
+==============================================================================
+---------------
+ Exercise: 013
+---------------
+
+Write a Python program to generate a 3*4*6 3D array whose each element is *.
+
+[[['*', '*', '*', '*', '*', '*'], ['*', '*', '*', '*', '*', '*'], ['*', '*', '*', '*', '*', '*'], ['*', '*', '
+*', '*', '*', '*']], [['*', '*', '*', '*', '*', '*'], ['*', '*', '*', '*', '*', '*'], ['*', '*', '*', '*', '*'
+, '*'], ['*', '*', '*', '*', '*', '*']], [['*', '*', '*', '*', '*', '*'], ['*', '*', '*', '*', '*', '*'], ['*'
+, '*', '*', '*', '*', '*'], ['*', '*', '*', '*', '*', '*']]]
+
+==============================================================================
+---------------
+ Exercise: 014
+---------------
+
+Write a Python program to print the numbers of a specified list after removing even numbers from it.
+
+[7, 8, 120, 25, 44, 20, 27]     =>  [7, 25, 27]
+
+==============================================================================
+---------------
+ Exercise: 015
+---------------
+
+Write a Python program to shuffle and print a specified list.
+
+==============================================================================
+---------------
+ Exercise: 016
+---------------
+
+Write a Python program to generate and print a list of the first and last 5 elements where the values are square
+numbers between 1 and 30 (both included).
+
+[1, 4, 9, 16, 25]
+[256, 289, 324, 361, 400]
+
+==============================================================================
+---------------
+ Exercise: 017
+---------------
+
+Write a Python program to check if each number is prime in a given list of numbers. Return True if all numbers are
+prime otherwise False.
+
+[0, 3, 4, 7, 9] -> False
+[3, 5, 7, 13]   -> True
+[1, 5, 3]       -> False
+
+==============================================================================
+---------------
+ Exercise: 018
+---------------
+
+Write a Python program to generate all permutations of a list in Python.
+
+In mathematics, the notion of permutation relates to the act of arranging all the members of a set into some sequence
+or order, or if the set is already ordered, rearranging (reordering) its elements, a process called permuting. These
+differ from combinations, which are selections of some members of a set where order is disregarded.
+
+[(1, 2, 3), (1, 3, 2), (2, 1, 3), (2, 3, 1), (3, 1, 2), (3, 2, 1)]
+
+==============================================================================
+---------------
+ Exercise: 019
+---------------
+
+Write a Python program to calculate the difference between the two lists.
+
+[1, 3, 5, 7, 9], [1, 2, 4, 6, 7, 8]  => [9, 3, 5, 8, 2, 4, 6]
+
+==============================================================================
+---------------
+ Exercise: 020
+---------------
+
+Write a Python program to access the index of a list.
+
+[5, 15, 35, 8, 98]
+
+0 5
+1 15
+2 35
+3 8
+4 98
+
+==============================================================================
+---------------
+ Exercise: 021
+---------------
+
+Write a Python program to convert a list of characters into a string.
+
+['a', 'b', 'c', 'd']    =>  abcd
+
+==============================================================================
+---------------
+ Exercise: 022
+---------------
+
+Write a Python program to find the index of an item in a specified list.
+
+[10, 30, 4, -6], 30     =>  1
+
+==============================================================================
+---------------
+ Exercise: 023
+---------------
+
+Write a Python program to flatten a shallow list.
+
+[[2, 4, 3], [1, 5, 6], [9], [7, 9, 0]]  =>  [2, 4, 3, 1, 5, 6, 9, 7, 9, 0]
+
+==============================================================================
+---------------
+ Exercise: 024
+---------------
+
+Write a Python program to append a list to the second list.
+
+[1, 2, 3, 0], ['Red', 'Green', 'Black']     =>  [1, 2, 3, 0, 'Red', 'Green', 'Black']
+
+==============================================================================
+---------------
+ Exercise: 025
+---------------
+
+Write a Python program to select an item randomly from a list.
+
+['Red', 'Blue', 'Green', 'White', 'Black']      =>    White
+
+==============================================================================
+---------------
+ Exercise: 026
+---------------
+
+Write a Python program to check whether two lists are circularly identical.
+
+[10, 10, 0, 0, 10], [10, 10, 10, 0, 0]  =>  True
+[10, 10, 0, 0, 10], [1, 10, 10, 0, 0]   =>  False
+
+==============================================================================
+---------------
+ Exercise: 027
+---------------
+
+Write a Python program to find the second smallest number in a list.
+
+[1, 2, -8, -2, 0, -2]       =>  2
+[1, 1, 0, 0, 2, -2, -2]     =>  0
+[2, 2]                      =>  None
+[2]                         =>  None
+
+==============================================================================
+---------------
+ Exercise: 028
+---------------
+
+Write a Python program to find the second largest number in a list.
+
+[1, 2, 3, 4, 4]                 =>  3
+[1, 1, 1, 0, 0, 0, 2, -2, -2]   =>  1
+[2, 2]                          =>  None
+[1]                             =>  None
+
+==============================================================================
+---------------
+ Exercise: 029
+---------------
+
+Write a Python program to get unique values from a list.
+
+[10, 20, 30, 40, 20, 50, 60, 40]    =>  {40, 10, 50, 20, 60, 30}
+
+==============================================================================
+---------------
+ Exercise: 030
+---------------
+
+Write a Python program to get the frequency of elements in a list.
+
+[10, 10, 10, 10, 20, 20, 20, 20, 40, 40, 50, 50, 30]
+{10: 4, 20: 4, 40: 2, 50: 2, 30: 1}
+
+==============================================================================
+---------------
+ Exercise: 031
+---------------
+
+Write a Python program to count the number of elements in a list within a specified range.
+
+[10, 20, 30, 40, 40, 40, 70, 80, 99],   range(40, 100)      =>  6
+['a', 'b', 'c', 'd', 'e', 'f'],         range('a', 'e')     =>  5
+
+==============================================================================
+---------------
+ Exercise: 032
+---------------
+
+Write a Python program to check whether a list contains a sublist.
+
+[2, 4, 3, 5, 7], [4, 3]     =>  True
+[2, 4, 3, 5, 7], [3, 7]     =>  False
+
+==============================================================================
+---------------
+ Exercise: 033
+---------------
+
+Write a Python program to generate all sub-lists of a list.
+
+['X', 'Y', 'Z']
+[(), ('X',), ('Y',), ('Z',), ('X', 'Y'), ('X', 'Z'), ('Y', 'Z'), ('X', 'Y', 'Z')]
+
+==============================================================================
+---------------
+ Exercise: 034
+---------------
+
+Write a Python program to compute prime numbers up to a specified number.
+
+100
+[2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97]
+
+==============================================================================
+---------------
+ Exercise: 035
+---------------
+
+Write a Python program to create a list by concatenating a given list with a range from 1 to n.
+
+['p', 'q'], 5
+
+['p1', 'q1', 'p2', 'q2', 'p3', 'q3', 'p4', 'q4', 'p5', 'q5']
+
+==============================================================================
+---------------
+ Exercise: 036
+---------------
+
+Write a Python program to get the memory address of an integer and a string and print its hexadecimal representation
+
+==============================================================================
+---------------
+ Exercise: 037
+---------------
+
+Write a Python program to find common items in two lists.
+
+["Red", "Green", "Orange", "White"], ["Black", "Green", "White", "Pink"]    =>  {'Green', 'White'}
+
+==============================================================================
+---------------
+ Exercise: 038
+---------------
+
+Write a Python program to change the position of every n-th value to the (n+1)th in a list.
+
+[0, 1, 2, 3, 4, 5]   =>  [1, 0, 3, 2, 5, 4]
+
+==============================================================================
+---------------
+ Exercise: 039
+---------------
+
+Write a Python program to convert a list of multiple integers into a single integer.
+
+[11, 33, 50]    =>  113350
+
+==============================================================================
+---------------
+ Exercise: 040
+---------------
+
+Write a Python program to split a list based on the first character of a word.
+
+word_list = ['be', 'have', 'do', 'say', 'get', 'make', 'go', 'know', 'take', 'see', 'come', 'think',
+             'look', 'want', 'give', 'use', 'find', 'tell', 'ask', 'work', 'seem', 'feel', 'leave', 'call']
+
+    a
+        ask
+    b
+        be
+    c
+        call
+        come
+    d
+        do
+    f
+        feel
+        find
+    g
+        get
+        give
+        go
+    h
+        have
+    k
+        know
+    l
+        leave
+        look
+    m
+        make
+    s
+        say
+        see
+        seem
+    t
+        take
+        tell
+        think
+    u
+        use
+    w
+        want
+        work
+
+==============================================================================
+---------------
+ Exercise: 041
+---------------
+
+Write a Python program to create multiple lists.
+
+[[], [], [], [], [], [], [], [], [], []]
+
+==============================================================================
+---------------
+ Exercise: 042
+---------------
+
+Write a Python program to find missing and additional values in two lists.
+
+list1 = ['a', 'b', 'c', 'd', 'e', 'f']
+list2 = ['d', 'e', 'f', 'g', 'h']
+
+Missing values in second list: b,a,c
+Additional values in second list: g,h
+
+==============================================================================
+---------------
+ Exercise: 043
+---------------
+
+Write a Python program to split a list into different variables.
+
+color = [
+    ("Black", "#000000", "rgb(0, 0, 0)"),
+    ("Red", "#FF0000", "rgb(255, 0, 0)"),
+    ("Yellow", "#FFFF00", "rgb(255, 255, 0)")
+]
+
+Black #000000 rgb(0, 0, 0)
+Red #FF0000 rgb(255, 0, 0)
+Yellow #FFFF00 rgb(255, 255, 0)
+
+==============================================================================
+---------------
+ Exercise: 044
+---------------
+
+Write a Python program to generate groups of five consecutive numbers in a list.
+
+lst = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+
+[[1, 2, 3, 4, 5], [6, 7, 8, 9, 10], [11, 12, 13, 14, 15]]
+
+==============================================================================
+---------------
+ Exercise: 045
+---------------
+
+Write a Python program to convert a pair of values into a sorted unique array.
+
+lst = [(1, 2), (3, 4), (1, 2), (5, 6), (7, 8), (1, 2), (3, 4), (3, 4), (7, 8), (9, 10)]
+
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+==============================================================================
+---------------
+ Exercise: 046
+---------------
+
+Write a Python program to select the odd items from a list.
+
+lst = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+[1, 3, 5, 7, 9]
+
+==============================================================================
+---------------
+ Exercise: 047
+---------------
+
+Write a Python program to insert an element before each element of a list.
+
+color = ['Red', 'Green', 'Black']
+
+['c', 'Red', 'c', 'Green', 'c', 'Black']
+
+==============================================================================
+---------------
+ Exercise: 048
+---------------
+
+Write a Python program to print nested lists (each list on a new line) using the print() function.
+(without using a for loop)
+
+colors = [['Red'], ['Green'], ['Black']]
+
+['Red']
+['Green']
+['Black']
+
+==============================================================================
+---------------
+ Exercise: 049
+---------------
+
+Write a Python program to convert a list to a list of dictionaries.
+
+["Black", "Red", "Maroon", "Yellow"], ["#000000", "#FF0000", "#800000", "#FFFF00"]
+[
+{'color_name': 'Black', 'color_code': '#000000'},
+{'color_name': 'Red', 'color_code': '#FF0000'},
+{'color_name': 'Maroon', 'color_code': '#800000'},
+{'color_name': 'Yellow', 'color_code': '#FFFF00'}]
+
+==============================================================================
+---------------
+ Exercise: 050
+---------------
+
+Write a Python program to sort a list of nested dictionaries as follows.
+
+my_list = [{'key': {'subkey': 1}}, {'key': {'subkey': 10}}, {'key': {'subkey': 5}}]
+
+[{'key': {'subkey': 10}}, {'key': {'subkey': 5}}, {'key': {'subkey': 1}}]
+
+==============================================================================
+---------------
+ Exercise: 051
+---------------
+
+Write a Python program to split a list every Nth element.
+
+['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n'], 3
+
+[['a', 'd', 'g', 'j', 'm'], ['b', 'e', 'h', 'k', 'n'], ['c', 'f', 'i', 'l']]
+
+==============================================================================
+---------------
+ Exercise: 052
+---------------
+
+Write a Python program to compute the difference between two lists.
+
+["red", "orange", "green", "blue", "white"], ["black", "yellow", "green", "blue"]
+
+Color1-Color2: ['white', 'orange', 'red']
+Color2-Color1: ['black', 'yellow']
+
+==============================================================================
+---------------
+ Exercise: 053
+---------------
+
+Write a Python program to create an iterator with infinite elements [3, 4, 5, inf] and print the first 5 elements
+
+==============================================================================
+---------------
+ Exercise: 054
+---------------
+
+Write a Python program to concatenate elements of a list.
+
+color = ['red', 'green', 'orange']
+
+red-green-orange
+
+==============================================================================
+---------------
+ Exercise: 055
+---------------
+
+Write a Python program to remove key-value pairs from a list of dictionaries.
+
+original_list = [{'key1': 'value1', 'key2': 'value2'}, {'key1': 'value3', 'key2': 'value4'}]
+
+[{'key2': 'value2'}, {'key2': 'value4'}]
+
+==============================================================================
+---------------
+ Exercise: 056
+---------------
+
+Write a Python program to convert a string to a list.
+
+color = "['Red', 'Green', 'White']"
+
+['Red', 'Green', 'White']
+
+==============================================================================
+---------------
+ Exercise: 057
+---------------
+
+Write a Python program to check if all items in a given list of strings are equal to a given string.
+
+["green", "orange", "black", "white"], 'blue'   =>  False
+["green", "green", "green", "green"], 'green'   =>  True
+
+==============================================================================
+---------------
+ Exercise: 058
+---------------
+
+Write a Python program to replace the last element in a list with another list.
+
+[1, 3, 5, 7, 9, 10], [2, 4, 6, 8]
+[1, 3, 5, 7, 9, 2, 4, 6, 8]
+
+==============================================================================
+---------------
+ Exercise: 059
+---------------
+
+[WEIRD EXERCISE!]
+Write a Python program to check whether the n-th element exists in a given list.
+
+[1, 2, 3, 4, 5, 6]
+
+6
+
+==============================================================================
+---------------
+ Exercise: 060
+---------------
+
+Write a Python program to find a tuple, the smallest second index value from a list of tuples.
+
+x = [(4, 1), (1, 2), (6, 0)]
+
+(6, 0)
+
+==============================================================================
+---------------
+ Exercise: 061
+---------------
+
+Write a Python program to create a list of empty dictionaries.
+
+[{}, {}, {}, {}, {}]
+
+==============================================================================
+---------------
+ Exercise: 062
+---------------
+
+Write a Python program to print a list of space-separated elements.
+
+num = [1, 2, 3, 4, 5]
+
+1 2 3 4 5
+
+==============================================================================
+---------------
+ Exercise: 063
+---------------
+
+Write a Python program to insert a given string at the beginning of all items in a list.
+
+[1,2,3,4], emp
+
+['emp1', 'emp2', 'emp3', 'emp4']
+
+==============================================================================
+---------------
+ Exercise: 064
+---------------
+
+Write a Python program to iterate over two lists simultaneously.
+
+num = [1, 2, 3]
+color = ['red', 'white', 'black']
+
+1 red
+2 white
+3 black
+
+==============================================================================
+---------------
+ Exercise: 065
+---------------
+
+Write a Python program to move all zero digits to the end of a given list of numbers.
+
+[3, 4, 0, 0, 0, 6, 2, 0, 6, 7, 6, 0, 0, 0, 9, 10, 7, 4, 4, 5, 3, 0, 0, 2, 9, 7, 1]
+
+[3, 4, 6, 2, 6, 7, 6, 9, 10, 7, 4, 4, 5, 3, 2, 9, 7, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+==============================================================================
+---------------
+ Exercise: 066
+---------------
+
+Write a Python program to find the list in a list of lists whose sum of elements is the highest.
+
+[[1,2,3], [4,5,6], [10,11,12], [7,8,9]]
+
+[10, 11, 12]
+
+==============================================================================
+---------------
+ Exercise: 067
+---------------
+
+Write a Python program to check if all values in a list that are greater than or equal to a specified number.
+
+[220, 330, 500], 200    =>  True
+[12, 17, 21], 25        =>  False
+
+==============================================================================
+---------------
+ Exercise: 068
+---------------
+
+Write a Python program to extend a list without appending.
+insert the elements of 'y' at the beginning of 'x'
+
+[10, 20, 30]
+[40, 50, 60]
+
+[40, 50, 60, 10, 20, 30]
+
+==============================================================================
+---------------
+ Exercise: 069
+---------------
+
+Write a Python program to remove duplicates from a list of lists.
+
+[[10, 20], [40], [30, 56, 25], [10, 20], [33], [40]]
+
+[[10, 20], [30, 56, 25], [33], [40]]
+
+==============================================================================
+---------------
+ Exercise: 070
+---------------
+
+Write a Python program to find items starting with a specific character from a list.
+
+['abcd', 'abc', 'bcd', 'bkie', 'cder', 'cdsw', 'sdfsd', 'dagfa', 'acjd']
+
+a   =>  ['abcd', 'abc', 'acjd']
+d   =>  ['dagfa']
+w   =>   []
+
+==============================================================================
+---------------
+ Exercise: 071
+---------------
+
+Write a Python program to check whether all dictionaries in a list are empty or not.
+
+[{},{},{}]        =>  True
+[{1,2},{},{}]     =>  False
+
+==============================================================================
+---------------
+ Exercise: 072
+---------------
+
+Write a Python program to flatten a given nested list structure.
+
+[0, 10, [20, 30], 40, 50, [60, 70, 80], [90, 100, 110, 120]]
+
+[0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120]
+
+==============================================================================
+---------------
+ Exercise: 073
+---------------
+
+Write a Python program to remove consecutive (following each other continuously) duplicates (elements) from a
+given list.
+
+
+[0, 0, 1, 2, 3, 4, 4, 5, 6, 6, 6, 7, 8, 9, 4, 4]
+
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 4]
+
+==============================================================================
+---------------
+ Exercise: 074
+---------------
+
+Write a Python program to pack consecutive duplicates of a given list of elements into sublists.
+
+[0, 0, 1, 2, 3, 4, 4, 5, 6, 6, 6, 7, 8, 9, 4, 4]
+
+[[0, 0], [1], [2], [3], [4, 4], [5], [6, 6, 6], [7], [8], [9], [4, 4]]
+
+==============================================================================
+---------------
+ Exercise: 075
+---------------
+
+Write a Python program to create a list reflecting the run-length encoding from a given list of integers or a
+given list of characters.
+
+Original list:
+[1, 1, 2, 3, 4, 4.3, 5, 1]
+[[2, 1], [1, 2], [1, 3], [1, 4], [1, 4.3], [1, 5], [1, 1]]
+
+automatically
+[[1, 'a'], [1, 'u'], [1, 't'], [1, 'o'], [1, 'm'], [1, 'a'], [1, 't'], [1, 'i'], [1, 'c'], [1, 'a'], [2, 'l'], [1, 'y']]
+
+==============================================================================
+---------------
+ Exercise: 076
+---------------
+
+Write a Python program to create a list reflecting the modified run-length encoding from a given list of integers or
+a given list of characters.
+
+[1, 1, 2, 3, 4, 4, 5, 1]
+[[2, 1], 2, 3, [2, 4], 5, 1]
+
+aabcddddadnss
+[[2, 'a'], 'b', 'c', [4, 'd'], 'a', 'd', 'n', [2, 's']]
+
+==============================================================================
+---------------
+ Exercise: 077
+---------------
+
+Write a Python program to decode a run-length message.
+
+[[2, 1], 2, 3, [2, 4], 5, 1]
+
+[1, 1, 2, 3, 4, 4, 5, 1]
+
+==============================================================================
+---------------
+ Exercise: 078
+---------------
+
+Write a Python program to split a given list into two parts where the length of the first part of the list is given.
+
+[1, 1, 2, 3, 4, 4, 5, 1], 3
+
+([1, 1, 2], [3, 4, 4, 5, 1])
+
+==============================================================================
+---------------
+ Exercise: 079
+---------------
+
+Write a Python program to remove the K'th element from a given list, and print the updated list.
+
+[1, 1, 2, 3, 4, 4, 5, 1], 3
+
+[1, 1, 3, 4, 4, 5, 1]
+
+==============================================================================
+---------------
+ Exercise: 080
+---------------
+
+Write a Python program to insert an element at a specified position into a given list.
+
+[1, 1, 2, 3, 4, 4, 5, 1], 3, 12
+
+[1, 1, 12, 2, 3, 4, 4, 5, 1]
+
+==============================================================================
+---------------
+ Exercise: 081
+---------------
+
+Write a Python program to extract a given number of randomly selected elements from a given list.
+
+[1, 1, 2, 3, 4, 4, 5, 1], 3
+
+[4, 4, 1]
+
+==============================================================================
+---------------
+ Exercise: 082
+---------------
+
+Write a Python program to generate combinations of n distinct objects taken from the elements of a given list.
+
+[1, 2, 3, 4, 5, 6, 7, 8, 9], 2
+
+(1, 2) (1, 3) (1, 4) (1, 5) (1, 6) (1, 7) (1, 8) (1, 9) (2, 3) (2, 4) (2, 5) (2, 6) (2, 7) (2, 8) (2, 9) (3, 4) (3,
+5) (3, 6) (3, 7) (3, 8) (3, 9) (4, 5) (4, 6) (4, 7) (4, 8) (4, 9) (5, 6) (5, 7) (5, 8) (5, 9) (6, 7) (6, 8) (6,
+9) (7, 8) (7, 9) (8, 9)
+
+==============================================================================
+---------------
+ Exercise: 083
+---------------
+
+Write a Python program to round every number in a given list of numbers and print the total sum multiplied by the
+length of the list.
+
+[22.4, 4.0, -16.22, -9.1, 11.0, -12.22, 14.2, -5.2, 17.5]
+
+243
+
+==============================================================================
+---------------
+ Exercise: 084
+---------------
+
+Write a Python program to round the numbers in a given list, print the minimum and maximum numbers and multiply the
+numbers by 5. Print the unique numbers in ascending order separated by space.
+
+[22.4, 4.0, 16.22, 9.1, 11.0, 12.22, 14.2, 5.2, 17.5]
+
+Minimum value: 4
+Maximum value: 22
+20 25 45 55 60 70 80 90 110
+
+==============================================================================
+---------------
+ Exercise: 085
+---------------
+
+Write a Python program to create a multidimensional list (lists of lists) with zeros.
+
+[[0, 0], [0, 0], [0, 0]]
+
+==============================================================================
+---------------
+ Exercise: 086
+---------------
+
+Write a Python program to create a 3X3 grid with numbers.
+
+[[1, 2, 3], [1, 2, 3], [1, 2, 3]]
+
+==============================================================================
+---------------
+ Exercise: 087
+---------------
+
+Write a Python program to read a matrix from the console and print the sum for each column. As input from the user,
+accept matrix rows, columns, and elements separated by a space (each row).
+
+Input rows: 2
+Input columns: 2
+Input number of elements in a row (1, 2, 3):
+1 2
+3 4
+sum for each column:
+4 6
+
+==============================================================================
+---------------
+ Exercise: 088
+---------------
+
+Write a Python program to read a square matrix from the console and print the sum of the matrix's primary diagonal.
+Accept the size of the square matrix and elements for each column separated with a space (for every row) as input
+from the user.
+
+Input the size of the matrix: 3
+2 3 4
+4 5 6
+3 4 7
+Sum of matrix primary diagonal:
+14
+
+==============================================================================
+---------------
+ Exercise: 089
+---------------
+
+Write a Python program to Zip two given lists of lists.
+
+[[1, 3], [5, 7], [9, 11]]
+[[2, 4], [6, 8], [10, 12, 14]]
+
+[[1, 3, 2, 4], [5, 7, 6, 8], [9, 11, 10, 12, 14]]
+
+==============================================================================
+---------------
+ Exercise: 090
+---------------
+
+Write a Python program to count the number of lists in a given list of lists.
+
+[[1, 3], [5, 7], [9, 11], [13, 15, 17]]         =>  4
+[[2, 4], [[6, 8], [4, 5, 8]], [10, 12, 14]]     =>  3
+
+==============================================================================
+---------------
+ Exercise: 091
+---------------
+
+Write a Python program to find a list with maximum and minimum lengths.
+
+[[0], [1, 3], [5, 7], [9, 11], [13, 15, 17]]
+(3, [13, 15, 17])
+(1, [0])
+
+[[0], [1, 3], [5, 7], [9, 11], [3, 5, 7]]
+(3, [3, 5, 7])
+(1, [0])
+
+[[12], [1, 3], [1, 34, 5, 7], [9, 11], [3, 5, 7]]
+(4, [1, 34, 5, 7])
+(1, [12])
+
+==============================================================================
+---------------
+ Exercise: 092
+---------------
+
+Write a Python program to check if a nested list is a subset of another nested list.
+
+[[1, 3], [5, 7], [9, 11], [13, 15, 17]]
+[[1, 3], [13, 15, 17]]
+True
+
+[[[1, 2], [2, 3]], [[3, 4], [5, 6]]]
+[[[3, 4], [5, 6]]]
+True
+
+[[[1, 2], [2, 3]], [[3, 4], [5, 7]]]
+[[[3, 4], [5, 6]]]
+False
+
+==============================================================================
+---------------
+ Exercise: 093
+---------------
+
+Write a Python program to count the number of sublists that contain a particular element.
+
+[[1, 3], [5, 7], [1, 11], [1, 15, 7]]
+Count 1 in the said list: 3
+Count 7 in the said list: 2
+
+[['A', 'B'], ['A', 'C'], ['A', 'D', 'E'], ['B', 'C', 'D']]
+Count 'A' in the said list: 3
+Count 'E' in the said list: 1
+
+==============================================================================
+---------------
+ Exercise: 094
+---------------
+
+Write a Python program to count the number of unique sublists within a given list.
+
+[[1, 3], [5, 7], [1, 3], [13, 15, 17], [5, 7], [9, 11]]
+{(1, 3): 2, (5, 7): 2, (13, 15, 17): 1, (9, 11): 1}
+
+[['green', 'orange'], ['black'], ['green', 'orange'], ['white']]
+{('green', 'orange'): 2, ('black',): 1, ('white',): 1}
+
+==============================================================================
+---------------
+ Exercise: 095
+---------------
+
+Write a Python program to sort each sublist of strings in a given list of lists.
+
+[["green", "orange"], ["black", "white"], ["white", "black", "orange"]]
+[['green', 'orange'], ['black', 'white'], ['black', 'orange', 'white']]
+
+==============================================================================
+---------------
+ Exercise: 096
+---------------
+
+Write a Python program to sort a given list of lists by length and value.
+
+[[2], [0], [1, 3], [0, 7], [9, 11], [13, 15, 17]]
+[[0], [2], [0, 7], [1, 3], [9, 11], [13, 15, 17]]
+
+==============================================================================
+---------------
+ Exercise: 097
+---------------
+
+Write a Python program to remove sublists from a given list of lists that contain an element outside a given range.
+
+[[2], [0], [1, 2, 3], [0, 1, 2, 3, 6, 7], [9, 11], [13, 14, 15, 17]], [13, 17]
+[[13, 14, 15, 17]]
+
+==============================================================================
+---------------
+ Exercise: 098
+---------------
+
+Write a Python program to scramble the letters of a string in a given list.
+
+['Python', 'list', 'exercises', 'practice', 'solution']
+['tnPhyo', 'tlis', 'ecrsseiex', 'ccpitear', 'noiltuos']
+
+==============================================================================
+---------------
+ Exercise: 099
+---------------
+
+Write a Python program to find the maximum and minimum values in a given heterogeneous list.
+
+['Python', 3, 2, 4, 5, 'version']
+(5, 2)
+
+==============================================================================
+---------------
+ Exercise: 100
+---------------
+
+Write a Python program to extract common index elements from more than one given list.
+
+[1, 1, 3, 4, 5, 6, 7]
+[0, 1, 2, 3, 4, 5, 7]
+[0, 1, 2, 3, 4, 5, 7]
+
+[1, 7]
+
+==============================================================================
+---------------
+ Exercise: 101
+---------------
+
+Write a Python program to sort a given matrix in ascending order according to the sum of its rows.
+
+[[1, 2, 3], [2, 4, 5], [1, 1, 1]]
+[[1, 1, 1], [1, 2, 3], [2, 4, 5]]
+
+[[1, 2, 3], [-2, 4, -5], [1, -1, 1]]
+[[-2, 4, -5], [1, -1, 1], [1, 2, 3]]
+
+==============================================================================
+---------------
+ Exercise: 102
+---------------
+
+Write a Python program to extract specified size of strings from a give list of string values.
+
+['Python', 'list', 'exercises', 'practice', 'solution'], 8
+
+['practice', 'solution']
+
+==============================================================================
+---------------
+ Exercise: 103
+---------------
+
+Write a Python program to extract specified number of elements from a given list, which follows each other continuously.
+
+[1, 1, 3, 4, 4, 5, 6, 7], 2
+[1, 4]
+
+[0, 1, 2, 3, 4, 4, 4, 4, 5, 7], 4
+[4]
+
+==============================================================================
+---------------
+ Exercise: 104
+---------------
+
+Write a Python program to find the difference between consecutive numbers in a given list.
+
+[1, 1, 3, 4, 4, 5, 6, 7]
+[0, 2, 1, 0, 1, 1, 1]
+
+[4, 5, 8, 9, 6, 10]
+[1, 3, 1, -3, 4]
+
+==============================================================================
+---------------
+ Exercise: 105
+---------------
+
+Write a Python program to compute average of two given lists.
+Note: concatenate them both and do the averaging
+
+[1, 1, 3, 4, 4, 5, 6, 7]
+[0, 1, 2, 3, 4, 4, 5, 7, 8]
+
+Average of two lists:
+3.823529411764706
+
+==============================================================================
+---------------
+ Exercise: 106
+---------------
+
+Write a Python program to count integers in a given mixed list.
+
+[1, 'abcd', 3, 1.2, 4, 'xyz', 5, 'pqr', 7, -5, -12.22]  =>  6
+
+==============================================================================
+---------------
+ Exercise: 107
+---------------
+
+Write a Python program to remove a specified column from a given nested list.
+
+[[1, 2, 3], [2, 4, 5], [1, 1, 1]], 1
+[[2, 3], [4, 5], [1, 1]]
+
+[[1, 2, 3], [-2, 4, -5], [1, -1, 1]], 3
+[[1, 2], [-2, 4], [1, -1]]
+
+==============================================================================
+---------------
+ Exercise: 108
+---------------
+
+Write a Python program to extract a specified column from a given nested list.
+
+[[1, 2, 3], [2, 4, 5], [1, 1, 1]], 1
+[1, 2, 1]
+
+[[1, 2, 3], [-2, 4, -5], [1, -1, 1]], 3
+[3, -5, 1]
+
+==============================================================================
+---------------
+ Exercise: 109
+---------------
+
+Write a Python program to rotate a given list by a specified number of items in the right or left direction.
+
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+'left', 4   =>  [5, 6, 7, 8, 9, 10, 1, 2, 3, 4]
+'left', 2   =>  [3, 4, 5, 6, 7, 8, 9, 10, 1, 2]
+'right', 4  =>  [7, 8, 9, 10, 1, 2, 3, 4, 5, 6],
+'right', 2  =>  [9, 10, 1, 2, 3, 4, 5, 6, 7, 8]
+
+==============================================================================
+---------------
+ Exercise: 110
+---------------
+
+Write a Python program to find the item with the most occurrences in a given list.
+
+[2, 3, 8, 4, 7, 9, 8, 2, 6, 5, 1, 6, 1, 2, 3, 4, 6, 9, 1, 2]
+2
+
+==============================================================================
+---------------
+ Exercise: 111
+---------------
+
+Write a Python program to access multiple elements at a specified index from a given list.
+
+[2, 3, 8, 4, 7, 9, 8, 2, 6, 5, 1, 6, 1, 2, 3, 4, 6, 9, 1, 2], [0, 3, 5, 7, 10]
+[2, 4, 9, 2, 1]
+
+==============================================================================
+---------------
+ Exercise: 112
+---------------
+
+Write a Python program to check whether a specified list is sorted or not.
+
+[1, 2, 4, 6, 8, 10, 12, 14, 16, 17]     =>  True
+[1, 2, 4, 6, 8, 10, 12, 14, 16, 17]     =>  True
+
+==============================================================================
+---------------
+ Exercise: 113
+---------------
+
+Write a Python program to remove duplicate dictionary entries from a given list.
+
+[{'Green': '#008000'}, {'Black': '#000000'}, {'Blue': '#0000FF'}, {'Green': '#008000'}]
+
+[{'Black': '#000000'}, {'Blue': '#0000FF'}, {'Green': '#008000'}]
+
+==============================================================================
+---------------
+ Exercise: 114
+---------------
+
+Write a Python program to extract the nth element from a given list of tuples.
+
+[('Greyson Fulton', 98, 99), ('Brady Kent', 97, 96), ('Wyatt Knott', 91, 94), ('Beau Turnbull', 94, 98)]
+
+n = 0   =>  ['Greyson Fulton', 'Brady Kent', 'Wyatt Knott', 'Beau Turnbull']
+n = 2   =>  [99, 96, 94, 98]
+
+==============================================================================
+---------------
+ Exercise: 115
+---------------
+
+Write a Python program to check if the elements of a given list are unique or not.
+
+[1, 2, 4, 6, 8, 2, 1, 4, 10, 12, 14, 12, 16, 17]    =>  False
+[2, 4, 6, 8, 10, 12, 14]                            =>  True
+
+==============================================================================
+---------------
+ Exercise: 116
+---------------
+
+Write a Python program to sort a list of lists by a given index of the inner list.
+
+[('Greyson Fulton', 98, 99), ('Brady Kent', 97, 96), ('Wyatt Knott', 91, 94), ('Beau Turnbull', 94, 98)]
+
+Index = 0
+[('Beau Turnbull', 94, 98), ('Brady Kent', 97, 96), ('Greyson Fulton', 98, 99), ('Wyatt Knott', 91, 94)]
+
+Index = 2
+[('Wyatt Knott', 91, 94), ('Brady Kent', 97, 96), ('Beau Turnbull', 94, 98), ('Greyson Fulton', 98, 99)]
+
+==============================================================================
+---------------
+ Exercise: 117
+---------------
+
+Write a Python program to remove all elements from a given list that are present in another list.
+
+list1: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+list2: [2, 4, 6, 8]
+
+[1, 3, 5, 7, 9, 10]
+
+==============================================================================
+---------------
+ Exercise: 118
+---------------
+
+Write a Python program to find the difference between elements (n+1th - nth) of a given list of numeric values.
+
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+[1, 1, 1, 1, 1, 1, 1, 1, 1]
+
+[2, 4, 6, 8]
+[2, 2, 2]
+
+==============================================================================
+---------------
+ Exercise: 119
+---------------
+
+Write a Python program to check if a substring appears in a given list of string values.
+
+['red', 'black', 'white', 'green', 'orange']
+
+ack     =>  True
+abc     =>  False
+
+==============================================================================
+---------------
+ Exercise: 120
+---------------
+
+Write a Python program to create a list taking alternate elements from a given list.
+
+['red', 'black', 'white', 'green', 'orange']
+['red', 'white', 'orange']
+
+[2, 0, 3, 4, 0, 2, 8, 3, 4, 2]
+[2, 3, 0, 8, 4]
+
+==============================================================================
+---------------
+ Exercise: 121
+---------------
+
+Write a Python program to find nested list elements that are present in another list.
+
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+[[12, 18, 23, 25, 45], [7, 11, 19, 24, 28], [1, 5, 8, 18, 15, 16]]
+
+[[12], [7, 11], [1, 5, 8]]
+
+==============================================================================
+---------------
+ Exercise: 122
+---------------
+
+Write a Python program to find common elements in a nested list.
+
+[[12, 18, 23, 25, 45], [7, 12, 18, 24, 28], [1, 5, 8, 12, 15, 16, 18]]
+
+[18, 12]
+
+==============================================================================
+---------------
+ Exercise: 123
+---------------
+
+Write a Python program to reverse strings in a given list of string values.
+
+['Red', 'Green', 'Blue', 'White', 'Black']
+['deR', 'neerG', 'eulB', 'etihW', 'kcalB']
+
+==============================================================================
+---------------
+ Exercise: 124
+---------------
+
+Write a Python program to find the maximum and minimum product of pairs of tuples within a given list.
+
+[(2, 7), (2, 6), (1, 8), (4, 9)]
+(36, 8)
+
+==============================================================================
+---------------
+ Exercise: 125
+---------------
+
+Write a Python program to calculate the product of the unique numbers in a given list.
+
+Original List : [10, 20, 30, 40, 20, 50, 60, 40]
+Product of the unique numbers of the said list: 720,000,000
+
+==============================================================================
+---------------
+ Exercise: 126
+---------------
+
+Write a Python program to interleave multiple lists of the same length.
+
+list1: [1, 2, 3, 4, 5, 6, 7]
+list2: [10, 20, 30, 40, 50, 60, 70]
+list3: [100, 200, 300, 400, 500, 600, 700]
+
+[1, 10, 100, 2, 20, 200, 3, 30, 300, 4, 40, 400, 5, 50, 500, 6, 60, 600, 7, 70, 700]
+
+==============================================================================
+---------------
+ Exercise: 127
+---------------
+
+Write a Python program to remove words from a given list of strings containing a character or string.
+
+Original list:
+list1: ['Red color', 'Orange#', 'Green', 'Orange @', 'White']
+
+Character list:
+['#', 'color', '@']
+
+New list:
+['Green', 'White']
+
+==============================================================================
+---------------
+ Exercise: 128
+---------------
+
+Write a Python program to calculate the sum of the numbers in a list between the indices of a specified range.
+
+[2, 1, 5, 6, 8, 3, 4, 9, 10, 11, 8, 12]
+Range: 8 , 10
+
+29
+
+==============================================================================
+---------------
+ Exercise: 129
+---------------
+
+Write a Python program to reverse each list in a given list of lists.
+
+[[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16]]
+
+[[4, 3, 2, 1], [8, 7, 6, 5], [12, 11, 10, 9], [16, 15, 14, 13]]
+
+==============================================================================
+---------------
+ Exercise: 130
+---------------
+
+Write a Python program to count the same pair in three given lists.
+
+[1, 2, 3, 4, 5, 6, 7, 8]
+[2, 2, 3, 1, 2, 6, 7, 9]
+[2, 1, 3, 1, 2, 6, 7, 9]
+
+3
+
+==============================================================================
+---------------
+ Exercise: 131
+---------------
+
+Write a Python program to count the frequency of consecutive duplicate elements in a given list of numbers.
+
+[1, 2, 2, 2, 4, 4, 4, 5, 5, 5, 5]
+([1, 2, 4, 5], [1, 3, 3, 4])
+
+==============================================================================
+---------------
+ Exercise: 132
+---------------
+
+Write a Python program to find all index positions of the maximum and minimum values in a given list of numbers.
+
+[12, 33, 23, 10, 67, 89, 45, 667, 23, 12, 11, 10, 54]
+
+Index positions of the maximum value of the said list:
+7
+
+Index positions of the minimum value of the said list:
+3, 11
+
+==============================================================================
+---------------
+ Exercise: 133
+---------------
+
+Write a Python program to check if two lists have the common elements in them in same order or not.
+
+['red', 'green', 'black', 'orange']
+['red', 'pink', 'green', 'white', 'black']
+['white', 'orange', 'pink', 'black']
+
+1st and 2nd     =>  True    (red -> green -> black in the same order)
+1st and 3rd     =>  False
+2nd and 3rd     =>  False
+
+==============================================================================
+---------------
+ Exercise: 134
+---------------
+
+Write a Python program to find the difference between two lists including duplicate elements.
+Note: take the first list as your reference (it's the longer list)  "Left Difference"
+
+[1, 1, 2, 3, 3, 4, 4, 5, 6, 7]
+[1, 1, 2, 4, 5, 6]
+
+[3, 3, 4, 7]
+
+==============================================================================
+---------------
+ Exercise: 135
+---------------
+
+Write a Python program to iterate over all pairs of consecutive items in a given list.
+
+[1, 1, 2, 3, 3, 4, 4, 5]
+
+[(1, 1), (1, 2), (2, 3), (3, 3), (3, 4), (4, 4), (4, 5)]
+
+==============================================================================
+---------------
+ Exercise: 136
+---------------
+
+Write a Python program to remove duplicate words from a given list of strings.
+
+['Python', 'Exercises', 'Practice', 'Solution', 'Exercises']
+
+['Python', 'Exercises', 'Practice', 'Solution']
+
+==============================================================================
+---------------
+ Exercise: 137
+---------------
+
+Write a Python program to find the first even and odd number in a given list of numbers.
+
+[1, 3, 5, 7, 4, 1, 6, 8]
+
+(4, 1)
+
+==============================================================================
+---------------
+ Exercise: 138
+---------------
+
+Write a Python program to sort a given mixed list of integers and strings. Numbers must be sorted before strings.
+
+[19, 'red', 12, 'green', 'blue', 10, 'white', 'green', 1]
+
+[1, 10, 12, 19, 'blue', 'green', 'green', 'red', 'white']
+
+==============================================================================
+---------------
+ Exercise: 139
+---------------
+
+Write a Python program to sort a given list of strings(numbers) numerically.
+
+['4', '12', '45', '7', '0', '100', '200', '-12', '-500']
+
+[-500, -12, 0, 4, 7, 12, 45, 100, 200]
+
+==============================================================================
+---------------
+ Exercise: 140
+---------------
+
+Describe the Write a Python program to remove a specific item at a specific column from a given list of lists.
+
+[
+    ['Red', 'Maroon', 'Yellow', 'Olive'],
+    ['#FF0000', '#800000', '#FFFF00', '#808000'],
+    ['rgb(255,0,0)', 'rgb(128,0,0)', 'rgb(255,255,0)', 'rgb(128,128,0)']
+]
+
+Remove 1st list from the saod given list of lists:
+[
+    ['Maroon', 'Yellow', 'Olive'],
+    ['#800000', '#FFFF00', '#808000'],
+    ['rgb(128,0,0)', 'rgb(255,255,0)', 'rgb(128,128,0)']
+]
+
+Remove 2nd list from the saod given list of lists:
+[
+    ['Red', 'Yellow', 'Olive'],
+    ['#FF0000', '#FFFF00', '#808000'],
+    ['rgb(255,0,0)', 'rgb(255,255,0)', 'rgb(128,128,0)']
+]
+
+Remove 4th list from the saod given list of lists:
+[
+    ['Red', 'Maroon', 'Yellow'],
+    ['#FF0000', '#800000', '#FFFF00'],
+    ['rgb(255,0,0)', 'rgb(128,0,0)', 'rgb(255,255,0)']
+]
+
+==============================================================================
+---------------
+ Exercise: 141
+---------------
+
+Write a Python program to remove empty lists from a given list of lists.
+
+[[], [], [], 'Red', 'Green', [1, 2], 'Blue', [], []]
+
+['Red', 'Green', [1, 2], 'Blue']
+
+==============================================================================
+---------------
+ Exercise: 142
+---------------
+
+Write a Python program to sum a specific column of a list in a given list of lists.
+
+[[1, 2, 3, 2], [4, 5, 6, 2], [7, 8, 9, 5]]
+
+1st: 12
+2nd: 15
+4th: 9
+
+==============================================================================
+---------------
+ Exercise: 143
+---------------
+
+Write a Python program to get the frequency of elements in a given list of lists.
+
+[[1, 2, 3, 2], [4, 5, 6, 2], [7, 8, 9, 5]]
+
+{1: 1, 2: 3, 3: 1, 4: 1, 5: 2, 6: 1, 7: 1, 8: 1, 9: 1}
+
+==============================================================================
+---------------
+ Exercise: 144
+---------------
+
+Write a Python program to extract every nth element from a given two-dimensional list.
+
+[[1, 2, 3, 2], [4, 5, 6, 2], [7, 1, 9, 5]]
+
+1st =>  [1, 4, 7]
+3rd =>  [3, 6, 9]
+
+==============================================================================
+---------------
+ Exercise: 145
+---------------
+
+Write a Python program to generate a number in a specified range except for some specific numbers.
+
+Generate a number in a specified range (1, 10) except [2, 9, 10]
+7
+
+Generate a number in a specified range (-5, 5) except [-5, 0, 4, 3, 2]
+-4
+
+==============================================================================
+---------------
+ Exercise: 146
+---------------
+
+Write a Python program to compute the sum of digits of each number in a given list.
+
+[10, 2, 56]   (1+0+2+5+6)       =>  14
+[10, 20, 4, 5, 'b', 70, 'a']    =>  19
+[10, 20, -4, 5, -70]            =>  19
+
+==============================================================================
+---------------
+ Exercise: 147
+---------------
+
+Write a Python program to combine two lists into another list randomly.
+
+[1, 2, 7, 8, 3, 7]
+[4, 3, 8, 9, 4, 3, 8, 9]
+
+[4, 1, 2, 3, 8, 9, 4, 3, 7, 8, 9, 8, 3, 7]
+
+==============================================================================
+---------------
+ Exercise: 148
+---------------
+
+Write a Python program to remove specific words from a given list.
+
+['red', 'green', 'blue', 'white', 'black', 'orange']
+['white', 'orange']
+
+['red', 'green', 'blue', 'black']
+
+==============================================================================
+---------------
+ Exercise: 149
+---------------
+
+Write a Python program to get all possible combinations of the elements of a given list.
+
+['orange', 'red', 'green', 'blue']
+
+[
+    [], ['orange'], ['red'], ['red', 'orange'], ['green'], ['green', 'orange'], ['green', 'red'],
+    ['green', 'red', 'orange'], ['blue'], ['blue', 'orange'], ['blue', 'red'], ['blue', 'red', 'orange'],
+    ['blue', 'green'], ['blue', 'green', 'orange'], ['blue', 'green', 'red'], ['blue', 'green', 'red', 'orange']
+]
+
+==============================================================================
+---------------
+ Exercise: 150
+---------------
+
+Write a Python program to reverse a given list of lists.
+
+[['orange', 'red'], ['green', 'blue'], ['white', 'black', 'pink']]
+[['white', 'black', 'pink'], ['green', 'blue'], ['orange', 'red']]
+
+[[1, 2, 3, 4], [0, 2, 4, 5], [2, 3, 4, 2, 4]]
+[[2, 3, 4, 2, 4], [0, 2, 4, 5], [1, 2, 3, 4]]
+
+==============================================================================
+---------------
+ Exercise: 151
+---------------
+
+Write a Python program to find the maximum and minimum values in a given list within a specified index range.
+
+[4, 3, 0, 5, 3, 0, 2, 3, 4, 2, 4, 3, 5]
+
+Index range:
+3 to 8
+
+(5, 0)
+
+==============================================================================
+---------------
+ Exercise: 152
+---------------
+
+Write a Python program to combine two sorted lists using the heapq module.
+
+[1, 3, 5, 7, 9, 11]
+[0, 2, 4, 6, 8, 10]
+
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+
+==============================================================================
+---------------
+ Exercise: 153
+---------------
+
+Write a Python program to check if a given element occurs at least n times in a list.
+
+[0, 1, 3, 5, 0, 3, 4, 5, 0, 8, 0, 3, 6, 0, 3, 1, 1, 0]
+
+Check if 3 occurs at least 4 times =>   True
+Check if 0 occurs at least 5 times =>   True
+Check if 8 occurs at least 3 times =>   False
+
+==============================================================================
+---------------
+ Exercise: 154
+---------------
+
+Write a Python program to join two given list of lists of the same length, element wise.
+
+[[10, 20], [30, 40], [50, 60], [30, 20, 80]]
+[[61], [12, 14, 15], [12, 13, 19, 20], [12]]
+
+[[10, 20, 61], [30, 40, 12, 14, 15], [50, 60, 12, 13, 19, 20], [30, 20, 80, 12]]
+
+[['a', 'b'], ['b', 'c', 'd'], ['e', 'f']]
+[['p', 'q'], ['p', 's', 't'], ['u', 'v', 'w']]
+
+[['a', 'b', 'p', 'q'], ['b', 'c', 'd', 'p', 's', 't'], ['e', 'f', 'u', 'v', 'w']]
+
+==============================================================================
+---------------
+ Exercise: 155
+---------------
+
+Write a Python program to add two given lists of different lengths, starting on the left.
+
+[2, 4, 7, 0, 5, 8]
+[3, 3, -1, 7]
+
+[5, 7, 6, 7, 5, 8]
+
+[1, 2, 3, 4, 5, 6]
+[2, 4, -3]
+
+[3, 6, 0, 4, 5, 6]
+
+==============================================================================
+---------------
+ Exercise: 156
+---------------
+
+Write a Python program to add two given lists of different lengths, starting on the right.
+
+[2, 4, 7, 0, 5, 8]
+[3, 3, -1, 7]
+
+[2, 4, 10, 3, 4, 15]
+
+[1, 2, 3, 4, 5, 6]
+[2, 4, -3]
+
+[1, 2, 3, 6, 9, 3]
+
+==============================================================================
+---------------
+ Exercise: 157
+---------------
+
+Write a Python program to interleave lists of varying lengths.
+
+[2, 4, 7, 0, 5, 8]
+[2, 5, 8]
+[0, 1]
+[3, 3, -1, 7]
+
+[2, 2, 0, 3, 4, 5, 1, 3, 7, 8, -1, 0, 7, 5, 8]
+
+==============================================================================
+---------------
+ Exercise: 158
+---------------
+
+Write a Python program to find the maximum and minimum values in a given list of tuples.
+
+[('V', 60), ('VI', 70), ('VII', 75), ('VIII', 72), ('IX', 78), ('X', 70)]
+
+(78, 60)
+
+==============================================================================
+---------------
+ Exercise: 159
+---------------
+
+Write a Python program to append the same value/a list multiple times to a list/list-of-lists.
+
+Add a value(7), 5 times, to a list:
+['7', '7', '7', '7', '7']
+
+Add 5, 6 times, to a list [1, 2, 3, 4]:
+[1, 2, 3, 4, 5, 5, 5, 5, 5, 5]
+
+Add a list [1, 2, 5], 4 times, to a list of lists:
+[[1, 2, 5], [1, 2, 5], [1, 2, 5], [1, 2, 5]]
+
+Add a list [1, 2, 5], 3 times, to a list of lists [[5, 6, 7], [1, 2, 5]]:
+[[5, 6, 7], [1, 2, 5], [1, 2, 5], [1, 2, 5], [1, 2, 5]]
+
+==============================================================================
+---------------
+ Exercise: 160
+---------------
+
+Remove the first 4 number of even numbers from the following list:
+
+[3, 10, 4, 7, 5, 7, 8, 3, 3, 4, 5, 9, 3, 4, 9, 8, 5]
+
+[3, 7, 5, 7, 3, 3, 5, 9, 3, 4, 9, 8, 5]
+
+==============================================================================
+---------------
+ Exercise: 161
+---------------
+
+[Starred]
+
+Write a Python program to check if a given list increases strictly. Moreover, if removing only one element from
+the list results in a strictly increasing list, we still consider the list true.
+
+[]                          True
+[1]                         True
+[1, 2]                      True
+[1, 2, 3]                   True
+[3, 1, 2]                   True
+[1, 2, 3, 0, 4, 5, 6]       True
+[1, 2, 3, 0]                True
+[1, 2, 0, 3]                True
+[10, 1, 2, 3, 4, 5]         True
+[1, 2, 10, 3, 4]            True
+[1, 2, 3, 12, 4, 5]         True
+[3, 2, 1]                   False
+[1, 2, 0, -1]               False
+[5, 6, 1, 2]                False
+[1, 2, 3, 0, -1]            False
+[10, 11, 12, 2, 3, 4, 5]    False
+
+==============================================================================
+---------------
+ Exercise: 162
+---------------
+
+Write a Python program to find the last occurrence of a specified item in a given list.
+
+['s', 'd', 'f', 's', 'd', 'f', 's', 'f', 'k', 'o', 'p', 'i', 'w', 'e', 'k', 'c']
+
+Last occurrence of f    =>  7
+Last occurrence of c    =>  15
+Last occurrence of k    =>  14
+Last occurrence of w    =>  12
+
+==============================================================================
+---------------
+ Exercise: 163
+---------------
+
+Write a Python program to get the index of the first element that is greater than a specified element.
+
+[12, 45, 23, 67, 78, 90, 100, 76, 38, 62, 73, 29, 83]
+
+Index of the first element which is greater than 73     =>  4
+Index of the first element which is greater than 21     =>  1
+Index of the first element which is greater than 80     =>  5
+Index of the first element which is greater than 55     =>  3
+
+==============================================================================
+---------------
+ Exercise: 164
+---------------
+
+Write a Python program to get items from a given list that are even and greater than 45.
+
+[12, 45, 23, 67, 78, 90, 45, 32, 100, 76, 38, 62, 73, 29, 83]
+
+[78, 90, 100, 76, 62]
+
+==============================================================================
+---------------
+ Exercise: 165
+---------------
+
+Write a Python program to split a given list into specified-sized chunks.
+
+[12, 45, 23, 67, 78, 90, 45, 32, 100, 76, 38, 62, 73, 29, 83]
+
+3   =>  [[12, 45, 23], [67, 78, 90], [45, 32, 100], [76, 38, 62], [73, 29, 83]]
+4   =>  [[12, 45, 23, 67], [78, 90, 45, 32], [100, 76, 38, 62], [73, 29, 83]]
+5   =>  [[12, 45, 23, 67, 78], [90, 45, 32, 100, 76], [38, 62, 73, 29, 83]]
+
+==============================================================================
+---------------
+ Exercise: 166
+---------------
+
+Write a Python program to remove the None value from a given list.
+
+[12, 0, None, 23, None, -55, 234, 89, None, 0, 6, -12]
+
+[12, 0, 23, -55, 234, 89, 0, 6, -12]
+
+==============================================================================
+---------------
+ Exercise: 167
+---------------
+
+Write a Python program to convert a given list of strings into a list of lists.
+
+['Red', 'Maroon', 'Yellow', 'Olive']
+
+[['R', 'e', 'd'], ['M', 'a', 'r', 'o', 'o', 'n'], ['Y', 'e', 'l', 'l', 'o', 'w'], ['O', 'l', 'i', 'v', 'e']]
+
+==============================================================================
+---------------
+ Exercise: 168
+---------------
+
+Write a Python program to display vertically each element of a given list, or list of lists.
+
+['a', 'b', 'c', 'd', 'e', 'f']
+a
+b
+c
+d
+e
+f
+
+[[1, 2, 5], [4, 5, 8], [7, 3, 6]]
+1 4 7
+2 5 3
+5 8 6
+
+==============================================================================
+---------------
+ Exercise: 169
+---------------
+
+Write a Python program to convert a given list of strings and characters to a single list of characters.
+
+['red', 'white', 'a', 'b', 'black', 'f']
+
+['r', 'e', 'd', 'w', 'h', 'i', 't', 'e', 'a', 'b', 'b', 'l', 'a', 'c', 'k', 'f']
+
+==============================================================================
+---------------
+ Exercise: 170
+---------------
+
+Write a Python program to insert an element in a given list after every nth position.
+
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
+
+'a' after the 2nd element
+[1, 2, 'a', 3, 4, 'a', 5, 6, 'a', 7, 8, 'a', 9, 0]
+
+'b' after the 4th element:
+[1, 2, 3, 4, 'b', 5, 6, 7, 8, 'b', 9, 0]
+
+==============================================================================
+---------------
+ Exercise: 171
+---------------
+
+Write a Python program to concatenate element-wise three given lists.
+
+['0', '1', '2', '3', '4']
+['red', 'green', 'black', 'blue', 'white']
+['100', '200', '300', '400', '500']
+
+['0red100', '1green200', '2black300', '3blue400', '4white500']
+
+==============================================================================
+---------------
+ Exercise: 172
+---------------
+
+Write a Python program to remove the last N number of elements from a given list.
+
+[2, 3, 9, 8, 2, 0, 39, 84, 2, 2, 34, 2, 34, 5, 3, 5]
+
+Remove the last 3 elements from the said list:
+[2, 3, 9, 8, 2, 0, 39, 84, 2, 2, 34, 2, 34]
+
+Remove the last 5 elements from the said list:
+[2, 3, 9, 8, 2, 0, 39, 84, 2, 2, 34]
+
+Remove the last 1 element from the said list:
+[2, 3, 9, 8, 2, 0, 39, 84, 2, 2, 34, 2, 34, 5, 3]
+
+==============================================================================
+---------------
+ Exercise: 173
+---------------
+
+Write a Python program to merge some list items in a given list using the index value.
+
+['a', 'b', 'c', 'd', 'e', 'f', 'g']
+
+Merge items from 2 to 4 in the said List:
+['a', 'b', 'cd', 'e', 'f', 'g']
+
+Merge items from 3 to 7 in the said List:
+['a', 'b', 'c', 'defg']
+
+==============================================================================
+---------------
+ Exercise: 174
+---------------
+
+Write a Python program to add a number to each element in a given list of numbers.
+
+[3, 8, 9, 4, 5, 0, 5, 0, 3]
+3       =>  [6, 11, 12, 7, 8, 3, 8, 3, 6]
+
+[3.2, 8, 9.9, 4.2, 5, 0.1, 5, 3.11, 0]
+0.51    =>  [3.71, 8.51, 10.41, 4.71, 5.51, 0.61, 5.51, 3.62, 0.51]
+
+==============================================================================
+---------------
+ Exercise: 175
+---------------
+
+Write a Python program to find the minimum and maximum value for each tuple position in a given list of tuples.
+
+[(2, 3), (2, 4), (0, 6), (7, 1)]
+
+Maximum value for each tuple position in the said list of tuples:
+[7, 6]
+
+Minimum value for each tuple position in the said list of tuples:
+[0, 1]
+
+==============================================================================
+---------------
+ Exercise: 176
+---------------
+
+Write a Python program to create a new list by dividing two given lists of numbers.
+
+[7, 2, 3, 4, 9, 2, 3]
+[9, 8, 2, 3, 3, 1, 2]
+
+[0.7777777777777778, 0.25, 1.5, 1.3333333333333333, 3.0, 2.0, 1.5]
+
+==============================================================================
+---------------
+ Exercise: 177
+---------------
+
+Write a Python program to find common elements in a given list of lists.
+
+[[7, 2, 3, 4, 7], [9, 2, 3, 2, 5], [8, 2, 3, 4, 4]]
+[2, 3]
+
+[['a', 'b', 'c'], ['b', 'c', 'd'], ['c', 'd', 'e']]
+['c']
+
+==============================================================================
+---------------
+ Exercise: 178
+---------------
+
+Write a Python program to insert a specified element in a given list after every nth element.
+
+[1, 3, 5, 7, 9, 11, 0, 2, 4, 6, 8, 10, 8, 9, 0, 4, 3, 0]
+
+Insert 20 in said list after every 4th element:
+[1, 3, 5, 7, 20, 9, 11, 0, 2, 20, 4, 6, 8, 10, 20, 8, 9, 0, 4, 20, 3, 0]
+
+['s', 'd', 'f', 'j', 's', 'a', 'j', 'd', 'f', 'd']
+
+Insert Z in said list after every 3th element:
+['s', 'd', 'f', 'Z', 'j', 's', 'a', 'Z', 'j', 'd', 'f', 'Z', 'd']
+
+==============================================================================
+---------------
+ Exercise: 179
+---------------
+
+Write a Python program to create the largest possible number using the elements of a given list of positive integers.
+
+[3, 40, 41, 43, 74, 9]      =>  9744341403
+[10, 40, 20, 30, 50, 60]    =>  605040302010
+[8, 4, 2, 9, 5, 6, 1, 0]    =>  98654210
+
+==============================================================================
+---------------
+ Exercise: 180
+---------------
+
+Write a Python program to create the smallest possible number using the elements of a given list of positive integers.
+
+[3, 40, 41, 43, 74, 9]      =>  3404143749
+[10, 40, 20, 30, 50, 60]    =>  102030405060
+[8, 4, 2, 9, 5, 6, 1, 0]    =>  01245689
+
+==============================================================================
+---------------
+ Exercise: 181
+---------------
+
+Write a Python program to iterate a given list cyclically at a specific index position.
+
+['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
+
+3   =>  ['d', 'e', 'f', 'g', 'h', 'a', 'b', 'c']
+5   =>  ['f', 'g', 'h', 'a', 'b', 'c', 'd', 'e']
+
+==============================================================================
+---------------
+ Exercise: 182
+---------------
+
+Write a Python program to calculate the maximum and minimum sum of a sublist in a given list of lists.
+
+[[1, 2, 3, 5], [2, 3, 5, 4], [0, 5, 4, 1], [3, 7, 2, 1], [1, 2, 1, 2]]
+
+Maximum sum of sub list of the said list of lists:
+[2, 3, 5, 4]
+
+Minimum sum of sub list of the said list of lists:
+[1, 2, 1, 2]
+
+==============================================================================
+---------------
+ Exercise: 183
+---------------
+
+Write a Python program to get the unique values in a given list of lists.
+
+[[1, 2, 3, 5], [2, 3, 5, 4], [0, 5, 4, 1], [3, 7, 2, 1], [1, 2, 1, 2]]
+[0, 1, 2, 3, 4, 5, 7]
+
+[['h', 'g', 'l', 'k'], ['a', 'b', 'd', 'e', 'c'], ['j', 'i', 'y'], ['n', 'b', 'v', 'c'], ['x', 'z']]
+['e', 'd', 'c', 'b', 'x', 'k', 'n', 'h', 'g', 'j', 'i', 'a', 'l', 'y', 'v', 'z']
+
+==============================================================================
+---------------
+ Exercise: 184
+---------------
+
+Write a Python program to generate Bigrams of words from a given list of strings.
+
+From Wikipedia:
+A bigram or digram is a sequence of two adjacent elements from a string of tokens, which are typically letters,
+syllables, or words. A bigram is an n-gram for n=2. The frequency distribution of every bigram in a string is commonly
+used for simple statistical analysis of text in many applications, including in computational linguistics,
+cryptography, speech recognition, and so on.
+
+['Sum all the items in a list', 'Find the second smallest number in a list']
+
+[
+    ('Sum', 'all'), ('all', 'the'), ('the', 'items'), ('items', 'in'), ('in', 'a'), ('a', 'list'), ('Find', 'the'),
+    ('the', 'second'), ('second', 'smallest'), ('smallest', 'number'), ('number', 'in'), ('in', 'a'), ('a', 'list')
+]
+
+==============================================================================
+---------------
+ Exercise: 185
+---------------
+
+Write a Python program to convert a given decimal number to a binary list.
+
+Original Number: 8      =>  [1, 0, 0, 0]
+Original Number: 45     =>  [1, 0, 1, 1, 0, 1]
+Original Number: 100    =>  [1, 1, 0, 0, 1, 0, 0]
+
+==============================================================================
+---------------
+ Exercise: 186
+---------------
+
+Write a Python program to swap two sublists in a given list.
+
+[[0, 1, 2, 3, 4], [5, 6, 7, 8, 9], [10, 11, 12, 13, 14, 15]]
+
+[[0, 1, 2, 3, 4], [10, 11, 12, 13, 14, 15], [5, 6, 7, 8, 9]]
+
+==============================================================================
+---------------
+ Exercise: 187
+---------------
+
+Write a Python program to convert a given list of tuples to a list of strings.
+
+[('red', 'green'), ('black', 'white'), ('orange', 'pink')]
+['red green', 'black white', 'orange pink']
+
+[('Laiba', 'Delacruz'), ('Mali', 'Stacey', 'Drummond'), ('Raja', 'Welch'), ('Saarah', 'Stone')]
+['Laiba Delacruz', 'Mali Stacey Drummond', 'Raja Welch', 'Saarah Stone']
+
+==============================================================================
+---------------
+ Exercise: 188
+---------------
+
+Write a Python program to sort a given list of tuples by a specified element.
+
+[('item2', 10, 10.12), ('item3', 15, 25.1), ('item1', 11, 24.5), ('item4', 12, 22.5)]
+
+1st element =>  [('item1', 11, 24.5), ('item2', 10, 10.12), ('item3', 15, 25.1), ('item4', 12, 22.5)]
+2nd element =>  [('item2', 10, 10.12), ('item1', 11, 24.5), ('item4', 12, 22.5), ('item3', 15, 25.1)]
+3rd element =>  [('item2', 10, 10.12), ('item4', 12, 22.5), ('item1', 11, 24.5), ('item3', 15, 25.1)]
+
+==============================================================================
+---------------
+ Exercise: 189
+---------------
+
+Write a Python program to shift last element to first position and first element to last position in a given list.
+
+[1, 2, 3, 4, 5, 6, 7]
+[7, 2, 3, 4, 5, 6, 1]
+
+['s', 'd', 'f', 'd', 's', 's', 'd', 'f']
+['f', 'd', 'f', 'd', 's', 's', 'd', 's']
+
+==============================================================================
+---------------
+ Exercise: 190
+---------------
+
+Write a Python program to find the specified number of largest products from two given lists, multiplying an element
+from each list.
+
+[1, 2, 3, 4, 5, 6]
+[3, 6, 8, 9, 10, 6]
+
+3   =>  [60, 54, 50]
+4   =>  [60, 54, 50, 48]
+
+==============================================================================
+---------------
+ Exercise: 191
+---------------
+
+Write a Python program to find the maximum and minimum values of the three given lists.
+
+[2, 3, 5, 8, 7, 2, 3]
+[4, 3, 9, 0, 4, 3, 9]
+[2, 1, 5, 6, 5, 5, 4]
+
+max:    9
+min:    0
+
+==============================================================================
+---------------
+ Exercise: 192
+---------------
+
+Write a Python program to remove all strings from a given list of tuples.
+
+[(100, 'Math'), (80, 'Math'), (90, 'Math'), (88, 'Science', 89), (90, 'Science', 92)]
+[(100,), (80,), (90,), (88, 89), (90, 92)]
+
+==============================================================================
+---------------
+ Exercise: 193
+---------------
+
+Write a Python program to find the dimension of a given matrix.
+
+[[1, 2], [2, 4]]                    =>  (2, 2)
+[[0, 1, 2], [2, 4, 5]]              =>  (2, 3)
+[[0, 1, 2], [2, 4, 5], [2, 3, 4]]   =>  (3, 3)
+
+==============================================================================
+---------------
+ Exercise: 194
+---------------
+
+Write a Python program to sum two or more lists. The lengths of the lists may be different.
+
+[[1, 2, 4], [2, 4, 4], [1, 2]]  =>  [4, 8, 8]
+[[1], [2, 4, 4], [1, 2], [4]]   =>  [8, 6, 4]
+
+==============================================================================
+---------------
+ Exercise: 195
+---------------
+
+Write a Python program to traverse a given list in reverse order, and print the elements with the original index.
+
+['red', 'green', 'white', 'black']
+
+3 black
+2 white
+1 green
+0 red
+
+==============================================================================
+---------------
+ Exercise: 196
+---------------
+
+Write a Python program to move a specified element in a given list.
+
+['red', 'green', 'white', 'black', 'orange']
+
+'white'   =>  ['red', 'green', 'black', 'orange', 'white']
+'red'     =>  ['green', 'white', 'black', 'orange', 'red']
+'black'   =>   ['red', 'green', 'white', 'orange', 'black']
+
+==============================================================================
+---------------
+ Exercise: 197
+---------------
+
+Write a Python program to compute the average of the n-th element in a given list of lists with different lengths.
+
+[[0, 1, 2], [2, 3, 4], [3, 4, 5, 6], [7, 8, 9, 10, 11], [12, 13, 14]]
+[4.8, 5.8, 6.8, 8.0, 11.0]
+
+==============================================================================
+---------------
+ Exercise: 198
+---------------
+
+Write a Python program to compare two given lists and find the indices (w.r.t the first list) of the values present
+in both lists.
+
+[1, 2, 3, 4, 5, 6]
+[7, 8, 5, 2, 10, 12]
+[1, 4]
+
+[1, 2, 3, 4, 5, 6]
+[7, 8, 5, 7, 10, 12]
+[4]
+
+[1, 2, 3, 4, 15, 6]
+[7, 8, 5, 7, 10, 12]
+[]
+
+==============================================================================
+---------------
+ Exercise: 199
+---------------
+
+Write a Python program to convert a Unicode list to a list of strings.
+
+[u'S001', u'S002', u'S003', u'S004']
+['S001', 'S002', 'S003', 'S004']
+
+==============================================================================
+---------------
+ Exercise: 200
+---------------
+
+Write a Python program to pair consecutive elements of a given list.
+
+[1, 2, 3, 4, 5, 6]
+[[1, 2], [2, 3], [3, 4], [4, 5], [5, 6]]
+
+[1, 2, 3, 4, 5]
+[[1, 2], [2, 3], [3, 4], [4, 5]]
+
+==============================================================================
+---------------
+ Exercise: 201
+---------------
+
+Write a Python program to check if a given string contains an element that is present in a list.
+
+'https://www.w3resource.com/python-exercises/list/', ['.com', '.edu', '.tv']    =>  True
+'https://www.w3resource.net', ['.com', '.edu', '.tv']                           =>  False
+
+==============================================================================
+---------------
+ Exercise: 202
+---------------
+
+Write a Python program to find the indexes of all None items in a given list.
+
+[1, None, 5, 4, None, 0, None, None]
+[1, 4, 6, 7]
+
+==============================================================================
+---------------
+ Exercise: 203
+---------------
+
+Write a Python program to join adjacent members of a given list.
+
+['1', '2', '3', '4', '5', '6', '7', '8']
+['12', '34', '56', '78']
+
+['1', '2', '3']
+['12']
+
+==============================================================================
+---------------
+ Exercise: 204
+---------------
+
+Write a Python program to check if the first character of each element in a list is the same.
+
+[1234, 122, 1984, 19372, 100]   =>  True
+[1234, 922, 1984, 19372, 100]   =>  False
+['aabc', 'abc', 'ab', 'a']      =>  True
+['aabc', 'abc', 'ab', 'ha']     =>  False
+
+==============================================================================
+---------------
+ Exercise: 205
+---------------
+
+Write a Python program to find the indices of elements in a given list that are greater than a specified value.
+
+[1234, 1522, 1984, 19372, 1000, 2342, 7626]
+
+3000    =>  [3, 6]
+20000   =>  []
+
+==============================================================================
+---------------
+ Exercise: 206
+---------------
+
+Write a Python program to remove additional spaces from a given list.
+
+['abc ', ' ', ' ', 'sdfds ', ' ', ' ', 'sdfds ', 'huy']
+['abc', '', '', 'sdfds', '', '', 'sdfds', 'huy']
+
+==============================================================================
+---------------
+ Exercise: 207
+---------------
+
+Write a Python program to find the common tuples between two given lists.
+
+[('red', 'green'), ('black', 'white'), ('orange', 'pink')]
+[('red', 'green'), ('orange', 'pink')]
+
+[('orange', 'pink'), ('red', 'green')]
+
+==============================================================================
+---------------
+ Exercise: 208
+---------------
+
+Sum a list of numbers. Write a Python program to sum the first number with the second and divide it by 2, then sum
+the second with the third and divide by 2, and so on.
+
+[1, 2, 3, 4, 5, 6, 7]
+[1.5, 2.5, 3.5, 4.5, 5.5, 6.5]
+
+[0, 1, -3, 3, 7, -5, 6, 7, 11]
+[0.5, -1.0, 0.0, 5.0, 1.0, 0.5, 6.5, 9.0]
+
+==============================================================================
+---------------
+ Exercise: 209
+---------------
+
+Write a Python program to count the number of groups of non-zero numbers separated by zeros in a given list of numbers.
+
+[3, 4, 6, 2, 0, 0, 0, 0, 0, 0, 6, 7, 6, 9, 10, 0, 0, 0, 0, 0, 5, 9, 9, 7, 4, 4, 0, 0, 0, 0, 0, 0, 5, 3, 2, 9, 7, 1]
+4
+
+==============================================================================
+---------------
+ Exercise: 210
+---------------
+
+Write a Python program to compute the sum of non-zero groups (separated by zeros) of a given list of numbers.
+
+[3, 4, 6, 2, 0, 0, 0, 0, 0, 0, 6, 7, 6, 9, 10, 0, 0, 0, 0, 0, 7, 4, 4, 0, 0, 0, 0, 0, 0, 5, 3, 2, 9, 7, 1, 0, 0, 0]
+
+[15, 38, 15, 27]
+
+==============================================================================
+---------------
+ Exercise: 211
+---------------
+
+Write a Python program to remove an element from a given list.
+
+['Ricky Rivera', 98, 'Math', 90, 'Science']
+Delete the first element    =>  [98, 'Math', 90, 'Science']
+
+==============================================================================
+---------------
+ Exercise: 212
+---------------
+
+Write a Python program to remove all values except integer values from a given array of mixed values.
+
+[34.67, 12, -94.89, 'Python', 0, 'C#']
+[12, 0]
+
+==============================================================================
+---------------
+ Exercise: 213
+---------------
+
+Write a Python program to calculate the sum of two lowest negative numbers in a given array of integers.
+
+[-14, 15, -10, -11, -12, -13, 16, 17, 18, 19, 20]       =>  -27
+[-4, 5, -2, 0, 3, -1, 4, 9]                             =>  -6
+
+==============================================================================
+---------------
+ Exercise: 214
+---------------
+
+Write a Python program to sort a given positive number in descending/ascending order.
+Descending -> Highest to lowest.
+Ascending -> Lowest to highest
+
+Original Number: 134543
+Descending order of the said number: 544331
+Ascending order of the said number: 133445
+
+Original Number: 43750973
+Descending order of the said number: 97754330
+Ascending order of the said number: 3345779
+
+==============================================================================
+---------------
+ Exercise: 215
+---------------
+
+Write a Python program to merge two or more lists into a list of lists, combining elements from each of the input
+lists based on their positions.
+
+['a', 'b'], [1, 2], [True, False]   =>  [['a', 1, True], ['b', 2, False]]
+['a'], [1, 2], [True, False]        =>  [['a', 1, True], [None, 2, False]]
+['a'], [1, 2], [True, False]        =>  [['a', 1, True], [None, 2, False]]
+
+==============================================================================
+---------------
+ Exercise: 216
+---------------
+
+Write a Python program to group the elements of a list based on the given function and return the count of elements
+in each group.
+
+[6.1, 4.2, 6.3], floor          =>  {6: 2, 4: 1}
+['one', 'two', 'three'], len    =>  {3: 2, 5: 1}
+
+==============================================================================
+---------------
+ Exercise: 217
+---------------
+
+Write a Python program to split values into two groups, based on the result of the given filtering function.
+
+['red', 'green', 'wow', 'black', 'white']
+
+Filter all values that have 'w' as the first character in the first group and the put the others in the second group
+
+[['wow', 'white'], ['red', 'green', 'black']]
+
+==============================================================================
+---------------
+ Exercise: 218
+---------------
+
+Write a Python program to sort one list based on another list containing the desired indexes.
+
+l1 = ['eggs', 'bread', 'oranges', 'jam', 'apples', 'milk']
+l2 = [3, 2, 6, 4, 1, 5]
+
+Note: The second list tells the desired order
+
+ascending order:    ['apples', 'bread', 'eggs', 'jam', 'milk', 'oranges']
+descending order:   ['oranges', 'milk', 'jam', 'eggs', 'bread', 'apples']
+
+==============================================================================
+---------------
+ Exercise: 219
+---------------
+
+Write a Python program to build a list, using an iterator function and an initial seed value.
+
+In Python, we can create a list using a variety of methods. One such method is by using an iterator function and
+an initial seed value.
+
+Your task is to implement the unfold function that takes an iterator function and an initial seed value as arguments.
+The iterator function accepts one argument (seed) and must always return a list with two elements ([value, nextSeed])
+or False to terminate. The unfold function should use a generator function, fn_generator, that uses a while loop to
+call the iterator function and yield the value until it returns False. Finally, the unfold function should use a
+list comprehension to return the list that is produced by the generator, using the iterator function.
+
+==============================================================================
+---------------
+ Exercise: 220
+---------------
+
+Write a Python program to map the values of a list to a dictionary using a function, where the key-value pairs consist
+of the original value as the key and the result of the function as the value.
+
+[1, 2, 3], square the values
+
+{1: 1, 2: 4, 3: 9}
+
+==============================================================================
+---------------
+ Exercise: 221
+---------------
+
+Write a Python program to randomize the order of the values of a list, returning a new list.
+
+[1, 2, 3, 4, 5, 6]
+
+==============================================================================
+---------------
+ Exercise: 222
+---------------
+
+Write a Python program to get the left difference between two given lists, after applying the provided function to each
+list element of both.
+
+[2.1, 1.2], [2.3, 3.4], floor                       =>  [1.2]
+[{ 'x': 2 }, { 'x': 1 }], [{ 'x': 1 }], v['x']      =>  [{'x': 2}]
+
+==============================================================================
+---------------
+ Exercise: 223
+---------------
+
+Write a Python program to create a list with non-unique values filtered out.
+
+[1, 2, 2, 3, 4, 4, 5]   =>  [1, 3, 5]
+
+==============================================================================
+---------------
+ Exercise: 224
+---------------
+
+Write a Python program to create a list with unique values filtered out.
+
+[1, 2, 2, 3, 4, 4, 5]   =>  [2, 4]
+
+==============================================================================
+---------------
+ Exercise: 225
+---------------
+
+Write a Python program to retrieve the value of the nested key indicated by the given selector list from a
+dictionary or list.
+
+users = {
+  'freddy': {
+    'name': {
+      'first': 'Fateh',
+      'last': 'Harwood'
+    },
+    'postIds': [1, 2, 3]
+  }
+}
+
+['freddy', 'name', 'last']      =>  Harwood
+['freddy', 'postIds', 1]        =>  2
+
+==============================================================================
+---------------
+ Exercise: 226
+---------------
+
+Write a Python program to get a list of elements that exist in both lists, after applying the provided function to
+each list element of both.
+
+[2.1, 1.2], [2.3, 3.4], floor   =>  [2.1]
+
+==============================================================================
+---------------
+ Exercise: 227
+---------------
+
+Write a Python program to get the symmetric difference between two lists, after applying the provided function to
+each list element of both.
+
+[2.1, 1.2], [2.3, 3.4], floor   =>  [1.2, 3.4]
+
+==============================================================================
+---------------
+ Exercise: 228
+---------------
+
+Write a Python program to get every element that exists in any of the two given lists once, after applying the
+provided function to each element of both.
+
+[4.1], [2.2, 4.3], floor    =>  [2.2, 4.1]
+
+==============================================================================
+---------------
+ Exercise: 229
+---------------
+
+Write a Python program to find the index of the first element in the given list that satisfies the provided testing
+function.
+
+[1, 2, 3, 4], n is odd, 0
+
+==============================================================================
+---------------
+ Exercise: 230
+---------------
+
+Write a Python program to find the indices of all elements in the given list that satisfy the provided testing function.
+
+func = [1, 2, 3, 4]
+f = lambda n: n % 2 == 1
+
+[0, 2]
+
+==============================================================================
+---------------
+ Exercise: 231
+---------------
+
+Write a Python program to split values into two groups, based on the result of the given filter list.
+
+['red', 'green', 'blue', 'pink'], [True, True, False, True]
+
+[['red', 'green', 'pink'], ['blue']]
+
+==============================================================================
+---------------
+ Exercise: 232
+---------------
+
+Write a Python program to chunk a given list into smaller lists of a specified size.
+
+[1, 2, 3, 4, 5, 6, 7, 8], 3
+
+[[1, 2, 3], [4, 5, 6], [7, 8]]
+
+==============================================================================
+---------------
+ Exercise: 233
+---------------
+
+Write a Python program to chunk a given list into n smaller lists.
+
+[1, 2, 3, 4, 5, 6, 7], 4
+
+[[1, 2], [3, 4], [5, 6], [7]]
+
+==============================================================================
+---------------
+ Exercise: 234
+---------------
+
+Write a Python program to convert a given number (integer) to a list of digits.
+
+123         =>  [1, 2, 3]
+1347823     =>  [1, 3, 4, 7, 8, 2, 3]
+
+==============================================================================
+---------------
+ Exercise: 235
+---------------
+
+Write a Python program to find the index of the last element in the given list that satisfies the provided testing
+function.
+
+list = [1, 2, 3, 4]
+func = lambda n: n % 2 == 1
+
+2
+
+==============================================================================
+---------------
+ Exercise: 236
+---------------
+
+Write a Python program to find items that are parity outliers in a given list.
+Note: The parity is oddness/evenness
+
+[1, 2, 3, 4, 6]         =>  [1, 3]
+[1, 2, 3, 4, 5, 6, 7]   =>  [2, 4, 6]
+
+==============================================================================
+---------------
+ Exercise: 237
+---------------
+
+Write a Python program to convert a given list of dictionaries into a list of values corresponding to the specified key.
+
+simpsons = [
+    { 'name': 'Areeba', 'age': 8 },
+    { 'name': 'Zachariah', 'age': 36 },
+    { 'name': 'Caspar', 'age': 34 },
+    { 'name': 'Presley', 'age': 10 }
+]
+
+Key = 'age'
+
+[8, 36, 34, 10]
+
+==============================================================================
+---------------
+ Exercise: 238
+---------------
+
+Write a Python program to calculate the average of a given list, after mapping each element to a value using the
+provided function.
+
+{ 'n': 4 }, { 'n': 2 }, { 'n': 8 }, { 'n': 6 }, x['n']         =>  5.0
+{ 'n': 10 }, { 'n': 20 }, { 'n': -30 }, { 'n': 60 }, x['n']    =>  15.0
+
+==============================================================================
+---------------
+ Exercise: 239
+---------------
+
+Write a Python program to find the value of the first element in the given list that satisfies the provided
+testing function.
+
+[1, 2, 3, 4], lambda n: n % 2 == 1      =>  1
+[1, 2, 3, 4], lambda n: n % 2 == 0      =>  2
+
+==============================================================================
+---------------
+ Exercise: 240
+---------------
+
+Write a Python program to find the value of the last element in the given list that satisfies the provided testing
+function.
+
+[1, 2, 3, 4], lambda n: n % 2 == 1  =>  3
+[1, 2, 3, 4], lambda n: n % 2 == 0  =>  4
+
+==============================================================================
+---------------
+ Exercise: 241
+---------------
+
+Write a Python program to create a dictionary with the unique values of a given list as keys and their frequencies
+as values.
+
+
+['a', 'b', 'f', 'a', 'c', 'e', 'a', 'a', 'b', 'e', 'f']     =>  {'a': 4, 'b': 2, 'f': 2, 'c': 1, 'e': 2}
+[3, 4, 7, 5, 9, 3, 4, 5, 0, 3, 2, 3]                        =>  {3: 4, 4: 2, 7: 1, 5: 2, 9: 1, 0: 1, 2: 1}
+
+==============================================================================
+---------------
+ Exercise: 242
+---------------
+
+Write a Python program to get the symmetric difference between two iterables, without filtering out duplicate values.
+
+[10, 20, 30], [10, 20, 40]  =>  [30, 40]
+
+==============================================================================
+---------------
+ Exercise: 243
+---------------
+
+Write a Python program to check if a given function returns True for every element in a list.
+
+[4, 2, 3], lambda x: x > 1  =>  True
+[4, 2, 3], lambda x: x < 1  =>  False
+[4, 2, 3], lambda x: x == 1 =>  False
+
+==============================================================================
+---------------
+ Exercise: 244
+---------------
+
+Write a Python program to create a geometric progression (a^n = a * r^(n-1)) specifying the start element, the end
+element, and the step
+
+
+1, 256, 2   =>  [1, 2, 4, 8, 16, 32, 64, 128, 256]
+3, 256, 2   =>  [3, 6, 12, 24, 48, 96, 192]
+1, 256, 4   =>  [1, 4, 16, 64, 256]
+
+==============================================================================
+---------------
+ Exercise: 245
+---------------
+
+Write a Python program that takes any number of iterable objects or objects with a length property and returns
+the longest one.
+
+['this', 'is', 'a', 'Green']        =>  Green
+[1, 2, 3], [1, 2], [1, 2, 3, 4, 5]  =>  [1, 2, 3, 4, 5]
+[1, 2, 3, 4], 'Red'                 =>  [1, 2, 3, 4]
+
+==============================================================================
+---------------
+ Exercise: 246
+---------------
+
+Write a Python program to check if a given function returns True for at least one element in the list.
+
+[0, 1, 2, 0], lambda x: x >= 2      =>  True
+[5, 10, 20, 10], lambda x: x < 2    =>  False
+
+==============================================================================
+---------------
+ Exercise: 247
+---------------
+
+Write a Python program to calculate the left difference between two iterables, without filtering duplicate values.
+
+[1, 2, 3], [1, 2, 4]    =>  [3]
+
+==============================================================================
+---------------
+ Exercise: 248
+---------------
+
+Write a Python program to get the maximum value of a list, after mapping each element to a value using a
+given function.
+
+[{ 'n': 4 }, { 'n': 2 }, { 'n': 8 }, { 'n': 6 }], v['n']  =>  8
+
+==============================================================================
+---------------
+ Exercise: 249
+---------------
+
+Write a Python program to get the minimum value of a list, after mapping each element to a value using a given function.
+
+[{ 'n': 4 }, { 'n': 2 }, { 'n': 8 }, { 'n': 6 }], v['n']    =>  2
+
+==============================================================================
+---------------
+ Exercise: 250
+---------------
+
+Write a Python program to calculate the sum of a list, after mapping each element to a value using the provided
+function.
+
+[{ 'n': 4 }, { 'n': 2 }, { 'n': 8 }, { 'n': 6 }], v['n'] =>  20
+
+==============================================================================
+---------------
+ Exercise: 251
+---------------
+
+Write a Python program that fills a list with the specified value.
+
+0, 7    =>  [0, 0, 0, 0, 0, 0, 0]
+3, 8    =>  [3, 3, 3, 3, 3, 3, 3, 3]
+-2, 5   =>  [-2, -2, -2, -2, -2]
+3.2, 5  =>  [3.2, 3.2, 3.2, 3.2, 3.2]
+
+==============================================================================
+---------------
+ Exercise: 252
+---------------
+
+Write a Python program to get the n maximum elements from a given list of numbers.
+
+[1, 2, 3]
+1 maximum elements: [3]
+2 maximum elements: [3, 2]
+
+[-2, -3, -1, -2, -4, 0, -5]
+3 maximum elements: [0, -1, -2]
+
+[2.2, 2, 3.2, 4.5, 4.6, 5.2, 2.9]
+2 maximum elements: [5.2, 4.6]
+
+==============================================================================
+---------------
+ Exercise: 253
+---------------
+
+Write a Python program to get the n minimum elements from a given list of numbers.
+
+[1, 2, 3]
+1 maximum elements: [1]
+2 maximum elements: [1, 2]
+
+[-2, -3, -1, -2, -4, 0, -5]
+3 maximum elements: [-5, -4, -3]
+
+[2.2, 2, 3.2, 4.5, 4.6, 5.2, 2.9]
+2 maximum elements: [2, 2.2]
+
+==============================================================================
+---------------
+ Exercise: 254
+---------------
+
+Write a Python program to get the weighted average of two or more numbers.
+
+A weighted average is an average in which some of the items to be averaged are 'more important' or 'less important'
+than some of the others. The weights are (non-negative) numbers which measure the relative importance
+
+For example, the weighted average of a list of numbers x1,…,xn with corresponding weights w1,…,wn is:
+Weighted average: x1 * w1 + w2 * y2 + x3 * w3 + ... / (w1 + w2 + w3 + ...)
+
+Note: the second list is the weights' list
+
+[10, 50, 40]
+[2, 5, 3]
+
+39.0
+
+[82, 90, 76, 83]
+[0.2, 0.35, 0.45, 32]
+
+82.97272727272727
+
+==============================================================================
+---------------
+ Exercise: 255
+---------------
+
+[Starred]
+
+Write a Python program to perform a deep flattening of a list.
+
+[1, [2], [[3], [4], 5], 6]
+[1, 2, 3, 4, 5, 6]
+
+[[[1, 2, 3], [4, 5]], 6]
+[1, 2, 3, 4, 5, 6]
+
+==============================================================================
+---------------
+ Exercise: 256
+---------------
+
+Write a Python program to get the powerset of a given iterable.
+
+[1, 2]
+[(), (1,), (2,), (1, 2)]
+
+[1, 2, 3, 4]
+[
+    (), (1,), (2,), (3,), (4,), (1, 2), (1, 3), (1, 4), (2, 3), (2, 4), (3, 4), (1, 2, 3), (1, 2, 4), (1, 3, 4),
+    (2, 3, 4), (1, 2, 3, 4)
+]
+
+==============================================================================
+---------------
+ Exercise: 257
+---------------
+
+Write a Python program to check if two given lists contain the same elements regardless of order.
+
+[1, 2, 4]
+[2, 4, 1]
+True
+
+[1, 2, 3]
+[1, 2, 3]
+True
+
+[1, 2, 3]
+[1, 2, 4]
+False
+
+==============================================================================
+---------------
+ Exercise: 258
+---------------
+
+Write a Python program to create a flat list of all the keys in a flat dictionary.
+
+{'Laura': 10, 'Spencer': 11, 'Bridget': 9, 'Howard ': 10}
+['Laura', 'Spencer', 'Bridget', 'Howard ']
+
+==============================================================================
+---------------
+ Exercise: 259
+---------------
+
+Write a Python program to check if a given function returns True for at least one element in the list.
+
+[1, 0, 2, 3], lambda x: x >= 3  =>  True
+[1, 0, 2, 3], lambda x: x < 0   =>  False
+[2, 2, 4, 4], lambda x: x       =>  True
+
+==============================================================================
+---------------
+ Exercise: 260
+---------------
+
+Write a Python program to check if all the elements of a list are included in another given list.
+Note: all elements from the second list should be present in the first list
+
+[10, 20, 30, 40, 50, 60], [20, 40]  =>  True
+[10, 20, 30, 40, 50, 60], [20, 80]  =>  False
+
+==============================================================================
+---------------
+ Exercise: 261
+---------------
+
+Write a Python program to get the most frequent element in a given list of numbers.
+
+[2, 3, 8, 4, 7, 9, 8, 2, 6, 5, 1, 6, 1, 2, 3, 2, 4, 6, 9, 1, 2]     =>  2
+[1, 2, 3, 1, 2, 3, 2, 1, 4, 3, 3]                                   =>  3
+
+==============================================================================
+---------------
+ Exercise: 262
+---------------
+
+Write a Python program to move the specified number of elements to the end of the given list.
+
+[1, 2, 3, 4, 5, 6, 7, 8], 3     =>  [4, 5, 6, 7, 8, 1, 2, 3]
+[1, 2, 3, 4, 5, 6, 7, 8], -3    =>  [6, 7, 8, 1, 2, 3, 4, 5]
+[1, 2, 3, 4, 5, 6, 7, 8], 8     =>  [1, 2, 3, 4, 5, 6, 7, 8]
+[1, 2, 3, 4, 5, 6, 7, 8], -8    =>  [1, 2, 3, 4, 5, 6, 7, 8]
+[1, 2, 3, 4, 5, 6, 7, 8], 7     =>  [8, 1, 2, 3, 4, 5, 6, 7]
+[1, 2, 3, 4, 5, 6, 7, 8], -7    =>  [2, 3, 4, 5, 6, 7, 8, 1]
+
+==============================================================================
+---------------
+ Exercise: 263
+---------------
+
+Write a Python program to move the specified number of elements to the start of the given list.
+
+[1, 2, 3, 4, 5, 6, 7, 8], 3     =>  [6, 7, 8, 1, 2, 3, 4, 5]
+[1, 2, 3, 4, 5, 6, 7, 8], -3    =>  [4, 5, 6, 7, 8, 1, 2, 3]
+[1, 2, 3, 4, 5, 6, 7, 8], 8     =>  [1, 2, 3, 4, 5, 6, 7, 8]
+[1, 2, 3, 4, 5, 6, 7, 8], -8    =>  [1, 2, 3, 4, 5, 6, 7, 8]
+[1, 2, 3, 4, 5, 6, 7, 8], 7     =>  [2, 3, 4, 5, 6, 7, 8, 1]
+[1, 2, 3, 4, 5, 6, 7, 8], -7    =>  [8, 1, 2, 3, 4, 5, 6, 7]
+
+==============================================================================
+---------------
+ Exercise: 264
+---------------
+
+Write a Python program to create a two-dimensional list from a given list of lists.
+
+[[1, 2, 3], [4, 5, 6], [7, 8, 9], [10, 11, 12]]     =>  [(1, 4, 7, 10), (2, 5, 8, 11), (3, 6, 9, 12)]
+[[1, 2], [4, 5]]                                    =>  [(1, 4), (2, 5)]
+
+==============================================================================
+---------------
+ Exercise: 265
+---------------
+
+Write a Python program to generate a list containing the Fibonacci sequence, up until the nth term.
+
+First 7 Fibonacci numbers:
+[0, 1, 1, 2, 3, 5, 8]
+
+First 15 Fibonacci numbers:
+[0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377]
+
+First 50 Fibonacci numbers: [ 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181,
+6765, 10946, 17711, 28657, 46368, 75025, 121393, 196418, 317811, 514229, 832040, 1346269, 2178309, 3524578, 5702887,
+9227465, 14930352, 24157817, 39088169, 63245986, 102334155, 165580141, 267914296, 433494437, 701408733, 1134903170,
+1836311903, 2971215073, 4807526976, 7778742049]
+
+==============================================================================
+---------------
+ Exercise: 266
+---------------
+
+Write a Python program to cast the provided value as a list if it's not one.
+
+[1]                                 =>  <class 'list'>      [1]
+('Red', 'Green')                    =>  <class 'tuple'>     ['Red', 'Green']
+{'Red', 'Green'}                    =>  <class 'set'>       ['Green', 'Red']
+{1: 'Red', 2: 'Green', 3: 'Black'}  =>  <class 'dict'>      [1, 2, 3]
+
+==============================================================================
+---------------
+ Exercise: 267
+---------------
+
+Write a Python program to get the cumulative sum of the elements of a given list.
+
+[1, 2, 3, 4]
+[1, 3, 6, 10]
+
+[-1, -2, -3, 4]
+[-1, -3, -6, -2]
+
+==============================================================================
+---------------
+ Exercise: 268
+---------------
+
+Write a Python program to get a list with n elements removed from the left and right.
+
+[1, 2, 3]
+1 element from left:    [2, 3]
+1 element from right:   [1, 2]
+
+[1, 2, 3, 4]
+2 elements from left:   [3, 4]
+2 elements from right:  [1, 2]
+
+==============================================================================
+---------------
+ Exercise: 269
+---------------
+
+Write a Python program to get every nth element in a given list.
+
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+n = 1   =>  [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+n = 2   =>  [2, 4, 6, 8, 10]
+n = 5   =>  [5, 10]
+n = 6   =>  [6]
+
+==============================================================================
+---------------
+ Exercise: 270
+---------------
+
+Write a Python program to check if the elements of the first list are contained in the second one regardless of order.
+Note: consider duplicated elements! i.e. if an element exists twice in the first list, it should also exist twice in
+the second list
+
+[1, 2], [2, 4, 1]           =>  True
+[1], [2, 4, 1]              =>  True
+[1, 1], [4, 2, 1]           =>  False
+[1, 1], [3, 2, 4, 1, 5, 1]  =>  True
+
+==============================================================================
+---------------
+ Exercise: 271
+---------------
+
+Write a Python program to check if there are duplicate values in a given flat list.
+
+[1, 2, 3, 4, 5, 6, 7]       =>  False
+[1, 2, 3, 3, 4, 5, 5, 6, 7] =>  True
+
+==============================================================================
+---------------
+ Exercise: 272
+---------------
+
+Write a Python program to generate a list of numbers in the arithmetic progression starting with the given positive
+integer and up to the specified limit.
+
+An Arithmetic progression (AP) or arithmetic sequence is a sequence of numbers such that the difference between the
+consecutive terms is constant. For instance, the sequence 5, 7, 9, 11, 13, 15, . . . is an arithmetic progression with
+a common difference of 2.
+
+If the initial term of an arithmetic progression is a1 and the common difference of successive members is d, then the
+nth term of the sequence (an) is given by:  an = a1 + (n - 1)d
+
+Note: consider the first element a1 the same as d
+
+1, 15   =>  [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+3, 37   =>  [3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36]
+5, 25   =>  [5, 10, 15, 20, 25]
+
+==============================================================================
+---------------
+ Exercise: 273
+---------------
+
+Write a Python program to find an element that divides a given list of integers with the same sum value.
+
+[0, 9, 2, 4, 5, 6]      =>  4
+[-4, 0, 6, 1, 0, 2]     =>  1
+[1, 2, 3, 4]            =>  No such element!
+[-4, 0, 5, 1, 0, 1]     =>  1
+
+==============================================================================
+---------------
+ Exercise: 274
+---------------
+
+Write a Python program to count the lowercase letters in a given list of words.
+
+["Red", "Green", "Blue", "White"]       -> 13
+["SQL", "C++", "C"]                     -> 0
+
+==============================================================================
+---------------
+ Exercise: 275
+---------------
+
+Write a Python program to add all elements of a list of integers except the number at index.
+
+Example: ([1, 2, 3]) -> [1+2+3-1, 1+2+3-2, 1+2+3-3]     -> [5, 4, 3].
+
+[0, 9, 2, 4, 5, 6]      -> [26, 17, 24, 22, 21, 20]
+[-4, 0, 6, 1, 0, 2]     -> [9, 5, -1, 4, 5, 3]
+[1, 2, 3]               -> [5, 4, 3]
+[-4, 0, 5, 1, 0, 1]     -> [7, 3, -2, 2, 3, 2]
+
+==============================================================================
+---------------
+ Exercise: 276
+---------------
+
+Write a Python program to find the largest odd number in a given list of integers.
+
+[0, 9, 2, 4, 5, 6]      -> 9
+[-4, 0, 6, 1, 0, 2]     -> 1
+[1, 2, 3]               -> 3
+[-4, 0, 5, 1, 0, 1]     -> 5
+
+==============================================================================
+---------------
+ Exercise: 277
+---------------
+
+Write a Python program to calculate the largest and smallest gap between sorted elements of a list of integers.
+
+[1, 2 ,9, 0, 4, 6]          -> (3, 1)
+[23, -2, 45, 38, 12, 4, 6]  -> (15, 2)
+
+==============================================================================
+---------------
+ Exercise: 278
+---------------
+
+Write a Python program to sum the missing numbers in a given list of integers.
+
+[0, 3, 4, 7, 9]     -> 22
+[44, 45, 48]        -> 93
+[-7, -5, -4, 0]     -> -12
+
+==============================================================================
+---------------
+ Exercise: 279
+---------------
+
+Write a Python program to extract the first specified number of vowels from a given string. If the specified number
+is less than the number of vowels present in the string then display "n is less than the number of vowels present in
+the string".
+
+
+("Python", 2)           -> "n is less than number of vowels present in the string."
+("Python Exercises", 3) -> "oEe"
+("AEIOU", 3)            -> "AEI"
+
+==============================================================================
+---------------
+ Exercise: 280
+---------------
+
+Write a Python program that takes a list of integers and finds all pairs of integers that differ by three.
+Return all pairs of integers in a list.
+
+[0, 3, 4, 7, 9]             -> [[0, 3], [4, 7]]
+[0, -3, -5, -7, -8]         -> [[-3, 0], [-8, -5]]
+[1, 2, 3, 4, 5]             -> [[1, 4], [2, 5]]
+[100, 102, 103, 114, 115]   -> [[100, 103]]
+
+==============================================================================

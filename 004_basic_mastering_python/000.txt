@@ -1,0 +1,951 @@
+---------------
+ Exercise: 001
+---------------
+
+Create a list with values ranging from 0 to 9
+
+==============================================================================
+---------------
+ Exercise: 002
+---------------
+
+Convert a list of integers to a list of strings.
+
+e.g. lst = [1, 2, 3, 4, 5]      =>       ['1', '2', '3', '4', '5']
+
+==============================================================================
+---------------
+ Exercise: 003
+---------------
+
+Multiply all elements in a list by 2
+
+e.g. [1, 2, 3, 4, 5]       =>      [2, 4, 6, 8, 10]
+
+==============================================================================
+---------------
+ Exercise: 004
+---------------
+
+Extract all odd numbers from a list of integers.
+
+e.g.    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]     =>      [1, 3, 5, 7, 9]
+
+==============================================================================
+---------------
+ Exercise: 005
+---------------
+
+Replace all odd numbers in a list with -1.
+
+e.g.    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]     =>  [-1, 2, -1, 4, -1, 6, -1, 8, -1, 10]
+
+==============================================================================
+---------------
+ Exercise: 006
+---------------
+
+Convert a list of integers to a list of booleans where all non-zero values become True.
+
+e.g.    [-1, 2, 0, -4, 5]       =>      [True, True, False, True, True]
+
+==============================================================================
+---------------
+ Exercise: 007
+---------------
+
+Replace all even numbers in a list with their negative.
+
+e.g.    [1, 2, 3, 4, 5, 6, 7, 8, 9]     =>      [1, -2, 3, -4, 5, -6, 7, -8, 9]
+
+==============================================================================
+---------------
+ Exercise: 008
+---------------
+
+Create a 3x3 list of lists with random values ranging in [0, 100] and normalize it using the formula:
+    Min-max scaling (z-score normalization): x' = (x -min) / (max -min)
+
+==============================================================================
+---------------
+ Exercise: 009
+---------------
+
+Calculate the sum of the diagonal elements of a 3x3 matrix (list of lists).
+
+e.g.    matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]      =>  15
+
+==============================================================================
+---------------
+ Exercise: 010
+---------------
+
+Find the indices of non-zero elements in a list.
+
+e.g.    lst = [1, 2, 0, 0, 4, 0]    =>  [0, 1, 4]
+
+==============================================================================
+---------------
+ Exercise: 011
+---------------
+
+Reverse a list.
+
+e.g.    [1, 2, 3, 4, 5]     =>  [5, 4, 3, 2, 1]
+
+==============================================================================
+---------------
+ Exercise: 012
+---------------
+
+Create a 3x3 identity matrix as a list of lists.
+
+output:    [[1, 0, 0], [0, 1, 0], [0, 0, 1]]
+
+==============================================================================
+---------------
+ Exercise: 013
+---------------
+
+Reshape a 1D list to a 2D list with 2 rows.
+
+e.g.    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]  =>  [[0, 1, 2, 3, 4], [5, 6, 7, 8, 9]]
+
+==============================================================================
+---------------
+ Exercise: 014
+---------------
+
+Stack two lists vertically.
+
+lst1 = [1, 2, 3]
+lst2 = [4, 5, 6]
+
+[[1, 2, 3], [4, 5, 6]]
+
+==============================================================================
+---------------
+ Exercise: 015
+---------------
+
+Get the common items between two lists.
+
+    lst1 = [1, 2, 3, 4, 5]
+    lst2 = [3, 4, 5, 6, 7]
+
+    [3, 4, 5]
+
+==============================================================================
+---------------
+ Exercise: 016
+---------------
+
+Create a 5x5 list of lists with row values ranging from 0 to 4
+
+Output: [[0, 1, 2, 3, 4], [0, 1, 2, 3, 4], [0, 1, 2, 3, 4], [0, 1, 2, 3, 4], [0, 1, 2, 3, 4]]
+
+==============================================================================
+---------------
+ Exercise: 017
+---------------
+
+Find the index of the maximum value in a list.
+
+lst = [3, 7, 1, 10, 4]      =>  3
+
+==============================================================================
+---------------
+ Exercise: 018
+---------------
+
+Normalize the values in a list between 0 and 1 using the formula of Min-max scaling (z-score normalization):
+
+    x' = (x -min) / (max -min)
+
+lst = [2, 5, 10, 3, 8]      =>  [0.0, 0.375, 1.0, 0.125, 0.75]
+
+==============================================================================
+---------------
+ Exercise: 019
+---------------
+
+Calculate the dot product of two lists.
+
+    lst1 = [1, 2, 3]
+    lst2 = [4, 5, 6]
+
+    32
+
+==============================================================================
+---------------
+ Exercise: 020
+---------------
+
+Count the number of elements in a list within a specific range.
+
+lst = [2, 5, 8, 10, 12, 15]
+range:  [5, 12]
+
+output: 4
+
+==============================================================================
+---------------
+ Exercise: 021
+---------------
+
+Find the mean of each row in a 3x3 random list where the number are in the range [0, 10].
+
+==============================================================================
+---------------
+ Exercise: 022
+---------------
+
+Create a random 4x4 list of lists where the values are in the range [0, 10] and extract the diagonal elements.
+
+==============================================================================
+---------------
+ Exercise: 023
+---------------
+
+Count the number of occurrences of a specific value in a list.
+
+    lst = [1, 2, 3, 4, 2, 3, 2, 1]
+    val = 2
+
+    3
+
+==============================================================================
+---------------
+ Exercise: 024
+---------------
+
+Replace all values in a list with the mean of the list.
+
+lst = [10, 20, 30, 40, 50]      =>      [30.0, 30.0, 30.0, 30.0, 30.0]
+
+==============================================================================
+---------------
+ Exercise: 025
+---------------
+
+Find the indices of the maximum and minimum values in a list.
+
+e.g.    [5, 2, 8, 1, 7]
+
+Minium index: 3
+Maximum index: 2
+
+==============================================================================
+---------------
+ Exercise: 026
+---------------
+
+Create a 5x5 list with 1 on the border and 0 inside.
+
+Output: [[1, 1, 1, 1, 1], [1, 0, 0, 0, 1], [1, 0, 0, 0, 1], [1, 0, 0, 0, 1], [1, 1, 1, 1, 1]]
+
+==============================================================================
+---------------
+ Exercise: 027
+---------------
+
+Find the unique values and their counts in a list.
+
+e.g.    lst = [1, 2, 3, 2, 4, 1, 5, 4, 6]
+
+        Value: 1, count: 2
+        Value: 2, count: 2
+        Value: 3, count: 1
+        Value: 4, count: 2
+        Value: 5, count: 1
+        Value: 6, count: 1
+
+==============================================================================
+---------------
+ Exercise: 028
+---------------
+
+Create a 3x3 list of lists with values ranging from 0 to 8.
+
+Output: [[0, 1, 2], [3, 4, 5], [6, 7, 8]]
+
+==============================================================================
+---------------
+ Exercise: 029
+---------------
+
+Calculate the exponential of all elements in a list.
+
+e.g.    lst = [1, 2, 3, 4, 5]
+
+        [2.718281828459045, 7.38905609893065, 20.085536923187668, 54.598150033144236, 148.4131591025766]
+
+==============================================================================
+---------------
+ Exercise: 030
+---------------
+
+Swap the first and third rows in a 4x4 list of random values ranging in [0, 10]
+
+==============================================================================
+---------------
+ Exercise: 031
+---------------
+
+Create a random 3x3 list of lists and replace all values greater than 0.5 with 1 and all others with 0.
+
+==============================================================================
+---------------
+ Exercise: 032
+---------------
+
+Find the indices of the top N maximum values in a list.
+
+lst = [10, 5, 8, 20, 15]
+n = 2
+
+[3, 4]
+
+==============================================================================
+---------------
+ Exercise: 033
+---------------
+
+Calculate the mean of each column in a 3x3 random list where the values range in [0, 10].
+
+==============================================================================
+---------------
+ Exercise: 034
+---------------
+
+Normalize the values in each column of a 3x3 random list where the values range in [0, 10] using MinMax Scaling:
+     x' = (x - min) / (max - min)
+
+==============================================================================
+---------------
+ Exercise: 035
+---------------
+
+Concatenate two lists.
+
+lst1 = [1, 2, 3]
+lst2 = [4, 5, 6]
+
+[1, 2, 3, 4, 5, 6]
+
+==============================================================================
+---------------
+ Exercise: 036
+---------------
+
+Create a 3x3 list with random values ranging in [0, 10] and sort each row.
+
+==============================================================================
+---------------
+ Exercise: 037
+---------------
+
+Check if all elements in a list are non-zero.
+
+lst = [1, 2, 3, 4, 5]       =>  True
+
+==============================================================================
+---------------
+ Exercise: 038
+---------------
+
+Find the indices of the maximum value in each row of a 4x4 list of random values that range in [0, 10].
+
+==============================================================================
+---------------
+ Exercise: 039
+---------------
+
+Create a random 4x4 list where the values range in [0, 10] and then set the elements at the indices [0, 2] and [3, 1]
+to NaN and finally replace all nan values with the mean of the list.
+
+==============================================================================
+---------------
+ Exercise: 040
+---------------
+
+Calculate the mean of each row in a 2D list ignoring nan values.
+
+matrix = [[1, 2, NaN], [4, NaN, 6], [7, 8, 9]]
+
+[1.5, 5.0, 8.0]
+
+==============================================================================
+---------------
+ Exercise: 041
+---------------
+
+Compute the sum of diagonal elements in a 4x4 random list where the numbers are in the range [0, 10].
+
+==============================================================================
+---------------
+ Exercise: 042
+---------------
+
+Convert radians to degrees for each element in a list.
+
+lst = [pi / 2, pi, 3 * pi / 2]
+
+[90.0, 180.0, 270.0]
+
+==============================================================================
+---------------
+ Exercise: 043
+---------------
+
+Calculate the pairwise Euclidean distance between two lists.
+
+lst1 = [1, 2, 3]
+lst2 = [4, 5, 6]
+
+5.196152422706632
+
+==============================================================================
+---------------
+ Exercise: 044
+---------------
+
+Create a list and set the values between the 25th and 75th percentile to 0.
+
+lst = [10, 20, 30, 40, 50]
+
+[10, 0, 0, 0, 50]
+
+==============================================================================
+---------------
+ Exercise: 045
+---------------
+
+Calculate the element-wise square of the difference between two lists.
+
+lst1 = [1, 2, 3]
+lst2 = [4, 5, 6]
+
+[9, 9, 9]
+
+==============================================================================
+---------------
+ Exercise: 046
+---------------
+
+Replace all even numbers in a list with the next odd number.
+
+lst = [2, 5, 8, 12, 15]
+
+[3, 5, 9, 13, 15]
+
+==============================================================================
+---------------
+ Exercise: 047
+---------------
+
+Create a 3x3 random list where the number range in [0, 10] and normalize each column by its range (MinMax).
+    x' = (x - min) / (max - min)
+
+==============================================================================
+---------------
+ Exercise: 048
+---------------
+
+Compute the cumulative sum of elements along the third row and column in a random 4x4 list where the number range in
+[0, 10].
+
+==============================================================================
+---------------
+ Exercise: 049
+---------------
+
+Check if any element in a list is non-zero.
+
+e.g.    [0, 0, 0, 1, 0]     =>  True
+
+==============================================================================
+---------------
+ Exercise: 050
+---------------
+
+Create a 3x3 list with random integers in [0, 10] and replace all values greater than 5 with that 5.
+
+==============================================================================
+---------------
+ Exercise: 051
+---------------
+
+Find the median of a list of numbers.
+
+e.g.    lst = [2, 5, 1, 3, 4]       =>      3
+
+==============================================================================
+---------------
+ Exercise: 052
+---------------
+
+Convert a list of numbers to a list of their decimal logarithms (logarithm base 10).
+
+e.g.    lst = [1, 10, 100, 1000]    =>  [0.0, 1.0, 2.0, 3.0]
+
+==============================================================================
+---------------
+ Exercise: 053
+---------------
+
+Find the mode of a list of numbers (the most common number that appears in your set of data).
+
+e.g. lst = [1, 2, 2, 3, 3, 3, 4, 4]      =>  3
+
+==============================================================================
+---------------
+ Exercise: 054
+---------------
+
+Flatten a list of lists.
+
+e.g.    lst = [[1, 2, 3], [4, 5], [6, 7, 8, 9]]     =>  [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+==============================================================================
+---------------
+ Exercise: 055
+---------------
+
+Transpose a 2D list.
+
+e.g. matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]     =>  [[1, 4, 7], [2, 5, 8], [3, 6, 9]]
+
+==============================================================================
+---------------
+ Exercise: 056
+---------------
+
+Remove duplicates from a list while preserving order.
+
+e.g.    lst = [1, 2, 2, 3, 4, 4, 5]     =>  [1, 2, 3, 4, 5]
+
+==============================================================================
+---------------
+ Exercise: 057
+---------------
+
+Find the intersection of two lists.
+
+lst1 = [1, 2, 3, 4]
+lst2 = [3, 4, 5, 6]
+
+[3, 4]
+
+==============================================================================
+---------------
+ Exercise: 058
+---------------
+
+Merge two dictionaries.
+
+dict1 = {'a': 1, 'b': 2}
+dict2 = {'b': 3, 'c': 4}
+
+{'a': 1, 'b': 3, 'c': 4}
+
+==============================================================================
+---------------
+ Exercise: 059
+---------------
+
+Sort a list of dictionaries by a key.
+
+lst = [{'name': 'Anej', 'age': 25}, {'name': 'Matteo', 'age': 22}, {'name': 'Eliza', 'age': 28}]
+key: 'age'
+
+[{'name': 'Matteo', 'age': 22}, {'name': 'Anej', 'age': 25}, {'name': 'Eliza', 'age': 28}]
+
+==============================================================================
+---------------
+ Exercise: 060
+---------------
+
+Filter a dictionary based on its values.
+
+d = {'a': 1, 'b': 2, 'c': 3}
+drop keys with values <= 1
+
+{'b': 2, 'c': 3}
+
+==============================================================================
+---------------
+ Exercise: 061
+---------------
+
+Create a dictionary from two lists.
+
+keys = ['a', 'b', 'c']
+values = [1, 2, 3]
+
+{'a': 1, 'b': 2, 'c': 3}
+
+==============================================================================
+---------------
+ Exercise: 062
+---------------
+
+Find the maximum value in a dictionary.
+
+d = {'a': 1, 'b': 2, 'c': 3}    =>  3
+
+==============================================================================
+---------------
+ Exercise: 063
+---------------
+
+Invert a dictionary (swap keys and values).
+
+d = {'a': 1, 'b': 2, 'c': 3}        =>  {1: 'a', 2: 'b', 3: 'c'}
+
+==============================================================================
+---------------
+ Exercise: 064
+---------------
+
+Create a dictionary with a default value.
+
+keys = ['a', 'b', 'c']
+value = 1
+
+{'a': 1, 'b': 1, 'c': 1}
+
+==============================================================================
+---------------
+ Exercise: 065
+---------------
+
+Convert a dictionary to a list of tuples.
+
+d = {'a': 1, 'b': 2, 'c': 3}    =>      [('a', 1), ('b', 2), ('c', 3)]
+
+==============================================================================
+---------------
+ Exercise: 066
+---------------
+
+Find the length of the longest string in a list.
+
+lst = ['apple', 'banana', 'cherry']     =>  6
+
+==============================================================================
+---------------
+ Exercise: 067
+---------------
+
+Reverse the words in a sentence.
+
+sentence = "Hello world"    =>  world Hello
+
+==============================================================================
+---------------
+ Exercise: 068
+---------------
+
+Check if a string is a palindrome. (if it remains the same on reading from both ends)
+
+s = "racecar"   =>  True
+
+==============================================================================
+---------------
+ Exercise: 069
+---------------
+
+Remove punctuation from a string.
+
+s = "Hello, world!"     =>  Hello world
+
+==============================================================================
+---------------
+ Exercise: 070
+---------------
+
+Count the occurrences of each character in a string.
+
+e.g.    hello   =>  [('h', 1), ('e', 1), ('l', 2), ('o', 1)]
+
+==============================================================================
+---------------
+ Exercise: 071
+---------------
+
+Find the longest common prefix among a list of strings.
+
+lst = ["flower", "flow", "flight"]      =>  fl
+
+==============================================================================
+---------------
+ Exercise: 072
+---------------
+
+Convert a string to a list of characters.
+
+s = "hello"     =>  ['h', 'e', 'l', 'l', 'o']
+
+==============================================================================
+---------------
+ Exercise: 073
+---------------
+
+Generate a list of 10 random integers in the range [0, 10].
+
+==============================================================================
+---------------
+ Exercise: 074
+---------------
+
+Shuffle a list.
+
+lst = [1, 2, 3, 4, 5]
+
+==============================================================================
+---------------
+ Exercise: 075
+---------------
+
+Generate a random password of a length 10 that combines upper case and lower case characters with some digits.
+
+==============================================================================
+---------------
+ Exercise: 076
+---------------
+
+Calculate the factorial of a number.
+
+4   =>  24
+
+==============================================================================
+---------------
+ Exercise: 077
+---------------
+
+Calculate the Fibonacci sequence up to a given number of terms.
+
+10      =>      [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
+
+==============================================================================
+---------------
+ Exercise: 078
+---------------
+
+Check if a number is prime.
+
+1   =>  False
+17  =>  True
+
+==============================================================================
+---------------
+ Exercise: 079
+---------------
+
+Find the greatest common divisor (GCD) of two numbers.
+
+48, 18  =>  6
+
+==============================================================================
+---------------
+ Exercise: 080
+---------------
+
+Find the least common multiple (LCM) of two numbers.
+
+4, 5    =>  20
+
+==============================================================================
+---------------
+ Exercise: 081
+---------------
+
+Sort a list of tuples by the second element.
+
+[(1, 3), (2, 2), (3, 1)]    =>      [(3, 1), (2, 2), (1, 3)]
+
+==============================================================================
+---------------
+ Exercise: 082
+---------------
+
+Find the second largest number in a list.
+
+lst = [1, 2, 3, 4, 5]   =>  4
+
+==============================================================================
+---------------
+ Exercise: 083
+---------------
+
+Check if a list is a palindrome
+
+lst = [1, 2, 3, 2, 1]   =>  True
+
+==============================================================================
+---------------
+ Exercise: 084
+---------------
+
+Find the sum of the digits of a number.
+
+12345   =>  15
+
+==============================================================================
+---------------
+ Exercise: 085
+---------------
+
+Find the product of the digits of a number.
+
+12345   =>  120
+
+==============================================================================
+---------------
+ Exercise: 086
+---------------
+
+Check if a string is a valid number.
+
+==============================================================================
+---------------
+ Exercise: 087
+---------------
+
+Find the length of the longest word in a sentence.
+
+sentence = "The quick brown fox jumps over the lazy dog"    =>  5
+
+==============================================================================
+---------------
+ Exercise: 088
+---------------
+
+Convert a list of tuples to a dictionary.
+
+lst = [('a', 1), ('b', 2), ('c', 3)]    =>  {'a': 1, 'b': 2, 'c': 3}
+
+==============================================================================
+---------------
+ Exercise: 089
+---------------
+
+Filter a list of dictionaries based on a key value.
+
+lst = [{'name': 'Vivek', 'age': 25}, {'name': 'Esther', 'age': 22}, {'name': ' Neassa', 'age': 28}]
+drop all people whose age is <= 23
+
+==============================================================================
+---------------
+ Exercise: 090
+---------------
+
+Sort a list of tuples by multiple keys.
+
+lst = [(' Aisha', 'A', 25), (' Remy', 'B', 22), ('Meine', 'A', 28)]
+Sort them by the second and third keys
+
+[(' Aisha', 'A', 25), ('Meine', 'A', 28), (' Remy', 'B', 22)]
+
+==============================================================================
+---------------
+ Exercise: 091
+---------------
+
+Merge two lists into a dictionary, using one as keys and the other as values.
+
+keys = ['a', 'b', 'c']
+values = [1, 2, 3]
+
+{'a': 1, 'b': 2, 'c': 3}
+
+==============================================================================
+---------------
+ Exercise: 092
+---------------
+
+Create a dictionary with keys as numbers and values as their squares.
+
+keys = [1, 2, 3, 4]
+
+{1: 1, 2: 4, 3: 9, 4: 16}
+
+==============================================================================
+---------------
+ Exercise: 093
+---------------
+
+Check if two strings are anagrams.
+
+An anagram of a string is another string that contains the same characters, only the order of characters can be
+different.
+
+s1 = "listen"
+s2 = "silent"
+
+True
+
+==============================================================================
+---------------
+ Exercise: 094
+---------------
+
+Count the number of vowels in a string.
+
+s = "hello world"   =>  3
+
+==============================================================================
+---------------
+ Exercise: 095
+---------------
+
+Check if a string contains only digits.
+
+==============================================================================
+---------------
+ Exercise: 096
+---------------
+
+Find the first non-repeated character in a string.
+
+swiss   =>  w
+
+==============================================================================
+---------------
+ Exercise: 097
+---------------
+
+Reverse each word in a sentence.
+
+Hello world     =>  olleH dlrow
+
+==============================================================================
+---------------
+ Exercise: 098
+---------------
+
+Generate a list of Fibonacci numbers up to a given number.
+
+==============================================================================
+---------------
+ Exercise: 099
+---------------
+
+Remove all whitespaces from a string.
+
+s = " a b c d "     =>  abcd
+
+==============================================================================
+---------------
+ Exercise: 100
+---------------
+
+Replace all occurrences of a substring in a string.
+
+s = "Hello world, welcome to the world of Python family."
+Replace all occurrences of 'world' with 'universe'
+
+Hello universe, welcome to the universe of Python family.
+
+==============================================================================
