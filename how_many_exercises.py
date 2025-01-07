@@ -13,7 +13,7 @@ from collections import OrderedDict
 import pathlib
 
 
-__excluded_dirs = [".idea"]
+__excluded_dirs = [".git", ".idea"]
 
 
 def main(args):
@@ -27,7 +27,7 @@ def main(args):
                 stats[str(p)] = len(py_files)
                 total += len(py_files)
 
-        print(f"You have completed {total} exercises so far!\n")
+        print(f"You have completed {total:,} exercises so far!\n")
 
         for k, v in stats.items():
             print(f"You completed {v:3,} in {k}")

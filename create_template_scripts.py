@@ -38,6 +38,7 @@ def main(args):
         desc="Creating template scripts: ",
         unit="script"
     ):
+        args.out_dir.mkdir(exist_ok=True)
         out_f = args.out_dir / f"{str(scr_id).zfill(3)}.py"
         assert not out_f.is_file(), f"{str(out_f)} already exists"
         with open(out_f, "w") as f:

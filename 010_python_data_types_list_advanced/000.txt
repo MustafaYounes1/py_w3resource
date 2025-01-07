@@ -1,0 +1,252 @@
+---------------
+ Exercise: 001
+---------------
+
+Write a Python function to reverse a list at a specific location.
+
+[10, 20, 30, 40, 50, 60, 70, 80]
+
+start_pos = 2
+end_pos = 4
+=>  [10, 20, 50, 40, 30, 60, 70, 80]
+
+start_pos = 6
+end_pos = 7
+=>  [10, 20, 30, 40, 50, 60, 80, 70]
+
+start_pos = 0
+end_pos = 7
+=>  [80, 70, 60, 50, 40, 30, 20, 10]
+
+==============================================================================
+---------------
+ Exercise: 002
+---------------
+
+Write a Python function to find the length of the longest increasing sub-sequence in a list.
+
+[10, 20, 30, 40, 50, 60, 70, 80]    =>  8
+[10, 20, 30, 40, 50, 30, 30, 20]    =>  5
+[-1, -2, -3, -4, -5, -11, -12, -13] =>  1
+
+==============================================================================
+---------------
+ Exercise: 003
+---------------
+
+Write a Python function that finds all the permutations of the members of a list.
+
+In mathematics, the notion of permutation relates to the act of arranging all the members of a set into some sequence
+or order, or if the set is already ordered, rearranging (reordering) its elements, a process called permuting. These
+differ from combinations, which are selections of some members of a set where order is disregarded
+
+[1, 2, 3, 4]    =>  [
+    [1, 2, 3, 4], [1, 2, 4, 3], [1, 3, 2, 4], [1, 3, 4, 2], [1, 4, 2, 3], [1, 4, 3, 2], [2, 1, 3, 4], [2, 1, 4, 3],
+    [2, 3, 1, 4], [2, 3, 4, 1], [2, 4, 1, 3], [2, 4, 3, 1], [3, 1, 2, 4], [3, 1, 4, 2], [3, 2, 1, 4], [3, 2, 4, 1],
+    [3, 4, 1, 2], [3, 4, 2, 1], [4, 1, 2, 3], [4, 1, 3, 2], [4, 2, 1, 3], [4, 2, 3, 1], [4, 3, 1, 2], [4, 3, 2, 1]
+]
+
+[-100, -300, 0] =>  [
+    [-100, -300, 0], [-100, 0, -300], [-300, -100, 0], [-300, 0, -100], [0, -100, -300], [0, -300, -100]
+]
+
+==============================================================================
+---------------
+ Exercise: 004
+---------------
+
+Write a Python function to find the kth smallest element in a list.
+
+[1, 2, 4, 3, 5, 4, 6, 9, 2, 1]
+
+1   =>  1
+2   =>  1
+3   =>  2
+4   =>  2
+5   =>  3
+6   =>  4
+7   =>  5
+8   =>  5
+9   =>  6
+10  =>  9
+
+==============================================================================
+---------------
+ Exercise: 005
+---------------
+
+Write a Python function to find the kth largest element in a list.
+
+[1, 2, 4, 3, 5, 4, 6, 9, 2, 1]
+
+1   =>  9
+2   =>  6
+3   =>  5
+4   =>  4
+5   =>  4
+6   =>  3
+7   =>  2
+8   =>  2
+9   =>  1
+10  =>  1
+
+==============================================================================
+---------------
+ Exercise: 006
+---------------
+
+Write a Python function to check if a list is a palindrome or not.
+
+[1, 2, 4, 3, 5, 4, 6, 9, 2, 1]  =>  False
+[1, 2, 2, 1]                    =>  True
+['Red', 'Green', 'Blue']        =>  False
+['Red', 'Green', 'Red']         =>  True
+
+==============================================================================
+---------------
+ Exercise: 007
+---------------
+
+Write a Python a function to find the union and intersection of two lists.
+
+[1, 2, 3, 4, 5]
+[3, 4, 5, 6, 7, 8]
+
+union:          [1, 2, 3, 4, 5, 6, 7, 8]
+intersection:   [3, 4, 5]
+
+["Red", "Green", "Blue"]
+["Red", "White", "Pink", "Black"]
+
+union:          ['Pink', 'Blue', 'White', 'Black', 'Red', 'Green']
+intersection:   ['Red']
+
+==============================================================================
+---------------
+ Exercise: 008
+---------------
+
+Write a Python function to remove duplicates from a list while preserving the order.
+
+[1, 2, 4, 3, 5, 4, 6, 9, 2, 1]                                          =>  [1, 2, 4, 3, 5, 6, 9]
+['a', 'a', 'b', 'a', 'a', 'c', 'c', 'c', 'd', 'e', 'a', 'b', 'b', 'b']  =>  ['a', 'b', 'c', 'd', 'e']
+
+==============================================================================
+---------------
+ Exercise: 009
+---------------
+
+Write a Python a function to find the maximum sum sub-sequence in a list.
+
+[1, 2, 3]                           =>  6
+[1, 2, 4, 3, 5, 4, 6, 9, 2, -10]    =>  36
+[1, 2, -4, 3, 5, 4, 6, 9, 2, -10]   =>  29
+[1, 2, 4, 3, 5, -24, 6, 9, -2]      =>  15
+
+==============================================================================
+---------------
+ Exercise: 010
+---------------
+
+Write a Python a function to find the sub-sequence of the minimum sum in a list.
+
+[1, 2, 6, 12]                           =>  [1]
+[1, -2, 4, 3, 5, 4, 6, 9, 2, -10]       =>  [-10]
+[2, 4, -3, -5, -4, 6, 9, 2]             =>  [-3, -5, -4]
+[1, 2, 4, 3, 5, -24, 4, 9, -22]         =>  [-24, 4, 9, -22]
+
+==============================================================================
+---------------
+ Exercise: 011
+---------------
+
+Write a Python function to find the longest common sub-sequence in two lists.
+
+[1, 2, 3, 4, 5, 6, 7, 8]
+[6, 7, 5, 6, 7, 8]
+
+=>  [5, 6, 7, 8]
+
+[3, 5, 1, 8, 8]
+[3, 3, 5, 3, 8]
+
+=>  [3, 5]
+
+[1, 3, 5, 7]
+[2, 4, 6, 8]
+
+=>  []
+
+[1, 3, 5, 7]
+[1, 2, 4, 6, 8]
+
+=>  [1]
+
+==============================================================================
+---------------
+ Exercise: 012
+---------------
+
+Write a Python program to find the first non-repeated element in a list.
+
+[1, 2, 3, 4, 5, 6, 7, 8]        =>  1
+[1, 2, 3, 1, 2, 4, 5, 6, 7, 8]  =>  3
+[1, 1, 2, 3, 1, 2, 3, 8, 8]     =>  None
+
+==============================================================================
+---------------
+ Exercise: 013
+---------------
+
+Write a Python a function to implement a LRU cache.
+
+From Wikipedia - Least recently used (LRU) Discards the least recently used items first. This algorithm requires
+keeping track of what was used when, which is expensive if one wants to make sure the algorithm always discards the
+least recently used item. General implementations of this technique require keeping "age bits" for cache-lines and
+track the "Least Recently Used" cache-line based on age-bits. In such an implementation, every time a cache-line
+is used, the age of all other cache-lines changes.
+
+Implement an LRU Cache that basically has a predefined capacity and provides the following features:
+    1. stores some data in a dict fashion
+    2. gets new data a key-val pair
+        a. and obviously, the new provided pair is the most recently one
+        b. this method can also change a key's value when provided with a pair whose key is already in the cache
+        c. when the cache exceeds the predefined capacity, it would pop the least recently used key-val pair
+    3. return the val of a provided key
+        a. and hence, the key would be the last used element
+        b. if the key is not present in the cache, return -1
+
+The LRU Cache capacity is 2
+
+put(10, 10)
+put(20, 20)
+get(10)         =>  10
+put(30, 30)
+get(20)         =>  -1
+put(40, 40)
+get(10)         =>  -1
+get(30)         =>  30
+get(40)         =>  40
+
+==============================================================================
+---------------
+ Exercise: 014
+---------------
+
+Write a Python function to merge a list of lists into one sorted list.
+
+[[1, 4, 5], [1, 3, 4], [2, 6, 7, 8]]    =>  [1, 1, 2, 3, 4, 4, 5, 6, 7, 8]
+[[1, 2], [-1, -2, -3], [0]]             =>  [-3, -2, -1, 0, 1, 2]
+
+==============================================================================
+---------------
+ Exercise: 015
+---------------
+
+Write a Python program to find all the pairs in a list whose sum is equal to a given value.
+
+[1, 2, 3, 4, 5, 6, 7, 8, 9], 10     =>  [(6, 4), (7, 3), (8, 2), (9, 1)]
+[1, 2, 3, 4, 5, 6, 7, 8, 9], 35     =>  []
+[1, 2, 3, 4, 5, 6, 7, 8, 9], 5      =>  [(3, 2), (4, 1)]
+
+==============================================================================
