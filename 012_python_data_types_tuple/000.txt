@@ -1,0 +1,373 @@
+---------------
+ Exercise: 001
+---------------
+
+Write a Python program to create a tuple.
+
+()
+
+==============================================================================
+---------------
+ Exercise: 002
+---------------
+
+Write a Python program to create a tuple with different data types.
+
+('tuple', False, 3.2, 1)
+
+==============================================================================
+---------------
+ Exercise: 003
+---------------
+
+Write a Python program to create a tuple of numbers and another one of one item.
+
+(5, 10, 15, 20, 25)
+(5, )
+
+==============================================================================
+---------------
+ Exercise: 004
+---------------
+
+Write a Python program to unpack a tuple into several variables.
+
+(4, 8, 3)
+
+4 8 3
+
+==============================================================================
+---------------
+ Exercise: 005
+---------------
+
+Write a Python program to add an item to a tuple.
+
+t = (4, 6, 2, 8, 3, 1)
+
+First add 9 the end of it
+Then these items (15, 20, 25) after the third element
+And finally add 0 at the beginning
+
+(0, 4, 6, 2, 15, 20, 25, 8, 3, 1, 9)
+
+==============================================================================
+---------------
+ Exercise: 006
+---------------
+
+Write a Python program to convert a tuple to a string.
+
+('e', 'x', 'e', 'r', 'c', 'i', 's', 'e', 's')
+
+exercises
+
+==============================================================================
+---------------
+ Exercise: 007
+---------------
+
+Write a Python program to get the 4th element from the last 4th element of a tuple.
+
+t = ("w", 3, "r", "e", "s", "o", "u", "r", "c", "e")
+
+e u
+
+==============================================================================
+---------------
+ Exercise: 008
+---------------
+
+Write a Python program to clone of a tuple.
+
+t = ("HELLO", 5, [], True)
+
+==============================================================================
+---------------
+ Exercise: 009
+---------------
+
+Write a Python program to find repeated items in a tuple.
+
+2, 4, 5, 6, 2, 3, 4, 4, 7
+
+[2, 4]
+
+==============================================================================
+---------------
+ Exercise: 010
+---------------
+
+Write a Python program to check whether an element exists within a tuple.
+
+("w", 3, "r", "e", "s", "o", "u", "r", "c", "e")
+
+'r' =>  True
+5   =>  False
+
+==============================================================================
+---------------
+ Exercise: 011
+---------------
+
+Write a Python program to convert a list to a tuple.
+
+[1, 2]
+
+(1, 2)
+
+==============================================================================
+---------------
+ Exercise: 012
+---------------
+
+Write a Python program to remove an item from a tuple.
+
+"w", 3, "r", "s", "o", "u", "r", "c", "e"
+
+remove c
+
+('w', 3, 'r', 's', 'o', 'u', 'r', 'e')
+
+==============================================================================
+---------------
+ Exercise: 013
+---------------
+
+Write a Python program to slice a tuple.
+
+(2, 4, 3, 5, 4, 6, 7, 8, 6, 1)
+
+Print from the third element until the sixth element
+
+(3, 5, 4, 6)
+
+==============================================================================
+---------------
+ Exercise: 014
+---------------
+
+Write a Python program to find the index of an item in a tuple.
+
+('i', 'n', 'd', 'e', 'x', ' ', 't', 'u', 'p', 'l', 'e')
+
+'p' =>  8
+
+==============================================================================
+---------------
+ Exercise: 015
+---------------
+
+Write a Python program to find the length of a tuple.
+
+('w', '3', 'r', 'e', 's', 'o', 'u', 'r', 'c', 'e')  =>  10
+
+==============================================================================
+---------------
+ Exercise: 016
+---------------
+
+Write a Python program to convert a tuple to a dictionary.
+Note: use the second element from each pair as the key and the first one as the value
+
+((2, "w"), (3, "r"))
+
+{'w': 2, 'r': 3}
+
+==============================================================================
+---------------
+ Exercise: 017
+---------------
+
+Write a Python program to unzip a list of tuples into individual lists.
+
+lst = [(1, 2), (3, 4), (8, 9)]
+
+[(1, 3, 8), (2, 4, 9)]
+
+==============================================================================
+---------------
+ Exercise: 018
+---------------
+
+Write a Python program to reverse a tuple.
+
+(5, 10, 15, 20)
+
+(20, 15, 10, 5)
+
+==============================================================================
+---------------
+ Exercise: 019
+---------------
+
+Write a Python program to convert a list of tuples into a dictionary.
+Note: the key is the first element and it's not unique  =>  group all of the keys into lists
+
+[("x", 1), ("x", 2), ("x", 3), ("y", 1), ("y", 2), ("z", 1)]
+
+{'x': [1, 2, 3], 'y': [1, 2], 'z': [1]}
+
+==============================================================================
+---------------
+ Exercise: 020
+---------------
+
+Write a Python program to print a tuple with string formatting.
+
+(100, 200, 300)
+
+This is a tuple (100, 200, 300)
+
+==============================================================================
+---------------
+ Exercise: 021
+---------------
+
+Write a Python program to replace the last value of tuples with '100' in a list.
+
+[(10, 20, 40), (40, 50, 60), (70, 80, 90)]
+
+[(10, 20, 100), (40, 50, 100), (70, 80, 100)]
+
+==============================================================================
+---------------
+ Exercise: 022
+---------------
+
+Write a Python program to remove an empty tuple(s) from a list of tuples.
+
+[(), (), ('',), ('a', 'b'), ('a', 'b', 'c'), 'd']
+
+[('',), ('a', 'b'), ('a', 'b', 'c'), 'd']
+
+==============================================================================
+---------------
+ Exercise: 023
+---------------
+
+Write a Python program to sort a tuple by its float element (the second element that comes as a string) in
+descending order.
+
+[('item1', '12.20'), ('item2', '15.10'), ('item3', '24.5')]
+
+[('item3', '24.5'), ('item2', '15.10'), ('item1', '12.20')]
+
+==============================================================================
+---------------
+ Exercise: 024
+---------------
+
+Write a Python program to count the elements in a list until an element is a tuple.
+
+[10, 20, 30, (10, 20), 40]  =>  3
+
+==============================================================================
+---------------
+ Exercise: 025
+---------------
+
+Write a Python program to convert a given string list to a tuple.
+
+python 3.0
+
+('p', 'y', 't', 'h', 'o', 'n', '3', '.', '0')
+
+==============================================================================
+---------------
+ Exercise: 026
+---------------
+
+Write a Python program to calculate the product, multiplying all the numbers in a given tuple.
+
+(4, 3, 2, 2, -1, 18)    =>  -864
+
+(2, 4, 8, 8, 3, 2, 9)   =>  27648
+
+==============================================================================
+---------------
+ Exercise: 027
+---------------
+
+Write a Python program to calculate the average value of the numbers in a given tuple of tuples.
+Note: average all nth numbers of the insider tuples (first_numbers, second_numbers, ...)
+
+((10, 10, 10, 12), (30, 45, 56, 45), (81, 80, 39, 32), (1, 2, 3, 4))
+[30.5, 34.25, 27.0, 23.25]
+
+((1, 1, -5), (30, -15, 56), (81, -60, -39), (-10, 2, 3))
+[25.5, -18.0, 3.75]
+
+==============================================================================
+---------------
+ Exercise: 028
+---------------
+
+Write a Python program to convert a tuple of string values to a tuple of integer values.
+
+(('333', '33'), ('1416', '55'))
+
+((333, 33), (1416, 55))
+
+==============================================================================
+---------------
+ Exercise: 029
+---------------
+
+Write a Python program to convert a given tuple of positive integers into an integer.
+
+(1, 2, 3)           =>  123
+(10, 20, 40, 5, 70) =>  102040570
+
+==============================================================================
+---------------
+ Exercise: 030
+---------------
+
+Write a Python program to check if a specified element appears in a tuple of tuples.
+
+(('Red', 'White', 'Blue'), ('Green', 'Pink', 'Purple'), ('Orange', 'Yellow', 'Lime'))
+
+White =>    True
+Olive =>    False
+
+==============================================================================
+---------------
+ Exercise: 031
+---------------
+
+Write a Python program to compute the element-wise sum of given tuples.
+
+(1, 2, 3, 4)
+(3, 5, 2, 1)
+(2, 2, 3, 1)
+
+(6, 9, 8, 6)
+
+==============================================================================
+---------------
+ Exercise: 032
+---------------
+
+Write a Python program to compute the sum of all the elements of each tuple stored inside a list of tuples.
+
+[(1, 2), (2, 3), (3, 4)]
+[3, 5, 7]
+
+[(1, 2, 6), (2, 3, -6), (3, 4), (2, 2, 2, 2)]
+[9, -1, 7, 8]
+
+==============================================================================
+---------------
+ Exercise: 033
+---------------
+
+Write a Python program to convert a given list of tuples to a list of lists.
+
+[(1, 2), (2, 3), (3, 4)]
+[[1, 2], [2, 3], [3, 4]]
+
+[(1, 2), (2, 3, 5), (3, 4), (2, 3, 4, 2)]
+[[1, 2], [2, 3, 5], [3, 4], [2, 3, 4, 2]]
+
+==============================================================================

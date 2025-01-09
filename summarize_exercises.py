@@ -1,13 +1,14 @@
 """
 
-Use this script to summarize the questions from the exercises' scripts in a certain exercises group.
+Use this script to summarize the questions from the exercises' scripts in a certain exercises group that is present
+in a dedicated subdirectory.
 
-It would fetch the questions of all exercises and write them in a text file namely: "000.txt" that would get created
-inside the input directory.
+It would fetch the questions of all exercises (the '*.py' files) and write them down in a text file namely: "000.txt"
+that would get created inside the input directory.
 
 Note:   the python scripts are supposed to have a docstring at the beginning that holds the question.
-        Best practice would be to create the python scripts with 'create_template_scripts.py' python file and then use
-        this script to summarize a certain group of exercises
+        Best practice would be to create the python scripts with 'create_template_scripts.py'  and then use this
+        script to summarize a certain group of exercises.
 
 """
 
@@ -48,7 +49,8 @@ def main(args):
 
 if __name__ == "__main__":
     arg_parser = argparse.ArgumentParser(
-        description="Summarize a group of exercises"
+        description=__doc__,
+        formatter_class=argparse.RawTextHelpFormatter
     )
 
     arg_parser.add_argument(

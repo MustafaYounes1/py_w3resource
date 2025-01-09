@@ -2,9 +2,9 @@
 
 Count how many exercises you have completed so far.
 
-By default, it would count all '*.py' files in all subdirectories, however, it's possible to count how many exercises
-have been completed in just one single subdirectory that is existed in the root directory by providing the subdirectory
-name
+By default, it would count all '*.py' files in all subdirectories where each python script is supposed to hold
+the solution for a certain exercise. However, it's possible to count how many exercises have been completed in just one
+single subdirectory that is existed in the root directory by providing the subdirectory name
 
 """
 
@@ -40,15 +40,19 @@ def main(args):
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Count how many exercises you have completed so far")
+    parser = argparse.ArgumentParser(
+        description=__doc__,
+        formatter_class=argparse.RawTextHelpFormatter
+    )
 
     parser.add_argument(
         "--dir",
         type=pathlib.Path,
         default=pathlib.Path(),
         help="By default it would recursively walk through all subdirectories in the current file directory and count "
-             "all '*.py' files. \nHowever, with this argument it's possible to provide a name of a certain "
-             "subdirectory that is assumed to be present in the current directory and it would count all '*.py' in it."
+             "all '*.py' files where each python script is supposed to hold the solution for a certain exercise. "
+             "\nHowever, with this argument it's possible to provide a name of a certain subdirectory that is assumed "
+             "to be present in the current directory and it would count all '*.py' in it."
     )
 
     arguments = parser.parse_args()

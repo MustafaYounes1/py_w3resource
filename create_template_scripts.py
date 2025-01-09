@@ -1,7 +1,21 @@
 """
 
-Automate the creation of scripts for multiple exercises where the filename is the exercise ID and the
-contents are the template contents
+A tool to automate the creation of multiple template scripts for multiple w3resource exercises, where each script name
+is the exercise ID and its contents would be the following template:
+
+\"\"\"
+
+Describe the task here
+
+\"\"\"
+
+
+def main():
+    pass
+
+
+if __name__ == "__main__":
+    main()
 
 """
 
@@ -30,13 +44,14 @@ if __name__ == "__main__":
 def main(args):
     assert args.first_exc_id > 0, f"args.first_exc_id should be greater than zero"
     assert args.last_exc_id > 0, f"args.last_exc_id should be greater than zero"
-    assert args.last_exc_id > args.first_exc_id
+    assert args.last_exc_id >= args.first_exc_id, ("Last exercise ID should be equal to or greater than the First "
+                                                   "exercise ID.")
 
     for scr_id in tqdm(
-        range(args.first_exc_id, args.last_exc_id + 1),
-        total=args.last_exc_id - args.first_exc_id + 1,
-        desc="Creating template scripts: ",
-        unit="script"
+            range(args.first_exc_id, args.last_exc_id + 1),
+            total=args.last_exc_id - args.first_exc_id + 1,
+            desc="Creating template scripts: ",
+            unit="script"
     ):
         args.out_dir.mkdir(exist_ok=True)
         out_f = args.out_dir / f"{str(scr_id).zfill(3)}.py"
@@ -47,7 +62,8 @@ def main(args):
 
 if __name__ == "__main__":
     arg_parser = argparse.ArgumentParser(
-        description="A tool to automate the creation of multiple template scripts for multiple w3resource exercises"
+        description=__doc__,
+        formatter_class=argparse.RawTextHelpFormatter
     )
     arg_parser.add_argument(
         "first_exc_id",
@@ -57,7 +73,7 @@ if __name__ == "__main__":
     arg_parser.add_argument(
         "last_exc_id",
         type=int,
-        help="The last exercise ID, must be greater than the 'first_exc_id' argument"
+        help="The last exercise ID, must be equal to or greater than 'first_exc_id'"
     )
     arg_parser.add_argument(
         "out_dir",
