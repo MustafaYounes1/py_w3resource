@@ -1,0 +1,461 @@
+---------------
+ Exercise: 001
+---------------
+
+Write a Python program that iterates over elements as many times as its count.
+
+Element p is repeated 4 times
+Element q is repeated 2 times
+Element r is repeated 0 times   (should be ignored)
+Element s is repeated -2 times  (should be ignored)
+
+['p', 'p', 'p', 'p', 'q', 'q']
+
+==============================================================================
+---------------
+ Exercise: 002
+---------------
+
+Write a Python program to find the most 3 common elements and their counts in a specified text.
+
+lkseropewdssafsdfafkpwe
+
+[('s', 4), ('e', 3), ('f', 3)]
+
+==============================================================================
+---------------
+ Exercise: 003
+---------------
+
+Write a Python program to create a new deque with the items 'aeiou' and iterate over the deque's elements.
+
+a e i o u
+
+==============================================================================
+---------------
+ Exercise: 004
+---------------
+
+Write a Python program to find the occurrences of the 10 most common words in a given text.
+Note: You would need to clear all punctuations
+text = \
+
+==============================================================================
+---------------
+ Exercise: 005
+---------------
+
+Write a Python program that accepts some words and counts the number of distinct words. Print the number of distinct
+words and the number of occurrences of each distinct word according to their appearance.
+
+s =  "Red Green Blue Black White Blue Red Orange"
+
+Total number of distinct words: 8
+Red     :  2
+Blue    :  2
+Green   :  1
+Black   :  1
+White   :  1
+Orange  :  1
+
+==============================================================================
+---------------
+ Exercise: 006
+---------------
+
+Write a Python program that accepts the number of subjects, subject names and marks. Input the number of subjects and
+then the subject name and marks separated by a space on the next line. Print the subject name and marks in order of
+appearance.
+
+Note: try to use the OrderedDict
+
+Number of subjects: 3
+Input Subject name and marks: Bengali 58
+Input Subject name and marks: English 62
+Input Subject name and marks: Math 68
+Bengali 58
+English 62
+Math 6
+
+==============================================================================
+---------------
+ Exercise: 007
+---------------
+
+Write a Python program to create a deque with the elements: ['Red', 'Green', 'White']
+
+1. Add 'Pink' to the left
+2. Add 'Orange' to the right
+3. Remove one element from the right
+4. Remove one element from the left
+5. Reverse the deque
+
+['White', 'Green', 'Red']
+
+==============================================================================
+---------------
+ Exercise: 008
+---------------
+
+Write a Python program to create a deque from an existing iterable object (2, 4, 6) and make the required operations
+to let it have the following final items: [2, 2, 4, 6, 8, 10, 12]
+
+==============================================================================
+---------------
+ Exercise: 009
+---------------
+
+Write a Python program to add more elements to a deque object from an iterable object.
+
+The deque should contain (2, 4, 6, 8, 10) at first, then add (12, 14, 16, 18, 20) to the left
+
+[20, 18, 16, 14, 12, 2, 4, 6, 8, 10]
+
+==============================================================================
+---------------
+ Exercise: 010
+---------------
+
+Write a Python program to remove all the elements of a given deque object that has the following vals [1, 3, 5, 7, 9].
+
+deque([])
+
+==============================================================================
+---------------
+ Exercise: 011
+---------------
+
+Write a Python program that copies a deque object and verifies shallow copying.
+The contents of the original deque are: [1, 3, 5, 7, 9]
+
+[The new deque is a new object with new id]
+d1 id: 2551964308224
+d2 id: 2551964308464
+
+[The new deque holds references to the items found in the original deque, hence the same id of the elements]
+d1 element id: 140716466553640
+d2 element id: 140716466553640
+
+==============================================================================
+---------------
+ Exercise: 012
+---------------
+
+Write a Python program to count the number of times a specific element appears in a deque object.
+
+(2, 9, 0, 8, 2, 4, 0, 9, 2, 4, 8, 2, 0, 4, 2, 3, 4, 0)
+
+2   =>      5
+4   =>      4
+
+==============================================================================
+---------------
+ Exercise: 013
+---------------
+
+Write a Python program to rotate a Deque Object a specified number of times to the right.
+
+[2, 4, 6, 8, 10]
+
+Note: perform the following rotations continuously
+1 rotation     =>  [10, 2, 4, 6, 8]
+2 rotations    =>  [6, 8, 10, 2, 4]
+
+==============================================================================
+---------------
+ Exercise: 014
+---------------
+
+Write a Python program to rotate a Deque Object a specified number of times to the left.
+
+[2, 4, 6, 8, 10]
+
+Note: perform the following rotations continuously
+1 rotation     =>  [4, 6, 8, 10, 2]
+2 rotations    =>  [8, 10, 2, 4, 6]
+
+==============================================================================
+---------------
+ Exercise: 015
+---------------
+
+Write a Python program to find the most common element in a given list.
+
+['PHP', 'PHP', 'Python', 'PHP', 'Python', 'JS', 'Python', 'Python', 'PHP', 'Python']    =>  Python
+
+==============================================================================
+---------------
+ Exercise: 016
+---------------
+
+Write a Python program to find the student with the second-lowest grade.
+Note: Try to represent students as named-tuples
+
+[['Avik Das ', 89.0], ['ayan Roy', 75.0], ['Sayan Dutta', 93.0]]
+
+=>  Avik Das  89.0
+
+==============================================================================
+---------------
+ Exercise: 017
+---------------
+
+Write a Python program to find the majority element from a given array of size n using the Collections module.
+
+[10, 10, 20, 30, 40, 10, 20, 10]    =>  10
+
+==============================================================================
+---------------
+ Exercise: 018
+---------------
+
+Write a Python program to merge more than one dictionary into a single expression.
+
+{'R': 'Red', 'B': 'Black', 'P': 'Pink'} {'G': 'Green', 'W': 'White'}
+{'G': 'Green', 'W': 'White', 'R': 'Red', 'B': 'Black', 'P': 'Pink'}
+
+{'R': 'Red', 'B': 'Black', 'P': 'Pink'} {'G': 'Green', 'W': 'White'} {'O': 'Orange', 'W': 'White', 'B': 'Black'}
+{'O': 'Orange', 'W': 'White', 'B': 'Black', 'G': 'Green', 'R': 'Red', 'P': 'Pink'}
+
+==============================================================================
+---------------
+ Exercise: 019
+---------------
+
+Write a Python program to check if a given list of integers can be broken into sets of exactly n consecutive elements.
+Note: the difference between each two consecutive items in the sublist should be 1
+
+[1, 2, 3, 4, 5, 6, 7, 8], 4     =>  True
+[1, 2, 3, 4, 5, 6, 7, 8], 3     =>  False
+
+==============================================================================
+---------------
+ Exercise: 020
+---------------
+
+Write a Python program to find the item with the highest frequency in a given list.
+
+[2, 3, 8, 4, 7, 9, 8, 2, 6, 5, 1, 6, 1, 2, 3, 2, 4, 6, 9, 1, 2]
+
+(2, 5)
+
+==============================================================================
+---------------
+ Exercise: 021
+---------------
+
+Write a Python program to count the most and least common characters in a given string.
+
+hello world
+
+Most  common:  l
+Least common:  h
+
+==============================================================================
+---------------
+ Exercise: 022
+---------------
+
+Write a Python program to insert an element at the beginning of a given Ordered Dictionary.
+
+[('color1', 'Red'), ('color2', 'Green'), ('color3', 'Blue')]
+
+Insert an element at the beginning of the said OrderedDict: ('color4', 'Orange')
+
+[('color4', 'Orange'), ('color1', 'Red'), ('color2', 'Green'), ('color3', 'Blue')]
+
+==============================================================================
+---------------
+ Exercise: 023
+---------------
+
+Write a Python program to get the frequency of pairs in a given list.
+Note: order of elements inside the pairs shouldn't matter ([a, b] == [b, a])
+
+[['1', '4'], ['4', '1'], ['3', '4'], ['2', '7'], ['6', '8'], ['5', '8'], ['6', '8'], ['5', '7'], ['2', '7']]
+
+('4', '1') 2
+('2', '7') 2
+('8', '6') 2
+('3', '4') 1
+('8', '5') 1
+('5', '7') 1
+
+==============================================================================
+---------------
+ Exercise: 024
+---------------
+
+Write a Python program to calculate the maximum aggregate from the list of tuples (pairs).
+
+[('Juan Whelan', 90), ('Sabah Colley', 88), ('Peter Nichols', 7), ('Juan Whelan', 122), ('Sabah Colley', 84)]
+
+('Juan Whelan', 212)
+
+==============================================================================
+---------------
+ Exercise: 025
+---------------
+
+Write a Python program to find the characters in a list of strings that occur more than a given number.
+Note: take into consideration all occurrences of a character in all strings
+
+['abcd', 'iabhef', 'dsalsdf', 'sdfsas', 'jlkdfgd'], 3   =>  ['a', 'd', 'f', 's']
+
+==============================================================================
+---------------
+ Exercise: 026
+---------------
+
+Write a Python program to find the left difference between two lists including duplicate elements.
+Note: use the collection module
+
+lst1 = [1, 1, 2, 3, 3, 4, 4, 5, 6, 7]
+lst2 = [1, 1, 2, 4, 5, 6]
+
+[3, 3, 4, 7]
+
+==============================================================================
+---------------
+ Exercise: 027
+---------------
+
+Write a Python program to remove duplicate words from a given string. Use the collections module.
+
+Python Exercises Practice Solution Exercises
+
+Python Exercises Practice Solution
+
+==============================================================================
+---------------
+ Exercise: 028
+---------------
+
+Write a Python program to create a dictionary grouping a sequence of key-value pairs into a dictionary of lists.
+
+[('yellow', 1), ('blue', 2), ('yellow', 3), ('blue', 4), ('red', 1)]
+
+{'yellow': [1, 3], 'blue': [2, 4], 'red': [1]}
+
+==============================================================================
+---------------
+ Exercise: 029
+---------------
+
+Write a Python program to get the frequency of elements in a given list of lists.
+
+[[1, 2, 3, 2], [4, 5, 6, 2], [7, 1, 9, 5]]
+
+{1: 2, 2: 3, 3: 1, 4: 1, 5: 2, 6: 1, 7: 1, 9: 1}
+
+==============================================================================
+---------------
+ Exercise: 030
+---------------
+
+Write a Python program to count the occurrences of each element in a given list.
+
+['Green', 'Red', 'Blue', 'Red', 'Orange', 'Black', 'Black', 'White', 'Orange']
+{'Green': 1, 'Red': 2, 'Blue': 1, 'Orange': 2, 'Black': 2, 'White': 1}
+
+[3, 5, 0, 3, 9, 5, 8, 0, 3, 8, 5, 8, 3, 5, 8, 1, 0, 2]
+{3: 4, 5: 4, 0: 3, 9: 1, 8: 4, 1: 1, 2: 1}
+
+==============================================================================
+---------------
+ Exercise: 031
+---------------
+
+Write a Python program to count the most common 4 words in a list.
+
+words = [
+   'red', 'green', 'black', 'pink', 'black', 'white', 'black', 'eyes',
+   'white', 'black', 'orange', 'pink', 'pink', 'red', 'red', 'white', 'orange',
+   'white', "black", 'pink', 'green', 'green', 'pink', 'green', 'pink',
+   'white', 'orange', "orange", 'red'
+]
+
+[('pink', 6), ('black', 5), ('white', 5), ('red', 4)]
+
+==============================================================================
+---------------
+ Exercise: 032
+---------------
+
+Write a Python program to find the class wise roll number from a tuple-of-tuples.
+
+classes = (
+    ('V', 1),
+    ('VI', 1),
+    ('V', 2),
+    ('VI', 2),
+    ('VI', 3),
+    ('VII', 1),
+)
+
+{'V': [1, 2], 'VI': [1, 2, 3], 'VII': [1]}
+
+==============================================================================
+---------------
+ Exercise: 033
+---------------
+
+Write a Python program to count the number of students in an individual class.
+Note: if a class was repeated, the latest number should be considered
+
+classes = (
+    ('V', 1),
+    ('VI', 1),
+    ('V', 2),
+    ('VI', 2),
+    ('VI', 3),
+    ('VII', 1),
+)
+
+{'V': 2, 'VI': 3, 'VII': 1}
+
+==============================================================================
+---------------
+ Exercise: 034
+---------------
+
+Write a Python program to create an instance of an OrderedDict using a given dictionary. Sort the dictionary during
+the creation and print the members of the dictionary in reverse order.
+
+{'Afghanistan': 93, 'Albania': 355, 'Algeria': 213, 'Andorra': 376, 'Angola': 244}
+
+Angola 244
+Andorra 376
+Algeria 213
+Albania 355
+Afghanistan 93
+
+==============================================================================
+---------------
+ Exercise: 035
+---------------
+
+Write a Python program to group a sequence of key-value pairs into a dictionary of lists.
+
+class_roll = [('v', 1), ('vi', 2), ('v', 3), ('vi', 4), ('vii', 1)]
+
+[('v', [1, 3]), ('vi', [2, 4]), ('vii', [1])]
+
+==============================================================================
+---------------
+ Exercise: 036
+---------------
+
+Write a Python program to compare two unordered lists (not sets).
+
+[20, 10, 30, 10, 20, 30]
+[30, 20, 10, 30, 20, 50]
+
+False
+
+[1, 2, 3]
+[2, 1, 3]
+
+True
+
+==============================================================================

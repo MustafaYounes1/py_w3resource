@@ -1,0 +1,370 @@
+---------------
+ Exercise: 001
+---------------
+
+Write a Python program to create a set.
+
+{0, 1, 2, 3, 4}
+
+==============================================================================
+---------------
+ Exercise: 002
+---------------
+
+Write a Python program to iterate over sets.
+Note: Keep in mind that sets are unordered collections
+
+0, 1, 2, 3, 4, 5
+
+==============================================================================
+---------------
+ Exercise: 003
+---------------
+
+Write a Python program to add member(s) to a set.
+
+1. Start with an empty set
+2. add "Red" to it
+3. add the following collection of items to it ["Blue", "Green"]
+
+{'Green', 'Red', 'Blue'}
+
+==============================================================================
+---------------
+ Exercise: 004
+---------------
+
+Write a Python program to remove item(s) from a given set.
+
+0, 1, 3, 4, 5
+
+1. start with removing a random item
+2. remove 1, but keep in mind that it could be removed from the set in the previous step
+
+Expect the list to have only 3 items with no KeyErrors being raised
+
+==============================================================================
+---------------
+ Exercise: 005
+---------------
+
+Write a Python program to remove an item from a set if it is present in the set.
+
+0, 1, 2, 3, 4, 5
+
+Remove the following items from the set continuously:
+
+0   =>  {1, 2, 3, 4, 5}
+5   =>  {1, 2, 3, 4}
+7   =>  {1, 2, 3, 4}
+
+==============================================================================
+---------------
+ Exercise: 006
+---------------
+
+Write a Python program to create an intersection of sets.
+
+{'green', 'blue'}
+{'blue', 'yellow'}
+
+{'blue'}
+
+==============================================================================
+---------------
+ Exercise: 007
+---------------
+
+Write a Python program to create a union of sets.
+
+{'blue', 'green'}
+{'blue', 'yellow'}
+
+{'blue', 'yellow', 'green'}
+
+==============================================================================
+---------------
+ Exercise: 008
+---------------
+
+Write a Python program to create set left difference.
+
+{'green', 'blue'}
+{'yellow', 'blue'}
+
+{'green'}
+
+==============================================================================
+---------------
+ Exercise: 009
+---------------
+
+Write a Python program to create a symmetric difference.
+
+{'blue', 'green'}
+{'blue', 'yellow'}
+
+{'green', 'yellow'}
+
+==============================================================================
+---------------
+ Exercise: 010
+---------------
+
+Write a Python program to check if a set is a subset of another set.
+
+x = {'mango', 'apple'}
+y = {'mango', 'orange'}
+z = {'mango'}
+
+If x is subset of y     =>  False
+If y is subset of x     =>  False
+If y is subset of z     =>  False
+If z is subset of y     =>  True
+
+==============================================================================
+---------------
+ Exercise: 011
+---------------
+
+Write a Python program to create a shallow copy of sets.
+
+Note : Shallow copy is a bit-wise copy of an object. A new object is created that has an exact copy of the values in
+the original object.
+
+s1 = {"Red", "Green"}
+
+create s2 as a shallow copy of s1
+
+==============================================================================
+---------------
+ Exercise: 012
+---------------
+
+Write a Python program to remove all elements from a given set.
+
+{'Green', 'Black', 'Red', 'White'}
+
+set()
+
+==============================================================================
+---------------
+ Exercise: 013
+---------------
+
+Write a python program to create a dict which has the following key-value pair:
+
+(k: v); where k is a set of two values: ("Red", "Green") and the v is "success"
+
+try to access the key above in the dictionary   =>  success
+
+==============================================================================
+---------------
+ Exercise: 014
+---------------
+
+Write a Python program to find the maximum and minimum values in a set.
+
+{2, 3, 5, 10, 15, 20}
+
+Maximum =>  20
+Minimum =>  2
+
+==============================================================================
+---------------
+ Exercise: 015
+---------------
+
+Write a Python program to find the length of a set.
+
+{2, 3, 5, 10, 15, 20}   =>  6
+
+==============================================================================
+---------------
+ Exercise: 016
+---------------
+
+Write a Python program to check if a given value is present in a set or not.
+
+{1, 3, 5, 7, 9, 11}
+
+6   =>  False
+7   =>  True
+11  =>  True
+0   =>  False
+
+==============================================================================
+---------------
+ Exercise: 017
+---------------
+
+Write a Python program to check if two given sets have no elements in common.
+
+x = {1, 2, 3, 4}
+y = {4, 5, 6, 7}
+z = {8}
+
+x and y     =>  False
+x and z     =>  True
+y and z     =>  True
+
+==============================================================================
+---------------
+ Exercise: 018
+---------------
+
+Write a Python program to check if a given set is a superset of a given set
+
+num1 =  {1, 2, 3, 4, 5, 7}
+num2 =  {2, 4}
+num3 =  {2, 4}
+
+mum1 is superset of num2    =>  True
+mum2 is superset of num3    =>  False
+mum3 is superset of num2    =>  False
+
+==============================================================================
+---------------
+ Exercise: 019
+---------------
+
+Write a Python program to find elements in a given set that are not in another set.
+
+s1 = {1, 2, 3, 4, 5}
+s2 = {4, 5, 6, 7, 8}
+
+in s1 but not in s2     =>  {1, 2, 3}
+in s2 but not in s1     =>  {8, 6, 7}
+
+==============================================================================
+---------------
+ Exercise: 020
+---------------
+
+Write a Python program to remove the intersection of a second set with a first set.
+
+s1 = {1, 2, 3, 4, 5}
+s2 = {4, 5, 6, 7, 8}
+
+on s1:  {1, 2, 3}
+on s2:  {6, 7, 8}
+
+==============================================================================
+---------------
+ Exercise: 021
+---------------
+
+Write a Python program to find all the unique words and count the frequency of occurrence from a given list of strings.
+Note: try to use Python sets
+
+['Red', 'Green', 'Red', 'Blue', 'Red', 'Red', 'Green']
+
+{'Red': 4, 'Green': 2, 'Blue': 1}
+
+==============================================================================
+---------------
+ Exercise: 022
+---------------
+
+Write a Python program that finds all pairs of elements in a list whose sum is equal to a given value.
+Note: try to use Python sets to eliminate duplicate pairs
+
+[10, 11, 12, 13, 14, 15, 11, 16, 17, 18, 19, 20], 35
+
+[(17, 18), (16, 19), (15, 20)]
+
+==============================================================================
+---------------
+ Exercise: 023
+---------------
+
+Write a Python program to find the longest common prefix of all strings. Use the Python set.
+
+['pqrefgh', 'pqrsfgh']      =>  pqr
+['w3r', 'w3resource']       =>  w3r
+['Python', 'PHP', 'Perl']   =>  P
+['Python', 'HTML', 'PHP']   =>  ''
+
+==============================================================================
+---------------
+ Exercise: 024
+---------------
+
+Write a Python program to find the two numbers whose product is maximum among all the pairs in a given list of numbers.
+Note: Use the Python set.
+
+[1, 2, 3, 4, 5, 6, 7, 8, 9]         =>  (8, 9)
+[1, -2, -3, 4, 5, -6, 7, -8, 9]     =>  (7, 9)
+
+==============================================================================
+---------------
+ Exercise: 025
+---------------
+
+Given two sets of numbers, write a Python program to find the missing numbers in the second set as compared to the
+first and vice versa.
+
+{1, 2, 3, 4, 5, 6}
+{3, 4, 5, 6, 7, 8}
+
+Missing numbers in the second set as compared to the first  =>  {1, 2}
+Missing numbers in the first set as compared to the second  =>  {8, 7}
+
+==============================================================================
+---------------
+ Exercise: 026
+---------------
+
+Write a Python program to find all the anagrams and group them together from a given list of strings.
+Use the Python data type.
+
+Note: two strings are considered anagrams if they have the same characters with the same frequency, but the order of
+the characters is different.
+
+['eat', 'cba', 'tae', 'abc', 'xyz']
+
+    =>  [['eat', 'tae'], ['cba', 'abc'], ['xyz']]
+
+['restful', 'forty five', 'evil', 'over fifty', 'vile', 'fluster']
+
+    =>  [['restful', 'fluster'], ['forty five', 'over fifty'], ['evil', 'vile']]
+
+==============================================================================
+---------------
+ Exercise: 027
+---------------
+
+Write a Python program to find all the unique combinations of 3 numbers from a given list of numbers, adding up to
+a target number. Note: try to use Python sets
+
+[1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+12      =>  [(1, 3, 8), (1, 4, 7), (1, 2, 9), (1, 5, 6), (3, 4, 5), (2, 3, 7), (2, 4, 6)]
+17      =>  [(4, 5, 8), (2, 6, 9), (3, 5, 9), (2, 7, 8), (4, 6, 7), (3, 6, 8), (1, 7, 9)]
+
+==============================================================================
+---------------
+ Exercise: 028
+---------------
+
+Write a Python program to find the third-largest number from a given list of numbers.
+Note: Use the Python set data type.
+
+[1, 2, 3, 4, 5, 5, 6, 7, 7, 8, 8, 9, 10]    =>  8
+[1, 2, 3, 4, 5, 6, 7, 8, 9]                 =>  7
+[1, 2, 3]                                   =>  1
+[1, 2, 2]                                   =>  None
+[1, 2]                                      =>  None
+
+==============================================================================
+---------------
+ Exercise: 029
+---------------
+
+Write a Python program to remove all duplicates from a given list of strings and return a list of unique strings.
+Note: Use the Python set data type.
+
+['foo', 'bar', 'abc', 'foo', 'qux', 'bar', 'baz']               =>  ['bar', 'qux', 'abc', 'baz', 'foo']
+['Python', 'Exercises', 'Practice', 'Solution', 'Exercises']    =>  ['Practice', 'Exercises', 'Python', 'Solution']
+
+==============================================================================

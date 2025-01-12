@@ -3,11 +3,11 @@
 A tool to automate the creation of multiple template scripts for multiple w3resource exercises, where each script name
 is the exercise ID and its contents would be the following template:
 
-\"\"\"
+\"""
 
 Describe the task here
 
-\"\"\"
+\"""
 
 
 def main():
