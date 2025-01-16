@@ -1,0 +1,121 @@
+---------------
+ Exercise: 001
+---------------
+
+Write a Python unit test program to check if a given number is prime or not.
+
+The unit test should work OK on the following tests:
+
+Prime numbers:      2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31
+Non-prime numbers:  4, 6, 8, 10, 12, 14, 16, 18, 20
+
+==============================================================================
+---------------
+ Exercise: 002
+---------------
+
+Write a Python unit test program to check if a list is sorted in ascending order.
+
+The unit test should work OK on the following tests:
+
+[1, 2, 3, 4, 5, 6, 7]   =>  sorted
+[5, 7, 2, 8, 1, 9]      =>  not sorted
+
+==============================================================================
+---------------
+ Exercise: 003
+---------------
+
+Write a Python unit test program that checks if two lists are equal.
+
+The unit test should work OK on the following tests:
+
+[10, 20, 30, 40], [10, 20, 30, 40]      => Equal
+[10, 20, 30, 40], [30, 20, 10, 40]      => Not-equal
+
+==============================================================================
+---------------
+ Exercise: 004
+---------------
+
+Write a Python unit test program to check if a string is a palindrome.
+
+The unit test should work OK on the following tests:
+
+madam   =>  palindrome
+hello   =>  non-palindrome
+
+==============================================================================
+---------------
+ Exercise: 005
+---------------
+
+Write a Python unit test program to check if a file exists in a specified directory.
+
+The unit test should work OK on the following tests:
+
+The current module exists   =>  True
+
+==============================================================================
+---------------
+ Exercise: 006
+---------------
+
+Write a Python unit test that checks if a function handles floating-point calculations accurately.
+
+The unit test should work OK on the following tests:
+
+0.3 + 0.5   ==  0.81        (with 1 decimal place)
+0.3 * 0.5   ==  0.152       (with 2 decimal places)
+0.7 / 0.3   ==  2.333333    (with 6 decimal places)
+
+==============================================================================
+---------------
+ Exercise: 007
+---------------
+
+Write a Python unit test program to check if a function handles multi-threading correctly.
+
+You should create 5 threads with each one looping through the range (1, 100_0000) and incrementing a counter for each
+loop, start the threads, and join them all, and at the end your test unit should assert that all threads are dead.
+
+==============================================================================
+---------------
+ Exercise: 008
+---------------
+
+Write a Python unit test program to check if a database connection is successful.
+
+"018_python_concepts_unittest/008.db" is a database that have only one table 'exercises' with the following columns:
+    ['date', 'exercise', 'author', 'framework']
+    
+Create a unit test that creates a connection to that database and checks whether it has the expected tables and columns
+
+==============================================================================
+---------------
+ Exercise: 009
+---------------
+
+Write a Python unit test program to check if a database query returns the expected results.
+
+"018_python_concepts_unittest/008.db" is a database that have only one table 'exercises' with the following columns:
+    ['date', 'exercise', 'author', 'framework']
+
+Fetch all the contents of the 'exercises' table, and they should match the following:
+    [('2025-01-16', 8, 'Mustafa Younes', 'unittest')]
+
+==============================================================================
+---------------
+ Exercise: 010
+---------------
+
+Write a Python unit test program to check if a function correctly parses and validates input data.
+Note:   the data should be a numeric string which its corresponding int value greater zero.
+        if the data is not of the type string or is not numeric, the parsing function should raise TypeError
+
+The unit test should work OK on the following tests:
+
+"100"                                       =>  valid data
+"0", 1, 4.4, "hello", "45s", "-100"         =>  invalid data
+
+==============================================================================

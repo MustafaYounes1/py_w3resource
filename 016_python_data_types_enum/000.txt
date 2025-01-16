@@ -1,0 +1,96 @@
+---------------
+ Exercise: 001
+---------------
+
+Write a Python program to create the following Enum object
+
+    Afghanistan -> 93
+    Albania     -> 355
+    Algeria     -> 213
+    Andorra     -> 376
+    Angola      -> 244
+    Antarctica  -> 672
+
+Display the name and value of the Enum member: Albania
+
+==============================================================================
+---------------
+ Exercise: 002
+---------------
+
+Write a Python program that iterates over an enum class and displays each member and their value.
+
+    Afghanistan -> 93
+    Albania     -> 355
+    Algeria     -> 213
+    Andorra     -> 376
+    Angola      -> 244
+    Antarctica  -> 672
+
+name: AFGHANISTAN , value:   93
+name: ALBANIA     , value:  355
+name: ALGERIA     , value:  213
+name: ANDORRA     , value:  376
+name: ANGOLA      , value:  244
+name: ANTARCTICA  , value:  672
+
+==============================================================================
+---------------
+ Exercise: 003
+---------------
+
+Write a Python program to display all the member names of an enum class ordered by their values.
+
+    Afghanistan -> 93
+    Albania     -> 355
+    Algeria     -> 213
+    Andorra     -> 376
+    Angola      -> 244
+    Antarctica  -> 672
+
+['AFGHANISTAN', 'ALGERIA', 'ANGOLA', 'ALBANIA', 'ANDORRA', 'ANTARCTICA']
+
+==============================================================================
+---------------
+ Exercise: 004
+---------------
+
+Write a Python program to get all values from an enum class.
+
+    Afghanistan -> 93
+    Albania     -> 355
+    Algeria     -> 213
+    Andorra     -> 376
+    Angola      -> 244
+    Antarctica  -> 672
+
+[93, 355, 213, 376, 244, 672]
+
+==============================================================================
+---------------
+ Exercise: 005
+---------------
+
+Write a Python program to get unique enumeration values.
+
+    Afghanistan -> 93
+    Albania     -> 355
+    Algeria     -> 213
+    Andorra     -> 376
+    Angola      -> 244
+    Antarctica  -> 672
+    India       -> 355
+    USA         -> 213
+
+AFGHANISTAN 93
+ALBANIA    355
+ALGERIA    213
+ANDORRA    376
+ANGOLA     244
+
+Try to look up 355 value:  Country.ALBANIA
+Try to look up INDIA name: Country.ALBANIA
+Try to look up 213 value:  Country.ALGERIA
+Try to look up USA name:   Country.ALGERIA
+
+==============================================================================
