@@ -15,10 +15,13 @@ import unittest
 
 
 def parse(d: str) -> bool:
-    if isinstance(d, str) and d.isnumeric():
-        return int(d) > 0
+    if isinstance(d, str):
+        if d.isnumeric():
+            return int(d) > 0
+        else:
+            raise ValueError("Non-numeric string")
     else:
-        raise ValueError
+        raise TypeError("Non-string data")
 
 
 class TestDataValidity(unittest.TestCase):
@@ -35,7 +38,10 @@ class TestDataValidity(unittest.TestCase):
         data = [1, 4.4, "hello", "45s", "-100"]
         for sample in data:
             with self.subTest(f"Testing on {sample}"):
-                with self.assertRaises(ValueError):
+                with self.assertRaisesRegex(
+                        (TypeError, ValueError),
+                        r"^Non-string data$|^Non-numeric string$"
+                ):
                     parse(sample)
 
 

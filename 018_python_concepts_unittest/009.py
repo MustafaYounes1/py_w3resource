@@ -13,18 +13,20 @@ import pathlib
 import unittest
 
 
+_db_path = pathlib.Path("008.db")
+
+
+@unittest.skipUnless(_db_path.is_file(), f"The database file: {_db_path} is missing")
 class TestDatabaseTableContents(unittest.TestCase):
     """A unit test to test the contents in a database table"""
     __con = None
-    __db_path = pathlib.Path("008.db")
 
     @classmethod
     def setUpClass(cls):
         """Test case setup routine"""
         import sqlite3
 
-        assert pathlib.Path(cls.__db_path).is_file(), f"{cls.__db_path} doesn't exist"
-        cls.__con = sqlite3.connect(cls.__db_path)
+        cls.__con = sqlite3.connect(_db_path)
         cls.__cur = cls.__con.cursor()
 
     @classmethod
