@@ -1,0 +1,249 @@
+---------------
+ Exercise: 001
+---------------
+
+Write a Python program to create a class representing a Circle. Include methods to calculate its area and perimeter.
+
+Circle(radius=5.7)
+
+Area:       102.07
+Perimeter:   35.81
+
+==============================================================================
+---------------
+ Exercise: 002
+---------------
+
+Write a Python program to create a person class. Include attributes like name, country and date of birth.
+Implement a method to determine the person's age.
+
+Person("Mustafa Younes", "Syria", "1-11-1996")
+
+Age: xx years, and xx months, and xx days
+
+==============================================================================
+---------------
+ Exercise: 003
+---------------
+
+Write a Python program to create a calculator class. Include methods for basic arithmetic operations.
+e.g. Add, Sub, Mul, Div, True Div
+
+calc.add(5, 5)              =>  10
+calc.sub(0, 5)              =>  -5
+calc.mul(5.1, 2.3)          =>  11.729999999999999
+calc.div(5, 2.0)            =>  2.5
+calc.true_div(5, 2.0)       =>  2
+
+==============================================================================
+---------------
+ Exercise: 004
+---------------
+
+Write a Python program to create a class that represents a shape. Include methods to calculate its area and perimeter.
+Implement subclasses for different shapes like circle, triangle, and rectangle.
+
+Circle(radius=7)
+Rectangle(Width=7, Length=5)
+Triangle(sides=(4, 3, 5), base_idx=2, height=4)
+
+==================================================
+Circle(radius=7)
+Area:       153.94
+Perimeter:   43.98
+==================================================
+Rectangle(width=7, length=5)
+Area:        35.00
+Perimeter:   24.00
+==================================================
+Triangle(sides=(4, 3, 5), base=5, height=4)
+Area:        10.00
+Perimeter:   12.00
+==================================================
+
+==============================================================================
+---------------
+ Exercise: 005
+---------------
+
+Write a Python program to create a class representing a binary search tree. Include methods for:
+    1. inserting nodes
+    2. traversing the tree depth-first with different orders: (in-order, pre-order, and post-order)
+    3. traversing the tree breadth-first
+    4. searching for values
+    5. find min_val
+    6. find max_val
+    7. deleting node
+
+
+bst.insert(8)
+bst.insert(3)
+bst.insert(1)
+bst.insert(6)
+bst.insert(7)
+bst.insert(10)
+bst.insert(14)
+bst.insert(4)
+
+in-order traversal      =>  [1, 3, 4, 6, 7, 8, 10, 14]
+pre-order traversal     =>  [8, 3, 1, 6, 4, 7, 10, 14]
+post-order traversal    =>  [1, 4, 7, 6, 3, 14, 10, 8]
+
+14  in bst      =>  True
+34  in bst      =>  False
+6   in bst      =>  True
+0   in bst      =>  False
+8   in bst      =>  True
+
+Minimum value in the bst:  1
+Maximum value in the bst: 14
+
+// delete 8 from the BST //
+8 in bst: False
+In-order:   [1, 3, 4, 6, 7, 10, 14]
+
+==============================================================================
+---------------
+ Exercise: 006
+---------------
+
+Write a Python program to create a class representing a stack data structure. Include methods for:
+    pushing
+    popping
+    check if the stack is empty
+    the len of the stack
+    peek at the last element if there are any elements without removing it
+
+stack.push(0)
+stack.push(1)
+stack.push(2)
+stack.push(3)
+stack.push(4)
+
+Stack size:     5
+Last element:   4
+
+// pop an element from the stack //
+Stack size:     4
+Last element:   3
+
+==============================================================================
+---------------
+ Exercise: 007
+---------------
+
+Write a Python program to create a class representing a linked list data structure. Include methods for:
+    1. inserting nodes (at the beginning, at the end, and at a given index)
+    2. updating a node given a certain index
+    3. deleting nodes (first node, last node, a node that hold given data (first occurrence), and at a node given index)
+    4. check whether a value exists in the linked list
+    5. getting the size of the linked list
+    6. displaying the linked list data
+
+ll = LinkedList()
+
+ll.insert(0, 'a')
+ll.insert(1, 'b')
+ll.insert(-1, 'c')
+ll.insert(-1, 'e')
+ll.insert(3, 'd')
+
+ll          =>  ['a', 'b', 'c', 'd', 'e']
+'d' in ll   =>  True
+
+ll.delete(0)
+ll.delete(1)
+ll.remove('d')
+
+The size of the linked list     =>  2
+ll                              =>  ['b', 'e']
+'d' in ll                       =>  False
+
+ll.update(0, 'z')
+
+ll                              =>  ['z', 'e']
+
+==============================================================================
+---------------
+ Exercise: 008
+---------------
+
+Write a Python program to create a class representing a shopping cart.
+
+Each item in the shopping cart would have a: name, count, and price
+
+Include methods for:
+    Adding an item
+    Adding a group of items
+    Removing a single item given its name
+    Removing a group of items given their name
+    Calculating the price of all items in the shopping cart
+
+sh = ShoppingCart()
+
+sh.add_item("chicken", 1, 50)
+sh.add_items(
+    [
+        ("milk", 1, 25),
+        ("soda", 2, 15.5),
+        ("bread", 4, 10)
+    ]
+)
+
+sh.get_price        =>  146.0
+
+sh.remove_item("milk")
+sh.remove_items(["soda", "chicken"])
+
+sh.get_price        =>  40
+
+==============================================================================
+---------------
+ Exercise: 009
+---------------
+
+Write a Python program to create a class representing a queue data structure. Include methods to:
+    1. enqueue and dequeue elements from the queue.
+    2. return the size of the queue
+    3. check whether an element exists in the queue
+    3. get a list of the queue
+
+queue.enqueue(10)
+queue.enqueue(20)
+queue.enqueue(30)
+queue.enqueue(40)
+queue.enqueue(50)
+
+queue.to_list()         =>  [10, 20, 30, 40, 50]
+
+queue.dequeue()         =>  10
+queue.dequeue()         =>  20
+queue.dequeue()         =>  30
+
+len(queue)              =>  2
+
+20 in queue             =>  False
+
+queue.to_list()         =>  [40, 50]
+
+==============================================================================
+---------------
+ Exercise: 010
+---------------
+
+Write a Python program to create a class representing a bank.
+
+The bank would open accounts for customers, where each account is characterized by an ID and would have a certain
+balance. The bank should provide methods for depositing/withdrawing money in/from the user account, and checking their
+balance.
+
+bank.open_account("SB-123", 1000)
+bank.open_account("SB-124", 1500)
+
+bank.deposit("SB-123", 600)
+bank.withdraw("SB-124", 350)
+
+Balance in 'SB-123': 1600
+Balance in 'SB-124': 1150
+
+==============================================================================
