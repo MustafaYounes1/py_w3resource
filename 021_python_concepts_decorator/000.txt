@@ -1,0 +1,226 @@
+---------------
+ Exercise: 001
+---------------
+
+Write a Python program to create a decorator that logs the name + the arguments + the returned value of a function.
+
+@func_logger
+def test(*args, **kwargs) -> None:
+    ...
+
+test(1, 0, None, name="Mustafa", age=28)
+
+>>      'test' called with the positional args: '(1, 0, None)', and keyword args: '{'name': 'Mustafa', 'age': 28}'
+        'test' returned the value: 'None'
+
+==============================================================================
+---------------
+ Exercise: 002
+---------------
+
+Write a Python program to create a decorator function to measure the execution time of a function.
+
+@func_benchmark
+def test(s: int, e: int) -> int:
+    i = 0
+    for _ in range(s, e):
+        i += 1
+
+    return i
+
+_ = test(0, 100_000_000)
+
+>>      test took 4.833 sec
+        Result of the execution: 100,000,000
+
+==============================================================================
+---------------
+ Exercise: 003
+---------------
+
+Write a Python program to create a decorator to convert the return value of a function to a specified data type.
+
+@cast_return_to(float)
+def add_integers(a: int, b: int) -> int:
+    return a + b
+
+res = add_integers(1, 2)
+
+>   3.0 is of type: <class 'float'>
+
+==============================================================================
+---------------
+ Exercise: 004
+---------------
+
+Write a Python program that
+    implements a decorator to cache the result of a function that calculates the product of a list of numbers.
+        Note: the cache should have a maxsize that must not get exceeded (FIFO)
+    implements a decorator to benchmark the calls product of huge lists
+
+
+// The cache max size is 2 //
+
+data = [
+    [random.randint(1, 1000) for _ in range(200_000)],
+    [random.randint(1, 1000) for _ in range(200_000)],
+    [random.randint(1, 1000) for _ in range(200_000)]
+]
+
+multiply(data[0])       the cache holds the res of: [data[0]]
+multiply(data[1])       the cache holds the res of: [data[0], data[1]]
+multiply(data[0])       the cache holds the res of: [data[0], data[1]]      (Retrieve the result from the cache)
+multiply(data[2])       the cache holds the res of: [data[1], data[2]]
+multiply(data[0])       the cache holds the res of: [data[2], data[0]]
+multiply(data[1])       the cache holds the res of: [data[0], data[1]]
+multiply(data[1])       the cache holds the res of: [data[0], data[1]]      (Retrieve the result from the cache)
+
+took 6.019 sec
+took 8.125 sec
+multiply was already executed on the given args
+took 0.042 sec
+took 8.228 sec
+took 6.370 sec
+took 9.496 sec
+multiply was already executed on the given args
+took 0.040 sec
+
+==============================================================================
+---------------
+ Exercise: 005
+---------------
+
+Write a Python program that implements a decorator to validate function arguments based on a given condition.
+    The decorator should return the multiplication of a sequence if all of its elements are positive
+    Otherwise the decorator should raise an error
+
+print(multiply([1, 2, 3, 5]))
+print(multiply([1, 2, -3, 5]))
+
+30
+ValueError: The function arguments don't statisfy the specified condition
+
+==============================================================================
+---------------
+ Exercise: 006
+---------------
+
+Write a Python program that implements a decorator to retry a function multiple times in case of failure.
+    Try to open '006.db' and fetch all contents from the table 'STUDENT'
+    retry 3 times with a delay of 2 seconds
+
+==============================================================================
+---------------
+ Exercise: 007
+---------------
+
+Write a Python program that implements a decorator to enforce rate limits on a function.
+    Limits the number of function calls within a specified time period.
+
+==============================================================================
+---------------
+ Exercise: 008
+---------------
+
+Write a Python program that implements a decorator to handle exceptions raised by a function and provide a default
+response. Your decorator should provide a default value for all ArithmeticErrors (e.g. division by zero)
+
+print(divide(1, 2))
+print(divide(1, 0))
+
+0.5
+An arithmetic error occurred: 'division by zero', returning the default value: 0.0
+0.0
+
+==============================================================================
+---------------
+ Exercise: 009
+---------------
+
+Write a Python program that implements a decorator to enforce type checking on the arguments of a function.
+    The decorator would check that all args are of the annotated datatype if not it would raise TypeError
+
+@arg_type_check
+def f1(x: int, y: int, z: str) -> ...:
+    ...
+
+
+@arg_type_check
+def f2(name: str, age: int, salary: float) -> ...:
+    ...
+
+
+f1(1, 1, "s")  # f1 executed successfully
+f1(1, 1.0, "s")  # 'y' should be of type: 'int'
+f1("1", 1, "s")  # 'x' should be of type: 'int'
+f2(age=1, salary=100.25, name="Mike")  # f2 executed successfully
+f2(salary=22, name="Mike", age=1)  # 'salary' should be of type: 'float'
+f2(salary=1.2, name="Mike", age=[1, 2])  # 'age' should be of type: 'int'
+
+==============================================================================
+---------------
+ Exercise: 010
+---------------
+
+Write a Python program that implements a decorator to measure the memory usage of a function.
+    Hint: use 'tracemalloc' to trace memory blocks allocated by Python.
+    Implement a function that would calculate the factorial of number and trace its memory allocations, print the
+    top 5 statistics of the memory allocations grouped by the filename and the line number
+
+res = factorial(3)
+
+factorial memory usage:
+D:\\learn\\python\\w3resource\\021_python_concepts_decorator\\010.py:23: size=128 B, count=2, average=64 B
+D:\\learn\\python\\w3resource\\021_python_concepts_decorator\\010.py:42: size=64 B, count=1, average=64 B
+factorial memory usage:
+D:\\learn\\python\\w3resource\\021_python_concepts_decorator\\010.py:42: size=64 B, count=1, average=64 B
+D:\\learn\\python\\w3resource\\021_python_concepts_decorator\\010.py:23: size=64 B, count=1, average=64 B
+C:\\Users\\muyo\\anaconda3\\envs\\py_w3resource\\Lib\\tracemalloc.py:485: size=64 B, count=1, average=64 B
+C:\\Users\\muyo\\anaconda3\\envs\\py_w3resource\\Lib\\tracemalloc.py:484: size=64 B, count=1, average=64 B
+C:\\Users\\muyo\\anaconda3\\envs\\py_w3resource\\Lib\\tracemalloc.py:558: size=56 B, count=1, average=56 B
+factorial memory usage:
+C:\\Users\\muyo\\anaconda3\\envs\\py_w3resource\\Lib\\tracemalloc.py:193: size=288 B, count=6, average=48 B
+C:\\Users\\muyo\\anaconda3\\envs\\py_w3resource\\Lib\\tracemalloc.py:558: size=160 B, count=3, average=53 B
+C:\\Users\\muyo\\anaconda3\\envs\\py_w3resource\\Lib\\tracemalloc.py:485: size=128 B, count=2, average=64 B
+C:\\Users\\muyo\\anaconda3\\envs\\py_w3resource\\Lib\\tracemalloc.py:484: size=128 B, count=2, average=64 B
+factorial memory usage:
+C:\\Users\\muyo\\anaconda3\\envs\\py_w3resource\\Lib\\tracemalloc.py:558: size=448 B, count=9, average=50 B
+C:\\Users\\muyo\\anaconda3\\envs\\py_w3resource\\Lib\\tracemalloc.py:485: size=128 B, count=2, average=64 B
+C:\\Users\\muyo\\anaconda3\\envs\\py_w3resource\\Lib\\tracemalloc.py:484: size=128 B, count=2, average=64 B
+D:\\learn\\python\\w3resource\\021_python_concepts_decorator\\010.py:29: size=56 B, count=1, average=56 B
+
+Result: 6
+
+==============================================================================
+---------------
+ Exercise: 011
+---------------
+
+Write a Python program that implements a decorator to provide caching with expiration time for a function.
+    Implement a function that would calculate the multiplication of an Iterable and return the result
+    Cache the returned values for provided arguments and the cache should expire in s seconds
+
+
+@cache(expiry_time=5)
+def multiply(iterable: Iterable) -> int | float:
+    return reduce(mul, iterable)
+
+
+print(multiply([1, 2, 3]))
+print(multiply([15, 14, 6, 2, 7]))
+print(multiply([1, 2, 3]))
+print(multiply([15, 14, 6, 2, 7]))
+print("Sleep for 5 second ...")
+time.sleep(5)
+print(multiply([15, 14, 6, 2, 7]))
+
+6
+17640
+multiply was already executed on the given args (1, 2, 3)
+6
+multiply was already executed on the given args (15, 14, 6, 2, 7)
+17640
+Sleep for 5 second ...
+17640
+
+==============================================================================
