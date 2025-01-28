@@ -1,0 +1,542 @@
+---------------
+ Exercise: 001
+---------------
+
+Write a Python program to create an iterator from several iterables in a sequence and display the elements of the
+new iterator.
+
+[(10, 20, 30, 40), ('A', 'B', 'C', 'D'), (40, 50, 60, 70, 80, 90)]
+
+10 20 30 40 A B C D 40 50 60 70 80 90
+
+==============================================================================
+---------------
+ Exercise: 002
+---------------
+
+Write a Python program that generates the running product of elements in an iterable.
+
+[1, 2, 3, 4, 5, 6, 7]   =>  [1, 2, 6, 24, 120, 720, 5040]
+
+==============================================================================
+---------------
+ Exercise: 003
+---------------
+
+Write a Python program to generate the running maximum and minimum values of the elements of an iterable.
+
+Running max of [1, 3, 2, 7, 9, 8, 10, 11, 12, 14, 11, 12, 7]
+[1, 3, 3, 7, 9, 9, 10, 11, 12, 14, 14, 14, 14]
+
+Running min of [3, 2, 7, 9, 8, 10, 11, 12, 1, 14, 11, 12, 7]
+[3, 2, 2, 2, 2, 2, 2, 2, 1, 1, 1, 1, 1]
+
+==============================================================================
+---------------
+ Exercise: 004
+---------------
+
+Write a Python program to construct an infinite iterator that returns evenly spaced values starting with a specified
+number (10) and a step (1). Print the first 10 values
+
+10 11 12 13 14 15 16 17 18 19
+
+==============================================================================
+---------------
+ Exercise: 005
+---------------
+
+Write a Python program to generate an infinite cycle of elements from an iterable.
+    Print the first 3 cycles
+
+['A', 'B', 'C', 'D']   =>  A B C D A B C D A B C D
+
+==============================================================================
+---------------
+ Exercise: 006
+---------------
+
+Write a Python program to make an iterator that drops elements from the iterable as long as the elements are negative;
+afterward, it returns every element.
+
+[-1, -2, -3, 4, -10, 2, 0, 5, 12]   =>  [4, -10, 2, 0, 5, 12]
+
+==============================================================================
+---------------
+ Exercise: 007
+---------------
+
+Write a Python program to create an iterator that returns consecutive keys and groups from an iterable.
+
+'AAAAJJJJHHHHNWWWEERRRSSSOOIIU'
+    [
+        ('A', ['A', 'A', 'A', 'A']), ('J', ['J', 'J', 'J', 'J']), ('H', ['H', 'H', 'H', 'H']), ('N', ['N']),
+        ('W', ['W', 'W', 'W']), ('E', ['E', 'E']), ('R', ['R', 'R', 'R']), ('S', ['S', 'S', 'S']), ('O', ['O', 'O']),
+        ('I', ['I', 'I']), ('U', ['U'])
+    ]
+
+[1, 2, 2, 3, 4, 4, 5, 5, 5, 6, 6, 7, 7, 7, 8]
+    [(1, [1]), (2, [2, 2]), (3, [3]), (4, [4, 4]), (5, [5, 5, 5]), (6, [6, 6]), (7, [7, 7, 7]), (8, [8])]
+
+==============================================================================
+---------------
+ Exercise: 008
+---------------
+
+Write a Python program to split an iterable and generate iterables a specified number of times.
+
+['A', 'B', 'C', 'D']
+    ['A', 'B', 'C', 'D']
+    ['A', 'B', 'C', 'D']
+    ['A', 'B', 'C', 'D']
+    ['A', 'B', 'C', 'D']
+    ['A', 'B', 'C', 'D']
+
+==============================================================================
+---------------
+ Exercise: 009
+---------------
+
+Write a Python program to create an iterator to get a specified number of permutations of elements.
+
+['A', 'B', 'C', 'D'], 3
+
+[
+    ('A', 'B', 'C'), ('A', 'B', 'D'), ('A', 'C', 'B'), ('A', 'C', 'D'), ('A', 'D', 'B'), ('A', 'D', 'C'),
+    ('B', 'A', 'C'), ('B', 'A', 'D'), ('B', 'C', 'A'), ('B', 'C', 'D'), ('B', 'D', 'A'), ('B', 'D', 'C'),
+    ('C', 'A', 'B'), ('C', 'A', 'D'), ('C', 'B', 'A'), ('C', 'B', 'D'), ('C', 'D', 'A'), ('C', 'D', 'B'),
+    ('D', 'A', 'B'), ('D', 'A', 'C'), ('D', 'B', 'A'), ('D', 'B', 'C'), ('D', 'C', 'A'), ('D', 'C', 'B')
+]
+
+==============================================================================
+---------------
+ Exercise: 010
+---------------
+
+Write a Python program to generate combinations of a given length of a given iterable.
+
+"Python", 1                 =>  [('P',), ('y',), ('t',), ('h',), ('o',), ('n',)]
+['A', 'B', 'C', 'D'], 2     =>  [('A', 'B'), ('A', 'C'), ('A', 'D'), ('B', 'C'), ('B', 'D'), ('C', 'D')]
+
+==============================================================================
+---------------
+ Exercise: 011
+---------------
+
+Write a Python program to compute the Cartesian product of two or more given lists using itertools.
+
+[1, 2], [3, 4]          =>  [(1, 3), (1, 4), (2, 3), (2, 4)]
+[1, 2, 3], [3, 4, 5]    =>  [(1, 3), (1, 4), (1, 5), (2, 3), (2, 4), (2, 5), (3, 3), (3, 4), (3, 5)]
+[], [1, 2, 3]           =>  []
+[1, 2], []              =>  []
+
+==============================================================================
+---------------
+ Exercise: 012
+---------------
+
+Write a Python program that will select a specified number of colours from three different colours, and then generate
+all the combinations with repetitions.
+
+["Red", "Green", "Blue"]
+
+1: [('Red',), ('Green',), ('Blue',)]
+
+2: [('Red', 'Red'), ('Red', 'Green'), ('Red', 'Blue'), ('Green', 'Green'), ('Green', 'Blue'), ('Blue', 'Blue')]
+
+3: [
+    ('Red', 'Red', 'Red'), ('Red', 'Red', 'Green'), ('Red', 'Red', 'Blue'), ('Red', 'Green', 'Green'),
+    ('Red', 'Green', 'Blue'), ('Red', 'Blue', 'Blue'), ('Green', 'Green', 'Green'), ('Green', 'Green', 'Blue'),
+    ('Green', 'Blue', 'Blue'), ('Blue', 'Blue', 'Blue')
+]
+
+==============================================================================
+---------------
+ Exercise: 013
+---------------
+
+Write a Python program to generate all possible permutations of specified characters drawn from a specific word.
+    Note: permutations with repeated chars are required
+
+"Red"
+
+1:  ['R', 'e', 'd']
+2:  ['RR', 'Re', 'Rd', 'eR', 'ee', 'ed', 'dR', 'de', 'dd']
+3:  ['RRR', 'RRe', 'RRd', 'ReR', 'Ree', 'Red', 'RdR', 'Rde', 'Rdd', 'eRR', 'eRe', 'eRd', 'eeR', 'eee', 'eed', 'edR',
+    'ede', 'edd', 'dRR', 'dRe', 'dRd', 'deR', 'dee', 'ded', 'ddR', 'dde', 'ddd']
+
+==============================================================================
+---------------
+ Exercise: 014
+---------------
+
+Write a Python program to generate all possible permutations of n different objects.
+
+[1]         =>  [(1,)]
+[1, 2]      =>  [(1, 2), (2, 1)]
+[1, 2, 3]   =>  [(1, 2, 3), (1, 3, 2), (2, 1, 3), (2, 3, 1), (3, 1, 2), (3, 2, 1)]
+
+==============================================================================
+---------------
+ Exercise: 015
+---------------
+
+Write a Python program to find the sorted sequence from a set of permutations of a given input.
+    Note: find the sorted sequences in ascending order
+
+[12, 10, 9]     =>  [(9, 10, 12)]
+[2, 3, 1, 0]    =>  [(0, 1, 2, 3)]
+
+==============================================================================
+---------------
+ Exercise: 016
+---------------
+
+Write a Python program to read a given string character by character and compress repeated characters by storing
+the length of those character(s).
+
+AAASSSSKKIOOOORRRREEETTTTAAAABBBBBBDDDDD
+[(3, 'A'), (4, 'S'), (2, 'K'), (1, 'I'), (4, 'O'), (4, 'R'), (3, 'E'), (4, 'T'), (4, 'A'), (6, 'B'), (5, 'D')]
+
+jjjjiiiiooooosssnssiiiiwwwweeeaaaabbbddddkkkklll
+[
+    (4, 'j'), (4, 'i'), (5, 'o'), (3, 's'), (1, 'n'), (2, 's'), (4, 'i'), (4, 'w'), (3, 'e'), (4, 'a'), (3, 'b'),
+    (4, 'd'), (4, 'k'), (3, 'l')
+]
+
+==============================================================================
+---------------
+ Exercise: 017
+---------------
+
+Write a Python program to generate permutations of n items.
+
+n = 3   =>  [(0, 1, 2), (0, 2, 1), (1, 0, 2), (1, 2, 0), (2, 0, 1), (2, 1, 0)]
+
+==============================================================================
+---------------
+ Exercise: 018
+---------------
+
+Write a Python program that iterates the integers from 1 to a given number and prints "Fizz" for multiples of three,
+prints "Buzz" for multiples of five, and prints "FizzBuzz" for multiples of both three and five using the itertools
+module.
+
+50
+
+[
+    1, 2, 'Fizz', 4, 'Buzz', 'Fizz', 7, 8, 'Fizz', 'Buzz', 11, 'Fizz', 13, 14, 'FizzBuzz', 16, 17, 'Fizz', 19, 'Buzz',
+    'Fizz', 22, 23, 'Fizz', 'Buzz', 26, 'Fizz', 28, 29, 'FizzBuzz', 31, 32, 'Fizz', 34, 'Buzz', 'Fizz', 37, 38, 'Fizz',
+    'Buzz', 41, 'Fizz', 43, 44, 'FizzBuzz', 46, 47, 'Fizz', 49, 'Buzz'
+]
+
+==============================================================================
+---------------
+ Exercise: 019
+---------------
+
+Write a Python program to find the factorial of a number using the itertools module.
+
+5   =>  120
+
+==============================================================================
+---------------
+ Exercise: 020
+---------------
+
+Write a Python program to find the years between 2000 and 2150 when the 25th of December is a Sunday.
+
+[2005, 2011, 2016, 2022, 2033, 2039, 2044, 2050, 2061, 2067, 2072, 2078, 2089, 2095, 2101, 2107, 2112, 2118, 2129,
+2135, 2140, 2146]
+
+==============================================================================
+---------------
+ Exercise: 021
+---------------
+
+Write a Python program to create a 24-hour time format (HH:MM) using the 4 given digits. Display the latest time and
+do not use any digit more than once.
+
+[1, 2, 3, 4]    =>  23:41
+[1, 2, 4, 5]    =>  21:54
+[2, 2, 4, 5]    =>  22:54
+[2, 2, 4, 3]    =>  23:42
+[0, 2, 4, 3]    =>  23:40
+
+==============================================================================
+---------------
+ Exercise: 022
+---------------
+
+Write a Python program to find the shortest distance from a specified character in a given string. Return the
+shortest distances through a list and use an itertools component to solve the problem.
+
+"r", "w3resource"           =>  [2, 1, 0, 1, 2, 2, 1, 0, 1, 2]
+"e", "python exercises"     =>  [7, 6, 5, 4, 3, 2, 1, 0, 1, 0, 1, 2, 2, 1, 0, 1]
+"S", "JavaScript"           =>  [4, 3, 2, 1, 0, 1, 2, 3, 4, 5]
+
+==============================================================================
+---------------
+ Exercise: 023
+---------------
+
+Write a Python program to find the maximum length of a substring in a given string where all the characters of the
+substring are the same. Use the itertools module to solve the problem.
+
+"aaabbccddeeeee"    =>  5
+"c++ exercises"     =>  2
+
+==============================================================================
+---------------
+ Exercise: 024
+---------------
+
+Write a Python program to find the pairs of elements from a given list whose sum is equal to a given value.
+Use the itertools module to solve the problem.
+
+[1, 2, 3, 4, 5, 6, 7], 10       =>  [(3, 7), (4, 6)]
+[1, 2, -3, -4, -5, 6, -7], -6   =>  [(1, -7)]
+
+==============================================================================
+---------------
+ Exercise: 025
+---------------
+
+Write a Python program to find the nth Hamming number. Use the itertools module.
+
+Hamming numbers are numbers of the form:    H = 2^i x 3^j x 5^k Where i, j, k ≥ 0
+The sequence of Hamming numbers 1, 2, 3, 4, 5, 6, 8, 9, 10, 12, 15, 16, 18, 20, 24, 25, 27. . .
+
+8   =>  9
+14  =>  20
+17  =>  27
+
+==============================================================================
+---------------
+ Exercise: 026
+---------------
+
+Create a Python program that chooses a specified number of colors from three different colors and generates
+unique combinations.
+
+['Red', 'Green', 'Blue']
+
+n = 1       =>  ['Red', 'Green', 'Blue']
+n = 2       =>  ['Red and Green', 'Red and Blue', 'Green and Blue']
+n = 3       =>  ['Red and Green and Blue']
+
+==============================================================================
+---------------
+ Exercise: 027
+---------------
+
+Write a Python program to find the maximum, minimum aggregation pair in a given list of integers.
+
+[1, 3, 4, 5, 4, 7, 9, 11, 10, 9]
+
+Maximum aggregation pair of the said list of tuple pair:
+(11, 10)
+
+Minimum aggregation pair of the said list of tuple pair:
+(1, 3)
+
+==============================================================================
+---------------
+ Exercise: 028
+---------------
+
+Write a Python program to interleave multiple lists of the same length. Use the itertools module.
+
+list1 = [100, 200, 300, 400, 500, 600, 700]
+list2 = [10, 20, 30, 40, 50, 60, 70]
+list3 = [1, 2, 3, 4, 5, 6, 7]
+
+[100, 10, 1, 200, 20, 2, 300, 30, 3, 400, 40, 4, 500, 50, 5, 600, 60, 6, 700, 70, 7]
+
+==============================================================================
+---------------
+ Exercise: 029
+---------------
+
+Write a Python program to count the frequency of consecutive duplicate elements in a given list of numbers.
+Use the itertools module.
+
+[1, 1, 2, 2, 2, 4, 4, 4, 5, 5, 5, 5]    =>  [2, 3, 3, 4]
+
+==============================================================================
+---------------
+ Exercise: 030
+---------------
+
+Write a Python program to count the frequency of the elements of a given unordered list.
+
+[2, 1, 3, 8, 5, 1, 4, 2, 3, 4, 0, 8, 2, 0, 8, 4, 2, 3, 4, 2]
+
+{0: 2, 1: 2, 2: 5, 3: 3, 4: 4, 5: 1, 8: 3}
+
+==============================================================================
+---------------
+ Exercise: 031
+---------------
+
+Write a Python program to find pairs of maximum and minimum products from a given list. Use the itertools module.
+
+[2, 5, 8, 7, 4, 3, 1, 9, 10, 1]
+
+Pairs of maximum and minimum product from the said list:
+((9, 10), (1, 1))
+
+==============================================================================
+---------------
+ Exercise: 032
+---------------
+
+Write a Python program to compute the sum of digits of each number in a given list of positive integers.
+
+[10, 2, 56]         =>  14
+[10, 20, 4, 5, 70]  =>  19
+
+==============================================================================
+---------------
+ Exercise: 033
+---------------
+
+Write a Python program to get all possible combinations of the elements of a given list using the itertools module.
+
+['orange', 'red', 'green', 'blue']
+
+[
+    [()],
+    [('orange',), ('red',), ('green',), ('blue',)],
+    [('orange', 'red'), ('orange', 'green'), ('orange', 'blue'), ('red', 'green'), ('red', 'blue'), ('green', 'blue')],
+    [('orange', 'red', 'green'), ('orange', 'red', 'blue'), ('orange', 'green', 'blue'), ('red', 'green', 'blue')],
+    [('orange', 'red', 'green', 'blue')]
+]
+
+==============================================================================
+---------------
+ Exercise: 034
+---------------
+
+Write a Python program to add two given lists of different lengths, starting from the right, using the itertools module.
+
+[2, 4, 7, 0, 5, 8]
+[3, 3, -1, 7]
+
+    [2, 4, 10, 3, 4, 15]
+
+
+[1, 2, 3, 4, 5, 6]
+[2, 4, -3]
+
+    [1, 2, 3, 6, 9, 3]
+
+==============================================================================
+---------------
+ Exercise: 035
+---------------
+
+Write a Python program to add two given lists of different lengths, starting from the left, using the itertools module.
+
+[2, 4, 7, 0, 5, 8]
+[3, 3, -1, 7]
+
+    [5, 7, 6, 7, 5, 8]
+
+
+[1, 2, 3, 4, 5, 6]
+[2, 4, -3]
+
+    [3, 6, 0, 4, 5, 6]
+
+==============================================================================
+---------------
+ Exercise: 036
+---------------
+
+Write a Python program to interleave a number of lists of different lengths using the itertools module.
+
+[2, 4, 7, 0, 5, 8]
+[2, 5, 8]
+[0, 1]
+[3, 3, -1, 7]
+
+[2, 2, 0, 3, 4, 5, 1, 3, 7, 8, -1, 0, 7, 5, 8]
+
+==============================================================================
+---------------
+ Exercise: 037
+---------------
+
+Write a Python program to get the index of the first element that is greater than a specified element using the
+itertools module.
+
+[12, 45, 23, 67, 78, 90, 100, 76, 38, 62, 73, 29, 83]
+
+Index of the first element which is greater than 73     =>  4
+Index of the first element which is greater than 21     =>  1
+Index of the first element which is greater than 80     =>  5
+Index of the first element which is greater than 55     =>  3
+
+==============================================================================
+---------------
+ Exercise: 038
+---------------
+
+Write a Python program to split a given list into specified sized chunks using the itertools module.
+
+[12, 45, 23, 67, 78, 90, 45, 32, 100, 76, 38, 62, 73, 29, 83]
+
+3   =>  [(12, 45, 23), (67, 78, 90), (45, 32, 100), (76, 38, 62), (73, 29, 83)]
+4   =>  [(12, 45, 23, 67), (78, 90, 45, 32), (100, 76, 38, 62), (73, 29, 83)]
+5   =>  [(12, 45, 23, 67, 78), (90, 45, 32, 100, 76), (38, 62, 73, 29, 83)]
+
+==============================================================================
+---------------
+ Exercise: 039
+---------------
+
+Write a Python program to find all lower and upper mixed case combinations of a given string.
+
+abc
+['abc', 'abC', 'aBc', 'aBC', 'Abc', 'AbC', 'ABc', 'ABC']
+
+w3r
+['w3r', 'w3R', 'w3r', 'w3R', 'W3r', 'W3R', 'W3r', 'W3R']
+
+==============================================================================
+---------------
+ Exercise: 040
+---------------
+
+Write a Python program to create groups of similar items from a given list.
+
+['red_1', 'red_2', 'green_1', 'green_2', 'green_3', 'orange_1', 'orange_2']
+[['red_1', 'red_2'], ['green_1', 'green_2', 'green_3'], ['orange_1', 'orange_2']]
+
+['red_1', 'green-1', 'green_2', 'green_3', 'orange-1', 'orange_2']
+[['red_1'], ['green-1'], ['green_2', 'green_3'], ['orange-1'], ['orange_2']]
+
+==============================================================================
+---------------
+ Exercise: 041
+---------------
+
+Write a Python program to find the maximum difference between pairs in a given list.
+
+[32, 14, 90, 10, 22, 42, 31]
+
+(90, 10)
+
+==============================================================================
+---------------
+ Exercise: 042
+---------------
+
+Write a Python program to extract a non-zero block from a given integer list.
+
+[3, 4, 6, 2, 0, 0, 0, 0, 0, 0, 6, 7, 6, 9, 10, 0, 0, 0, 0, 0, 7, 4, 4, 0, 0, 0, 0, 0, 0, 5, 3, 2, 9, 7, 1]
+
+[[3, 4, 6, 2], [6, 7, 6, 9, 10], [7, 4, 4], [5, 3, 2, 9, 7, 1]]
+
+==============================================================================
