@@ -1,0 +1,256 @@
+---------------
+ Exercise: 001
+---------------
+
+Write a Python program to read an entire text file.
+    Input file: 001.txt
+
+Welcome to w3resource.com.
+Append this text.Append this text.Append this text.
+Append this text.
+Append this text.
+Append this text.
+Append this text.
+
+==============================================================================
+---------------
+ Exercise: 002
+---------------
+
+Write a Python program to read first n lines of a file.
+    Input file: 001.txt
+
+Welcome to w3resource.com.
+Append this text.Append this text.Append this text.
+
+==============================================================================
+---------------
+ Exercise: 003
+---------------
+
+Write a Python program to append text to a file and display the text.
+    Input file: 003.txt
+    Append the following line: 'Python Exercises'
+
+Welcome to w3resource.com.
+Append this text.Append this text.Append this text.
+Append this text.
+Append this text.
+Append this text.
+Append this text.
+Python Exercises
+
+==============================================================================
+---------------
+ Exercise: 004
+---------------
+
+Write a Python program to read last n lines of a file.
+    Input file: 001.txt
+    Read the last two lines
+
+Append this text.
+Append this text.
+
+==============================================================================
+---------------
+ Exercise: 005
+---------------
+
+Write a Python program to read a file and store its into a list.
+    Input file: 001.txt
+
+[
+    'Welcome to w3resource.com.\n',
+    'Append this text.Append this text.Append this text.\n',
+    'Append this text.\n',
+    'Append this text.\n',
+    'Append this text.\n',
+    'Append this text.\n'
+]
+
+==============================================================================
+---------------
+ Exercise: 006
+---------------
+
+Write a Python program to read a file line by line and store its first 3 lines into a list.
+    Input file: 001.txt
+
+['Welcome to w3resource.com.\n', 'Append this text.Append this text.Append this text.\n', 'Append this text.\n']
+
+==============================================================================
+---------------
+ Exercise: 007
+---------------
+
+Write a python program to find the longest word.
+    Input file: 007.txt
+    Note: clear all punctuations except for "-"
+
+general-purpose
+
+==============================================================================
+---------------
+ Exercise: 008
+---------------
+
+Write a Python program to count the number of lines in a text file.
+    Input file: 007.txt
+
+6
+
+==============================================================================
+---------------
+ Exercise: 009
+---------------
+
+Write a Python program to count the frequency of words in a file.
+    Input file: 007.txt
+    Note: clear all punctuations except for "-"
+
+{
+    'what': 1, 'is': 3, 'python': 4, 'language': 2, 'a': 3, 'widely': 1, 'used': 1, 'high-level': 1,
+    'general-purpose': 1, 'interpreted': 1, 'dynamic': 2, 'programming': 3, 'its': 2, 'design': 1,
+    'philosophy': 1, 'emphasizes': 1, 'code': 2, 'readability': 1, 'and': 6, 'syntax': 1, 'allows': 1,
+    'programmers': 1, 'to': 2, 'express': 1, 'concepts': 1, 'in': 2, 'fewer': 1, 'lines': 1, 'of': 1,
+    'than': 1, 'possible': 1, 'languages': 1, 'such': 1, 'as': 1, 'c': 1, 'or': 2, 'java': 1,
+    'supports': 1, 'multiple': 1, 'paradigms': 1, 'including': 1, 'object-oriented': 1, 'imperative': 1,
+    'functional': 1, 'procedural': 1, 'styles': 1, 'it': 1, 'features': 1, 'type': 1, 'system': 1,
+    'automatic': 1, 'memory': 1, 'management': 1, 'has': 1, 'large': 1, 'comprehensive': 1, 'standard': 1,
+    'library': 1, 'the': 1, 'best': 1, 'way': 1, 'we': 2, 'learn': 1, 'anything': 1, 'by': 1, 'practice': 1,
+    'exercise': 1, 'questions': 1, 'have': 1, 'started': 1, 'this': 1, 'section': 1, 'for': 1, 'those': 1,
+    'beginner': 1, 'intermediate': 1, 'who': 1, 'are': 1, 'familiar': 1, 'with': 1
+}
+
+==============================================================================
+---------------
+ Exercise: 010
+---------------
+
+Write a Python program to get the file size of a plain file.
+    Input file: 007.txt
+
+0.71 KB
+
+==============================================================================
+---------------
+ Exercise: 011
+---------------
+
+Write a Python program to write a list to a file.
+    Output file: 011.txt
+    data: ["w3resource.com", "Python", "File IO", "Exercise 11"]
+
+011.txt should get created and would have the following content:
+
+w3resource.com
+Python
+File IO
+Exercise 11
+
+==============================================================================
+---------------
+ Exercise: 012
+---------------
+
+Write a Python program to copy the contents of a file to another file.
+    Input file: 001.txt
+    Output file: 012.txt
+
+==============================================================================
+---------------
+ Exercise: 013
+---------------
+
+Write a Python program to combine each line from first file with the corresponding line in second file.
+    Input file 1: "013a.txt"
+    Input file 2: "013b.txt"
+    Output file: "013c.txt"
+
+"013c.txt" would get created and would have the following content:
+
+Python Programming Language
+w3resource Exercises
+
+==============================================================================
+---------------
+ Exercise: 014
+---------------
+
+Write a Python program to read a random line from a file.
+    Input file: 001.txt
+
+==============================================================================
+---------------
+ Exercise: 015
+---------------
+
+Write a Python program to assess if a file is closed or not.
+    Input file: 001.txt
+
+Inside the open context manager: False
+Outside the open context manager: True
+
+==============================================================================
+---------------
+ Exercise: 016
+---------------
+
+Write a Python program to remove newline characters from a file.
+    Input file: 001.txt
+
+['Welcome to w3resource.com.', 'Append this text.Append this text.Append this text.', 'Append this text.',
+'Append this text.', 'Append this text.', 'Append this text.']
+
+==============================================================================
+---------------
+ Exercise: 017
+---------------
+
+Write a Python program that takes a text file as input and returns the number of words of a given text file.
+    Input file: 007.txt
+    Note: clear all punctuations except for "-"
+
+102
+
+==============================================================================
+---------------
+ Exercise: 018
+---------------
+
+Write a Python program to extract content from various text files and puts them into a list.
+    Input file 1: 001.txt
+    Input file 2: 007.txt
+
+[
+    'Welcome to w3resource.com.', 'Append this text.Append this text.Append this text.', 'Append this text.',
+    'Append this text.', 'Append this text.', 'Append this text.', 'What is Python language?',
+    'Python is a widely used high-level, general-purpose, interpreted, dynamic programming language.',
+    'Its design philosophy emphasizes code readability, and its syntax allows programmers to express concepts in
+    fewer lines of code than possible in languages such as C++ or Java.', 'Python supports multiple programming
+    paradigms, including object-oriented, imperative and functional programming or procedural styles.',
+    'It features a dynamic type system and automatic memory management and has a large and comprehensive standard
+    library.', 'The best way we learn anything is by practice and exercise questions. We  have started this section
+    for those (beginner to intermediate) who are familiar with Python.'
+]
+
+==============================================================================
+---------------
+ Exercise: 019
+---------------
+
+Write a Python program to generate 26 text files named A.txt, B.txt, and so on up to Z.txt.
+
+==============================================================================
+---------------
+ Exercise: 020
+---------------
+
+Write a Python program to create a file where all letters of English alphabet are listed by specified number of
+letters on each line.
+
+    Out file: "020.txt"
+    Each line should hold 3 letters at most
+
+==============================================================================

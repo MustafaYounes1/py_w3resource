@@ -1,0 +1,187 @@
+---------------
+ Exercise: 001
+---------------
+
+Write a Python program to read each row from a given csv file and print it.
+    Input file: 001.csv
+
+department_id | department_name | manager_id | location_id
+10 | Administration | 200 | 1700
+20 | Marketing | 201 | 1800
+30 | Purchasing | 114 | 1700
+40 | Human Resources | 203 | 2400
+50 | Shipping | 121 | 1500
+60 | IT | 103 | 1400
+70 | Public Relations | 204 | 2700
+80 | Sales | 145 | 2500
+90 | Executive | 100 | 1700
+100 | Finance | 108 | 1700
+110 | Accounting | 205 | 1700
+120 | Treasury |  | 1700
+130 | Corporate Tax |  | 1700
+140 | Control And Credit |  | 1700
+150 | Shareholder Services |  | 1700
+160 | Benefits |  | 1700
+170 | Manufacturing |  | 1700
+180 | Construction |  | 1700
+190 | Contracting |  | 1700
+200 | Operations |  | 1700
+210 | IT Support |  | 1700
+220 | NOC |  | 1700
+230 | IT Helpdesk |  | 1700
+240 | Government Sales |  | 1700
+250 | Retail Sales |  | 1700
+260 | Recruiting |  | 1700
+270 | Payroll |  | 1700
+
+==============================================================================
+---------------
+ Exercise: 002
+---------------
+
+Write a Python program to read a given CSV file having tab delimiter.
+    Input file: 002.csv
+
+['country_id', 'country_name', 'region_id']
+['AR', 'Argentina', '2']
+['AU', 'Australia', '3']
+
+==============================================================================
+---------------
+ Exercise: 003
+---------------
+
+Write a Python program to read a given CSV file as a list.
+    Input file: 003.csv
+
+[
+    ['employ_id', 'first_name', 'last_name', 'email', 'phone_number', 'hire_date', 'job_id', 'salary',
+    'commission_pct', 'manager_id', 'department_id'],
+    ['100', 'Steven', 'King', 'SKING', '515.123.4567', '1987-06-17', 'AD_PRES', '24000', '', '', '90'],
+    ['101', 'Neena', 'Kochhar', 'NKOCHHAR', '515.123.4568', '1987-06-18', 'AD_VP', '17000', '', '100', '90'],
+    ['102', 'Lex', 'De Haan', 'LDEHAAN', '515.123.4569', '1987-06-19', 'AD_VP', '17000', '', '100', '90']
+]
+
+==============================================================================
+---------------
+ Exercise: 004
+---------------
+
+Write a Python program to read a given CSV file as a dictionary.
+    Input file: 004.csv
+
+==============================================================================
+---------------
+ Exercise: 005
+---------------
+
+Write a Python program to read a given CSV files with initial spaces after a delimiter and remove those initial spaces.
+    Input file: 005.csv
+
+['department_id', 'department_name', 'manager_id', 'location_id']
+['10', 'Administration', '200', '1700']
+['20', 'Marketing', '201', '1800']
+
+==============================================================================
+---------------
+ Exercise: 006
+---------------
+
+Write a Python program that reads a CSV file and remove initial spaces, quotes around each entry and the delimiter.
+    Input file: 006.csv
+    Note: try to define a dialect and register it to the csv Module
+
+['country_id', 'country_name', 'region_id']
+['AR', 'Argentina', 2.0]
+['AU', 'Australia', 3.0]
+['BE', 'Belgium', 1.0]
+['BR', 'Brazil', 2.0]
+['CA', 'Canada', 2.0]
+
+==============================================================================
+---------------
+ Exercise: 007
+---------------
+
+Write a Python program to read specific columns of a given CSV file and print the content of the columns.
+    Input file: 001.csv
+    Get: department_id, department_name
+
+10 Administration
+20 Marketing
+30 Purchasing
+40 Human Resources
+50 Shipping
+60 IT
+70 Public Relations
+80 Sales
+90 Executive
+100 Finance
+110 Accounting
+120 Treasury
+130 Corporate Tax
+140 Control And Credit
+150 Shareholder Services
+160 Benefits
+170 Manufacturing
+180 Construction
+190 Contracting
+200 Operations
+210 IT Support
+220 NOC
+230 IT Helpdesk
+240 Government Sales
+250 Retail Sales
+260 Recruiting
+270 Payroll
+
+==============================================================================
+---------------
+ Exercise: 008
+---------------
+
+Write a Python program that prints the number of rows (skipping the header of the file) and the field names.
+    Input file: 001.csv
+
+Header: ['department_id', 'department_name', 'manager_id', 'location_id']
+#Rows:  27
+
+==============================================================================
+---------------
+ Exercise: 009
+---------------
+
+Write a Python program to create a csv that contain the following data:
+
+id1,id2,date
+1,a,01/01/2019
+2,b,01/02/2019
+3,c,01/03/2019
+
+==============================================================================
+---------------
+ Exercise: 010
+---------------
+
+Write a Python program to write a Python list of lists to a csv file.
+After writing the CSV file read the CSV file and display the content.
+
+[[10,'a1', 1], [12,'a2', 3], [14, 'a3', 5], [16, 'a4', 7], [18, 'a5', 9]]
+
+==============================================================================
+---------------
+ Exercise: 011
+---------------
+
+Write a Python program to write a Python dictionary to a csv file.
+After writing the CSV file read the CSV file and display the content.
+
+csv_columns = ['id', 'Column1', 'Column2', 'Column3', 'Column4', 'Column5']
+
+data = [
+    {'id': '1', 'Column1': 33, 'Column2': 35, 'Column3': 21, 'Column4': 71, 'Column5': 10},
+    {'id': '2', 'Column1': 25, 'Column2': 30, 'Column3': 40, 'Column4': 25, 'Column5': 10},
+    {'id': '3', 'Column1': 56, 'Column2': 30, 'Column3': 55, 'Column4': 55, 'Column5': 40}
+]
+
+==============================================================================
