@@ -1,0 +1,597 @@
+---------------
+ Exercise: 001
+---------------
+
+Write a Python program to check that a string contains only a certain set of characters (in this case a-z, A-Z and 0-9).
+
+ABCDEFabcdef123450      =>  True
+ABCDEFabcdef123450_     =>  False
+ABCDEFabc!def123450     =>  False
+*&%@#!}{                =>  False
+
+==============================================================================
+---------------
+ Exercise: 002
+---------------
+
+Write a Python program that matches a string of two letters (a, b) that starts with an "a" followed by zero or more "b"s.
+
+ac      =>  False
+abc     =>  False
+a       =>  True
+ab      =>  True
+abb     =>  True
+
+==============================================================================
+---------------
+ Exercise: 003
+---------------
+
+Write a Python program that matches a string that starts with an "a" followed by one or more "b"s.
+
+ab      =>  True
+abc     =>  True
+
+==============================================================================
+---------------
+ Exercise: 004
+---------------
+
+Write a Python program that matches a string that starts with an "a" followed by zero or one 'b'.
+
+ab      =>  True
+abc     =>  True
+ac      =>  True
+abbc    =>  False
+aabbc   =>  True
+
+==============================================================================
+---------------
+ Exercise: 005
+---------------
+
+Write a Python program that matches a string that has an "a" followed by three 'b's.
+
+abbb        =>  True
+aabbbbbc    =>  True
+
+==============================================================================
+---------------
+ Exercise: 006
+---------------
+
+Write a Python program that matches a string that has an "a" followed by two to three 'b'.
+
+ab          =>  False
+aabbbbbc    =>  True
+
+==============================================================================
+---------------
+ Exercise: 007
+---------------
+
+Write a Python program to match sequences of lowercase letters joined by one underscore.
+
+aab_cbbbc   =>  True
+aab_Abbbc   =>  False
+Aaab_abbbc  =>  False
+
+==============================================================================
+---------------
+ Exercise: 008
+---------------
+
+Write a Python program to match the sequences of one upper case letter followed by lower case letters.
+
+AaBbGg      =>  False
+Python      =>  True
+python      =>  False
+PYTHON      =>  False
+aA          =>  False
+Aa          =>  True
+
+==============================================================================
+---------------
+ Exercise: 009
+---------------
+
+Write a Python program that matches a string that starts with an 'a' followed by anything ending in 'b'
+
+aabbbbd     =>  False
+aabAbbbc    =>  False
+accddbbjjjb =>  True
+
+==============================================================================
+---------------
+ Exercise: 010
+---------------
+
+Write a Python program that matches a word at the beginning of a string.
+
+The quick brown fox jumps over the lazy dog.    =>  The
+
+==============================================================================
+---------------
+ Exercise: 011
+---------------
+
+Write a Python program that matches a word at the end of a string, with optional punctuation
+
+"The quick brown fox jumps over the lazy dog."      =>  True
+"The quick brown fox jumps over the lazy dog?"      =>  True
+"The quick brown fox jumps over the lazy dog. "     =>  False
+"The quick brown fox jumps over the lazy dog "      =>  False
+
+==============================================================================
+---------------
+ Exercise: 012
+---------------
+
+Write a Python program that matches a word containing 'z'.
+
+The quick brown fox jumps over the lazy dog.    =>  True
+Python Exercises.                               =>  False
+
+==============================================================================
+---------------
+ Exercise: 013
+---------------
+
+Write a Python program that matches a word containing 'z', not the start or end of the word.
+
+lazy    =>  True
+buz     =>  False
+Python  =>  False
+zoo     =>  False
+
+==============================================================================
+---------------
+ Exercise: 014
+---------------
+
+Write a Python program to match a string that contains only upper and lowercase letters, numbers, and underscores.
+
+The quick brown fox jumps over the lazy dog.    =>  False
+Python_Exercises_1                              =>  True
+
+==============================================================================
+---------------
+ Exercise: 015
+---------------
+
+Write a Python program that tests whether a string starts with '5'
+
+5-2345861   =>  True
+6-2345861   =>  False
+
+==============================================================================
+---------------
+ Exercise: 016
+---------------
+
+Write a Python program to remove leading zeros from an IP address.
+
+216.08.094.196  =>  216.8.94.196
+
+==============================================================================
+---------------
+ Exercise: 017
+---------------
+
+Write a Python program to check for a number at the end of a string.
+
+abcdef  =>  False
+abcdef6 =>  True
+
+==============================================================================
+---------------
+ Exercise: 018
+---------------
+
+Write a Python program to search for numbers (0-9) of length between 1 and 3 in a given string.
+
+"Exercises number 1, 12, 13, and 345 are important, but 9999 does not exist"     =>  [1, 12, 13, 345]
+
+==============================================================================
+---------------
+ Exercise: 019
+---------------
+
+Write a Python program to search for literal strings within a string.
+
+'The quick brown fox jumps over the lazy dog.'
+
+'fox'       =>  True
+'dog'       =>  True
+'horse'     =>  False
+
+==============================================================================
+---------------
+ Exercise: 020
+---------------
+
+Write a Python program to search for a literal string in a string and also find the location within the original
+string where the pattern occurs.
+
+Sample text : 'The quick brown fox jumps over the lazy dog.'
+Searched words : 'fox'      =>  16 -> 19
+
+==============================================================================
+---------------
+ Exercise: 021
+---------------
+
+Write a Python program to find the number of occurrences of a substrings within a string.
+
+Sample text :   'Python exercises, PHP exercises, C# exercises'
+
+Pattern :       'exercises'     =>  3 matches
+
+==============================================================================
+---------------
+ Exercise: 022
+---------------
+
+Write a Python program to find the occurrence and position of substrings within a string.
+
+string:     Python exercises, PHP exercises, C# exercises
+pattern:    exercises
+
+7:16
+22:31
+36:45
+
+==============================================================================
+---------------
+ Exercise: 023
+---------------
+
+Write a Python program to replace whitespaces with an underscore.
+
+"Python Exercises   Hello world!"    =>     "Python_Exercises_Hello_world!"
+
+==============================================================================
+---------------
+ Exercise: 024
+---------------
+
+Write a Python program to extract year, month and date (yyyy/mm/dd) from a URL.
+
+"https://www.washingtonpost.com/news/football-insider/wp/2016/12/2/odell-beckhams-fame-rests-on-one-stupid-little-ball-josh-norman-tells-author/"
+
+year: 2016, month: 12, day: 2
+
+==============================================================================
+---------------
+ Exercise: 025
+---------------
+
+Write a Python program to convert a date of yyyy-mm-dd format to dd-mm-yyyy format.
+
+"2025-02-09; 1996-11-01; 2024-09-26"      =>  09-02-2025; 01-11-1996; 26-09-2024
+
+==============================================================================
+---------------
+ Exercise: 026
+---------------
+
+Write a Python program to match if two words from a list of words start with the letter 'P'.
+
+["Python PHP", "Java JavaScript", "c c++"]  =>  ('Python', 'PHP')
+
+==============================================================================
+---------------
+ Exercise: 027
+---------------
+
+Write a Python program to separate and print the numbers in a given string.
+
+"Ten 10, Twenty 20, Thirty 30"      =>  [10, 20, 30]
+
+==============================================================================
+---------------
+ Exercise: 028
+---------------
+
+Write a Python program to find all words starting with 'a' or 'e' in a given string.
+
+"The following example creates an ArrayList with a capacity of 50 elements. Four elements are then added to the
+ArrayList and the ArrayList is trimmed accordingly."
+
+['example', 'eates', 'an', 'ayList', 'apacity', 'elements', 'elements', 'are', 'en', 'added', 'ayList', 'and',
+ 'ayList', 'ed', 'accordingly']
+
+==============================================================================
+---------------
+ Exercise: 029
+---------------
+
+Write a Python program to separate and print the numbers and their position in a given string.
+
+"The following example creates an ArrayList with a capacity of 50 elements. Four elements are then added to the
+ArrayList and the ArrayList is trimmed accordingly."
+
+50, index: 62
+
+==============================================================================
+---------------
+ Exercise: 030
+---------------
+
+Write a Python program to abbreviate 'Road' as 'Rd.' in a given string.
+
+"21 Ramkrishna Road"    =>  21 Ramkrishna Rd.
+
+==============================================================================
+---------------
+ Exercise: 031
+---------------
+
+Write a Python program to replace all occurrences of a space, comma, or dot with a colon.
+
+"Python Exercises, PHP exercises."  =>  Python:Exercises::PHP:exercises:
+
+==============================================================================
+---------------
+ Exercise: 032
+---------------
+
+Write a Python program to replace maximum 2 occurrences of space, comma, or dot with a colon.
+
+"Python Exercises, PHP exercises."  =>  Python:Exercises: PHP exercises.
+
+==============================================================================
+---------------
+ Exercise: 033
+---------------
+
+Write a Python program to find all five-character words in a string.
+
+"The quick brown fox jumps over the lazy dog."   =>  ['quick', 'brown', 'jumps']
+
+==============================================================================
+---------------
+ Exercise: 034
+---------------
+
+Write a Python program to find all three, four, and five character words in a string.
+
+"The quick brown fox jumps over the lazy dog."
+
+['The', 'quick', 'brown', 'fox', 'jumps', 'over', 'the', 'lazy', 'dog']
+
+==============================================================================
+---------------
+ Exercise: 035
+---------------
+
+Write a Python program to find all words that are at least 4 characters long in a string.
+
+"The quick brown fox jumps over the lazy dog."  =>  ['quick', 'brown', 'jumps', 'over', 'lazy']
+
+==============================================================================
+---------------
+ Exercise: 036
+---------------
+
+Write a Python program to convert a camel-case string to a snake-case string.
+
+PythonExercises         =>  python_exercises
+ImageClassifierLoader   =>  image_classifier_loader
+Image1LoadingAPI        =>  image1_loading_api
+
+==============================================================================
+---------------
+ Exercise: 037
+---------------
+
+Write a python program to convert snake-case string to camel-case string.
+
+python_exercises            =>  PythonExercises
+image_classifier_loader     =>  ImageClassifierLoader
+image1_loading_api          =>  Image1LoadingApi
+
+==============================================================================
+---------------
+ Exercise: 038
+---------------
+
+Write a Python program to extract values between quotation marks of a string.
+
+'"Python", "PHP", "Java"'   =>  ['Python', 'PHP', 'Java']
+
+==============================================================================
+---------------
+ Exercise: 039
+---------------
+
+Write a Python program to remove multiple spaces from a string.
+
+"Python      Exercises"     =>  Python Exercises
+
+==============================================================================
+---------------
+ Exercise: 040
+---------------
+
+Write a Python program to remove all whitespaces from a string.
+
+" Python    Exercises "     =>  PythonExercises
+
+==============================================================================
+---------------
+ Exercise: 041
+---------------
+
+Write a Python program to remove everything except alphanumeric characters from a string.
+
+"**//Python Exercises// - 12. "     =>  PythonExercises12
+
+==============================================================================
+---------------
+ Exercise: 042
+---------------
+
+Write a Python program to find URLs in a string.
+
+'<p>Contents :</p><a href="https://w3resource.com">Python Examples</a><a href="http://github.com">Even More Examples</a>'
+
+['https://w3resource.com', 'http://github.com']
+
+==============================================================================
+---------------
+ Exercise: 043
+---------------
+
+Write a Python program to split a string into uppercase letters.
+
+PythonTutorialAndExercises  =>  ['Python', 'Tutorial', 'And', 'Exercises']
+
+==============================================================================
+---------------
+ Exercise: 044
+---------------
+
+Write a Python program to do case-insensitive string replacement.
+
+Replace "php" in "PHP Exercises php" with *  =>  "* Exercises *"
+
+==============================================================================
+---------------
+ Exercise: 045
+---------------
+
+Write a Python program to remove ANSI escape sequences from a string.
+
+"\t\u001b[0;35mgoogle.com\u001b[0m \u001b[0;36m216.58.218.206\u001b[0m"
+
+Input:  "  	google.com 216.58.218.206" (colored)
+Output: the same input text but without any color
+
+==============================================================================
+---------------
+ Exercise: 046
+---------------
+
+Write a Python program to find all adverbs and their positions in a given sentence.
+
+Sample text : "Clearly, he has no excuse for such behavior."
+
+0-7: Clearly
+
+==============================================================================
+---------------
+ Exercise: 047
+---------------
+
+Write a Python program to split a string with multiple delimiters.
+    Possible delimiters: [; , \n *]
+
+The quick brown\nfox jumps*over the lazy dog.    =>  ['The quick brown', 'fox jumps', 'over the lazy dog.']
+
+==============================================================================
+---------------
+ Exercise: 048
+---------------
+
+Write a Python program to check a decimal with a precision of 2.
+
+123.11      =>  True
+123.1       =>  True
+123         =>  True
+0.21        =>  True
+123.1214    =>  False
+3.124587    =>  False
+e666.86     =>  False
+
+==============================================================================
+---------------
+ Exercise: 049
+---------------
+
+Write a Python program to remove words from a string of length between 1 and 3
+
+"The quick brown fox jumps over the lazy dog."   =>  "quick brown jumps over lazy."
+
+==============================================================================
+---------------
+ Exercise: 050
+---------------
+
+Write a Python program to remove the parenthesis area in a string.
+
+["example (.com)", "w3resource", "github (.com)", "stackoverflow (.com)"]
+
+example
+w3resource
+github
+stackoverflow
+
+==============================================================================
+---------------
+ Exercise: 051
+---------------
+
+Write a Python program to insert spaces between words starting with capital letters.
+
+Python                              =>  Python
+PythonExercises                     =>  Python Exercises
+PythonExercisesPracticeSolution     =>  Python Exercises Practice Solution
+
+==============================================================================
+---------------
+ Exercise: 052
+---------------
+
+Write a Python program to remove lowercase substrings from a given string.
+
+KDeoALOklOOHserfLoAJSIskdsf     =>  KDALOOOHLAJSI
+
+==============================================================================
+---------------
+ Exercise: 053
+---------------
+
+Write a Python program to concatenate the consecutive numbers in a given string.
+
+Enter at 1 20 Kearny Street. The security desk can direct you to floor 1 6. Please have your identification ready.
+
+Enter at 120 Kearny Street. The security desk can direct you to floor 16. Please have your identification ready.
+
+==============================================================================
+---------------
+ Exercise: 054
+---------------
+
+Write a Python program to convert a given string to snake case.
+
+JavaScript                  =>  java-script
+GDScript                    =>  gd-script
+PythonExercisesSolutions    =>  python-exercises-solutions
+
+==============================================================================
+---------------
+ Exercise: 055
+---------------
+
+Write a Python program that checks whether a word starts and ends with a vowel in a given string.
+Return true if a word matches the condition; otherwise, return false.
+
+"Red Orange White"      -> True
+"Red White Black"       -> False
+"abcd dkise eosksu"     -> True
+
+==============================================================================
+---------------
+ Exercise: 056
+---------------
+
+Write a Python program that takes a string with some words. For two consecutive words in the said string, check
+whether the first word ends with a vowel and the next word begins with a vowel. If the program meets the condition,
+ return true, otherwise false. Only one space is allowed between the words.
+
+"These exercises can be used for practice."             -> True
+"Following exercises should be removed for practice."   -> False
+"I use these stories in my classroom."                  -> True
+
+==============================================================================
