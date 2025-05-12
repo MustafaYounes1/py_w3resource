@@ -1,0 +1,247 @@
+---------------
+ Exercise: 001
+---------------
+
+Write a Python program to create a singly linked list, append some items and iterate through the list.
+
+ll = LinkedList()
+
+ll.add("PHP")
+ll.add("Python")
+ll.add("C#")
+ll.add("C++")
+ll.add("Java")
+
+print(ll.values)    =>  ['PHP', 'Python', 'C#', 'C++', 'Java']
+
+==============================================================================
+---------------
+ Exercise: 002
+---------------
+
+Write a Python program to find the size of a singly linked list.
+
+ll = LinkedList()
+
+ll.add("PHP")
+ll.add("Python")
+ll.add("C#")
+ll.add("C++")
+ll.add("Java")
+
+print(len(ll))      =>  5
+
+==============================================================================
+---------------
+ Exercise: 003
+---------------
+
+Write a Python program to search a specific item in a singly linked list and return true if the item is found
+otherwise return false.
+
+ll = LinkedList()
+
+ll.add("PHP")
+ll.add("Python")
+ll.add("C#")
+ll.add("C++")
+ll.add("Java")
+
+print("SQL" in ll)      =>  False
+print("C++" in ll)      =>  True
+
+==============================================================================
+---------------
+ Exercise: 004
+---------------
+
+Write a Python program to access a specific item in a singly linked list using index value.
+
+ll = LinkedList()
+
+ll.add("PHP")
+ll.add("Python")
+ll.add("C#")
+ll.add("C++")
+ll.add("Java")
+
+print(ll[0])        =>  PHP
+print(ll[1])        =>  Python
+print(ll[4])        =>  Java
+print(ll[5])        =>  IndexError: linked list index out of range
+
+==============================================================================
+---------------
+ Exercise: 005
+---------------
+
+Write a Python program to set a new value of an item in a singly linked list using index value.
+
+ll = LinkedList()
+
+ll.add("PHP")
+ll.add("Python")
+ll.add("C#")
+ll.add("C++")
+ll.add("Java")
+
+print(ll[1])        =>  Python
+print(ll[4])        =>  Java
+
+ll[1] = "SQL"
+ll[4] = "Perl"
+
+print(ll[1])        =>  SQL
+print(ll[4])        =>  Perl
+
+==============================================================================
+---------------
+ Exercise: 006
+---------------
+
+Write a Python program to delete the first occurrence of an item from a singly linked list.
+
+ll = LinkedList()
+
+ll.add("PHP")
+ll.add("Python")
+ll.add("C#")
+ll.add("PHP")
+ll.add("C++")
+ll.add("Java")
+ll.add("C#")
+
+print(ll.values)        =>  ['PHP', 'Python', 'C#', 'PHP', 'C++', 'Java', 'C#']
+
+ll.delete("PHP")
+print(ll.values)        =>  ['Python', 'C#', 'PHP', 'C++', 'Java', 'C#']
+
+ll.delete("C#")
+print(ll.values)        =>  ['Python', 'PHP', 'C++', 'Java', 'C#']
+
+==============================================================================
+---------------
+ Exercise: 007
+---------------
+
+Write a Python program to create a doubly linked list, append some items and iterate through the list forwards and
+backwards.
+
+ll = DoublyLinkedList()
+
+ll.add("PHP")
+ll.add("Python")
+ll.add("C#")
+ll.add("C++")
+ll.add("Java")
+
+print(len(ll))          =>  5
+print(ll.values)        =>  ['PHP', 'Python', 'C#', 'C++', 'Java']
+print(ll.r_values)      =>  ['Java', 'C++', 'C#', 'Python', 'PHP']
+
+==============================================================================
+---------------
+ Exercise: 008
+---------------
+
+Write a Python program to insert an item in front of a given doubly linked list.
+
+ll = DoublyLinkedList()
+
+ll.add("PHP")
+ll.add("Python")
+ll.add("C#")
+ll.add("C++")
+ll.add("Java")
+ll.add("SQL")
+
+print(len(ll))          =>  6
+print(ll.values)        =>  ['PHP', 'Python', 'C#', 'C++', 'Java', 'SQL']
+print(ll.r_values)      =>  ['SQL', 'Java', 'C++', 'C#', 'Python', 'PHP']
+
+ll.add_left("Perl")
+
+print(len(ll))          =>  7
+print(ll.values)        =>  ['Perl', 'PHP', 'Python', 'C#', 'C++', 'Java', 'SQL']
+print(ll.r_values)      =>  ['SQL', 'Java', 'C++', 'C#', 'Python', 'PHP', 'Perl']
+
+==============================================================================
+---------------
+ Exercise: 009
+---------------
+
+Write a Python program to search a specific item in a given doubly linked list and return the index of the element.
+
+Note:
+    * Implement both:
+        find    -   the search would start from the head
+        rfind   -   the search would start from the tail
+    * return -1 if the item wasn't found
+
+ll = DoublyLinkedList()
+
+ll.add("PHP")
+ll.add("Python")
+ll.add("C#")
+ll.add("C++")
+ll.add("Python")
+ll.add("Java")
+ll.add("SQL")
+
+print(ll.find("PHP"))       =>  0
+print(ll.find("Python"))    =>  1
+print(ll.rfind("Python"))   =>  4
+print(ll.rfind("SQL"))      =>  6
+
+print(ll.find("Dart"))      =>  -1
+print(ll.rfind("HTML"))     =>  -1
+
+==============================================================================
+---------------
+ Exercise: 010
+---------------
+
+Write a Python program to delete a specific item from a given doubly linked list.
+
+Note:
+    * Implement both:
+        delete    -  delete the first occurrence of an item
+        r_delete   - delete the last occurrence of an item
+
+ll = DoublyLinkedList()
+
+ll.add("PHP")
+ll.add("Python")
+ll.add("C#")
+ll.add("PHP")
+ll.add("C++")
+ll.add("Java")
+ll.add("Python")
+ll.add("C#")
+
+print(ll.values)        =>  ['PHP', 'Python', 'C#', 'PHP', 'C++', 'Java', 'Python', 'C#']
+print(ll.r_values)      =>  ['C#', 'Python', 'Java', 'C++', 'PHP', 'C#', 'Python', 'PHP']
+
+
+ll.delete("PHP")
+print(ll.values)        =>  ['Python', 'C#', 'PHP', 'C++', 'Java', 'Python', 'C#']
+print(ll.r_values)      =>  ['C#', 'Python', 'Java', 'C++', 'PHP', 'C#', 'Python']
+
+
+ll.r_delete("Python")
+print(ll.values)        =>  ['Python', 'C#', 'PHP', 'C++', 'Java', 'C#']
+print(ll.r_values)      =>  ['C#', 'Java', 'C++', 'PHP', 'C#', 'Python']
+
+
+ll.r_delete("C#")
+print(ll.values)        =>  ['Python', 'C#', 'PHP', 'C++', 'Java']
+print(ll.r_values)      =>  ['Java', 'C++', 'PHP', 'C#', 'Python']
+
+
+ll.delete("C#")
+print(ll.values)        =>  ['Python', 'PHP', 'C++', 'Java']
+print(ll.r_values)      =>  ['Java', 'C++', 'PHP', 'Python']
+
+print(len(ll))          =>  4
+
+==============================================================================
