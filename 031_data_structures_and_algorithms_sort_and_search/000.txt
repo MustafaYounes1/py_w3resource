@@ -1,0 +1,1358 @@
+---------------
+ Exercise: 001
+---------------
+
+Write a Python program that implements binary search.
+    Return -1 if the item does not exist, otherwise return its index
+
+In computer science, a binary search or half-interval search algorithm finds the position of a target value within a
+sorted array. The binary search algorithm can be classified as a dichotomies divide-and-conquer search algorithm and
+executes in logarithmic time.
+
+Time Complexities (#instructions required)
+    Best case complexity:       O(1)
+    Average case complexity:    O(log n)
+    Worst case complexity:      O(log n)
+
+Space Complexity (extra memory required)
+    The space complexity of the iterative binary search is O(1) (no extra memory is required, the amount of memory
+    required is constant doesn't depend on the data being processed522222222222222222222222222222222222222222)
+    The space complexity of the recursive binary search is O(log n) (Recursion creates call stack)
+
+[1], 1                          -> 0
+[4, 5], 1                       -> -1
+[1, 2, 3, 5, 8], 6              -> -1
+[1, 2, 3, 5, 8], 5              -> 3
+[10, 11, 15, 60, 70, 90], 90    -> 5
+[10, 11, 15, 60, 70, 80], 11    -> 1
+[10, 11, 15, 60, 70, 80], 10    -> 0
+
+==============================================================================
+---------------
+ Exercise: 002
+---------------
+
+Write a Python program for sequential search.
+    Return -1 if the item does not exist, otherwise return its index
+
+In computer science, linear search or sequential search is a method for finding a particular value in a list that
+checks each element in sequence until the desired element is found or the list is exhausted. The list need not be
+ordered. (Time complexity: O(n))
+
+Time complexity:    O(n).
+Space complexity:   O(1).
+
+
+[11, 23, 58, 31, 56, 77, 43, 12, 65, 19], 31    ->  3
+[4, 45, 3, -2, 4, 80], 100                      ->  -1
+
+==============================================================================
+---------------
+ Exercise: 003
+---------------
+
+Write a Python program to sort a list of elements using the bubble sort algorithm.
+
+According to Wikipedia "Bubble sort, sometimes referred to as sinking sort, is a simple sorting algorithm that
+repeatedly steps through the list to be sorted, compares each pair of adjacent items and swaps them if they are in
+the wrong order. The pass through the list is repeated until no swaps are needed, which indicates that the list is
+sorted.
+
+The algorithm, which is a comparison sort, is named for the way smaller elements "bubble" to the top of the list.
+Although the algorithm is simple, it is too slow and impractical for most problems even when compared to insertion sort.
+It can be practical if the input is usually in sort order but may occasionally have some out-of-order elements nearly
+in position."
+
+Worst Time Complexity:      O(n^2)
+    If we want to sort in ascending order and the array is in descending order then the worst case occurs.
+
+Average Time Complexity:    O(n^2)
+
+Best Time Complexity:       O(n)
+    If the array is already sorted
+
+Space Complexity:           O(1)
+
+[14, 46, 43, 27, 57, 41, 45, 21, 70]
+
+Ascending order:    [14, 21, 27, 41, 43, 45, 46, 57, 70]
+Descending order:   [70, 57, 46, 45, 43, 41, 27, 21, 14]
+
+==============================================================================
+---------------
+ Exercise: 004
+---------------
+
+Write a Python program to sort a list of elements using the selection sort algorithm.
+
+The selection sort algorithm sorts an array by repeatedly finding the minimum element (considering ascending order)
+from unsorted part and putting it at the beginning. It finds the minimum element’s index in the unsorted portion of
+the array and swaps it with the current index’s element.
+
+Time Complexity:
+    Best	O(n^2)
+    Average	O(n^2)
+    Worst	O(n^2)
+
+Space Complexity: O(1)
+
+[14, 46, 43, 27, 57, 41, 45, 21, 70]
+
+Ascending order:    [14, 21, 27, 41, 43, 45, 46, 57, 70]
+Descending order:   [70, 57, 46, 45, 43, 41, 27, 21, 14]
+
+==============================================================================
+---------------
+ Exercise: 005
+---------------
+
+Write a Python program to sort a list of elements using the insertion sort algorithm.
+
+Insertion sort is a sorting algorithm that places an unsorted element at its suitable place in each iteration.
+
+Insertion sort works the way we sort playing cards in our hands. We assume that the first card is already sorted then,
+we select an unsorted card. If the unsorted card is greater than the card in hand, it is placed on the right otherwise,
+to the left. In the same way, other unsorted cards are taken and put in their right place.
+
+The algorithm uses one part of the array to hold the sorted values, and the other part of the array to hold values
+that are not sorted yet. It takes one value at a time from the unsorted part of the array and puts it into the right
+place in the sorted part of the array, until the array is sorted.
+
+Worst Time Complexity:      O(n^2)
+    If we want to sort in ascending order and the array is in descending order then the worst case occurs.
+
+Average Time Complexity:    O(n^2)
+
+Best Time Complexity:       O(n)
+    If the array is already sorted
+
+Space Complexity:   O(1)
+
+[14, 46, 43, 27, 57, 41, 45, 21, 70]
+
+Ascending order:    [14, 21, 27, 41, 43, 45, 46, 57, 70]
+Descending order:   [70, 57, 46, 45, 43, 41, 27, 21, 14]
+
+==============================================================================
+---------------
+ Exercise: 006
+---------------
+
+Write a Python program to sort a list of elements using shell sort algorithm.
+
+Shell sort is mainly a variation of Insertion Sort. In insertion sort, we move elements only one position ahead.
+When an element has to be moved far ahead, many movements are involved. The idea of ShellSort is to allow the exchange
+of far items. Starting with far apart elements can move some out-of-place elements into position faster than a simple
+nearest neighbor exchange.
+
+Shell sort leverages the idea that inserting an element into a partially sorted array is more efficient than inserting
+it into an entirely unsorted array.
+
+It first sorts elements that are far apart from each other and successively reduces the interval between the
+elements to be sorted. And when the gap becomes 1, Shell Sort essentially turns into Insertion Sort.
+
+In brief, shell sort aims to improve Insertion Sort’s performance by partially sorting elements that are far apart
+and gradually reducing the gap between elements to perform smaller and more efficient insertions. This allows Shell
+Sort to take advantage of the partially sorted nature of the array and achieve faster sorting times.
+
+=================
+Choose a Sequence
+=================
+
+Shell Sort starts by selecting a sequence of intervals. The interval between the elements is to be sorted at each
+pass reduced based on the sequence used.
+
+Some of the optimal sequences that can be used in the shell sort algorithm are:
+    Shell's original sequence:      N/2 , N/4 , …, 1
+    Knuth's increments:             1, 4, 13, …, (3k – 1) / 2
+    Sedgewick's increments:         1, 8, 23, 77, 281, 1073, 4193, 16577...4j+1+ 3·2j+ 1
+    Hibbard's increments:           1, 3, 7, 15, 31, 63, 127, 255, 511…
+    Papernov & Stasevich increment: 1, 3, 5, 9, 17, 33, 65,...
+    Pratt:                          1, 2, 3, 4, 6, 9, 8, 12, 18, 27, 16, 24, 36, 54, 81....
+
+===================================
+Perform Insertion Sort on Sub lists
+===================================
+
+* performs Insertion Sort on a series of sub lists created by dividing the array based on the chosen increment sequence.
+* Initially, the sub lists are items from the original list that are far apart from each other, and Insertion Sort
+is performed on each sub list independently.
+* As the algorithm progresses, the gap between elements decreases, and the sub lists would contain items that are closer
+to each other.
+
+====================
+Gradually Reduce Gap
+====================
+
+* In each pass, the algorithm reduces the gap between elements by following the chosen sequence.
+* Elements within each sub list are compared and swapped to partially sort them within their respective sub lists.
+
+========================
+Combine Sorted Sub lists
+========================
+
+* As the algorithm continues, the partially sorted sub lists begin to overlap.
+* Eventually, the gap becomes 1, and the entire array is treated as a single sub list for the final pass.
+
+==========
+Final Pass
+==========
+
+* In the final pass, the gap is 1, effectively turning the algorithm into a regular Insertion Sort on the entire array.
+* However, due to the previous passes, many elements are already partially sorted, leading to fewer comparisons and swaps.
+
+The key idea behind Shell Sort is to strike a balance between the advantages of Insertion Sort (efficient for
+partially sorted data) and the advantages of other sorting algorithms (efficient for larger datasets). By gradually
+reducing the gap between elements, Shell Sort efficiently transforms the array into a state where elements are closer
+to their final positions, reducing the number of comparisons and swaps required in the final pass.
+
+The complexity depends on the interval chosen.
+
+Worst Time Complexity:      O(n^2)
+Average Time Complexity:    O(n * log n)
+Best Time Complexity:       O(n * log n)
+
+Space complexity:   O(1)
+
+[14, 46, 43, 27, 57, 41, 45, 21, 70]
+
+Ascending order:    [14, 21, 27, 41, 43, 45, 46, 57, 70]
+Descending order:   [70, 57, 46, 45, 43, 41, 27, 21, 14]
+
+==============================================================================
+---------------
+ Exercise: 007
+---------------
+
+Write a Python program to sort a list of elements using the merge sort algorithm.
+
+The Merge Sort algorithm is a divide-and-conquer algorithm that sorts an array by first breaking it down into smaller
+arrays, and then building the array back together the correct way so that it is sorted.
+
+Divide: The algorithm starts with breaking up the array into smaller and smaller pieces until one such sub-array only
+        consists of one element.
+
+Conquer: The algorithm merges the small pieces of the array back together by putting the lowest values first,
+        resulting in a sorted array.
+
+How it works
+    1.  Divide the unsorted array into two sub-arrays, half the size of the original.
+    2.  Continue to divide the sub-arrays as long as the current piece of the array has more than one element.
+    3.  Merge two sub-arrays together by always putting the lowest value first.
+    4.  Keep merging until there are no sub-arrays left.
+
+Time Complexity
+    Best	O(n * log n)
+    Average	O(n * log n)
+    Worst	O(n * log n)
+
+Space complexity: O(n)
+
+[14, 46, 43, 27, 57, 41, 45, 21, 70]
+
+Ascending order:    [14, 21, 27, 41, 43, 45, 46, 57, 70]
+Descending order:   [70, 57, 46, 45, 43, 41, 27, 21, 14]
+
+==============================================================================
+---------------
+ Exercise: 008
+---------------
+
+Write a Python program to sort a list of elements using the quick sort algorithm.
+
+QuickSort is a sorting algorithm works on the principle of Divide and Conquer breaking down the problem into smaller
+sub-problems. It picks an element as a pivot and partitions the given array around the picked pivot by placing the
+pivot in its correct position in the sorted array.
+
+While dividing/partitioning the array, the pivot element should be positioned in such a way that elements less than
+pivot are kept on the left side and elements greater than pivot are on the right side of the pivot.
+
+There are mainly three steps in the algorithm:
+
+1. Choose a Pivot:      Select an element from the array as the pivot. The choice of pivot can vary (e.g., first element,
+                        last element, random element, or median).
+
+2. Partition the Array: Rearrange the array around the pivot. After partitioning, all elements smaller than the pivot
+                        will be on its left, and all elements greater than the pivot will be on its right. The pivot
+                        is then in its correct position, and we obtain the index of the pivot.
+
+3. Recursively Call:    Recursively apply the same process to the two partitioned sub-arrays (left and right of the pivot).
+
+4. Base Case:           The recursion stops when there is only one element left in the sub-array, as a single element
+                        is already sorted.
+
+Time Complexity
+    Best	O(n * log n)
+        Occurs when the pivot element divides the array into two equal halves.
+        i.e. the pivot element is always the middle element in the sub array or near to the middle element.
+    Average	O(n * log n)
+    Worst	O(n^2)
+        It occurs when the pivot element picked is either the greatest or the smallest element.
+        This condition leads to the case in which the pivot element lies in an extreme end of the sorted array.
+        One sub-array is always empty and another sub-array contains n - 1 elements. Thus, quicksort is called only
+        on this sub-array.
+
+Space Complexity: O(n)
+
+[14, 46, 43, 27, 57, 41, 45, 21, 70]
+
+Ascending order:    [14, 21, 27, 41, 43, 45, 46, 57, 70]
+Descending order:   [70, 57, 46, 45, 43, 41, 27, 21, 14]
+
+==============================================================================
+---------------
+ Exercise: 009
+---------------
+
+Write a Python program for counting sort.
+
+Counting Sort is a non-comparison-based sorting algorithm. It is particularly efficient when the range of input values
+is small compared to the number of elements to be sorted. The basic idea behind Counting Sort is to count the frequency
+of each distinct element in the input array and use that information to place the elements in their correct sorted
+positions.
+
+In other words it sorts a collection of objects according to keys that are small integers; that is, it is an integer
+sorting algorithm. It operates by counting the number of objects that have each distinct key value, and using
+arithmetic on those counts to determine the positions of each key value in the output sequence.
+
+1. Initialize an auxiliary array of length max+1 with all elements as 0s.
+2. Go through the array that needs to be sorted and store the count of each element at their respective index in
+    count array.
+3. Store cumulative sum of the elements of the count array. It helps in placing the elements into the correct index of
+    the sorted array. count[i] now contains actual position of the item in output array
+3. Iterate from end of the input array and because traversing input array from end preserves the order of equal
+    elements, which eventually makes this sorting algorithm stable.
+4. Find the index of each element of the original array in the sorted array using the following math:
+     outputArray[ countArray[ inputArray[i] ] – 1] = inputArray[i]
+     After placing each element at its correct position, decrease its count by one in the count array.
+
+=========================
+Limitations of Count Sort
+=========================
+* Integer values: Counting Sort relies on counting occurrences of distinct values, so they must be integers.
+With integers, each value fits with an index (for non negative values), and there is a limited number of different
+values, so that the number of possible different values k is not too big compared to the number of values n
+
+* No-negative values: Counting Sort is usually implemented by creating an array for counting. When the algorithm goes
+through the values to be sorted, value x is counted by increasing the counting array value at index x. If we tried
+sorting negative values, we might get in trouble with sorting value -3, because index -3 might be outside the counting
+array or even coincide with the index of a positive element if it was implemented in the original way.
+
+* Limited range of values: If the number of possible different values to be sorted k is larger than the number of
+values to be sorted n, the counting array we need for sorting will be larger than the original array we have that
+needs sorting, and the algorithm becomes ineffective.
+
+Its running time is linear in the number of items and the difference between the maximum and minimum
+key values, so it is only suitable for direct use in situations where the variation in keys is not significantly
+greater than the number of items. However, it is often used as a subroutine in another sorting algorithm,
+radix sort, that can handle larger keys more efficiently
+
+Best/Average/Worst Time Complexity
+    can be expressed in identical forms: O(n + k) or O(n + max) or O(n + m)
+    where
+        n is the size of the original array
+        k is the range of possible values
+        max is the maximum element in the input array
+        m is the size of the count array
+
+Space complexity    O(max)
+
+Counting Sort algorithm runs depends on both the range of possible values k and the number of values n. In a best case
+scenario, the range of possible different values k is very small compared to the number of values n and Counting Sort
+has time complexity O(n)
+
+
+[14, 46, 43, 27, 57, 41, 45, 21, 70]
+
+Ascending order:    [14, 21, 27, 41, 43, 45, 46, 57, 70]
+Descending order:   [70, 57, 46, 45, 43, 41, 27, 21, 14]
+
+==============================================================================
+---------------
+ Exercise: 010
+---------------
+
+Write Python code to create a program for Bitonic Sort.
+
+A bitonic sequence is a sequence of elements {a0, a1, …, an-1} such that:
+    (1) there exist an index i such as {a0,a1, …..ai} is monotonically increasing and {ai, …, an-1} is monotonically
+        decreasing or
+    (2) there exist a cyclic shift of indices so (1) is satisfied.
+
+Notes:
+    1. A sequence, sorted in increasing order is considered Bitonic with the decreasing part as empty. Similarly,
+    decreasing order sequence is considered Bitonic with the increasing part as empty. Thus, A sequence of only two
+    elements is always considered as a bitonic sequence (<4, 5>, <7, 2>)
+    2. A rotation (cyclic shift) of the Bitonic Sequence is also bitonic.
+
+〈1, 2, 4, 7, 6, 0〉 is a bitonic sequence, because it first increases and then decreases
+〈8, 9, 2, 1, 0, 4〉 is another bitonic sequence, because it is a cyclic shift of 〈0, 4, 8, 9, 2, 1>
+
+===========================
+How does Bitonic Sort work?
+===========================
+Simple put, the algorithm works by forming a bitonic sequence and finally sorting it using two procedures:
+    Bitonic Split and Bitonic Merge
+
+Note: Bitonic sort requires the input list to have a size that is power of two. The procedure of bitonic sequence fails
+if the number of elements is not in the aforementioned quantity precisely.
+
+=============
+Bitonic Split
+=============
+1. We keep dividing the sequence into two halves where the first half is going to be sorted in ascending order and the
+second half is going to be sorted in descending order (crucial for maintaining the bitonic property). The base case for
+this recursive spilt is having an input of size 1 (since every two-element sequence is a valid bitonic sequence)
+
+2. Using Bitonic Merge, We concatenate the two halves in order to bring a larger bitonic sequence (of size (based on
+the recursion level; deepest to highest) 2, 4, 8, 16, 32, ...) for the uplevel call, and the larger bitonic sort to
+be created would be sorted in the order that is required by uplevel call
+
+=============
+Bitonic Merge
+=============
+1. The initial call for this merge would be on two one-element lists, and they would get combined to form a bigger half
+of two elements for the uplevel call sorted in the required sorting order.
+
+2. Based on the uplevel sorting order (it could be ascending or descending), we swap elements from the two halves
+if necessary so we can bring a bigger sorted half to the uplevel call in the way the uplevel call requires the half
+to be sorted.
+
+3. However after this initial swapping, the combined halves that would form the bigger half for the uplevel is not
+guaranteed to be sorted
+    example:    let's assume that we have two halves sorted in the required order (asc for left, desc for right)
+                first half      1, 4
+                second half     8, 3
+                and the uplevel call requires a bitonic sort of 4 elements sorted in asc order (a, a, a, a, d, d, d, d)
+                so it can bring the left half of a bitonic sequence of 8 elements for its uplevel call
+                initial sort: (1, 4), (8, 3)    =>  ((1 < 8) -> no swap), ((4 > 3) -> swap)
+                                                =>  [1, 3, 8, 4]; as you can see it's not sorted in asc order
+
+To guarantee that list is sorted in the required order for the uplevel call, we repeat the swapping procedure on each
+half with the required sorting order:
+                [1, 3, 8, 4]    =>  (1, 3)  => (1), (3) agrees with the required sorting order
+                                =>  (8, 4)  => (8), (4) disagrees with the required sorting order   =>  (4, 8)
+                and thus [1, 3, 8, 4] would end up being [1, 3, 4, 8] (sorted in the required asc order)
+
+For better illustration and nice visualization of the algorithm, you can refer to this YouTube Tutorial:
+https://www.youtube.com/watch?v=uEfieI0MumY&list=PLzZR2BJ8ICYu_832OWSsKtt76PCuxLNZ8&index=10
+
+Note: Bitonic sort is a parallel algorithm. It's better for parallel implementation because we always compare
+elements in a predefined sequence and the sequence of comparison doesn’t depend on data that needs to be sorted (allows
+all operations at each stage to execute concurrently without dependencies) (in a list of 8 elements: the 0th element
+would always be compared with the 5th, 1st with 6th, 2nd with 7th, ...). So, we can run this algorithm on multiple
+processors to make the sorting exponentially faster. In brief, this algo shines when it can run on multiple processors.
+
+Best/Average/Worst Time Complexity:                         O(n * (log n)^2)
+When implemented on a parallel machine with p processors:   O(n/p * (log n)^2)
+Space complexity:                                           O(n * (log n)^2)
+
+[2, 10, 20, 30, 5, 5, 4, 3]
+
+Ascending order:    [2, 3, 4, 5, 5, 10, 20, 30]
+Descending order:   [30, 20, 10, 5, 5, 4, 3, 2]
+
+==============================================================================
+---------------
+ Exercise: 011
+---------------
+
+Write a Python program to sort a list of elements using Randomized Bogosort.
+
+Bogosort Also known as permutation sort, stupid sort, slow sort, shotgun sort or monkey sort, is a particularly
+ineffective sorting algorithm based on the generation and test paradigm. The algorithm successively generates
+permutations of its input until it finds one that is sorted. It is not useful for sorting, but may be used for
+educational purposes, to contrast it with other more realistic algorithms.
+
+Two versions of the algorithm exist: a deterministic version that enumerates all permutations until it hits a sorted
+one, and a randomized version that randomly permutes its input. An analogy for the working of the latter version is to
+sort a deck of cards, it would consist of checking if the deck were in order, and if it were not, one would throw the
+deck into the air, pick the cards up at random, and repeat the process until the deck is sorted.
+
+Bogosort:
+1. Check whether the list is sorted or not, if sorted then return the sorted array.
+2. Otherwise, generate a randomization of the numbers until the array is sorted.
+
+Worst Time Complexity:      O(infinity) (the randomized unbounded)
+Average Time Complexity:    O(n * n!)
+Best Time Complexity:       O(n)
+
+Space Complexity:      O(1)
+
+[14, 46, 43, 27, 57, 41, 45, 21, 70]
+
+Ascending order:    [14, 21, 27, 41, 43, 45, 46, 57, 70]
+Descending order:   [70, 57, 46, 45, 43, 41, 27, 21, 14]
+
+==============================================================================
+---------------
+ Exercise: 012
+---------------
+
+Write a Python program to sort a list of elements using Gnome sort.
+
+Gnome sort is a sorting algorithm originally proposed by Dr. Hamid Sarbazi-Azad (Professor of Computer Engineering at
+Sharif University of Technology) in 2000 and called "stupid sort" (not to be confused with bogosort), and then later
+on described by Dick Grune and named "gnome sort".
+
+The algorithm always finds the first place where two adjacent elements are in the wrong order, and swaps them.
+It takes advantage of the fact that performing a swap can introduce a new out-of-order adjacent pair only next to the
+two swapped elements.
+
+Gnome Sort also called Stupid sort is based on the concept of a Garden Gnome sorting his flower pots.
+
+A garden gnome sorts the flower pots by the following method:
+1. He looks at the flower pot next to him and the previous one; if they are in the right order he steps one pot forward,
+otherwise he swaps them and steps one pot backwards.
+2. If there is no previous pot (he is at the starting of the pot line), he steps forwards; if there is no pot next to him
+(he is at the end of the pot line), he is done.
+
+Worst TIme Complexity:      O(n^2)
+Average Time Complexity:    O(n^2)
+Best TIme Complexity:       O(n)
+
+Space Complexity:           O(1)
+
+[14, 46, 43, 27, 57, 41, 45, 21, 70]
+
+Ascending order:    [14, 21, 27, 41, 43, 45, 46, 57, 70]
+Descending order:   [70, 57, 46, 45, 43, 41, 27, 21, 14]
+
+==============================================================================
+---------------
+ Exercise: 013
+---------------
+
+Write a Python program to sort a list of elements using Cocktail shaker sort.
+
+One problem of bubble sort is that its running time badly depends on the initial order of the elements.
+Considering sorting in ascending order, big elements (rabbits) go up fast, while small ones (turtles) go down very slow.
+
+Turtle example:
+Element {1} is a turtle; {2, 3, 4, 5, 1} is almost sorted, it takes O(n^2) iterations to sort this array.
+
+Rabbit example.
+Element {6} is a rabbit, {6, 1, 2, 3, 4, 5} is almost sorted too, but it takes O(n) iterations to sort it.
+
+Cocktail shaker sort also known as bidirectional bubble sort, cocktail sort, shaker sort, ripple sort, or shuffle sort,
+is a variation of bubble sort that is both a stable sorting algorithm and a comparison sort. The algorithm differs from
+a bubble sort in that it sorts in both directions on each pass through the list. This sorting algorithm is only
+marginally more difficult to implement than a bubble sort, and solves the problem of turtles in bubble sorts.
+
+It provides only marginal performance improvements, and does not improve asymptotic performance; like the bubble sort,
+it is not of practical interest (insertion sort is preferred for simple sorts), though it finds some use in education.
+
+============
+How it works
+============
+The Bubble sort algorithm always traverses elements from left and moves the largest element to its correct position
+in the first iteration and second-largest in the second iteration and so on.
+
+Cocktail Sort is a variation of Bubble sort. It traverses through a given array in both directions alternatively.
+
+Each iteration of the algorithm is broken up into 2 stages:
+1. The first stage loops through the array from left to right, just like the Bubble Sort. During the loop, adjacent
+items are compared and if the value on the left is greater than the value on the right, then values are swapped.
+At the end of the first iteration, the largest number will reside at the end of the array.
+
+2. The second stage loops through the array in opposite direction. Starting from the item just before the most recently
+sorted item, and moving back to the start of the array. Here also, adjacent items are compared and are swapped if
+required. At the end of the first iteration, the smallest number will reside at the beginning of the array.
+
+Worst Time Complexity:      O(n^2)
+Average Time Complexity:    O(n^2)
+Best Time Complexity:       O(n)
+
+Space Complexity:           O(1)
+
+[14, 46, 43, 27, 57, 41, 45, 21, 70]
+
+Ascending order:    [14, 21, 27, 41, 43, 45, 46, 57, 70]
+Descending order:   [70, 57, 46, 45, 43, 41, 27, 21, 14]
+
+==============================================================================
+---------------
+ Exercise: 014
+---------------
+
+Write a Python program to sort a list of elements using Comb sort.
+
+The Comb Sort is a variant of the Bubble Sort.
+
+Like the Shell sort, the Comb Sort increases the gap used in comparisons and exchanges. The basic idea is to eliminate
+turtles, or small values near the end of the list, since in a bubble sort these slow the sorting down tremendously.
+Rabbits, large values around the beginning of the list do not pose a problem in bubble sort.
+
+In bubble sort, when any two elements are compared, they always have a gap of 1. The basic idea of comb sort is that
+the gap can be much more than 1. The gap starts with a large value (typically len(lst) / 1.3) and shrinks by a
+factor of 1.3 in every iteration until it reaches the value 1 (turning it to the regular bubble sort)
+
+Note: The shrink factor has been empirically found to be 1.3 (by testing Comb sort on over 200,000 random lists)
+
+============================
+Improvement over Bubble Sort
+============================
+Bubble sort always compares adjacent values. So all inversions are removed one by one. Thus Comb Sort removes more than
+one inversion with one swap and performs better than Bubble Sort.
+
+Worst Time Complexity:      O(n^2)
+Average Time Complexity:    O(n^2 / 2^p), where p is the number of increments
+Best Time Complexity:       O(n * log n)
+
+Space Complexity:           O(1)
+
+[14, 46, 43, 27, 57, 41, 45, 21, 70]
+
+Ascending order:    [14, 21, 27, 41, 43, 45, 46, 57, 70]
+Descending order:   [70, 57, 46, 45, 43, 41, 27, 21, 14]
+
+==============================================================================
+---------------
+ Exercise: 015
+---------------
+
+Write a Python program to sort a list of elements using Cycle sort.
+
+Cycle sort is an in-place, unstable sorting algorithm, a comparison sort that is theoretically optimal in terms of the
+total number of writes to the original array, unlike any other in-place sorting algorithm. It drastically reduces the
+amount of memory writes required to sort. If a value is already in the proper location, it is written zero times;
+otherwise, it is written only once to the correct spot.
+
+Cycle sort is particularly useful when sorting arrays containing elements with a small range of values. It was developed
+by W. D. Jones and published in 1963. It is based on the idea that the permutation to be sorted can be factored into
+cycles (Cycle decompositions), which can individually be rotated to give a sorted result, i.e. the Cycle Sort finds a
+set of cycles to sort the list.
+
+============================
+Cycles / Cycle Decomposition
+============================
+(1, 3)      => 1 should be positioned at the location of 3, and 3 should be positioned in the location of 1
+(7, 10, 2)  => 7 should be positioned at the location of 10, and 10 should be positioned in the location of 2,
+                and 2 should be positioned at the location of 7
+
+The basic intuition is that: the correct position for a certain element e is at "the number of elements that are equal
+or less than e".
+
+Cycle Sort is based on the idea that the array to be sorted can be divided into cycles (cycle decomposition).
+Cycles can be visualized as a graph. We have n nodes and an edge directed from node i to node j if the element at i-th
+index must be present at j-th index in the sorted array.
+
+All the cycles are considered one by one. First, we'll look at the cycle that contains the first element.
+We determine the right position of the first element and set it there, say j. We take the old value of arr[j] and
+locate its right location; we repeat this process until all components of the current cycle are correctly positioned,
+i.e., it stops when we return to the cycle's beginning point.
+
+========================================
+How to generate the cycle decompositions
+========================================
+1. Start with an unsorted array of n elements.
+2. Initialize a variable, cycleStart, to 0.
+3. For each element in the array, compare it with every other element to its right. If there are any elements that
+    are smaller than the current element, increment cycleStart. (trying to determine the correct position for the
+    current element)
+4. If cycleStart is still 0 after comparing the first element with all other elements, move to the next element and
+    repeat step 3.
+5. Otherwise, swap the current element with the element at the found position. The cycle is then continued (3-5) until
+    the current element returns to the beginning of the current cycle. And this would indicate the end of the current
+    cycle. (After then, all elements in this decomposition would be in their correct positions in the sorted list)
+6. Repeat steps 3-5 until all cycles have been completed.
+
+A good explanation can be found in this YouTube Tutorial: https://www.youtube.com/watch?v=hX8seJh1cT0
+
+One of the advantages of cycle sort is that it has a low memory footprint, as it sorts the array in-place and does not
+require additional memory for temporary variables or buffers, and most importantly, it does the least number of memory
+writings
+
+However, it can be slow in certain situations, particularly when the input array has a large range of values.
+Nonetheless, cycle sort remains a useful sorting algorithm in certain contexts, such as when sorting small arrays
+with limited value ranges.
+
+Worst/Average/Best Time Complexity:     O(n^2)
+Space Complexity:                       O(1)
+
+[14, 46, 43, 27, 57, 41, 45, 21, 70]
+
+Ascending order:    [14, 21, 27, 41, 43, 45, 46, 57, 70]
+Descending order:   [70, 57, 46, 45, 43, 41, 27, 21, 14]
+
+==============================================================================
+---------------
+ Exercise: 016
+---------------
+
+Write a Python program to sort a list of elements using Heap sort.
+
+In computer science, heapsort (invented by J. W. J. Williams in 1964) is a comparison-based sorting algorithm.
+Heapsort can be thought of as an improved selection sort: like that algorithm, it divides its input into a sorted and
+an unsorted region, and it interactively shrinks the unsorted region by extracting the largest element and moving that
+to the sorted region.
+
+The improvement consists of the use of a heap data structure rather than a linear-time search to find the maximum.
+Although somewhat slower in practice on most machines than a well-implemented quicksort, it has the advantage of a more
+favorable worst-case O(n log n) runtime.
+
+Heapsort is an in-place algorithm, but it is not a stable sort.
+
+============
+Binary Tree
+============
+A binary tree is a tree data structure in which each parent node can have at most two children.
+Each node of a binary tree consists of three items:
+    * data item
+    * address of left child
+    * address of right child
+
+Full Binary Tree: A full Binary tree is a special type of binary tree in which every parent node/internal node has
+either two or no children.
+
+Perfect Binary Tree: A perfect binary tree is a type of binary tree in which every internal node has exactly two
+child nodes and all the leaf nodes are at the same level.
+
+Complete Binary Tree: A complete binary tree is just like a full binary tree, but with two major differences:
+    * All the leaf elements must lean towards the left.
+    * The last leaf element might not have a right sibling i.e. a complete binary tree doesn't have to be a full
+    binary tree.
+
+=====
+Heap
+=====
+Heap data structure is a complete binary tree that satisfies the heap property, where any given node is either:
+    * always greater than its child node/s and the key of the root node is the largest among all other nodes.
+    This property is also called max heap property.
+
+    * always smaller than the child node/s and the key of the root node is the smallest among all other nodes.
+    This property is also called min heap property.
+
+Heaps are usually used to implement priority queues, where the smallest (or largest) element is always at the root
+of the tree. Heaps are also used in Heap Sort Algorithm.
+
+A heap is typically represented as an array:
+    * The root element will be at Arr[0].
+    * For any ith node Arr[i]:
+        * left child is stored at index 2i+1
+        * Right child is stored at index 2i+2
+        * Parent is stored at index floor((i-1)/2)
+
+The Internal Implementation of the Max-Heap require 3 major steps:
+    * Insertion: To insert a new element into the heap, it is added to the end of the array and then “bubbled up”
+    until it satisfies the heap property.
+
+    * Deletion: To delete the maximum element (the root of the heap), the last element in the array is swapped with
+    the root, and the new root is “bubbled down” until it satisfies the heap property.
+
+    * Heapify: A heapify operation can be used to create a max heap from an unsorted array.
+        1. Start from the first index of non-leaf node whose index is given by "n/2 - 1"
+        2. Set current element i as "largest".
+        3. The index of left child is given by "2i + 1" and the right child is given by "2i + 2".
+            * If "leftChild" is greater than "currentElement" (i.e. element at ith index), set "leftChildIndex" as "largest".
+            * If "rightChild" is greater than element in "largest", set "rightChildIndex" as "largest".
+        4. Swap "largest" with "currentElement"
+        6. Repeat until the subtrees are also heapified.
+
+    The time complexity of heapify in a max heap is O(n).
+
+==========
+Heap Sort
+==========
+Heap sort is a comparison-based sorting technique based on Binary Heap Data Structure.
+
+It can be seen as an optimization over selection sort where we first find the max (or min) element and swap it with
+the last (or first). We repeat the same process for the remaining elements. In Heap Sort, we use Binary Heap so that
+we can quickly find and move the max element in O(Log n) instead of O(n) and hence achieve the O(n Log n) time complexity.
+
+* Rearrange array elements so that they form a Max Heap.
+* Repeat the following steps until the heap contains only one element:
+    * Swap the root element of the heap (which is the largest element in current heap) with the last element of the heap.
+    * Remove the last element of the heap (which is now in the correct position). We mainly reduce heap size and do
+    not remove element from the actual array.
+    * Heapify the remaining elements of the heap.
+
+A good explanation can be found in this YouTube Tutorial: https://www.youtube.com/watch?v=1Rn10hHmp5I
+
+Worst/Average/Best Time Complexity: O(n * log n)
+Space Complexity:   O(log n), due to the recursive call stack. However, auxiliary space can be O(1) for iterative
+                    implementation.
+
+[14, 46, 43, 27, 57, 41, 45, 21, 70]
+
+Ascending order:    [14, 21, 27, 41, 43, 45, 46, 57, 70]
+Descending order:   [70, 57, 46, 45, 43, 41, 27, 21, 14]
+
+==============================================================================
+---------------
+ Exercise: 017
+---------------
+
+Write a Python program to sort a list of elements using Pancake sort.
+
+Pancake sorting is the colloquial term for the mathematical problem of sorting a disordered stack of pancakes in order
+of size when a spatula can be inserted at any point in the stack and used to flip all pancakes above it.
+
+A pancake number is the minimum number of flips required for a given number of pancakes.
+
+The problem was first discussed by American geometer Jacob E. Goodman. It is a variation of the sorting problem in
+which the only allowed operation is to reverse the elements of some prefix of the sequence.
+
+Approach: Unlike a traditional sorting algorithm, which attempts to sort with the fewest comparisons possible,
+the goal is to sort the sequence in as few reversals as possible.
+
+"The idea is to do something similar to Selection Sort. We one by one place maximum element at the end and reduce the
+size of current array by one."
+
+Given an unsorted array, the task is to sort the given array. However, you are allowed to do only following operation
+on array:
+    flip(arr, i): Reverse array from 0 to i
+
+* Let the current size be curr_size
+* Start from curr_size equal to n and reduce curr_size by one while it’s greater than 1.
+* Do following for every curr_size
+    * Find index of the maximum element in arr[0 to curr_size-1]. Let the index be ‘mi’
+    * Call flip(arr, mi)            => the maximum element would be at the first index
+    * Call flip(arr, curr_size – 1) => the maximum element would be in its correct index
+
+See following video for visualization of the above algorithm: https://www.youtube.com/watch?v=kk-_DDgoXfk
+
+Worst/Average/Best Time Complexity: O(n^2)
+Space Complexity:                   O(1)
+
+[14, 46, 43, 27, 57, 41, 45, 21, 70]
+
+Ascending order:    [14, 21, 27, 41, 43, 45, 46, 57, 70]
+Descending order:   [70, 57, 46, 45, 43, 41, 27, 21, 14]
+
+==============================================================================
+---------------
+ Exercise: 018
+---------------
+
+Write a Python program to sort a list of elements using Radix sort.
+
+According to Wikipedia "In computer science, radix sort is a non-comparative integer sorting algorithm that sorts data
+with integer keys by grouping keys by the individual digits which share the same significant position and value".
+
+Radix Sort is a linear sorting algorithm that sorts elements by processing them digit by digit. It is an efficient
+sorting algorithm for integers or strings with fixed-size keys.
+
+The key idea behind Radix Sort is to exploit the concept of "place value". It assumes that sorting numbers digit by
+digit will eventually result in a fully sorted list.
+
+Radix Sort can be performed using different variations, such as Least Significant Digit (LSD) Radix Sort or Most
+Significant Digit (MSD) Radix Sort.
+
+The radix (or base) is the number of unique digits in a number system. In the decimal system we normally use, there
+are 10 different digits from 0 till 9. Radix Sort uses the radix so that decimal values are put into 10 different
+buckets (or containers) corresponding to the digit that is in focus, then put back into the array before moving on to
+the next digit.
+
+==============
+Stable Sorting
+==============
+A stable sorting algorithm is an algorithm that keeps the order of elements with the same value before and after the
+sorting. Let's say we have two elements "K" and "L", where "K" comes before "L", and they both have value "3".
+A sorting algorithm is considered stable if element "K" still comes before "L" after the array is sorted.
+
+Radix Sort must sort the elements in a stable way for the result to be sorted correctly.
+
+After sorting the elements on the least significant digit and moving to the next digit, it is important to not destroy
+the sorting work that has already been done on the previous digit position, and that is why we need to take care that
+Radix Sort does the sorting on each digit position in a stable way.
+
+=========
+Approach
+=========
+1. Find the largest element in the array , i.e. "max". Let "X" be the number of digits in "max".
+    "X" is calculated because we have to go through all the significant places of all elements.
+
+2. Now, go through each significant place one by one.
+    * Use any stable sorting technique to sort the digits at each significant place (e.g., Count Sort)
+
+    * Start with the least significant digit (rightmost digit) (unit place digits)
+
+    * Sort the values based on the digit in focus by first putting the values in the correct bucket based on the digit
+    in focus, and then put them back into array in the correct order.
+
+    * Move to the next digit (digits at unit place -> digits at tens place -> digits at hundreds place -> ...),
+    and sort again, like in the step above, until there are no digits left.
+
+A good explanation can be found in this YouTube Tutorial: https://www.youtube.com/watch?v=XiuSW_mEn7g
+
+Time Complexity:    O(d * (n + b)),
+                    where d is the number of digits,
+                    n is the number of elements,
+                    and b is the base of the number system being used.
+
+Space Complexity:   O(n + b)
+                    This space complexity comes from the need to create buckets for each digit value and to copy the
+                    elements back to the original array after each digit has been sorted.
+
+Note: radix sort has linear time complexity which is better than O(n * log n) of comparative sorting algorithms.
+If we take very large digit numbers or the number of other bases like 32-bit and 64-bit numbers then it can perform
+in linear time however the intermediate sort takes large space.
+
+[14, 46, 43, 27, 57, 41, 45, 21, 70]
+
+Ascending order:    [14, 21, 27, 41, 43, 45, 46, 57, 70]
+Descending order:   [70, 57, 46, 45, 43, 41, 27, 21, 14]
+
+==============================================================================
+---------------
+ Exercise: 019
+---------------
+
+Write a Python program to sort unsorted numbers using Binary Insertion Sort.
+
+Binary insertion sort is a sorting algorithm which is similar to the insertion sort, but instead of using linear search
+to find the location where an element should be inserted, we use binary search. Thus, we reduce the comparative value
+of inserting a single element from O(n) to O(log n).
+
+It is a flexible algorithm, which means it works faster when the same given members are already heavily sorted, i.e.,
+the current location of the feature is closer to its actual location in the sorted list.
+
+It is a stable sorting algorithm – elements with the same values appear in the same sequence in the last order as they
+were in the first list.
+
+========
+Approach
+========
+
+* Iterate the array from the second element to the last element.
+* Store the current element "A[i]" in a variable "key".
+* Find the position of the element just greater than "A[i]" in the subarray from "A[0]" to "A[i-1]" using binary search.
+  Say this element is at index "pos".
+* Shift all the elements from index "pos" to "i-1" towards the right.
+* "A[pos] = key"
+
+A good explanation can be found in this YouTube Tutorial: https://www.youtube.com/watch?v=-OVB5pOZJug
+
+Worst / Average Time Complexity:    O(n^2)
+Best Time Complexity:               O(n * log(n)) (the num of comparisons for inserting one element is O(log n),
+                                    and for N elements, it will be O(n log n).)
+
+[14, 46, 43, 27, 57, 41, 45, 21, 70]
+
+Ascending order:    [14, 21, 27, 41, 43, 45, 46, 57, 70]
+Descending order:   [70, 57, 46, 45, 43, 41, 27, 21, 14]
+
+==============================================================================
+---------------
+ Exercise: 020
+---------------
+
+Write a Python program to sort unsorted numbers using TimSort.
+
+From Wikipedia: Timsort is a hybrid stable sorting algorithm, derived from merge sort and insertion sort, designed to
+perform well on many kinds of real-world data. It was implemented by Tim Peters in 2002 for use in the Python
+programming language.
+
+The algorithm finds subsequences of the data that are already ordered (runs) and uses them to sort the remainder more
+efficiently. This is done by merging runs until certain criteria are fulfilled.
+
+Timsort has been Python's standard sorting algorithm since version 2.3.
+
+The way Timsort works can be grossly oversimplified as follows:
+    1. Divide the data into small chunks/runs (he size of these runs usually varies between 32 and 64 items)
+    2. Sort these chunks using Insertion sort
+    3. Merge the sorted chunks using a smart merging strategy found in Merge sort
+
+Note: TimSort brings out many optimizations over just naively merging Insertion Sort and Merge Sort, e.g.:
+    1. minimum run size.
+    2. Detecting ascending runs and use them as they are.
+    3. Detecting descending runs and blindly reverse them.
+    4. Binary Insertion Sort
+    5. Galloping while merging.
+    6. Adaptive merging.
+
+For more details, please refer to: https://www.kirupa.com/sorts/timsort.htm
+
+Best Time Complexity:       O(n)
+Average ime Complexity:     O(n log(n))
+Worst ime Complexity:       O(n log(n))
+
+Space Complexity:           O(n)
+
+However, for the sake of simplicity, you are tasked to implement the following approach:
+
+1. Split the array into runs of predefined size.
+2. Sort each run independently using Binary Insertion Sort.
+3. Merge the sorted runs as follows:
+    a. At each merging run, spilt the array into pairs of two consecutive sorted runs and merge each pair separately.
+    b. The size of the sorted runs would initially be the same as the input run size, and at each step it would double.
+    c. e.g.:    r1  |   r2  |   r3  |   r4      (Merge r1 & r2, Merge r3 & r4)
+                   r1_r2     |     r3_r4        (Merge r1_r2 & r3_r4)
+                        r1_r2_r3_r4             (The list is sorted now)
+
+[14, 46, 43, 27, 57, 41, 45, 21, 70]
+
+Ascending order:    [14, 21, 27, 41, 43, 45, 46, 57, 70]
+Descending order:   [70, 57, 46, 45, 43, 41, 27, 21, 14]
+
+==============================================================================
+---------------
+ Exercise: 021
+---------------
+
+Write a Python program to sort a list of elements using Topological sort.
+
+From Wikipedia: "In computer science, a topological sort or topological ordering of a directed graph is a linear
+ordering of its vertices such that for every directed edge (u,v) from vertex u to vertex v, u comes before v in the
+ordering. For instance, the vertices of the graph may represent tasks to be performed, and the edges may represent
+constraints that one task must be performed before another; in this application, a topological ordering is just a valid
+sequence for the tasks"
+
+Note: Topological Sorting for a graph is not possible if the graph is not a Directed Acyclic Graph (DAG); DAGs are a
+special type of graphs in which each edge is directed such that no cycle exists in the graph.
+
+    * Fails on undirected graphs: undirected edge between two vertices u and v means, there is an edge from u to v as
+    well as from v to u. Because of this both the nodes u and v depend upon each other and none of them can appear
+    before the other in the topological ordering without creating a contradiction.
+
+    * Fails on cyclic graphs: All the vertices in a cycle are indirectly dependent on each other hence topological
+    sorting fails.
+
+Note: Topological order may not be Unique.
+
+========
+Approach
+========
+* Initialize a stack and a visited array of size n.
+
+* For each unvisited vertex in the graph, do the following:
+    * Apply DFS (Depth-First Search) on the vertex.
+    * Mark the vertex as visited and recursively call DFS for all unvisited neighbors of the vertex.
+    * Once all the neighbors have been visited, push the vertex onto the stack.
+
+* After all, vertices have been visited, pop elements from the stack and append them to the output list until the stack
+is empty.
+
+* The resulting list is the topologically sorted order of the graph.
+
+Time Complexity: O(V+E)
+Auxiliary space: O(V)       (due to creation of the stack)
+
+1. Model the nodes and edges of the graph presented in "021.png".
+2. Find the topological sort of the nodes -> 5 4 2 3 1 0
+
+==============================================================================
+---------------
+ Exercise: 022
+---------------
+
+Write a Python program to sort a list of elements using Tree sort.
+
+Tree sort is a sorting algorithm that builds a Binary Search Tree (BST) from the elements of the array to be sorted
+and then performs an in-order traversal of the BST to get the elements in sorted order.
+
+Tree sort uses the properties of BST, where each node has at most two children, referred to as the left and right child.
+For any given node:
+    * The left child's value is less than the node's value.
+    * The right child's value is greater than the node's value.
+
+Tree Sort involves two main steps:
+    * Insertion: Insert all elements into the BST.
+    * Traversal: Perform an in-order traversal of the BST to extract the elements in sorted order.
+        The in-order traversal function will visit all nodes of the BST in sorted order and collect the elements.
+
+
+Best/Average Time Complexity:       O(n * log(n))
+                                    Adding one item to a Binary Search tree on average takes O(log n) time. Therefore,
+                                    adding n items will take O(n log n) time
+
+Worst Time Complexity:              O(n^2)
+                                    if the tree becomes unbalanced (e.g., if the input array is already sorted).
+
+[14, 46, 43, 27, 57, 41, 45, 21, 70]
+
+Ascending order:    [14, 21, 27, 41, 43, 45, 46, 57, 70]
+Descending order:   [70, 57, 46, 45, 43, 41, 27, 21, 14]
+
+==============================================================================
+---------------
+ Exercise: 023
+---------------
+
+Write a Python program to sort an unsorted array of numbers using Wiggle sort.
+
+Imagine you have a line of numbers, and you want them to form a pattern where each number goes: “low, high, low, high,”
+and so on. That’s Wiggle Sort!
+
+Given an unsorted array nums, reorder it in-place such that :
+    nums[0] <= nums[1] >= nums[2] <= nums[3]....
+
+For example, if you have: [3, 5, 2, 1, 6, 4], you can reorder it to [3, 5, 1, 6, 2, 4] to make it wiggle!
+
+Time Complexity:    O(n)
+Space Complexity:   O(1)
+
+==============================================================================
+---------------
+ Exercise: 024
+---------------
+
+Write a Python program to sort unsorted numbers using Strand sort.
+
+=========
+Approach
+=========
+1. Start with an empty output list.
+2. Extract the first strand (a sorted subsequence) from the input list.
+    * Start from the first element of the input list.
+    * Iterate through the list, and whenever an element is greater than or equal to the last added element in the
+        strand, add it to the strand.
+    * Remove the added elements from the input list
+3. Merge this strand into the output list.
+4. Repeat 2 & 3 until the output array holds a sorted version of the input array
+
+Best Time Complexity:       O(n)
+Average Time Complexity:    O(n^2)
+Worst Time Complexity:      O(n^2)
+
+Space Complexity:       O(n)    (Strand sort is not in-place)
+
+[14, 46, 43, 27, 57, 41, 45, 21, 70]
+
+Ascending order:    [14, 21, 27, 41, 43, 45, 46, 57, 70]
+Descending order:   [70, 57, 46, 45, 43, 41, 27, 21, 14]
+
+==============================================================================
+---------------
+ Exercise: 025
+---------------
+
+Write a Python program to sort unsorted numbers using Stooge sort.
+
+Stooge Sort is a recursive sorting algorithm, known for its terrible time complexity. It is based on comparisons.
+
+It generally divides the array into two overlapping parts (2/3 each). After that it performs sorting in first 2/3 part
+and then it performs sorting in last 2/3 part. And then, sorting is done on first 2/3 part to ensure that the array is
+sorted.
+
+The key idea behind the first and last 2/3s is that, imagine for simplicity that you have three numbers: [4, 3, 1]
+    * first step would sort the first 2/3 and put potential large elements within the reach of the next step
+        sort 4 and 3    -> [3, 4, 1]      => (4 is within the reach of the second step)
+    * second step would sort the last 2/3 and put the largest element at its correct place.
+        sort 4 and 1    -> [3, 1, 4]
+    * last step would take care of the remaining disorder in the first 2/3rd again
+        sort 3 and 1    ->  [1, 3, 4]     =>  the list is sorted now
+
+The same idea can be extended to bigger lists by applying the same approach recursively on each 2/3 part.
+
+A nice illustration can be found in the first x minutes of the following YouTube Tutorial:
+
+=========
+Approach
+==========
+* first check the first and last elements of the list, and swap them if they are in the wrong order.
+* If there are three or more elements in the list, then, the algorithm calls itself recursively on:
+    * the initial 2/3 of the list
+    * the final 2/3 of the list
+    * and again on the initial 2/3 of the list, until all the list is sorted.
+
+Note: always round down (floor) when calculating the third of the list size.
+
+Its complexity is almost cubic, making it worse than Selection Sort or Insertion Sort.
+
+Best/Average/Worst Time Complexity:     O(n^(log 3 / log 1.5)) = O(n^2.7095)
+Space Complexity:                       O(n)
+
+[14, 46, 43, 27, 57, 41, 45, 21, 70]
+
+Ascending order:    [14, 21, 27, 41, 43, 45, 46, 57, 70]
+Descending order:   [70, 57, 46, 45, 43, 41, 27, 21, 14]
+
+==============================================================================
+---------------
+ Exercise: 026
+---------------
+
+Write a Python program to segregate 0s and 1s in an array of only 0s and 1s such that 0s comes first then the 1s.
+
+You are given an array of 0s and 1s in random order. Segregate 0s on left side and 1s on right side of the array
+[Basically you have to sort the array].
+
+Note: you're allowed to traverse the array only once.
+
+[0, 1, 0, 1, 0, 0, 1, 1, 1, 0]  =>  [0, 0, 0, 0, 0, 1, 1, 1, 1, 1]
+
+==============================================================================
+---------------
+ Exercise: 027
+---------------
+
+Write a Python program to sort a list of 0s, 1s, and 2s using the Dutch National Flag Algorithm.
+
+Given an array consisting of only 0s, 1s, and 2s. The task is to sort the array, i.e., put all 0s first, then all 1s
+and all 2s in last.
+
+This problem is the same as the famous “Dutch National Flag problem”. The problem was proposed by Edsger Dijkstra.
+The problem is as follows: Given n balls of colour red, white or blue arranged in a line in random order. You have to
+arrange all the balls such that the balls with the same colours are adjacent with the order of the balls, with the
+order of the colours being red, white and blue (i.e., all red coloured balls come first then the white coloured balls
+and then the blue coloured balls).
+
+Note: You're allowed to traverse the input list only once.
+
+[0, 1, 2, 0, 1, 2, 0, 1, 2, 0]  =>  [0, 0, 0, 0, 1, 1, 1, 2, 2, 2]
+
+==============================================================================
+---------------
+ Exercise: 028
+---------------
+
+Write a Python program to sort a list of elements using 3-way Quick Sort.
+
+In simple QuickSort algorithm, we select an element as pivot, partition the array around a pivot and recur for
+sub-arrays on the left and right of the pivot.
+
+Normal Quicksort exhibits poor performance for inputs that contain many repeated elements. The problem is clearly
+apparent when all the input elements are equal: at each recursion, the left partition is empty (no input values are
+less than the pivot), and the right partition has only decreased by one element (the pivot is removed).
+
+To solve this problem, we use 3-way quick sort (that is based on Dutch National Flag algorithm).
+Values equal to the pivot are already sorted so only left and right partitions have to be sorted using recursion.
+
+In this algorithm, the original array is partitioned into three parts that are as follows:
+    * One with elements less than pivot,
+    * Second with equal to pivot and
+    * Last with elements greater than pivot.
+
+Best Time Complexity:       O(n * log(n))
+Average Time Complexity:    O(n * log(n))
+Worst Time Complexity:      O(n^2)
+
+Space Complexity:           O(log(n))
+
+[14, 46, 43, 27, 57, 41, 45, 21, 70]
+
+Ascending order:    [14, 21, 27, 41, 43, 45, 46, 57, 70]
+Descending order:   [70, 57, 46, 45, 43, 41, 27, 21, 14]
+
+==============================================================================
+---------------
+ Exercise: 029
+---------------
+
+Write a Python program to sort unsorted numbers using Pigeonhole sorting.
+
+Pigeonhole sorting is a sorting algorithm that is suitable for sorting lists of elements where the number of elements
+(n) and the length of the range of possible key values (k) are approximately the same. It requires O(n + k) time.
+
+It is similar to counting sort, but differs in that it "moves items twice: once to the bucket array and again to the
+final destination, whereas counting sort builds an auxiliary array then uses the array to compute each item's final
+destination and move the item there."
+
+
+The pigeonhole algorithm works as follows:
+1. Find minimum and maximum values in array. Let the minimum and maximum values be ‘min’ and ‘max’ respectively.
+    Also find range as ‘max-min+1’.
+
+2. Set up an array of initially empty “pigeonholes” the same size as of the range.
+
+3. Visit each element of the array and then put each element in its pigeonhole.
+    An element arr[i] is put in hole at index arr[i] – min.
+
+4. Start the loop all over the pigeonhole array in order and put the elements from non- empty holes back into the
+    original array.
+
+Space Complexity:   O(k)  where k is the length of the range of possible key values.
+
+[14, 46, 43, 27, 57, 41, 45, 21, 70]
+
+Ascending order:    [14, 21, 27, 41, 43, 45, 46, 57, 70]
+Descending order:   [70, 57, 46, 45, 43, 41, 27, 21, 14]
+
+==============================================================================
+---------------
+ Exercise: 030
+---------------
+
+Write a Python program to sort unsorted numbers using patience sorting.
+
+From Wikipedia: In computer science, patience sorting is a sorting algorithm inspired by, and named after, the card
+game patience. A variant of the algorithm efficiently computes the length of the longest increasing subsequence in a
+given array.
+
+The algorithm's name derives from a simplified variant of the patience card game. The game begins with a shuffled deck
+of cards. The cards are dealt one by one into a sequence of piles on the table, according to the following rules:
+1. Initially, there are no piles. The first card dealt forms a new pile consisting of the single card.
+
+2. Each subsequent card is placed on the leftmost existing pile whose top card has a value greater than or equal to
+    the new card's value, or to the right of all of the existing piles, thus forming a new pile.
+
+3. When there are no more cards remaining to deal, the game ends.
+
+Goal is to form as much as few piles possible.
+
+Note: In order to find the longest increasing subsequence:
+    Whenever a card is placed on top of a pile, put a back-pointer to the top card in the previous pile (that, by
+    assumption, has a lower value than the new card has).
+
+A good illustration of the algorithm can be found in this YouTube Tutorial: https://www.youtube.com/watch?v=22s1xxRvy28
+
+Worst Time Complexity:  O(n log(n))
+Best Time Complexity:   O(n)    occurs when the input is pre-sorted.
+
+[14, 46, 43, 27, 57, 41, 45, 21, 70]
+
+Ascending order:    [14, 21, 27, 41, 43, 45, 46, 57, 70]
+Descending order:   [70, 57, 46, 45, 43, 41, 27, 21, 14]
+
+==============================================================================
+---------------
+ Exercise: 031
+---------------
+
+Write a Python program to sort an odd-even sort or odd-even transposition sort.
+
+From Wikipedia: In computing, an odd-even sort or odd-even transposition sort (also known as brick sort
+or parity sort  is a relatively simple sorting algorithm, developed originally for use on parallel processors
+with local interconnections. It is a comparison sort related to bubble sort, with which it shares many characteristics.
+
+It functions by comparing all odd/even indexed pairs of adjacent elements in the list and, if a pair is in the wrong
+order (the first is larger than the second) the elements are switched. The next step repeats this for even/odd indexed
+pairs (of adjacent elements). Then it alternates between odd/even and even/odd steps until the list is sorted.
+
+========
+Approach
+========
+* The algorithm runs until the array elements are sorted.
+
+* In each iteration two phases occurs: Odd and Even Phases.
+
+* In the odd phase, we perform a bubble sort on odd indexed elements and in the even phase, we perform a bubble sort
+    on even indexed elements:
+    Odd phase: Every odd indexed element is compared with the next even indexed element.
+    Even phase: Every even indexed element is compared with the next odd indexed element.
+
+A nice illustration of the algorithm can be found in this YouTube Tutorial: https://www.youtube.com/watch?v=1UEWb_dgkq8
+
+Worst Time Complexity:      O(n^2)
+Average Time Complexity:    O(n^2)
+Best Time Complexity:       O(n)
+
+Space Complexity:           O(1)
+
+[14, 46, 43, 27, 57, 41, 45, 21, 70]
+
+Ascending order:    [14, 21, 27, 41, 43, 45, 46, 57, 70]
+Descending order:   [70, 57, 46, 45, 43, 41, 27, 21, 14]
+
+==============================================================================
+---------------
+ Exercise: 032
+---------------
+
+Write a Python program to sort unsorted strings using natural sort.
+
+Natural sort order is an ordering of strings in alphabetical order, except that multi-digit numbers are treated
+atomically, i.e., as if they were a single character.
+
+Natural sort order has been promoted as being more human-friendly ("natural") than the machine-oriented pure alphabetical
+order. For example, in alphabetical sorting "z11" would be sorted before "z2" because "1" is sorted as smaller than "2",
+while in natural sorting "z2" is sorted before "z11" because "2" is sorted as smaller than "11".
+
+['Elm11', 'Elm12', 'Elm2', 'elm0', 'elm1', 'elm10', 'elm13', 'elm9']
+
+Ascending order:    ['elm0', 'elm1', 'Elm2', 'elm9', 'elm10', 'Elm11', 'Elm12', 'elm13']
+Descending order:   ['elm13', 'Elm12', 'Elm11', 'elm10', 'elm9', 'Elm2', 'elm1', 'elm0']
+
+==============================================================================
