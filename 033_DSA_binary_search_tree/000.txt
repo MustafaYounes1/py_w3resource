@@ -1,0 +1,115 @@
+---------------
+ Exercise: 001
+---------------
+
+Write a Python program to create a 'Balanced' Binary Search Tree (BST) using an array of elements where array elements
+are sorted in ascending order (see "001.png"). And finally apply pre-order traversal on the tree.
+
+[1, 2, 3, 4, 5, 6, 7]   ->  [4, 2, 1, 3, 6, 5, 7]
+
+==============================================================================
+---------------
+ Exercise: 002
+---------------
+
+Write a Python program to find the closest value to a given target value in a given non-empty Binary Search Tree (BST)
+of unique values, i.e., the task is to find the node with a minimum absolute difference with the given target value.
+
+bst = BST()
+
+bst.insert(9)
+bst.insert(4)
+bst.insert(17)
+bst.insert(3)
+bst.insert(6)
+bst.insert(5)
+bst.insert(7)
+bst.insert(22)
+bst.insert(20)
+
+print(dfs(bst.root, "pre-order"))       =>  [9, 4, 3, 6, 5, 7, 17, 22, 20]
+
+print(closest_node(bst, 4))       =>  4
+print(closest_node(bst, 18))      =>  17
+print(closest_node(bst, 12))      =>  9
+print(closest_node(bst, 2))       =>  3
+
+==============================================================================
+---------------
+ Exercise: 003
+---------------
+
+Write a Python program to check whether a given binary tree is a valid binary search tree (BST) or not.
+
+In a binary search tree (BST):
+    * The left subtree of a node contains only nodes with keys less than the node's key.
+    * The right subtree of a node contains only nodes with keys greater than the node's key.
+    * Both the left and right subtrees must also be binary search trees.
+
+See "003.png" for example inputs
+
+==============================================================================
+---------------
+ Exercise: 004
+---------------
+
+Write a Python program to delete a node with the given node_val in a given binary search tree (BST).
+Note: Search for a node to remove. If the node is found, delete the node.
+
+bst = BST()
+
+bst.insert(13)
+bst.insert(7)
+bst.insert(3)
+bst.insert(8)
+bst.insert(15)
+bst.insert(14)
+bst.insert(19)
+bst.insert(18)
+
+print(dfs(bst.root, "in-order"))    =>  [3, 7, 8, 13, 14, 15, 18, 19]
+
+bst.delete(8)
+print(dfs(bst.root, "in-order"))    =>  [3, 7, 13, 14, 15, 18, 19]
+
+bst.delete(19)
+print(dfs(bst.root, "in-order"))    =>  [3, 7, 13, 14, 15, 18]
+
+bst.delete(13)
+print(dfs(bst.root, "in-order"))    =>  [3, 7, 14, 15, 18]
+
+bst.delete(100)
+print(dfs(bst.root, "in-order"))    =>  [3, 7, 14, 15, 18]
+
+==============================================================================
+---------------
+ Exercise: 005
+---------------
+
+Write a Python program to find the kth smallest/largest element in a given binary search tree.
+
+bst = BST()
+
+bst.insert(20)
+bst.insert(8)
+bst.insert(22)
+bst.insert(4)
+bst.insert(12)
+bst.insert(10)
+bst.insert(14)
+
+print(dfs(bst.root, "in-order"))        =>  [4, 8, 10, 12, 14, 20, 22]
+
+print(bst.kth(1, "smallest"))           => 4
+print(bst.kth(2, "smallest"))           => 8
+print(bst.kth(3, "smallest"))           => 10
+print(bst.kth(6, "smallest"))           => 20
+print(bst.kth(100, "smallest"))         => None
+
+print(bst.kth(1, "largest"))            => 22
+print(bst.kth(4, "largest"))            => 12
+print(bst.kth(3, "largest"))            => 14
+print(bst.kth(7, "largest"))            => 4
+print(bst.kth(100, "largest"))          => None
+
+==============================================================================

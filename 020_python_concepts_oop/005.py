@@ -19,6 +19,7 @@ bst.insert(10)
 bst.insert(14)
 bst.insert(4)
 
+BFS                     =>  [8, 3, 10, 1, 6, 14, 4, 7]
 in-order traversal      =>  [1, 3, 4, 6, 7, 8, 10, 14]
 pre-order traversal     =>  [8, 3, 1, 6, 4, 7, 10, 14]
 post-order traversal    =>  [1, 4, 7, 6, 3, 14, 10, 8]
@@ -182,30 +183,47 @@ class BST:
 
     def __delete_helper(self, node: Node, key: int) -> Union[Node, None]:
         """A helper method to recursively find the node and delete it without breaking the BST properties"""
+
+        # To delete a node, we must first search the BST to find it
+
+        # if the node in the current call is None -> do nothing
         if node is None:
             return None
 
+        # if key to be searched is smaller than the current node value -> keep looking in the left subtree
         elif key < node.value:
             node.left = self.__delete_helper(node.left, key)
 
+        # if key to be searched is larger than the current node value -> keep looking in the right subtree
         elif key > node.value:
             node.right = self.__delete_helper(node.right, key)
 
-        # the node is found
+        # the node with the key to be searched was found
         else:
-            # the node has one child
+            # the node has one child: a right child
+            # connect the parent node (from the previous function call) of the node you want to remove to that child node.
             if node.left is None:
                 return node.right
 
-            elif node.left is None:
+            # the node has one child: a left child
+            # connect the parent node (from the previous function call) of the node you want to remove to that child node.
+            elif node.right is None:
                 return node.left
 
             # the node has two children
+            # Find the node's inorder successor, i.e., the node that comes after it if we were to do in-order traversal
+            # which will always be a leaf node that has the smallest value larger than the current node.
+            # The in-order successor value would be written as the new value of the node to be removed
+            # And finally, the inorder successor (a leaf node) would be deleted.
             else:
-                n = dfs(node.right, "in_order")[0]  # Get the inorder successor of that node
-                node.value = n  # Replace the node value with the inorder successor
-                # Remove the inorder successor from its original position
-                node.right = self.__delete_helper(node.right, n)
+                # we can find the in-order successor by applying dfs with in-order traversal starting from the right
+                # child -> the first value to be returned would be the in-order successor
+                in_order_successor = dfs(node.right, "in_order")[0]
+
+                node.value = in_order_successor  # Replace the node value with the inorder successor
+
+                # Remove the inorder successor (a leaf node) from the BST
+                node.right = self.__delete_helper(node.right, in_order_successor)
 
         return node
 
