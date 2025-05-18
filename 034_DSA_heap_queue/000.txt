@@ -1,0 +1,303 @@
+---------------
+ Exercise: 001
+---------------
+
+Write a Python program to find the three largest integers from a given list of numbers using the heap queue algorithm.
+
+[25, 35, 22, 85, 14, 65, 75, 22, 58]
+
+the three smallest integers     =>      [14, 22, 22]
+the three largest integers      =>      [85, 75, 65]
+
+==============================================================================
+---------------
+ Exercise: 002
+---------------
+
+Write a Python program to implement heapsort by pushing all values onto a heap and then popping off the smallest
+values one at a time.
+
+[1, 3, 5, 7, 9, 2, 4, 6, 8, 0]
+
+Ascending order:        [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Descending order:       [9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
+
+==============================================================================
+---------------
+ Exercise: 003
+---------------
+
+Write a Python function that accepts an arbitrary list and converts it to a heap using the heap queue algorithm.
+
+[25, 44, 68, 21, 39, 23, 89]    =>  [21, 25, 23, 44, 39, 68, 89]
+
+==============================================================================
+---------------
+ Exercise: 004
+---------------
+
+Write a Python program that deletes the smallest element from a heap and then inserts a new item.
+
+[25, 44, 68, 21, 39, 23, 89]
+
+Pop and insert 21
+Pop and insert 110
+
+->  [23, 25, 68, 44, 39, 110, 89]
+
+==============================================================================
+---------------
+ Exercise: 005
+---------------
+
+Write a Python program to find the kth (1 <= k <= array's length) largest element in an unsorted array using the heap
+queue algorithm.
+
+[12, 14, 9, 50, 61, 41]
+
+Third-largest element:  41
+Second-largest element: 50
+Fifth-largest element:  12
+
+==============================================================================
+---------------
+ Exercise: 006
+---------------
+
+Write a Python program to compute the maximum product of three numbers in a given array of n integers using the heap
+queue algorithm.
+
+[12, 74, 9, 50, 61, 41]     =>  225700
+[-10, -3, 5, 6, -20]        =>  1200
+
+==============================================================================
+---------------
+ Exercise: 007
+---------------
+
+Write a Python program to find the top k integers that occur the most frequently from a given list of integers using
+the heap queue algorithm.
+
+Note: If more than one element has same frequency then prioritise the larger element over the smaller one.
+
+[3, 1, 4, 4, 5, 2, 6, 1], k = 2                 =>  [4, 1]
+[7, 10, 11, 5, 2, 5, 5, 7, 11, 8, 9], k = 4     =>  [5, 11, 7, 10]
+
+==============================================================================
+---------------
+ Exercise: 008
+---------------
+
+Write a Python program to get the most expensive and least expensive items from a given dataset using the heap queue
+algorithm.
+
+items = [
+    {'name': 'Item-1', 'price': 101.1},
+    {'name': 'Item-2', 'price': 555.22},
+    {'name': 'Item-3', 'price': 45.09},
+    {'name': 'Item-4', 'price': 22.75},
+    {'name': 'Item-5', 'price': 16.30},
+    {'name': 'Item-6', 'price': 110.65}
+]
+
+First 3 expensive items:
+[{'name': 'Item-2', 'price': 555.22},
+ {'name': 'Item-6', 'price': 110.65},
+ {'name': 'Item-1', 'price': 101.1}]
+
+First 3 cheap items:
+[{'name': 'Item-5', 'price': 16.3},
+ {'name': 'Item-4', 'price': 22.75},
+ {'name': 'Item-3', 'price': 45.09}]
+
+==============================================================================
+---------------
+ Exercise: 009
+---------------
+
+Write a Python program that sorts multiple input lists and merge them into a single sorted iterator using the heap
+queue algorithm.
+
+num1 = [25, 24, 15, 4, 5, 29, 110]
+num2 = [19, 20, 11, 56, 25, 233, 154]
+num3 = [24, 26, 54, 48]
+
+Ascending order:    [4, 5, 11, 15, 19, 20, 24, 24, 25, 25, 26, 29, 48, 54, 56, 110, 154, 233]
+Descending order:   [233, 154, 110, 56, 54, 48, 29, 26, 25, 25, 24, 24, 20, 19, 15, 11, 5, 4]
+
+==============================================================================
+---------------
+ Exercise: 010
+---------------
+
+Given a n x n matrix where each of the rows and columns is sorted in ascending order, write a Python program to find
+the kth smallest element in the matrix using the heap queue algorithm.
+
+matrix = [
+   [0, 5, 9],
+   [11, 12, 13],
+   [15, 17, 19]
+]
+
+Third-smallest element:     9
+
+==============================================================================
+---------------
+ Exercise: 011
+---------------
+
+Write a Python program to find the nth super-ugly number from a given prime list of size k using the heap queue
+algorithm.
+
+Super-ugly numbers are positive numbers whose all prime factors are in the given prime list. Given a number n, and a
+list of primes, the task is to find the nth Super-Ugly number.
+
+Note: the first Super-Ugly number is 1 by convention.
+
+For example:
+[1, 2, 4, 7, 8, 13, 14, 16, 19, 26, 28, 32] is the sequence of the first 12 super-ugly numbers given
+primes = [2, 7, 13, 19].
+
+[2, 5], 5                   =>  8
+[2, 3, 5], 50               =>  243
+[3, 5, 7, 11, 13], 9        =>  21
+
+==============================================================================
+---------------
+ Exercise: 012
+---------------
+
+Write a Python program to get the k most frequent elements from a given non-empty list of words using the heap queue
+algorithm
+
+["a", "abc", "abcdef", "a", "abcd", "abcd", "abc", "abcdefg"], 3  =>  ['a', 'abc', 'abcd']
+
+==============================================================================
+---------------
+ Exercise: 013
+---------------
+
+Write a Python program to check if the letters in a given string can be rearranged. This is to make sure that two
+characters that are adjacent to each other are different using the heap queue algorithm.
+
+Given a string s with lowercase repeated characters, the task is to rearrange characters in a string so that no two
+adjacent characters are the same. If it is not possible to do so, then print empty string ("").
+
+Note: Multiple valid rearranged strings can be possible for same input string.
+
+"aab"       =>  aba
+"abc"       =>  abc
+"aabb"      =>  abab
+"abccdd"    =>  cdabcd
+"aa"        =>  N/A     (it's not possible to rearrange the chars in a way where adjacent chars are non-duplicates)
+"aaaabc"    =>  N/A
+
+==============================================================================
+---------------
+ Exercise: 014
+---------------
+
+Write a Python program that adds integer numbers from the data stream to a heapq and computes the median of all
+elements. Use the heap queue algorithm.
+
+Median, by definition, is the middle value in an ordered list of numbers. If the list has an odd number of elements,
+the median is simply the middle element. If the list has an even number of elements, there is no single middle element,
+so the median is calculated by taking the average of the two middle numbers.
+
+=========
+Approach
+=========
+To find the median efficiently, we need a data structure that allows quick access to the middle elements. Utilizing two
+heaps is an elegant solution: a max heap to store the smaller half of the numbers and a min heap to store the larger
+half. This way, the largest number in the smaller half or the smallest number in the larger half can easily give us the
+median.
+
+By balancing the heaps so that their size differs by at most one, we ensure that we either have a single middle element
+when the combined size is odd (this will be at the top of the max heap), or two middle elements when the combined
+size is even (the top of each heap).
+
+Task: given a list of integers, find the median after adding each item from the list
+
+[5, 15, 1, 3, 2, 8]     ->  [5, 10.0, 5, 4.0, 3, 4.0]
+[2, 2, 2, 2]            ->  [2, 2.0, 2, 2.0]
+[1, 2, 3, 4, 5]         ->  [1, 1.5, 2, 2.5, 3]
+
+==============================================================================
+---------------
+ Exercise: 015
+---------------
+
+You have two integer arrays sorted in ascending order and an integer k. Write a Python program to find the k smallest
+pairs (u, v) which consist of one element from the first array and one element from the second array using the heap
+queue algorithm.
+
+lst1 = [1, 3, 7]
+lst2 = [2, 4, 6]
+k = 2
+
+->  [(1, 2), (1, 4)]
+
+==============================================================================
+---------------
+ Exercise: 016
+---------------
+
+Write a Python program to find the nth ugly number using the heap queue algorithm.
+
+Ugly numbers are positive numbers whose only prime factors are 2, 3 or 5.
+The sequence 1, 2, 3, 4, 5, 6, 8, 9, 10, 12, ... shows the first 10 ugly numbers.
+Note: 1 is typically treated as an ugly number.
+
+7th Ugly number     =>  8
+10th Ugly number    =>  12
+
+==============================================================================
+---------------
+ Exercise: 017
+---------------
+
+Write a Python program to convert a list into a heap and print it as a tree-like data structure.
+
+[1, 2, 3, 4, 7, 9, 10, 8, 16, 14]
+
+                             1
+              2                             3
+       4              7              9              10
+   8      16     14
+
+==============================================================================
+---------------
+ Exercise: 018
+---------------
+
+Write a Python program to create a queue, add 0 -> 9, display all the members and the size of the queue.
+
+The size of the queue: 10
+0 1 2 3 4 5 6 7 8 9
+
+==============================================================================
+---------------
+ Exercise: 019
+---------------
+
+Write a Python program to find out whether a queue is empty or not.
+
+==============================================================================
+---------------
+ Exercise: 020
+---------------
+
+Write a Python program to create a LIFO queue (Stack), add 0 -> 9 to the stack, and get them one by one.
+
+9 8 7 6 5 4 3 2 1 0
+
+==============================================================================
+---------------
+ Exercise: 021
+---------------
+
+Write a Python program to create a priority queue, add -1, -2, -3 to the stack, and get them one by one.
+
+-3 -2 -1
+
+==============================================================================
