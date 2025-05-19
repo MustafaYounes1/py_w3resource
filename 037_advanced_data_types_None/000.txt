@@ -1,0 +1,99 @@
+---------------
+ Exercise: 001
+---------------
+
+Write a Python function that takes a string as input and returns "None" if the string is empty, otherwise it returns
+the given string.
+
+""          =>  None
+"test"      =>  test
+
+==============================================================================
+---------------
+ Exercise: 002
+---------------
+
+Write a Python function that returns the middle character of a string or "None" if the string length is odd.
+
+abcd    =>  None
+abcde   =>  c
+
+==============================================================================
+---------------
+ Exercise: 003
+---------------
+
+Write a Python program that iterates through a list of strings and prints each string. If a string is empty, print
+"None" instead.
+
+["Python", "", "Java", "C++", "", "C#"]     =>  ['Python', None, 'Java', 'C++', None, 'C#']
+
+==============================================================================
+---------------
+ Exercise: 004
+---------------
+
+Write a Python function that checks if a given list is sorted in descending order. Return None if the list is empty.
+
+[7, 7, 8, 2, 1]     =>  False
+[1, 2, 3, 4, 5]     =>  False
+[5, 4, 3, 2, 1]     =>  True
+[]                  =>  None
+
+==============================================================================
+---------------
+ Exercise: 005
+---------------
+
+Write a Python program that takes a user's input and converts it to uppercase. If the input is empty, return None.
+
+==============================================================================
+---------------
+ Exercise: 006
+---------------
+
+Write a Python program that defines a dictionary and retrieves a value using a key. If the key is not found, return None.
+
+==============================================================================
+---------------
+ Exercise: 007
+---------------
+
+Write a Python function that counts None values in a list recursively. Return 0 if the list is empty.
+
+[None, "Red", None, 8, None, True]  =>  3
+[]                                  =>  0
+[1, 2]                              =>  0
+
+==============================================================================
+---------------
+ Exercise: 008
+---------------
+
+Write a Python function that takes two arguments and returns their sum if both aren't None, otherwise return None.
+
+sum_()          =>  None
+sum_(1)         =>  None
+sum_(1, 2)      =>  3
+
+==============================================================================
+---------------
+ Exercise: 009
+---------------
+
+Write a Python function that takes a list and returns a new list with None inserted between each element.
+
+[2, 4, 6, 8, 10]    =>  [2, None, 4, None, 6, None, 8, None, 10]
+
+==============================================================================
+---------------
+ Exercise: 010
+---------------
+
+Write a Python function that replaces all occurrences of a substring in a string with another substring. Returns None
+if the original string is empty.
+
+"Java Exercises!"     (replace Java with Python)      =>   Python Exercises!
+""                                                    =>  None
+
+==============================================================================

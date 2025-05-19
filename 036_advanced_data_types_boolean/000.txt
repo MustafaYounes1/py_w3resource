@@ -1,0 +1,128 @@
+---------------
+ Exercise: 001
+---------------
+
+Write a Python program to check if a given number is even or odd using boolean variables.
+
+10  ->  Even
+7   ->  Odd
+
+==============================================================================
+---------------
+ Exercise: 002
+---------------
+
+Write a Python function that takes two boolean values as input and returns the logical AND and OR of those values.
+
+False AND False = False
+False OR  False = False
+False AND True = False
+False OR  True = True
+True AND False = False
+True OR  False = True
+True AND True = True
+True OR  True = True
+
+==============================================================================
+---------------
+ Exercise: 003
+---------------
+
+Write a program that calculates whether a person is eligible for voting based on their age (>= 18) using boolean
+conditions.
+
+20  ->  Eligible
+18  ->  Eligible
+17  ->  Non-eligible
+
+==============================================================================
+---------------
+ Exercise: 004
+---------------
+
+Write a Python function that checks if a given list is empty or not using boolean logic.
+
+[]  ->  True
+[1] ->  False
+
+==============================================================================
+---------------
+ Exercise: 005
+---------------
+
+Write a Python program that checks whether a given year is a leap year or not using boolean logic.
+
+2000    ->  True
+2021    ->  False
+
+==============================================================================
+---------------
+ Exercise: 006
+---------------
+
+Write a Python function that checks if a given string is a palindrome (reads the same backward as forward) using
+boolean values.
+
+mamdam  =>  False
+madam   =>  True
+
+==============================================================================
+---------------
+ Exercise: 007
+---------------
+
+Write a Python program that implements a program that validates a user's password based on certain criteria
+(length, containing numbers and special characters etc.) using boolean expressions.
+
+Password length: 8-16
+It must contain at least one digit, one capital letter, one lower-case letter, and one special character
+
+afr12@hK$   =>  True
+AQbg12Fert  =>  False
+
+==============================================================================
+---------------
+ Exercise: 008
+---------------
+
+Write a Python program that implements a function to check if a given string is a valid email address format using
+boolean logic.
+
+Accepted format: "firstName_SecondName@gmail.com"
+
+"foo_bar@gmail.com"     =>  True
+"foo_bar2@gmail.com"    =>  False
+"foo2@gmail.com"        =>  False
+"foo2@x.com"            =>  False
+
+==============================================================================
+---------------
+ Exercise: 009
+---------------
+
+Write a Python program that creates a function that determines if a given point (x, y) is within a specified circle
+area using boolean conditions.
+
+Circle(cx: 10, cy: 10, r: 50),  Point(2, 3)      =>  True
+Circle(cx: 5, cy: 4, r: 4),     Point(8, 9)      =>  False
+
+==============================================================================
+---------------
+ Exercise: 010
+---------------
+
+Write a Python program that checks a simple authentication system. The program verifies the provided username and
+password against predefined usernames and passwords by using boolean checks.
+
+predefined_users = {
+    "empdb1": "Jue@3$juy0",
+    "empdb2": "juRe34@$",
+    "admin": "koiUaq$&@ki"
+}
+
+users = ["empdb1", "admin", "sd"]
+passwords = ["Jue@3$juy0", "oiUaq$&@ki", "sds"]
+
+=> True, False, False
+
+==============================================================================
