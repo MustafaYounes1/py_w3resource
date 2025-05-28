@@ -1,0 +1,66 @@
+---------------
+ Exercise: 001
+---------------
+
+Write a Python program that creates a memory view on a bytes object and prints the length and first 8 bytes.
+
+b"Python Exercises!"
+
+#bytes: 17
+first 8 bytes: b'Python E'
+
+==============================================================================
+---------------
+ Exercise: 002
+---------------
+
+Write a Python function that takes a memory view and converts it to a bytes object.
+
+==============================================================================
+---------------
+ Exercise: 003
+---------------
+
+Write a Python program that creates a list from a memory view over the following bytes object b'\x03\x02\x01CBA'.
+
+->  [3, 2, 1, 67, 66, 65]
+
+==============================================================================
+---------------
+ Exercise: 004
+---------------
+
+Write a Python program that reads a binary file into a memory view and saves a modified copy.
+
+Note: Read the "004.bin" file and add 10 to each byte. (the expected modified binary data is: b'Hello world!')
+
+==============================================================================
+---------------
+ Exercise: 005
+---------------
+
+Write a Python function that takes two memory views and concatenates them. Print the concatenated memory view.
+
+1st memory view on: b"Python"
+2nd memory view on: b" Exercises!"
+Out memory view on: b'Python Exercises!'
+
+==============================================================================
+---------------
+ Exercise: 006
+---------------
+
+Write a Python program that slices of a memory view over b'\x01\x02\x03\x04\x05\x06\x07\x08\t\n'
+
+Note: print the decimal representation of the bytes starting from the fourth byte to the eighth byte
+    ->  [4, 5, 6, 7, 8]
+
+==============================================================================
+---------------
+ Exercise: 007
+---------------
+
+Write a Python program that creates a memory view from a list of integers and print the hex values of each element.
+    [8, 16, 42, 92, 128]    ->  08:10:2a:5c:80
+
+==============================================================================

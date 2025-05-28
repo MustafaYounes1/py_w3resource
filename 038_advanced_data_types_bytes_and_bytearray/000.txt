@@ -1,0 +1,101 @@
+---------------
+ Exercise: 001
+---------------
+
+Write a Python program to convert a given string to bytes using different encodings like UTF-8, UTF-16, ASCII etc.
+
+"Python Exercises!"
+
+ASCII   b'Python Exercises!'
+UTF-8   b'Python Exercises!'
+UTF-16  b'\xff\xfeP\x00y\x00t\x00h\x00o\x00n\x00 \x00E\x00x\x00e\x00r\x00c\x00i\x00s\x00e\x00s\x00!\x00'
+
+==============================================================================
+---------------
+ Exercise: 002
+---------------
+
+Write a Python program that concatenates two given bytes objects.
+
+b'Python ', b'Exercises!' -> b'Python Exercises!'
+
+==============================================================================
+---------------
+ Exercise: 003
+---------------
+
+Write a Python program to create a bytearray from a given list of integers.
+
+[72, 123, 21, 108, 222, 67, 44, 38, 10] ->  b'H{\x15l\xdeC,&\n'
+
+==============================================================================
+---------------
+ Exercise: 004
+---------------
+
+Write a Python program that reads an input file into a bytes object and saves a modified copy.
+
+Note: Read the "004.txt" file and write the following bytes in it:
+    [10, 104, 101, 108, 108, 111, 32, 119, 51, 114, 101, 115, 111, 117, 114, 99, 101, 33]
+
+==============================================================================
+---------------
+ Exercise: 005
+---------------
+
+Write a Python program that converts a hexadecimal string into a bytes sequence.
+
+4861636b657220436f6465  =>  b'Hacker Code'
+
+==============================================================================
+---------------
+ Exercise: 006
+---------------
+
+Write a Python function to reverse a given bytes object.
+
+b'Python Exercises!'    =>  b'!sesicrexE nohtyP'
+
+==============================================================================
+---------------
+ Exercise: 007
+---------------
+
+Write a Python program that checks if two bytes objects are equal.
+
+b'Python', b'Pytho'     =>  False
+b'Python', b'Python'    =>  True
+
+==============================================================================
+---------------
+ Exercise: 008
+---------------
+
+Write a Python program to compress and decompress a bytes sequence using zlib.
+
+Original Bytes:     b'Python Exercises.'
+Compressed Bytes:   b'x\x9c\x0b\xa8,\xc9\xc8\xcfSp\xadH-J\xce,N-\xd6\x03\x00;6\x06|'
+Decompressed Bytes: b'Python Exercises.'
+
+==============================================================================
+---------------
+ Exercise: 009
+---------------
+
+Write a Python function that searches for a bytes sequence within a file opened in byte mode.
+
+Note: Get the index of the exclamation mark in the "004.txt" file
+    -> 11
+
+==============================================================================
+---------------
+ Exercise: 010
+---------------
+
+Write a Python function that converts a bytearray to a bytes object.
+
+Note: the bytearray contains the following bytes:
+    [48, 140, 201, 252, 186, 3, 37, 186, 52]
+    ->  b'0\x8c\xc9\xfc\xba\x03%\xba4'
+
+==============================================================================
