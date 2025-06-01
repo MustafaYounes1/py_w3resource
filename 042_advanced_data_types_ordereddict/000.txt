@@ -1,0 +1,131 @@
+---------------
+ Exercise: 001
+---------------
+
+Write a Python program that creates an OrderedDict and adds some items. Print the OrderedDict contents.
+
+OrderedDict([('b', 98), ('c', 99), ('a', 97), ('f', 102), ('g', 103)])
+
+==============================================================================
+---------------
+ Exercise: 002
+---------------
+
+Write a Python program that sorts the OrderedDict by its keys. Sort the OrderedDict by its values as well.
+
+'Laptop': 40
+'Desktop': 45
+'Mobile': 35
+
+-> sorted according to the keys:    OrderedDict([('Desktop', 45), ('Laptop', 40), ('Mobile', 35)])
+-> sorted according to the values:  OrderedDict([('Mobile', 35), ('Laptop', 40), ('Desktop', 45)])
+
+==============================================================================
+---------------
+ Exercise: 003
+---------------
+
+Write a Python program that accesses an item in the OrderedDict by its key. Check if a specified item exists in the
+OrderedDict as well.
+
+==============================================================================
+---------------
+ Exercise: 004
+---------------
+
+Write a Python program that reverses the order of a given OrderedDict.
+
+OrderedDict([('c', 99), ('b', 98), ('a', 97)])
+OrderedDict([('a', 97), ('b', 98), ('c', 99)])
+
+==============================================================================
+---------------
+ Exercise: 005
+---------------
+
+Write a Python program to create an OrderedDict with the following key-value pairs:
+
+'Laptop': 40
+'Desktop': 45
+'Mobile': 35
+'Charger': 25
+Now move the 'Desktop' key to the end of the dictionary and print the updated contents.
+
+OrderedDict([('Laptop', 40), ('Desktop', 45), ('Mobile', 35), ('Charger', 25)])
+OrderedDict([('Laptop', 40), ('Mobile', 35), ('Charger', 25), ('Desktop', 45)])
+
+==============================================================================
+---------------
+ Exercise: 006
+---------------
+
+Write a Python program to create an OrderedDict with the following key-value pairs:
+
+'Laptop': 40
+'Desktop': 45
+'Mobile': 35
+'Charger': 25
+Now remove the first key-value pair and print the updated OrderedDict.
+
+OrderedDict([('Laptop', 40), ('Desktop', 45), ('Mobile', 35), ('Charger', 25)])
+OrderedDict([('Desktop', 45), ('Mobile', 35), ('Charger', 25)])
+
+==============================================================================
+---------------
+ Exercise: 007
+---------------
+
+Write a Python function that merges two OrderedDict objects. If there are duplicate keys, sum their values. Print the
+merged OrderedDict.
+
+d1:
+    ('Laptop', 40),
+    ('Desktop', 45),
+    ('Mobile', 35)
+
+d2:
+    ('Laptop', 40),
+    ('Charger', 25)
+
+OrderedDict([('Laptop', 80), ('Desktop', 45), ('Mobile', 35), ('Charger', 25)])
+
+==============================================================================
+---------------
+ Exercise: 008
+---------------
+
+Write a Python function that creates an OrderedDict and removes a key-value pair from the OrderedDict using a given key.
+
+'Laptop': 40
+'Desktop': 45
+'Mobile': 35
+'Charger': 25
+
+Key to remove: 'Desktop'
+
+OrderedDict([('Laptop', 40), ('Mobile', 35), ('Charger', 25)])
+
+==============================================================================
+---------------
+ Exercise: 009
+---------------
+
+Write a Python program that creates an OrderedDict and populates it with 10 random integer values as values and their
+ASCII characters as keys. Print the OrderedDict.
+
+OrderedDict(
+    [('h', 104), ('K', 75), ('V', 86), ('k', 107), ('t', 116), ('G', 71), ('N', 78), ('F', 70), ('C', 67), ('I', 73)]
+)
+
+==============================================================================
+---------------
+ Exercise: 010
+---------------
+
+Write a Python function that takes a list of words and returns an OrderedDict where keys are the words and values are
+the lengths of the words.
+
+["Red", "Green", "Pink", "White", "Orange"]
+OrderedDict([('Red', 3), ('Green', 5), ('Pink', 4), ('White', 5), ('Orange', 6)])
+
+==============================================================================

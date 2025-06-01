@@ -1,0 +1,109 @@
+---------------
+ Exercise: 001
+---------------
+
+Write a Python program to create a 'Counter' of the letters in the string "Python Exercise!".
+
+Counter({'e': 2, 'P': 1, 'y': 1, 't': 1, 'h': 1, 'o': 1, 'n': 1, 'E': 1, 'x': 1, 'r': 1, 'c': 1, 'i': 1, 's': 1})
+
+==============================================================================
+---------------
+ Exercise: 002
+---------------
+
+Write a Python program that creates a 'Counter' from a list of elements and print the most common elements along
+with their counts.
+
+[1, 2, 3, 4, 5, 11, 3, 3, 6, 7, 8, 9, 3, 10, 1]
+
+-> [(3, 4), (1, 2), (2, 1), (4, 1), (5, 1), (11, 1), (6, 1), (7, 1), (8, 1), (9, 1), (10, 1)]
+
+==============================================================================
+---------------
+ Exercise: 003
+---------------
+
+Write a Python program that creates a counter of the vowels in the word "Python Exercises".
+
+Counter({'e': 3, 'o': 1, 'i': 1})
+
+==============================================================================
+---------------
+ Exercise: 004
+---------------
+
+Write a Python program that creates two 'Counter' objects and finds their sum, difference, union, and intersection.
+
+ctr1 = Counter(x=3, y=2, z=10)
+ctr2 = Counter(x=1, y=2, z=3)
+
+Sum:            Counter({'z': 13, 'x': 4, 'y': 4})
+Difference:     Counter({'z': 7, 'x': 2})
+Union:          Counter({'z': 10, 'x': 3, 'y': 2})
+Intersection:   Counter({'z': 3, 'y': 2, 'x': 1})
+
+==============================================================================
+---------------
+ Exercise: 005
+---------------
+
+Write a Python program that creates a counter of the words in a sentence and prints the words in ascending and
+descending order of their frequency.
+
+"Red Green Black Black Red red Orange Pink Pink Red White."
+
+ascending:  ['white', 'orange', 'green', 'pink', 'black', 'red']
+descending: ['red', 'black', 'pink', 'green', 'orange', 'white']
+
+==============================================================================
+---------------
+ Exercise: 006
+---------------
+
+Write a Python program that creates a 'Counter' for a list of words and removes all items with a count less than a
+certain value.
+
+["Red", "Green", "Black", "Black", "Red", "red", "Orange", "Pink", "Pink", "Red", "White"]
+min_count = 2
+
+-> Counter({'red': 4, 'black': 2, 'pink': 2})
+
+==============================================================================
+---------------
+ Exercise: 007
+---------------
+
+Write a python program to find the Jaccard similarity coefficient between two lists using 'Counter' objects.
+
+Jaccard Similarity, also known as the Jaccard Index or Jaccard Coefficient, is a measure used to quantify similarity
+between two sets. It's commonly employed in various fields, including data mining, information retrieval, and natural
+language processing, to compare similarities between sets of elements.
+
+For example, consider two sets:
+    A = {apple, banana, orange, kiwi}
+    B = {banana, kiwi, pineapple}
+
+The intersection of A and B is {banana, kiwi}, which has a cardinality of 2.
+The union of A and B is {apple, banana, orange, kiwi, pineapple}, which has a cardinality of 5.
+So, the Jaccard Similarity between sets A and B is 2/5, which is 0.4.
+
+lst1 = ['Red', 'Green', 'Blue', 'Orange']
+lst2 = ['Green', 'Pink', 'Blue']
+
+Jaccard Similarity Coefficient: 0.4
+
+==============================================================================
+---------------
+ Exercise: 008
+---------------
+
+Write a Python program that creates a 'Counter' for a list of items and uses dictionary-style access to update the
+count of specific items.
+
+items = ['Red', 'Green', 'Black', 'Black', 'Red', 'Red', 'Orange', 'Pink', 'Pink', 'Red', 'White']
+
+subtract 2 from the "Red" count and add 1 to the "purple" count:
+
+-> Counter({'red': 2, 'black': 2, 'pink': 2, 'green': 1, 'orange': 1, 'white': 1, 'purple': 1})
+
+==============================================================================

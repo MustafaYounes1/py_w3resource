@@ -1,0 +1,116 @@
+---------------
+ Exercise: 001
+---------------
+
+Write a Python program that defines a NamedTuple called Employee with fields like name, age, and country.
+Print each employee's name and country.
+
+Klaes Susana, 35, USA
+Auxentius Cloe, 44, Canada
+Golzar Merob, 28, UK
+Tatjana Adhelm, 30, Australia
+
+->
+    Klaes Susana    is from USA
+    Auxentius Cloe  is from Canada
+    Golzar Merob    is from UK
+    Tatjana Adhelm  is from Australia
+
+==============================================================================
+---------------
+ Exercise: 002
+---------------
+
+Write a Python program that defines a NamedTuple called Point with fields x, y and z representing the coordinate of a
+point. Access and print the fields.
+
+x: 0, y: 0, z: 0
+x: 1, y: 1, z: 2
+
+==============================================================================
+---------------
+ Exercise: 003
+---------------
+
+Write a Python program that creates a dictionary that maps food names to food namedtuple objects. Each food has a name
+and a price.
+
+"Pizza", 11.90
+"Burger", 7.45
+"Salad", 5.45
+
+-> {
+    'Pizza': Food(name='Pizza', price=11.9),
+    'Burger': Food(name='Burger', price=7.45),
+    'Salad': Food(name='Salad', price=5.45)
+}
+
+==============================================================================
+---------------
+ Exercise: 004
+---------------
+
+Write a Python program that defines a NamedTuple called Student with fields like name, age, and marks.
+
+Student(name='Svetovid Borko', age=22, marks={'Math': 85, 'Science': 90, 'History': 78, 'English': 92, 'Art': 88})
+Student(name='Mohan Balbino', age=22, marks={'Math': 75, 'Science': 82, 'History': 95, 'English': 88, 'Art': 90})
+Student(name='Tacita Jerzy', age=21, marks={'Math': 92, 'Science': 87, 'History': 85, 'English': 78, 'Art': 91})
+
+==============================================================================
+---------------
+ Exercise: 005
+---------------
+
+Write a Python function that takes a namedtuple as input of the item's name and price. Returns the item's name and price.
+
+Item(name="Mobile", price=300.00)
+Item(name="Desktop", price=1500.00)
+Item(name="Laptop", price=1200.00)
+
+==============================================================================
+---------------
+ Exercise: 006
+---------------
+
+Write a Python function that takes a Student named tuple as an argument and calculates the average grade.
+
+Student(name="Ain Ruth", age=22, marks=[89, 92, 75, 90, 86])    ->  86.4
+
+==============================================================================
+---------------
+ Exercise: 007
+---------------
+
+Write a Python program that defines a NamedTuple named "Circle" with fields 'radius' and 'center' (a Point NamedTuple
+representing the coordinates of the center of the circle). Create an instance of the "Circle" NamedTuple and print its
+attributes.
+
+-> Circle(center=Point(x=0, y=0), radius=0.45)
+
+==============================================================================
+---------------
+ Exercise: 008
+---------------
+
+Write a Python program that defines a NamedTuple named "Triangle" with fields 'side_1', 'side_2', and 'side_3'.
+Now write a function that takes a "Triangle" NamedTuple as input and calculates its area using Heron's formula.
+
+The area of a triangle can be calculated using Heron's formula, which utilizes the semi-perimeter. The semi-perimeter
+(s) is half the perimeter of the triangle, and the formula is: Area = √(s(s-a)(s-b)(s-c)), where a, b, and c are the
+side lengths of the triangle.
+
+Triangle(side_1=4, side_2=5, side_3=7)  ->  9.797958971132712
+
+==============================================================================
+---------------
+ Exercise: 009
+---------------
+
+Write a Python program that defines a NamedTuple named "Car" with fields 'make', 'model', 'year', and 'engine'
+(a NamedTuple representing engine details: type and #cylinders).
+
+Create an instance of the "Car" NamedTuple and print its attributes.
+
+Car(make='Honda', model='City', year=2020, engine=Engine(type='1.5L', cylinders=4))
+
+==============================================================================
