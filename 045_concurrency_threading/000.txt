@@ -1,0 +1,53 @@
+---------------
+ Exercise: 001
+---------------
+
+Write a Python program to create 10 threads and print their names.
+
+==============================================================================
+---------------
+ Exercise: 002
+---------------
+
+Write a Python program to download multiple files concurrently using threads.
+Note:   URLs can be found in "002.txt"
+        Use urllib.request to download contents from the URLs
+
+==============================================================================
+---------------
+ Exercise: 003
+---------------
+
+Write a Python program that creates two threads to find and print even and odd numbers from 0 to 1000.
+
+==============================================================================
+---------------
+ Exercise: 004
+---------------
+
+Write a Python program to calculate the factorial of a number using multiple threads.
+
+==============================================================================
+---------------
+ Exercise: 005
+---------------
+
+Write a Python program to implement a multi-threaded merge sort algorithm.
+
+==============================================================================
+---------------
+ Exercise: 006
+---------------
+
+Write a Python program to implement a multi-threaded quicksort algorithm.
+
+==============================================================================
+---------------
+ Exercise: 007
+---------------
+
+Write a Python program that performs concurrent HTTP requests using threads.
+Note:   URLs can be found in "002.txt"
+        Use requests to download contents from the URLs
+
+==============================================================================

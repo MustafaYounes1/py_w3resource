@@ -1,0 +1,67 @@
+---------------
+ Exercise: 001
+---------------
+
+Write a Python program that creates an asynchronous function to print "Python Exercises!" with a two-second delay.
+
+==============================================================================
+---------------
+ Exercise: 002
+---------------
+
+Write a Python program that creates three asynchronous functions and displays their respective names with different
+delays (1 second, 2 seconds, and 3 seconds).
+
+==============================================================================
+---------------
+ Exercise: 003
+---------------
+
+Write a Python program that creates an asyncio event loop and runs a coroutine that prints numbers from 1 to 7 with
+a delay of 1 second each.
+
+==============================================================================
+---------------
+ Exercise: 004
+---------------
+
+Write a Python program that implements a coroutine to fetch data from two different URLs simultaneously using the
+"aiohttp" library.
+
+Note: the URLs can be found in "004.txt"
+
+==============================================================================
+---------------
+ Exercise: 005
+---------------
+
+Write a Python program that runs multiple asynchronous tasks concurrently using asyncio.gather() and measures the
+time taken.
+    Task1: sleep 4 seconds
+    Task2: sleep 1 seconds
+    Task3: sleep 2 seconds
+
+==============================================================================
+---------------
+ Exercise: 006
+---------------
+
+Write a Python program to create a coroutine that simulates a time-consuming task and use asyncio.CancelledError to
+handle task cancellation.
+
+==============================================================================
+---------------
+ Exercise: 007
+---------------
+
+Write a Python program that implements a timeout for an asynchronous operation using asyncio.wait_for().
+
+==============================================================================
+---------------
+ Exercise: 008
+---------------
+
+Write a Python program that uses asyncio queues to simulate a producer-consumer scenario with multiple producers and a
+single consumer.
+
+==============================================================================
