@@ -13,35 +13,27 @@ Note:   the python scripts are supposed to have a docstring at the beginning tha
 """
 
 import argparse
-import pathlib
-import re
+from common import ArgRaTeDeHelpFormatter, fetch_file_doc_string, validate_dir_path
 
 
-def main(args):
-    assert args.group_dir.is_dir(), f"{args.group_dir} doesn't exist"
-
+def main(args: argparse.Namespace):
     py_files = [_ for _ in sorted(args.group_dir.iterdir()) if _.suffix == ".py"]
     assert py_files, f"{args.group_dir} has no python scripts"
+
+    out_txt = args.group_dir / "000.txt"
+    assert not out_txt.is_file(), f"{out_txt} already exists"
 
     out_str = ""
 
     for idx, file in enumerate(py_files):
-        with open(file, "r", encoding="utf8") as f:
-            contents = "".join(f.readlines())
-            match = re.match(r'^\s*([\'\"]{3})(.*?)\1', contents, re.DOTALL)
+        docstring = fetch_file_doc_string(file)
+        assert docstring, f"{file} has no docstring"
 
-            assert match is not None, f"{file} has no docstring"
-
-            docstring = match.group(2).strip()
-
-            out_str += "-" * 15 + "\n"
-            out_str += f" Exercise: {file.stem}\n"
-            out_str += "-" * 15 + "\n\n"
-            out_str += docstring + "\n\n"
-            out_str += "=" * 78 + "\n"
-
-    out_txt = args.group_dir / "000.txt"
-    assert not out_txt.is_file(), f"{out_txt} already exists"
+        out_str += "-" * 15 + "\n"
+        out_str += f" Exercise: {file.stem}\n"
+        out_str += "-" * 15 + "\n\n"
+        out_str += docstring + "\n\n"
+        out_str += "=" * 78 + "\n"
 
     with open(out_txt, "w", encoding="utf8") as f:
         f.write(out_str)
@@ -50,14 +42,15 @@ def main(args):
 if __name__ == "__main__":
     arg_parser = argparse.ArgumentParser(
         description=__doc__,
-        formatter_class=argparse.RawTextHelpFormatter
+        formatter_class=ArgRaTeDeHelpFormatter
     )
 
     arg_parser.add_argument(
         "group_dir",
-        type=pathlib.Path,
+        type=validate_dir_path,
         help="The path to the directory that holds the python scripts of the exercises to be summarized."
     )
 
     arguments = arg_parser.parse_args()
+
     main(arguments)
