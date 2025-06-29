@@ -5,7 +5,7 @@ Practice and improve your skills by solving randomized exercises using this tool
 """
 
 import argparse
-from common import EXCLUDED_DIRS, fetch_file_doc_string, validate_dir_path
+from common import ArgRaTeDeHelpFormatter, EXCLUDED_DIRS, fetch_file_doc_string, validate_dir_path
 import pathlib
 import random
 from typing import Callable, Generator
@@ -71,7 +71,7 @@ def main(args: argparse.Namespace):
 if __name__ == "__main__":
     arg_parser = argparse.ArgumentParser(
         description=__doc__,
-        formatter_class=argparse.ArgumentDefaultsHelpFormatter
+        formatter_class=ArgRaTeDeHelpFormatter
     )
 
     arg_parser.add_argument(
@@ -88,8 +88,8 @@ if __name__ == "__main__":
         type=validate_dir_path,
         default=pathlib.Path(__file__).parent,
         nargs="+",
-        help="Source groups from which the random exercises would be fetched. \nBy default, all subdirectories (except "
-             f"for {EXCLUDED_DIRS}) present in the current file directory would be considered as source groups."
+        help="Source groups from which the random exercises would be fetched. \nBy default, all subdirectories present in "
+             "the current file directory would be considered as source groups."
     )
 
     arg_parser.add_argument(
