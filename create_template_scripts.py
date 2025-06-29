@@ -1,7 +1,7 @@
 """
 
-A tool to automate the creation of multiple template scripts for multiple w3resource exercises, where each script name
-is the exercise ID and its contents would be the following template:
+A tool to automate the creation of multiple template scripts for many exercises at once. The name of each resultant
+script would refer to the exercise ID, and its contents would be the following template:
 
 \"""
 

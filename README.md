@@ -78,8 +78,8 @@ Streamline this process with the `create_template_scripts.py` CLI tool:
 ``` 
 usage: create_template_scripts.py [-h] first_exc_id last_exc_id out_dir
 
-A tool to automate the creation of multiple template scripts for multiple w3resource exercises, where each script name
-is the exercise ID and its contents would be the following template:
+A tool to automate the creation of multiple template scripts for many exercises at once. The name of each resultant
+script would refer to the exercise ID, and its contents would be the following template:
 
 """
 
@@ -112,15 +112,15 @@ for consistency:
 ```
 usage: summarize_exercises.py [-h] group_dir
 
-Use this script to summarize the questions from the exercises' scripts in a certain exercises group that is present
-in a dedicated subdirectory.
+This script aggregates and summarizes problem statements from a collection of Python exercise scripts located within a
+specified directory. It scans all `.py` files in the input directory, extracts the docstring from each file — expected
+to contain the exercise's problem statement — and compiles them into a single text file named `000.txt`, which is generated
+in the same directory.
 
-It would fetch the questions of all exercises (the '*.py' files) and write them down in a text file namely: "000.txt"
-that would get created inside the input directory.
-
-Note:   the python scripts are supposed to have a docstring at the beginning that holds the question.
-        Best practice would be to create the python scripts with 'create_template_scripts.py'  and then use this
-        script to summarize a certain group of exercises.
+Note:   For best results, exercise scripts should be created in advance using `create_template_scripts.py`.
+        After filling the template scripts with the problems' definition and their solutions, this script can then be
+        used to produce a centralized summary of all exercise questions within the group, facilitating efficient reference
+        and review.
 
 positional arguments:
   group_dir   The path to the directory that holds the python scripts of the exercises to be summarized.
