@@ -1,35 +1,62 @@
 name: py_w3resource
 channels:
+  - conda-forge
   - defaults
 dependencies:
   - aiohappyeyeballs=2.4.4=py311haa95532_0
   - aiohttp=3.11.10=py311h827c3e9_0
   - aiosignal=1.2.0=pyhd3eb1b0_0
+  - asttokens=3.0.0=py311haa95532_0
   - attrs=24.3.0=py311haa95532_0
   - brotli-python=1.0.9=py311h5da7b33_9
   - bzip2=1.0.8=h2bbff1b_6
   - ca-certificates=2025.2.25=haa95532_0
-  - certifi=2025.4.26=py311haa95532_0
+  - certifi=2025.6.15=py311haa95532_0
   - charset-normalizer=3.3.2=pyhd3eb1b0_0
   - colorama=0.4.6=py311haa95532_0
+  - decorator=5.1.1=pyhd3eb1b0_0
+  - executing=0.8.3=pyhd3eb1b0_0
   - frozenlist=1.5.0=py311h827c3e9_0
   - idna=3.7=py311haa95532_0
+  - intel-openmp=2024.2.1=h57928b3_1083
+  - ipython=9.1.0=py311haa95532_0
+  - ipython_pygments_lexers=1.1.1=py311haa95532_0
+  - jedi=0.19.2=py311haa95532_0
+  - libblas=3.9.0=32_h641d27c_mkl
+  - libcblas=3.9.0=32_h5e41251_mkl
   - libffi=3.4.4=hd77b12b_1
+  - liblapack=3.9.0=32_h1aa476e_mkl
+  - matplotlib-inline=0.1.6=py311haa95532_0
+  - mkl=2024.2.2=h66d3029_15
   - multidict=6.1.0=py311h827c3e9_0
+  - numpy=2.3.0=py311hc907d76_0
   - openssl=3.0.16=h3f729d1_0
+  - parso=0.8.4=py311haa95532_0
   - pip=24.2=py311haa95532_0
+  - prompt-toolkit=3.0.43=py311haa95532_0
+  - prompt_toolkit=3.0.43=hd3eb1b0_0
   - propcache=0.3.1=py311h827c3e9_0
+  - pure_eval=0.2.2=pyhd3eb1b0_0
+  - pygments=2.19.1=py311haa95532_0
   - pysocks=1.7.1=py311haa95532_0
   - python=3.11.11=h4607a30_0
+  - python_abi=3.11=2_cp311
   - requests=2.32.3=py311haa95532_1
   - setuptools=75.1.0=py311haa95532_0
   - sqlite=3.45.3=h2bbff1b_0
+  - stack_data=0.2.0=pyhd3eb1b0_0
+  - tbb=2021.8.0=h59b6b97_0
   - tk=8.6.14=h0416ee5_0
   - tqdm=4.66.5=py311h746a85d_0
+  - traitlets=5.14.3=py311haa95532_0
+  - typing_extensions=4.12.2=py311haa95532_0
   - tzdata=2024b=h04d1e81_0
+  - ucrt=10.0.20348.0=haa95532_0
   - urllib3=2.3.0=py311haa95532_0
   - vc=14.40=haa95532_2
-  - vs2015_runtime=14.42.34433=h9531ae6_2
+  - vc14_runtime=14.42.34433=h6356254_26
+  - vs2015_runtime=14.42.34433=hfef2bbc_26
+  - wcwidth=0.2.13=py311haa95532_0
   - wheel=0.44.0=py311haa95532_0
   - win_inet_pton=1.1.0=py311haa95532_0
   - xz=5.4.6=h8cc25b3_1
