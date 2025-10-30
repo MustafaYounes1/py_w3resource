@@ -22,9 +22,9 @@ a valuable resource for learners and developers alike.
 037_advanced_data_types_None...............  10        038_advanced_data_types_bytes_and_bytearray  10        039_advanced_data_types_memoryview.........   7        
 040_advanced_data_types_frozenset..........   7        041_advanced_data_types_namedtuple.........   9        042_advanced_data_types_ordereddict........  10        
 043_advanced_data_types_counter............   8        044_advanced_data_types_ellipsis...........   6        045_concurrency_threading..................   7        
-046_concurrency_asynchronous_io............   8        047_miscellaneous_generators...............  17        
+046_concurrency_asynchronous_io............   8        047_miscellaneous_generators...............  17        048_numpy_basic............................  57        
 
-....................................................................Total exercises: 1,722...................................................................
+....................................................................Total exercises: 1,779...................................................................
 ```
 
 ## Getting started
